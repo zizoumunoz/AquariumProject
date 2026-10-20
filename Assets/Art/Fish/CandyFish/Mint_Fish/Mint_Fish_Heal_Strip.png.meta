@@ -1,0 +1,1081 @@
+fileFormatVersion: 2
+guid: 2456f5f6361817942b1c5f1ee9c7479f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4325272473449340627
+    second: Mint_Fish_Heal_Strip_0
+  - first:
+      213: 1145757061446391353
+    second: Mint_Fish_Heal_Strip_1
+  - first:
+      213: -4193287348522675465
+    second: Mint_Fish_Heal_Strip_2
+  - first:
+      213: 8138447908428407406
+    second: Mint_Fish_Heal_Strip_3
+  - first:
+      213: -1471806520937542981
+    second: Mint_Fish_Heal_Strip_4
+  - first:
+      213: 7329528693192918981
+    second: Mint_Fish_Heal_Strip_5
+  - first:
+      213: 7476122819372572904
+    second: Mint_Fish_Heal_Strip_6
+  - first:
+      213: 3130893101167547858
+    second: Mint_Fish_Heal_Strip_7
+  - first:
+      213: 875197359591388526
+    second: Mint_Fish_Heal_Strip_8
+  - first:
+      213: 6021483014071505723
+    second: Mint_Fish_Heal_Strip_9
+  - first:
+      213: 5783008914553594245
+    second: Mint_Fish_Heal_Strip_10
+  - first:
+      213: 4886700801344985461
+    second: Mint_Fish_Heal_Strip_11
+  - first:
+      213: 2234781113382849368
+    second: Mint_Fish_Heal_Strip_12
+  - first:
+      213: 3355682219166896553
+    second: Mint_Fish_Heal_Strip_13
+  - first:
+      213: -4390056953327086925
+    second: Mint_Fish_Heal_Strip_14
+  - first:
+      213: 5507332343156170842
+    second: Mint_Fish_Heal_Strip_15
+  - first:
+      213: -7306086245318267924
+    second: Mint_Fish_Heal_Strip_16
+  - first:
+      213: 6559863077541598980
+    second: Mint_Fish_Heal_Strip_17
+  - first:
+      213: 9120462143330590445
+    second: Mint_Fish_Heal_Strip_18
+  - first:
+      213: 3796332252968605162
+    second: Mint_Fish_Heal_Strip_19
+  - first:
+      213: -7316826568796596090
+    second: Mint_Fish_Heal_Strip_20
+  - first:
+      213: 3543567549237023277
+    second: Mint_Fish_Heal_Strip_21
+  - first:
+      213: -5739542864585092503
+    second: Mint_Fish_Heal_Strip_22
+  - first:
+      213: 6614188106561563620
+    second: Mint_Fish_Heal_Strip_23
+  - first:
+      213: -2608822961773054441
+    second: Mint_Fish_Heal_Strip_24
+  - first:
+      213: -926153720719980037
+    second: Mint_Fish_Heal_Strip_25
+  - first:
+      213: 5617203269276584283
+    second: Mint_Fish_Heal_Strip_26
+  - first:
+      213: -3605658714033658802
+    second: Mint_Fish_Heal_Strip_27
+  - first:
+      213: -3481337920068541714
+    second: Mint_Fish_Heal_Strip_28
+  - first:
+      213: -8703359016969170882
+    second: Mint_Fish_Heal_Strip_29
+  - first:
+      213: 5920136315175949933
+    second: Mint_Fish_Heal_Strip_30
+  - first:
+      213: 6221063168821941604
+    second: Mint_Fish_Heal_Strip_31
+  - first:
+      213: -6339581151387388094
+    second: Mint_Fish_Heal_Strip_32
+  - first:
+      213: -4778854618884529994
+    second: Mint_Fish_Heal_Strip_33
+  - first:
+      213: -5573963182162101675
+    second: Mint_Fish_Heal_Strip_34
+  - first:
+      213: -8255253250748380978
+    second: Mint_Fish_Heal_Strip_35
+  - first:
+      213: -6248462929624154402
+    second: Mint_Fish_Heal_Strip_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de19b8f564760c30800000000000000
+      internalID: 4325272473449340627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93658661afb86ef00800000000000000
+      internalID: 1145757061446391353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f29a2e9f537ec5c0800000000000000
+      internalID: -4193287348522675465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6265ecd04391f070800000000000000
+      internalID: 8138447908428407406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 47
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba0a6564c7139be0800000000000000
+      internalID: -1471806520937542981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 59
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c70cc05387b7b560800000000000000
+      internalID: 7329528693192918981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_6
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0e4e1181680c760800000000000000
+      internalID: 7476122819372572904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 47
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d510d4ffaa237b20800000000000000
+      internalID: 3130893101167547858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_8
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 59
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65fdce8c53552c00800000000000000
+      internalID: 875197359591388526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_9
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33d7cae5ea909350800000000000000
+      internalID: 6021483014071505723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_10
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58162e4d7ff514050800000000000000
+      internalID: 5783008914553594245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_11
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579d8cbec7c01d340800000000000000
+      internalID: 4886700801344985461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_12
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 47
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bcfed0599830f10800000000000000
+      internalID: 2234781113382849368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 47
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a1998cf237c19e20800000000000000
+      internalID: 3355682219166896553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_14
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 11
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b29431e5726313c0800000000000000
+      internalID: -4390056953327086925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_15
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 47
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50e7d54699fd6c40800000000000000
+      internalID: 5507332343156170842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 11
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cebef69e4419b9a90800000000000000
+      internalID: -7306086245318267924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_17
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4075110a6b0590b50800000000000000
+      internalID: 6559863077541598980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_18
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 11
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee1e904ff3629e70800000000000000
+      internalID: 9120462143330590445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_19
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 11
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae55d8bf1184fa430800000000000000
+      internalID: 3796332252968605162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_20
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6881dbb7009657a90800000000000000
+      internalID: -7316826568796596090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_21
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 3
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22dfd159e74d2130800000000000000
+      internalID: 3543567549237023277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_22
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962174f8c2c0950b0800000000000000
+      internalID: -5739542864585092503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_23
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 15
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb27391a015acb50800000000000000
+      internalID: 6614188106561563620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_24
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71672a1a6599bcbd0800000000000000
+      internalID: -2608822961773054441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_25
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 7
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf944151914a523f0800000000000000
+      internalID: -926153720719980037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_26
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59c468bc9054fd40800000000000000
+      internalID: 5617203269276584283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_27
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e446bb0d08026fdc0800000000000000
+      internalID: -3605658714033658802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_28
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2a73b4b9dcfafc0800000000000000
+      internalID: -3481337920068541714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_29
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e301cd02615773780800000000000000
+      internalID: -8703359016969170882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_30
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d66d3f7cc9c882250800000000000000
+      internalID: 5920136315175949933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_31
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 7
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465d5eecdf7a55650800000000000000
+      internalID: 6221063168821941604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_32
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247fac608884508a0800000000000000
+      internalID: -6339581151387388094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_33
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b027282b091eadb0800000000000000
+      internalID: -4778854618884529994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_34
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a3f18940e45a2b0800000000000000
+      internalID: -5573963182162101675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_35
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8014a18e27f6d80800000000000000
+      internalID: -8255253250748380978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mint_Fish_Heal_Strip_36
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede3e8f32100949a0800000000000000
+      internalID: -6248462929624154402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mint_Fish_Heal_Strip_0: 4325272473449340627
+      Mint_Fish_Heal_Strip_1: 1145757061446391353
+      Mint_Fish_Heal_Strip_10: 5783008914553594245
+      Mint_Fish_Heal_Strip_11: 4886700801344985461
+      Mint_Fish_Heal_Strip_12: 2234781113382849368
+      Mint_Fish_Heal_Strip_13: 3355682219166896553
+      Mint_Fish_Heal_Strip_14: -4390056953327086925
+      Mint_Fish_Heal_Strip_15: 5507332343156170842
+      Mint_Fish_Heal_Strip_16: -7306086245318267924
+      Mint_Fish_Heal_Strip_17: 6559863077541598980
+      Mint_Fish_Heal_Strip_18: 9120462143330590445
+      Mint_Fish_Heal_Strip_19: 3796332252968605162
+      Mint_Fish_Heal_Strip_2: -4193287348522675465
+      Mint_Fish_Heal_Strip_20: -7316826568796596090
+      Mint_Fish_Heal_Strip_21: 3543567549237023277
+      Mint_Fish_Heal_Strip_22: -5739542864585092503
+      Mint_Fish_Heal_Strip_23: 6614188106561563620
+      Mint_Fish_Heal_Strip_24: -2608822961773054441
+      Mint_Fish_Heal_Strip_25: -926153720719980037
+      Mint_Fish_Heal_Strip_26: 5617203269276584283
+      Mint_Fish_Heal_Strip_27: -3605658714033658802
+      Mint_Fish_Heal_Strip_28: -3481337920068541714
+      Mint_Fish_Heal_Strip_29: -8703359016969170882
+      Mint_Fish_Heal_Strip_3: 8138447908428407406
+      Mint_Fish_Heal_Strip_30: 5920136315175949933
+      Mint_Fish_Heal_Strip_31: 6221063168821941604
+      Mint_Fish_Heal_Strip_32: -6339581151387388094
+      Mint_Fish_Heal_Strip_33: -4778854618884529994
+      Mint_Fish_Heal_Strip_34: -5573963182162101675
+      Mint_Fish_Heal_Strip_35: -8255253250748380978
+      Mint_Fish_Heal_Strip_36: -6248462929624154402
+      Mint_Fish_Heal_Strip_4: -1471806520937542981
+      Mint_Fish_Heal_Strip_5: 7329528693192918981
+      Mint_Fish_Heal_Strip_6: 7476122819372572904
+      Mint_Fish_Heal_Strip_7: 3130893101167547858
+      Mint_Fish_Heal_Strip_8: 875197359591388526
+      Mint_Fish_Heal_Strip_9: 6021483014071505723
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

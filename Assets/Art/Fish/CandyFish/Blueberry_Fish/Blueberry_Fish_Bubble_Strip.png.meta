@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: 40e821c1e88aea34f99f2dc622c2677f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3358220553822871710
+    second: Blueberry_Fish_Bubble_Strip_0
+  - first:
+      213: -2615128787394782434
+    second: Blueberry_Fish_Bubble_Strip_1
+  - first:
+      213: -8881774543652634768
+    second: Blueberry_Fish_Bubble_Strip_2
+  - first:
+      213: -771484656605883726
+    second: Blueberry_Fish_Bubble_Strip_3
+  - first:
+      213: -6540343709521248431
+    second: Blueberry_Fish_Bubble_Strip_4
+  - first:
+      213: 6034776523630094906
+    second: Blueberry_Fish_Bubble_Strip_5
+  - first:
+      213: -5257539039730257923
+    second: Blueberry_Fish_Bubble_Strip_6
+  - first:
+      213: -2907870811580413538
+    second: Blueberry_Fish_Bubble_Strip_7
+  - first:
+      213: -3700737622656482015
+    second: Blueberry_Fish_Bubble_Strip_8
+  - first:
+      213: -6770600980188607821
+    second: Blueberry_Fish_Bubble_Strip_9
+  - first:
+      213: 6767467210318918853
+    second: Blueberry_Fish_Bubble_Strip_10
+  - first:
+      213: 7626503891689884621
+    second: Blueberry_Fish_Bubble_Strip_11
+  - first:
+      213: -2521431772463678758
+    second: Blueberry_Fish_Bubble_Strip_12
+  - first:
+      213: 2511912127709201874
+    second: Blueberry_Fish_Bubble_Strip_13
+  - first:
+      213: -2695726633803245276
+    second: Blueberry_Fish_Bubble_Strip_14
+  - first:
+      213: -197126448726300593
+    second: Blueberry_Fish_Bubble_Strip_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9027041dcbca9e20800000000000000
+      internalID: 3358220553822871710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b9f61393235bbd0800000000000000
+      internalID: -2615128787394782434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f3a763c199db480800000000000000
+      internalID: -8881774543652634768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 47
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b29755dac22b45f0800000000000000
+      internalID: -771484656605883726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_4
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f76056c080c35a0800000000000000
+      internalID: -6540343709521248431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3aa6dd4645dfb350800000000000000
+      internalID: 6034776523630094906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_6
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 47
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff212859187907b0800000000000000
+      internalID: -5257539039730257923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99c50747ea25a7d0800000000000000
+      internalID: -2907870811580413538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_8
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 51
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12503a25db654acc0800000000000000
+      internalID: -3700737622656482015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba42fbd74ef902a0800000000000000
+      internalID: -6770600980188607821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4b92c729fdaed50800000000000000
+      internalID: 6767467210318918853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_11
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb4f4ee1e8c6d960800000000000000
+      internalID: 7626503891689884621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_12
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 39
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada3bec7923120dd0800000000000000
+      internalID: -2521431772463678758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_13
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3
+        width: 58
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d54a1f75ca1cd220800000000000000
+      internalID: 2511912127709201874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_14
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429199cb8ead69ad0800000000000000
+      internalID: -2695726633803245276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Bubble_Strip_15
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f48a5df0a8aa34df0800000000000000
+      internalID: -197126448726300593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Blueberry_Fish_Bubble_Strip_0: 3358220553822871710
+      Blueberry_Fish_Bubble_Strip_1: -2615128787394782434
+      Blueberry_Fish_Bubble_Strip_10: 6767467210318918853
+      Blueberry_Fish_Bubble_Strip_11: 7626503891689884621
+      Blueberry_Fish_Bubble_Strip_12: -2521431772463678758
+      Blueberry_Fish_Bubble_Strip_13: 2511912127709201874
+      Blueberry_Fish_Bubble_Strip_14: -2695726633803245276
+      Blueberry_Fish_Bubble_Strip_15: -197126448726300593
+      Blueberry_Fish_Bubble_Strip_2: -8881774543652634768
+      Blueberry_Fish_Bubble_Strip_3: -771484656605883726
+      Blueberry_Fish_Bubble_Strip_4: -6540343709521248431
+      Blueberry_Fish_Bubble_Strip_5: 6034776523630094906
+      Blueberry_Fish_Bubble_Strip_6: -5257539039730257923
+      Blueberry_Fish_Bubble_Strip_7: -2907870811580413538
+      Blueberry_Fish_Bubble_Strip_8: -3700737622656482015
+      Blueberry_Fish_Bubble_Strip_9: -6770600980188607821
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

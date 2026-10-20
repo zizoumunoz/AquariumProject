@@ -1,0 +1,405 @@
+fileFormatVersion: 2
+guid: 3c21e8e90fd5bfb41ab52b6fdf8745fb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3534348097742215844
+    second: Cherry_Fish_Heal_3_0
+  - first:
+      213: -5997615240356382395
+    second: Cherry_Fish_Heal_3_1
+  - first:
+      213: -7481838437186254358
+    second: Cherry_Fish_Heal_3_2
+  - first:
+      213: -3092516122186652732
+    second: Cherry_Fish_Heal_3_3
+  - first:
+      213: 8013257147462939257
+    second: Cherry_Fish_Heal_3_4
+  - first:
+      213: 2849581768174465313
+    second: Cherry_Fish_Heal_3_5
+  - first:
+      213: 3576506423710851768
+    second: Cherry_Fish_Heal_3_6
+  - first:
+      213: 189740576847055988
+    second: Cherry_Fish_Heal_3_7
+  - first:
+      213: -4938844678808654005
+    second: Cherry_Fish_Heal_3_8
+  - first:
+      213: 5513681502846133920
+    second: Cherry_Fish_Heal_3_9
+  - first:
+      213: 8015856731388660694
+    second: Cherry_Fish_Heal_3_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_3_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa908e7ed68c0130800000000000000
+      internalID: 3534348097742215844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_3_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 549b61337b034cca0800000000000000
+      internalID: -5997615240356382395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_3_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae946a4f49b2b2890800000000000000
+      internalID: -7481838437186254358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_3_3
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 47
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c365e2c8fc2515d0800000000000000
+      internalID: -3092516122186652732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_3_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97273686beec43f60800000000000000
+      internalID: 8013257147462939257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_3_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 11
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 121f77a358fbb8720800000000000000
+      internalID: 2849581768174465313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_3_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2203aa4ad42a130800000000000000
+      internalID: 3576506423710851768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_3_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c4272ac0812a200800000000000000
+      internalID: 189740576847055988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_3_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f28c68ee2b57bb0800000000000000
+      internalID: -4938844678808654005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_3_9
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a629c53d18848c40800000000000000
+      internalID: 5513681502846133920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_3_10
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db48d43a3b0e3f60800000000000000
+      internalID: 8015856731388660694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cherry_Fish_Heal_3_0: 3534348097742215844
+      Cherry_Fish_Heal_3_1: -5997615240356382395
+      Cherry_Fish_Heal_3_10: 8015856731388660694
+      Cherry_Fish_Heal_3_2: -7481838437186254358
+      Cherry_Fish_Heal_3_3: -3092516122186652732
+      Cherry_Fish_Heal_3_4: 8013257147462939257
+      Cherry_Fish_Heal_3_5: 2849581768174465313
+      Cherry_Fish_Heal_3_6: 3576506423710851768
+      Cherry_Fish_Heal_3_7: 189740576847055988
+      Cherry_Fish_Heal_3_8: -4938844678808654005
+      Cherry_Fish_Heal_3_9: 5513681502846133920
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

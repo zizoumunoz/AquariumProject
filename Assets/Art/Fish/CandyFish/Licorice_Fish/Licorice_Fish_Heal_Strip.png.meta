@@ -1,0 +1,1081 @@
+fileFormatVersion: 2
+guid: 186a92334f3cea941ba9f143f73d6746
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7645133083766655633
+    second: Licorice_Fish_Heal_Strip_0
+  - first:
+      213: -6490616953921324955
+    second: Licorice_Fish_Heal_Strip_1
+  - first:
+      213: 4394954467709821271
+    second: Licorice_Fish_Heal_Strip_2
+  - first:
+      213: 7621011958073372062
+    second: Licorice_Fish_Heal_Strip_3
+  - first:
+      213: -1034866677189089529
+    second: Licorice_Fish_Heal_Strip_4
+  - first:
+      213: 2898215227804439514
+    second: Licorice_Fish_Heal_Strip_5
+  - first:
+      213: 6042551372402479851
+    second: Licorice_Fish_Heal_Strip_6
+  - first:
+      213: 8055955578389076271
+    second: Licorice_Fish_Heal_Strip_7
+  - first:
+      213: -5189123425442766385
+    second: Licorice_Fish_Heal_Strip_8
+  - first:
+      213: 3129255776496067811
+    second: Licorice_Fish_Heal_Strip_9
+  - first:
+      213: 5066577689855380980
+    second: Licorice_Fish_Heal_Strip_10
+  - first:
+      213: -2617429685204450585
+    second: Licorice_Fish_Heal_Strip_11
+  - first:
+      213: 5755995123289165482
+    second: Licorice_Fish_Heal_Strip_12
+  - first:
+      213: -5931026525286909286
+    second: Licorice_Fish_Heal_Strip_13
+  - first:
+      213: 4056799744009061487
+    second: Licorice_Fish_Heal_Strip_14
+  - first:
+      213: -7599024651933043503
+    second: Licorice_Fish_Heal_Strip_15
+  - first:
+      213: -3807013419379271716
+    second: Licorice_Fish_Heal_Strip_16
+  - first:
+      213: -6952579059195849787
+    second: Licorice_Fish_Heal_Strip_17
+  - first:
+      213: 6626887924385041619
+    second: Licorice_Fish_Heal_Strip_18
+  - first:
+      213: 2751672038491246905
+    second: Licorice_Fish_Heal_Strip_19
+  - first:
+      213: -1478217308157026596
+    second: Licorice_Fish_Heal_Strip_20
+  - first:
+      213: -7526018770044873410
+    second: Licorice_Fish_Heal_Strip_21
+  - first:
+      213: -2624818772581646174
+    second: Licorice_Fish_Heal_Strip_22
+  - first:
+      213: -3508971342783053046
+    second: Licorice_Fish_Heal_Strip_23
+  - first:
+      213: 1181473144456464057
+    second: Licorice_Fish_Heal_Strip_24
+  - first:
+      213: -1194016445143010676
+    second: Licorice_Fish_Heal_Strip_25
+  - first:
+      213: -2292483475466214876
+    second: Licorice_Fish_Heal_Strip_26
+  - first:
+      213: -6999195356514550843
+    second: Licorice_Fish_Heal_Strip_27
+  - first:
+      213: 8824732752796701741
+    second: Licorice_Fish_Heal_Strip_28
+  - first:
+      213: 6286589758058090258
+    second: Licorice_Fish_Heal_Strip_29
+  - first:
+      213: -2446150266097322142
+    second: Licorice_Fish_Heal_Strip_30
+  - first:
+      213: 4434360754994220396
+    second: Licorice_Fish_Heal_Strip_31
+  - first:
+      213: 88560241389979216
+    second: Licorice_Fish_Heal_Strip_32
+  - first:
+      213: 5596622505429853555
+    second: Licorice_Fish_Heal_Strip_33
+  - first:
+      213: -1332070256207783800
+    second: Licorice_Fish_Heal_Strip_34
+  - first:
+      213: 7272899851468676567
+    second: Licorice_Fish_Heal_Strip_35
+  - first:
+      213: 60158197748515075
+    second: Licorice_Fish_Heal_Strip_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a8f76b808f81a60800000000000000
+      internalID: 7645133083766655633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5683468e442bce5a0800000000000000
+      internalID: -6490616953921324955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7512cdb8dc30efc30800000000000000
+      internalID: 4394954467709821271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9da7fd7ff543c960800000000000000
+      internalID: 7621011958073372062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 47
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70761447d3a63a1f0800000000000000
+      internalID: -1034866677189089529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 59
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad359efe467883820800000000000000
+      internalID: 2898215227804439514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_6
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2591955747bd350800000000000000
+      internalID: 6042551372402479851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 47
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2915309ae08ccf60800000000000000
+      internalID: 8055955578389076271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_8
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 59
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc163dadcb78cf7b0800000000000000
+      internalID: -5189123425442766385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_9
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e423699c895d6b20800000000000000
+      internalID: 3129255776496067811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_10
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fdcfb6a099105640800000000000000
+      internalID: 5066577689855380980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_11
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e283dca1950dabd0800000000000000
+      internalID: -2617429685204450585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_12
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 47
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae088c611761ef40800000000000000
+      internalID: 5755995123289165482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 47
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9abad69cc2c0bda0800000000000000
+      internalID: -5931026525286909286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_14
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 11
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f644e829fd5ac4830800000000000000
+      internalID: 4056799744009061487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_15
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 47
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d438162757da8690800000000000000
+      internalID: -7599024651933043503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 11
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7d0ca2775ca2bc0800000000000000
+      internalID: -3807013419379271716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_17
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3dfc79e2a738f90800000000000000
+      internalID: -6952579059195849787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_18
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 11
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dccb4bd47f67fb50800000000000000
+      internalID: 6626887924385041619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_19
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 11
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93155a8d327ef2620800000000000000
+      internalID: 2751672038491246905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_20
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde577ea0315c7be0800000000000000
+      internalID: -1478217308157026596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_21
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 3
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e359d8e9dc53e8790800000000000000
+      internalID: -7526018770044873410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_22
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a08e74bb35c29bd0800000000000000
+      internalID: -2624818772581646174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_23
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 15
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a030462b721ad4fc0800000000000000
+      internalID: -3508971342783053046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_24
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6cdfea09f656010800000000000000
+      internalID: 1181473144456464057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_25
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 7
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82b64b8e500e6fe0800000000000000
+      internalID: -1194016445143010676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_26
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4222267dc667f20e0800000000000000
+      internalID: -2292483475466214876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_27
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cbf26518ecddde90800000000000000
+      internalID: -6999195356514550843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_28
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24d338eeafb77a70800000000000000
+      internalID: 8824732752796701741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_29
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f49a1c3147e3750800000000000000
+      internalID: 6286589758058090258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_30
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267ba021b478d0ed0800000000000000
+      internalID: -2446150266097322142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_31
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 7
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6d0d57cc930a8d30800000000000000
+      internalID: 4434360754994220396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_32
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056c5410211aa3100800000000000000
+      internalID: 88560241389979216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_33
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3756a1a34823bad40800000000000000
+      internalID: 5596622505429853555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_34
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8881fdad829838de0800000000000000
+      internalID: -1332070256207783800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_35
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd18c5a1e78ee460800000000000000
+      internalID: 7272899851468676567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Licorice_Fish_Heal_Strip_36
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 301c027ef89b5d000800000000000000
+      internalID: 60158197748515075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Licorice_Fish_Heal_Strip_0: 7645133083766655633
+      Licorice_Fish_Heal_Strip_1: -6490616953921324955
+      Licorice_Fish_Heal_Strip_10: 5066577689855380980
+      Licorice_Fish_Heal_Strip_11: -2617429685204450585
+      Licorice_Fish_Heal_Strip_12: 5755995123289165482
+      Licorice_Fish_Heal_Strip_13: -5931026525286909286
+      Licorice_Fish_Heal_Strip_14: 4056799744009061487
+      Licorice_Fish_Heal_Strip_15: -7599024651933043503
+      Licorice_Fish_Heal_Strip_16: -3807013419379271716
+      Licorice_Fish_Heal_Strip_17: -6952579059195849787
+      Licorice_Fish_Heal_Strip_18: 6626887924385041619
+      Licorice_Fish_Heal_Strip_19: 2751672038491246905
+      Licorice_Fish_Heal_Strip_2: 4394954467709821271
+      Licorice_Fish_Heal_Strip_20: -1478217308157026596
+      Licorice_Fish_Heal_Strip_21: -7526018770044873410
+      Licorice_Fish_Heal_Strip_22: -2624818772581646174
+      Licorice_Fish_Heal_Strip_23: -3508971342783053046
+      Licorice_Fish_Heal_Strip_24: 1181473144456464057
+      Licorice_Fish_Heal_Strip_25: -1194016445143010676
+      Licorice_Fish_Heal_Strip_26: -2292483475466214876
+      Licorice_Fish_Heal_Strip_27: -6999195356514550843
+      Licorice_Fish_Heal_Strip_28: 8824732752796701741
+      Licorice_Fish_Heal_Strip_29: 6286589758058090258
+      Licorice_Fish_Heal_Strip_3: 7621011958073372062
+      Licorice_Fish_Heal_Strip_30: -2446150266097322142
+      Licorice_Fish_Heal_Strip_31: 4434360754994220396
+      Licorice_Fish_Heal_Strip_32: 88560241389979216
+      Licorice_Fish_Heal_Strip_33: 5596622505429853555
+      Licorice_Fish_Heal_Strip_34: -1332070256207783800
+      Licorice_Fish_Heal_Strip_35: 7272899851468676567
+      Licorice_Fish_Heal_Strip_36: 60158197748515075
+      Licorice_Fish_Heal_Strip_4: -1034866677189089529
+      Licorice_Fish_Heal_Strip_5: 2898215227804439514
+      Licorice_Fish_Heal_Strip_6: 6042551372402479851
+      Licorice_Fish_Heal_Strip_7: 8055955578389076271
+      Licorice_Fish_Heal_Strip_8: -5189123425442766385
+      Licorice_Fish_Heal_Strip_9: 3129255776496067811
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

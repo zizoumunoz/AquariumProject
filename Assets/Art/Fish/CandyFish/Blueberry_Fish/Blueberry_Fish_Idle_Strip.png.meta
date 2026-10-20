@@ -1,0 +1,639 @@
+fileFormatVersion: 2
+guid: d636e9d904e80404680d41f184d8b12e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 61483857432370411
+    second: Blueberry_Fish_Idle_Strip_0
+  - first:
+      213: 4179662661279584228
+    second: Blueberry_Fish_Idle_Strip_1
+  - first:
+      213: 4781417899924279411
+    second: Blueberry_Fish_Idle_Strip_2
+  - first:
+      213: -5554300111568239192
+    second: Blueberry_Fish_Idle_Strip_3
+  - first:
+      213: -4040683024519448091
+    second: Blueberry_Fish_Idle_Strip_4
+  - first:
+      213: -7452061517697591746
+    second: Blueberry_Fish_Idle_Strip_5
+  - first:
+      213: -8144314246504461374
+    second: Blueberry_Fish_Idle_Strip_6
+  - first:
+      213: -4640086766089423660
+    second: Blueberry_Fish_Idle_Strip_7
+  - first:
+      213: -8494994139321128853
+    second: Blueberry_Fish_Idle_Strip_8
+  - first:
+      213: 6623907750797525165
+    second: Blueberry_Fish_Idle_Strip_9
+  - first:
+      213: 7807339715044278743
+    second: Blueberry_Fish_Idle_Strip_10
+  - first:
+      213: -6651468695316856741
+    second: Blueberry_Fish_Idle_Strip_11
+  - first:
+      213: -6498765323772298229
+    second: Blueberry_Fish_Idle_Strip_12
+  - first:
+      213: 2344686659756487341
+    second: Blueberry_Fish_Idle_Strip_13
+  - first:
+      213: -3179147751887407860
+    second: Blueberry_Fish_Idle_Strip_14
+  - first:
+      213: 8912582766327353547
+    second: Blueberry_Fish_Idle_Strip_15
+  - first:
+      213: 5260833549758017804
+    second: Blueberry_Fish_Idle_Strip_16
+  - first:
+      213: -692810067345230311
+    second: Blueberry_Fish_Idle_Strip_17
+  - first:
+      213: -6629696481803506197
+    second: Blueberry_Fish_Idle_Strip_18
+  - first:
+      213: 3074040945822034425
+    second: Blueberry_Fish_Idle_Strip_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec5da91e3f6ad000800000000000000
+      internalID: 61483857432370411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef888eab05210a30800000000000000
+      internalID: 4179662661279584228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3705ea73f320b5240800000000000000
+      internalID: 4781417899924279411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 43
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5001af9792be2b0800000000000000
+      internalID: -5554300111568239192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_4
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e93199923c9ce7c0800000000000000
+      internalID: -4040683024519448091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_5
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36d6494885f49890800000000000000
+      internalID: -7452061517697591746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_6
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 47
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cbc2fdd75599fe80800000000000000
+      internalID: -8144314246504461374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_7
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d4bf34aba91b9fb0800000000000000
+      internalID: -4640086766089423660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_8
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 51
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b682db4b6d7bb1a80800000000000000
+      internalID: -8494994139321128853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da04e3f1109dceb50800000000000000
+      internalID: 6623907750797525165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 39
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d183041b1e395c60800000000000000
+      internalID: 7807339715044278743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_11
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 39
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50020d667c31b3a0800000000000000
+      internalID: -6651468695316856741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_12
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cfce5be5fbfc5a0800000000000000
+      internalID: -6498765323772298229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_13
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 3
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2f16828100a8020800000000000000
+      internalID: 2344686659756487341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_14
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 39
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05f448a6f561e3d0800000000000000
+      internalID: -3179147751887407860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_15
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 39
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0d53a1ecadfab70800000000000000
+      internalID: 8912582766327353547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_16
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01b8cb8d3c320940800000000000000
+      internalID: 5260833549758017804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_17
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 31
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916b2171ae4a266f0800000000000000
+      internalID: -692810067345230311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_18
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 31
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bede179ec269ef3a0800000000000000
+      internalID: -6629696481803506197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blueberry_Fish_Idle_Strip_19
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f96ab804ff29aa20800000000000000
+      internalID: 3074040945822034425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Blueberry_Fish_Idle_Strip_0: 61483857432370411
+      Blueberry_Fish_Idle_Strip_1: 4179662661279584228
+      Blueberry_Fish_Idle_Strip_10: 7807339715044278743
+      Blueberry_Fish_Idle_Strip_11: -6651468695316856741
+      Blueberry_Fish_Idle_Strip_12: -6498765323772298229
+      Blueberry_Fish_Idle_Strip_13: 2344686659756487341
+      Blueberry_Fish_Idle_Strip_14: -3179147751887407860
+      Blueberry_Fish_Idle_Strip_15: 8912582766327353547
+      Blueberry_Fish_Idle_Strip_16: 5260833549758017804
+      Blueberry_Fish_Idle_Strip_17: -692810067345230311
+      Blueberry_Fish_Idle_Strip_18: -6629696481803506197
+      Blueberry_Fish_Idle_Strip_19: 3074040945822034425
+      Blueberry_Fish_Idle_Strip_2: 4781417899924279411
+      Blueberry_Fish_Idle_Strip_3: -5554300111568239192
+      Blueberry_Fish_Idle_Strip_4: -4040683024519448091
+      Blueberry_Fish_Idle_Strip_5: -7452061517697591746
+      Blueberry_Fish_Idle_Strip_6: -8144314246504461374
+      Blueberry_Fish_Idle_Strip_7: -4640086766089423660
+      Blueberry_Fish_Idle_Strip_8: -8494994139321128853
+      Blueberry_Fish_Idle_Strip_9: 6623907750797525165
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1081 @@
+fileFormatVersion: 2
+guid: 75ea8d4cd0dc3ea40a5301dea0723984
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6560858294933298501
+    second: Cherry_Fish_Heal_Strip_0
+  - first:
+      213: 5947359634088251493
+    second: Cherry_Fish_Heal_Strip_1
+  - first:
+      213: -250431047378062270
+    second: Cherry_Fish_Heal_Strip_2
+  - first:
+      213: -664303221341132604
+    second: Cherry_Fish_Heal_Strip_3
+  - first:
+      213: -5025814801050793301
+    second: Cherry_Fish_Heal_Strip_4
+  - first:
+      213: 8681998136519472405
+    second: Cherry_Fish_Heal_Strip_5
+  - first:
+      213: 6330441540918331069
+    second: Cherry_Fish_Heal_Strip_6
+  - first:
+      213: -8325797825354597257
+    second: Cherry_Fish_Heal_Strip_7
+  - first:
+      213: 2850910746057415595
+    second: Cherry_Fish_Heal_Strip_8
+  - first:
+      213: -9126335660029197464
+    second: Cherry_Fish_Heal_Strip_9
+  - first:
+      213: 5954103105323823352
+    second: Cherry_Fish_Heal_Strip_10
+  - first:
+      213: 3717166536749490068
+    second: Cherry_Fish_Heal_Strip_11
+  - first:
+      213: -1832315001989819182
+    second: Cherry_Fish_Heal_Strip_12
+  - first:
+      213: 8429518923622348300
+    second: Cherry_Fish_Heal_Strip_13
+  - first:
+      213: -1023566132558156103
+    second: Cherry_Fish_Heal_Strip_14
+  - first:
+      213: -4925768211707578546
+    second: Cherry_Fish_Heal_Strip_15
+  - first:
+      213: -7298121517695689063
+    second: Cherry_Fish_Heal_Strip_16
+  - first:
+      213: -1236871403935319288
+    second: Cherry_Fish_Heal_Strip_17
+  - first:
+      213: 7831794497054417202
+    second: Cherry_Fish_Heal_Strip_18
+  - first:
+      213: -2530575663891296331
+    second: Cherry_Fish_Heal_Strip_19
+  - first:
+      213: -2369192319007710418
+    second: Cherry_Fish_Heal_Strip_20
+  - first:
+      213: 6766586512103461465
+    second: Cherry_Fish_Heal_Strip_21
+  - first:
+      213: -3666926627040043688
+    second: Cherry_Fish_Heal_Strip_22
+  - first:
+      213: -5136918217435895955
+    second: Cherry_Fish_Heal_Strip_23
+  - first:
+      213: -4793359787270646372
+    second: Cherry_Fish_Heal_Strip_24
+  - first:
+      213: 6086595194025940314
+    second: Cherry_Fish_Heal_Strip_25
+  - first:
+      213: -3729211320549137175
+    second: Cherry_Fish_Heal_Strip_26
+  - first:
+      213: 7665110042090223656
+    second: Cherry_Fish_Heal_Strip_27
+  - first:
+      213: -5417261983718124255
+    second: Cherry_Fish_Heal_Strip_28
+  - first:
+      213: -725887275922755453
+    second: Cherry_Fish_Heal_Strip_29
+  - first:
+      213: -41771088327905557
+    second: Cherry_Fish_Heal_Strip_30
+  - first:
+      213: -7709992968393527531
+    second: Cherry_Fish_Heal_Strip_31
+  - first:
+      213: -2406233336554428842
+    second: Cherry_Fish_Heal_Strip_32
+  - first:
+      213: -8350368316238091028
+    second: Cherry_Fish_Heal_Strip_33
+  - first:
+      213: -8972339685418933720
+    second: Cherry_Fish_Heal_Strip_34
+  - first:
+      213: -4338659773472734517
+    second: Cherry_Fish_Heal_Strip_35
+  - first:
+      213: 1368791424267531099
+    second: Cherry_Fish_Heal_Strip_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d9c2bbbd9dc0b50800000000000000
+      internalID: 6560858294933298501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560d355a314498250800000000000000
+      internalID: 5947359634088251493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2443d4c0a4a468cf0800000000000000
+      internalID: -250431047378062270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c860d46dbbe7c6f0800000000000000
+      internalID: -664303221341132604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 47
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa877cf018b04ab0800000000000000
+      internalID: -5025814801050793301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 59
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515b8d35e47ac7870800000000000000
+      internalID: 8681998136519472405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_6
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db640d59a0f3ad750800000000000000
+      internalID: 6330441540918331069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 47
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77cf4046df2d47c80800000000000000
+      internalID: -8325797825354597257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_8
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 59
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab98110838709720800000000000000
+      internalID: 2850910746057415595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_9
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863caf2121eb85180800000000000000
+      internalID: -9126335660029197464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_10
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f070e46a3931a250800000000000000
+      internalID: 5954103105323823352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_11
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f1ce15547069330800000000000000
+      internalID: 3717166536749490068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_12
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 47
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d417c5b63f4296e0800000000000000
+      internalID: -1832315001989819182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 47
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0671fdaccaabf470800000000000000
+      internalID: 8429518923622348300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_14
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 11
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be20c886009bc1f0800000000000000
+      internalID: -1023566132558156103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_15
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 47
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e473247c8e724abb0800000000000000
+      internalID: -4925768211707578546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 11
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e1d12952dd7ba90800000000000000
+      internalID: -7298121517695689063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_17
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80bb897e200c5dee0800000000000000
+      internalID: -1236871403935319288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_18
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 11
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231a9c6b99f10bc60800000000000000
+      internalID: 7831794497054417202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_19
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 11
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bfc28c57d691ecd0800000000000000
+      internalID: -2530575663891296331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_20
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2326fc6320fe1fd0800000000000000
+      internalID: -2369192319007710418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_21
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 3
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95250e3f49eb7ed50800000000000000
+      internalID: 6766586512103461465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_22
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d5bd139a57c1dc0800000000000000
+      internalID: -3666926627040043688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_23
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 15
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d672089091006b8b0800000000000000
+      internalID: -5136918217435895955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_24
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9557177ba09a7db0800000000000000
+      internalID: -4793359787270646372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_25
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 7
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55148fa41ee77450800000000000000
+      internalID: 6086595194025940314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_26
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4ad4aef0e2f3cc0800000000000000
+      internalID: -3729211320549137175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_27
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8283117c8f0ff5a60800000000000000
+      internalID: 7665110042090223656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_28
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125d04d7de402d4b0800000000000000
+      internalID: -5417261983718124255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_29
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380f5a35e512de5f0800000000000000
+      internalID: -725887275922755453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_30
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee655e9a699b6ff0800000000000000
+      internalID: -41771088327905557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_31
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 7
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51fe42a9e3a900590800000000000000
+      internalID: -7709992968393527531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_32
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65668f777875b9ed0800000000000000
+      internalID: -2406233336554428842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_33
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceca3fe22488d1c80800000000000000
+      internalID: -8350368316238091028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_34
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 822e676f798db7380800000000000000
+      internalID: -8972339685418933720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_35
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc281e85cebf9c3c0800000000000000
+      internalID: -4338659773472734517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Heal_Strip_36
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5331175c8ceef210800000000000000
+      internalID: 1368791424267531099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cherry_Fish_Heal_Strip_0: 6560858294933298501
+      Cherry_Fish_Heal_Strip_1: 5947359634088251493
+      Cherry_Fish_Heal_Strip_10: 5954103105323823352
+      Cherry_Fish_Heal_Strip_11: 3717166536749490068
+      Cherry_Fish_Heal_Strip_12: -1832315001989819182
+      Cherry_Fish_Heal_Strip_13: 8429518923622348300
+      Cherry_Fish_Heal_Strip_14: -1023566132558156103
+      Cherry_Fish_Heal_Strip_15: -4925768211707578546
+      Cherry_Fish_Heal_Strip_16: -7298121517695689063
+      Cherry_Fish_Heal_Strip_17: -1236871403935319288
+      Cherry_Fish_Heal_Strip_18: 7831794497054417202
+      Cherry_Fish_Heal_Strip_19: -2530575663891296331
+      Cherry_Fish_Heal_Strip_2: -250431047378062270
+      Cherry_Fish_Heal_Strip_20: -2369192319007710418
+      Cherry_Fish_Heal_Strip_21: 6766586512103461465
+      Cherry_Fish_Heal_Strip_22: -3666926627040043688
+      Cherry_Fish_Heal_Strip_23: -5136918217435895955
+      Cherry_Fish_Heal_Strip_24: -4793359787270646372
+      Cherry_Fish_Heal_Strip_25: 6086595194025940314
+      Cherry_Fish_Heal_Strip_26: -3729211320549137175
+      Cherry_Fish_Heal_Strip_27: 7665110042090223656
+      Cherry_Fish_Heal_Strip_28: -5417261983718124255
+      Cherry_Fish_Heal_Strip_29: -725887275922755453
+      Cherry_Fish_Heal_Strip_3: -664303221341132604
+      Cherry_Fish_Heal_Strip_30: -41771088327905557
+      Cherry_Fish_Heal_Strip_31: -7709992968393527531
+      Cherry_Fish_Heal_Strip_32: -2406233336554428842
+      Cherry_Fish_Heal_Strip_33: -8350368316238091028
+      Cherry_Fish_Heal_Strip_34: -8972339685418933720
+      Cherry_Fish_Heal_Strip_35: -4338659773472734517
+      Cherry_Fish_Heal_Strip_36: 1368791424267531099
+      Cherry_Fish_Heal_Strip_4: -5025814801050793301
+      Cherry_Fish_Heal_Strip_5: 8681998136519472405
+      Cherry_Fish_Heal_Strip_6: 6330441540918331069
+      Cherry_Fish_Heal_Strip_7: -8325797825354597257
+      Cherry_Fish_Heal_Strip_8: 2850910746057415595
+      Cherry_Fish_Heal_Strip_9: -9126335660029197464
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

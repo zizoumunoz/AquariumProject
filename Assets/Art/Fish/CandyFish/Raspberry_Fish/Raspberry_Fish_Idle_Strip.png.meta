@@ -1,0 +1,639 @@
+fileFormatVersion: 2
+guid: 82f9032e13a26f648b6d0af524b50ffe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2952786820221347708
+    second: Raspberry_Fish_Idle_Strip_0
+  - first:
+      213: 7773687051066978180
+    second: Raspberry_Fish_Idle_Strip_1
+  - first:
+      213: -5821169781090314346
+    second: Raspberry_Fish_Idle_Strip_2
+  - first:
+      213: -138444844488774362
+    second: Raspberry_Fish_Idle_Strip_3
+  - first:
+      213: -3672657531955690036
+    second: Raspberry_Fish_Idle_Strip_4
+  - first:
+      213: -3581011662176807755
+    second: Raspberry_Fish_Idle_Strip_5
+  - first:
+      213: 1764118063733016514
+    second: Raspberry_Fish_Idle_Strip_6
+  - first:
+      213: -4880982020901840641
+    second: Raspberry_Fish_Idle_Strip_7
+  - first:
+      213: -2102221833543305153
+    second: Raspberry_Fish_Idle_Strip_8
+  - first:
+      213: -4694401802048662673
+    second: Raspberry_Fish_Idle_Strip_9
+  - first:
+      213: -5119163357423255761
+    second: Raspberry_Fish_Idle_Strip_10
+  - first:
+      213: 3847403207061515775
+    second: Raspberry_Fish_Idle_Strip_11
+  - first:
+      213: 1407739350987512799
+    second: Raspberry_Fish_Idle_Strip_12
+  - first:
+      213: -7914115818731147228
+    second: Raspberry_Fish_Idle_Strip_13
+  - first:
+      213: -3262661326504467398
+    second: Raspberry_Fish_Idle_Strip_14
+  - first:
+      213: 6379187280176539018
+    second: Raspberry_Fish_Idle_Strip_15
+  - first:
+      213: -2338172809059629628
+    second: Raspberry_Fish_Idle_Strip_16
+  - first:
+      213: -4810593096174767719
+    second: Raspberry_Fish_Idle_Strip_17
+  - first:
+      213: -6271222579088837366
+    second: Raspberry_Fish_Idle_Strip_18
+  - first:
+      213: 4468681315510703822
+    second: Raspberry_Fish_Idle_Strip_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488504318089507d0800000000000000
+      internalID: -2952786820221347708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fa6e9af2fa1eb60800000000000000
+      internalID: 7773687051066978180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6979fdc0dec073fa0800000000000000
+      internalID: -5821169781090314346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 43
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d234fb525241ef0800000000000000
+      internalID: -138444844488774362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_4
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc54e1aee69180dc0800000000000000
+      internalID: -3672657531955690036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_5
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b49b63cdd0bd4ec0800000000000000
+      internalID: -3581011662176807755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_6
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 47
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c708a248086b7810800000000000000
+      internalID: 1764118063733016514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_7
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8d31966b4434cb0800000000000000
+      internalID: -4880982020901840641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_8
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 51
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38b494616863d2e0800000000000000
+      internalID: -2102221833543305153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f639febde622adeb0800000000000000
+      internalID: -4694401802048662673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 39
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f37958c0415f8b0800000000000000
+      internalID: -5119163357423255761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_11
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 39
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffda99815d8b46530800000000000000
+      internalID: 3847403207061515775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_12
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb13ff2b7b498310800000000000000
+      internalID: 1407739350987512799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_13
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 3
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420fa39f7996b2290800000000000000
+      internalID: -7914115818731147228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_14
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 39
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34eb435fc2b8b2d0800000000000000
+      internalID: -3262661326504467398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_15
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 39
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a85ec9e680d678850800000000000000
+      internalID: 6379187280176539018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_16
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c50684e7342d8fd0800000000000000
+      internalID: -2338172809059629628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_17
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 31
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9917e8f01175d3db0800000000000000
+      internalID: -4810593096174767719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_18
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 31
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05300a6a4428f8a0800000000000000
+      internalID: -6271222579088837366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raspberry_Fish_Idle_Strip_19
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec6d079faf1f30e30800000000000000
+      internalID: 4468681315510703822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Raspberry_Fish_Idle_Strip_0: -2952786820221347708
+      Raspberry_Fish_Idle_Strip_1: 7773687051066978180
+      Raspberry_Fish_Idle_Strip_10: -5119163357423255761
+      Raspberry_Fish_Idle_Strip_11: 3847403207061515775
+      Raspberry_Fish_Idle_Strip_12: 1407739350987512799
+      Raspberry_Fish_Idle_Strip_13: -7914115818731147228
+      Raspberry_Fish_Idle_Strip_14: -3262661326504467398
+      Raspberry_Fish_Idle_Strip_15: 6379187280176539018
+      Raspberry_Fish_Idle_Strip_16: -2338172809059629628
+      Raspberry_Fish_Idle_Strip_17: -4810593096174767719
+      Raspberry_Fish_Idle_Strip_18: -6271222579088837366
+      Raspberry_Fish_Idle_Strip_19: 4468681315510703822
+      Raspberry_Fish_Idle_Strip_2: -5821169781090314346
+      Raspberry_Fish_Idle_Strip_3: -138444844488774362
+      Raspberry_Fish_Idle_Strip_4: -3672657531955690036
+      Raspberry_Fish_Idle_Strip_5: -3581011662176807755
+      Raspberry_Fish_Idle_Strip_6: 1764118063733016514
+      Raspberry_Fish_Idle_Strip_7: -4880982020901840641
+      Raspberry_Fish_Idle_Strip_8: -2102221833543305153
+      Raspberry_Fish_Idle_Strip_9: -4694401802048662673
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

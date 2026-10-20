@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: ea298e39fb385694c82170d7bd8f9a88
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9117963123437187129
+    second: Cherry_Fish_Bubble_Strip_0
+  - first:
+      213: 1341443633290636661
+    second: Cherry_Fish_Bubble_Strip_1
+  - first:
+      213: 3006244241225461941
+    second: Cherry_Fish_Bubble_Strip_2
+  - first:
+      213: -8219077014540930623
+    second: Cherry_Fish_Bubble_Strip_3
+  - first:
+      213: 4138291137052871070
+    second: Cherry_Fish_Bubble_Strip_4
+  - first:
+      213: -7018392471926147946
+    second: Cherry_Fish_Bubble_Strip_5
+  - first:
+      213: 747300536701644561
+    second: Cherry_Fish_Bubble_Strip_6
+  - first:
+      213: 5252055209918636989
+    second: Cherry_Fish_Bubble_Strip_7
+  - first:
+      213: -6955958185798047966
+    second: Cherry_Fish_Bubble_Strip_8
+  - first:
+      213: -1309371437786226904
+    second: Cherry_Fish_Bubble_Strip_9
+  - first:
+      213: 381142274050352590
+    second: Cherry_Fish_Bubble_Strip_10
+  - first:
+      213: -4369582971936041609
+    second: Cherry_Fish_Bubble_Strip_11
+  - first:
+      213: -4199577416436210827
+    second: Cherry_Fish_Bubble_Strip_12
+  - first:
+      213: 1126134754725377011
+    second: Cherry_Fish_Bubble_Strip_13
+  - first:
+      213: -1607777569305822608
+    second: Cherry_Fish_Bubble_Strip_14
+  - first:
+      213: -892181071907555207
+    second: Cherry_Fish_Bubble_Strip_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930b597d623898e70800000000000000
+      internalID: 9117963123437187129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d6f7090e3cd9210800000000000000
+      internalID: 1341443633290636661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0be4aa53358b920800000000000000
+      internalID: 3006244241225461941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 47
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c1b5b67009ffed80800000000000000
+      internalID: -8219077014540930623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_4
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e990f211dd92e6930800000000000000
+      internalID: 4138291137052871070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694f0985b39a99e90800000000000000
+      internalID: -7018392471926147946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_6
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 47
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f6f86f0e1fe5a00800000000000000
+      internalID: 747300536701644561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3a0f7036c03e840800000000000000
+      internalID: 5252055209918636989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_8
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 51
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 227690f52e8777f90800000000000000
+      internalID: -6955958185798047966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f95bb5d9d24dde0800000000000000
+      internalID: -1309371437786226904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec5e7adf0e61a4500800000000000000
+      internalID: 381142274050352590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_11
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7751825207f1c53c0800000000000000
+      internalID: -4369582971936041609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_12
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 39
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573219e079a18b5c0800000000000000
+      internalID: -4199577416436210827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_13
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3
+        width: 58
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f3b0a8c795d0af00800000000000000
+      internalID: 1126134754725377011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_14
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a7fafa1d600b9e0800000000000000
+      internalID: -1607777569305822608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cherry_Fish_Bubble_Strip_15
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9787f95ca065e93f0800000000000000
+      internalID: -892181071907555207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cherry_Fish_Bubble_Strip_0: 9117963123437187129
+      Cherry_Fish_Bubble_Strip_1: 1341443633290636661
+      Cherry_Fish_Bubble_Strip_10: 381142274050352590
+      Cherry_Fish_Bubble_Strip_11: -4369582971936041609
+      Cherry_Fish_Bubble_Strip_12: -4199577416436210827
+      Cherry_Fish_Bubble_Strip_13: 1126134754725377011
+      Cherry_Fish_Bubble_Strip_14: -1607777569305822608
+      Cherry_Fish_Bubble_Strip_15: -892181071907555207
+      Cherry_Fish_Bubble_Strip_2: 3006244241225461941
+      Cherry_Fish_Bubble_Strip_3: -8219077014540930623
+      Cherry_Fish_Bubble_Strip_4: 4138291137052871070
+      Cherry_Fish_Bubble_Strip_5: -7018392471926147946
+      Cherry_Fish_Bubble_Strip_6: 747300536701644561
+      Cherry_Fish_Bubble_Strip_7: 5252055209918636989
+      Cherry_Fish_Bubble_Strip_8: -6955958185798047966
+      Cherry_Fish_Bubble_Strip_9: -1309371437786226904
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

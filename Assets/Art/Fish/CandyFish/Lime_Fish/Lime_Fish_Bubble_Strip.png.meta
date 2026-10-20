@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: dbe3934272b23f94c8be2977c89dd65d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7889466550872838282
+    second: Lime_Fish_Bubble_Strip_0
+  - first:
+      213: -5897218270447848395
+    second: Lime_Fish_Bubble_Strip_1
+  - first:
+      213: 8186972286641160358
+    second: Lime_Fish_Bubble_Strip_2
+  - first:
+      213: 8077969730771203138
+    second: Lime_Fish_Bubble_Strip_3
+  - first:
+      213: 7634028582880434894
+    second: Lime_Fish_Bubble_Strip_4
+  - first:
+      213: -7319776405002444202
+    second: Lime_Fish_Bubble_Strip_5
+  - first:
+      213: 3313872853752218872
+    second: Lime_Fish_Bubble_Strip_6
+  - first:
+      213: 1105227997961472808
+    second: Lime_Fish_Bubble_Strip_7
+  - first:
+      213: -4579902421744769186
+    second: Lime_Fish_Bubble_Strip_8
+  - first:
+      213: 6274969079491802931
+    second: Lime_Fish_Bubble_Strip_9
+  - first:
+      213: -5300149108192659738
+    second: Lime_Fish_Bubble_Strip_10
+  - first:
+      213: 570263034581818571
+    second: Lime_Fish_Bubble_Strip_11
+  - first:
+      213: 1179096083163512347
+    second: Lime_Fish_Bubble_Strip_12
+  - first:
+      213: 1762433880426139183
+    second: Lime_Fish_Bubble_Strip_13
+  - first:
+      213: 7802697963648265294
+    second: Lime_Fish_Bubble_Strip_14
+  - first:
+      213: 5528549492154963988
+    second: Lime_Fish_Bubble_Strip_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a801a1027040d7d60800000000000000
+      internalID: 7889466550872838282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53433035a3fd82ea0800000000000000
+      internalID: -5897218270447848395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0c6331be7fd9170800000000000000
+      internalID: 8186972286641160358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 47
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244b9f4dba6ba1070800000000000000
+      internalID: 8077969730771203138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_4
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca54cf9c8481f960800000000000000
+      internalID: 7634028582880434894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6522b88342eea6a90800000000000000
+      internalID: -7319776405002444202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_6
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 47
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f406b68dcd3dfd20800000000000000
+      internalID: 3313872853752218872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b4f46220f865f00800000000000000
+      internalID: 1105227997961472808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_8
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 51
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57a3f5430be070c0800000000000000
+      internalID: -4579902421744769186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3373bafa12b251750800000000000000
+      internalID: 6274969079491802931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6b29da7761276b0800000000000000
+      internalID: -5300149108192659738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_11
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc19c4653bf9e700800000000000000
+      internalID: 570263034581818571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_12
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 39
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ef309f3adfc5010800000000000000
+      internalID: 1179096083163512347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_13
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3
+        width: 58
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ec9e6c64c657810800000000000000
+      internalID: 1762433880426139183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_14
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c2bec1570c84c60800000000000000
+      internalID: 7802697963648265294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lime_Fish_Bubble_Strip_15
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 418101bb87a59bc40800000000000000
+      internalID: 5528549492154963988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lime_Fish_Bubble_Strip_0: 7889466550872838282
+      Lime_Fish_Bubble_Strip_1: -5897218270447848395
+      Lime_Fish_Bubble_Strip_10: -5300149108192659738
+      Lime_Fish_Bubble_Strip_11: 570263034581818571
+      Lime_Fish_Bubble_Strip_12: 1179096083163512347
+      Lime_Fish_Bubble_Strip_13: 1762433880426139183
+      Lime_Fish_Bubble_Strip_14: 7802697963648265294
+      Lime_Fish_Bubble_Strip_15: 5528549492154963988
+      Lime_Fish_Bubble_Strip_2: 8186972286641160358
+      Lime_Fish_Bubble_Strip_3: 8077969730771203138
+      Lime_Fish_Bubble_Strip_4: 7634028582880434894
+      Lime_Fish_Bubble_Strip_5: -7319776405002444202
+      Lime_Fish_Bubble_Strip_6: 3313872853752218872
+      Lime_Fish_Bubble_Strip_7: 1105227997961472808
+      Lime_Fish_Bubble_Strip_8: -4579902421744769186
+      Lime_Fish_Bubble_Strip_9: 6274969079491802931
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

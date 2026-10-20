@@ -1,0 +1,1081 @@
+fileFormatVersion: 2
+guid: 0e33612eee3486b4490a2093bef6115c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4966377493735529583
+    second: Tangerine_Fish_Heal_Strip_0
+  - first:
+      213: 6514819634818254943
+    second: Tangerine_Fish_Heal_Strip_1
+  - first:
+      213: -340089828360121038
+    second: Tangerine_Fish_Heal_Strip_2
+  - first:
+      213: -520128627228492658
+    second: Tangerine_Fish_Heal_Strip_3
+  - first:
+      213: -4097773815325889832
+    second: Tangerine_Fish_Heal_Strip_4
+  - first:
+      213: 323396584222576581
+    second: Tangerine_Fish_Heal_Strip_5
+  - first:
+      213: 6050270477515868734
+    second: Tangerine_Fish_Heal_Strip_6
+  - first:
+      213: 5162847680718948126
+    second: Tangerine_Fish_Heal_Strip_7
+  - first:
+      213: -9106193155408837859
+    second: Tangerine_Fish_Heal_Strip_8
+  - first:
+      213: 7182130544116650483
+    second: Tangerine_Fish_Heal_Strip_9
+  - first:
+      213: -5666491031299603018
+    second: Tangerine_Fish_Heal_Strip_10
+  - first:
+      213: -6333968365826281251
+    second: Tangerine_Fish_Heal_Strip_11
+  - first:
+      213: 400731100423531436
+    second: Tangerine_Fish_Heal_Strip_12
+  - first:
+      213: -733263378220247268
+    second: Tangerine_Fish_Heal_Strip_13
+  - first:
+      213: -2096935918350454793
+    second: Tangerine_Fish_Heal_Strip_14
+  - first:
+      213: -8339884858059399118
+    second: Tangerine_Fish_Heal_Strip_15
+  - first:
+      213: 7730623744851470652
+    second: Tangerine_Fish_Heal_Strip_16
+  - first:
+      213: -1820148609534888616
+    second: Tangerine_Fish_Heal_Strip_17
+  - first:
+      213: 4608701448837007991
+    second: Tangerine_Fish_Heal_Strip_18
+  - first:
+      213: -7107854823091506791
+    second: Tangerine_Fish_Heal_Strip_19
+  - first:
+      213: -5782987066843621663
+    second: Tangerine_Fish_Heal_Strip_20
+  - first:
+      213: 2109178922166139401
+    second: Tangerine_Fish_Heal_Strip_21
+  - first:
+      213: 7804241924634876330
+    second: Tangerine_Fish_Heal_Strip_22
+  - first:
+      213: 3498014394636766780
+    second: Tangerine_Fish_Heal_Strip_23
+  - first:
+      213: -7536425796059147649
+    second: Tangerine_Fish_Heal_Strip_24
+  - first:
+      213: 6525232299329079317
+    second: Tangerine_Fish_Heal_Strip_25
+  - first:
+      213: -8387474374839864258
+    second: Tangerine_Fish_Heal_Strip_26
+  - first:
+      213: -1452495190779258260
+    second: Tangerine_Fish_Heal_Strip_27
+  - first:
+      213: -4465566831001224104
+    second: Tangerine_Fish_Heal_Strip_28
+  - first:
+      213: -2163454943650125007
+    second: Tangerine_Fish_Heal_Strip_29
+  - first:
+      213: 6022334455934569819
+    second: Tangerine_Fish_Heal_Strip_30
+  - first:
+      213: -1586933557159898904
+    second: Tangerine_Fish_Heal_Strip_31
+  - first:
+      213: 5509308434236392914
+    second: Tangerine_Fish_Heal_Strip_32
+  - first:
+      213: -813399696864058019
+    second: Tangerine_Fish_Heal_Strip_33
+  - first:
+      213: -3401202342843113351
+    second: Tangerine_Fish_Heal_Strip_34
+  - first:
+      213: 8302349984613929433
+    second: Tangerine_Fish_Heal_Strip_35
+  - first:
+      213: 3109538676609949291
+    second: Tangerine_Fish_Heal_Strip_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19326618bf1e31bb0800000000000000
+      internalID: -4966377493735529583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f58051dd0f9496a50800000000000000
+      internalID: 6514819634818254943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2351fdc5a12c74bf0800000000000000
+      internalID: -340089828360121038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cb880f4c128c8f0800000000000000
+      internalID: -520128627228492658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 47
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da6a970d68c127c0800000000000000
+      internalID: -4097773815325889832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 59
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf492cda7fec7400800000000000000
+      internalID: 323396584222576581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_6
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3acd5f81f0e6f350800000000000000
+      internalID: 6050270477515868734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 47
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17c3b69c9e16a740800000000000000
+      internalID: 5162847680718948126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_8
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 59
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1343c3629d40a180800000000000000
+      internalID: -9106193155408837859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_9
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f15e846dad0ca360800000000000000
+      internalID: 7182130544116650483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_10
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5437ced649c51b0800000000000000
+      internalID: -5666491031299603018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_11
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0fc5084593918a0800000000000000
+      internalID: -6333968365826281251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_12
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 47
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab223b00deaf8500800000000000000
+      internalID: 400731100423531436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 47
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17116ea7dce2d5f0800000000000000
+      internalID: -733263378220247268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_14
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 11
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffa6fd64ef26e2e0800000000000000
+      internalID: -2096935918350454793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_15
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 47
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 230e5bf78e6c24c80800000000000000
+      internalID: -8339884858059399118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 11
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39621c5651b84b60800000000000000
+      internalID: 7730623744851470652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_17
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8557042bb788db6e0800000000000000
+      internalID: -1820148609534888616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_18
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 11
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a02cdbc8565ff30800000000000000
+      internalID: 4608701448837007991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_19
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 11
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991759a82b3db5d90800000000000000
+      internalID: -7107854823091506791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_20
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e69b1cf6e3bebfa0800000000000000
+      internalID: -5782987066843621663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_21
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 3
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a34770e0f454d10800000000000000
+      internalID: 2109178922166139401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_22
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9921b8eac3e4c60800000000000000
+      internalID: 7804241924634876330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_23
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 15
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e07830f817b8030800000000000000
+      internalID: 3498014394636766780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_24
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72ddcd0bac396790800000000000000
+      internalID: -7536425796059147649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_25
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 7
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5184a6e34384e8a50800000000000000
+      internalID: 6525232299329079317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_26
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e347afcae74b99b80800000000000000
+      internalID: -8387474374839864258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_27
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a93a3d153b7dbe0800000000000000
+      internalID: -1452495190779258260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_28
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85cb76570ae1702c0800000000000000
+      internalID: -4465566831001224104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_29
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13beb24f03dd9f1e0800000000000000
+      internalID: -2163454943650125007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_30
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d439ca741a39350800000000000000
+      internalID: 6022334455934569819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_31
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 7
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0565376541af9e0800000000000000
+      internalID: -1586933557159898904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_32
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d549b4d4def47c40800000000000000
+      internalID: 5509308434236392914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_33
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55e108094936b4f0800000000000000
+      internalID: -813399696864058019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_34
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9702c915d708cc0d0800000000000000
+      internalID: -3401202342843113351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_35
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d112e1c25fd73370800000000000000
+      internalID: 8302349984613929433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Heal_Strip_36
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e9caa83fc472b20800000000000000
+      internalID: 3109538676609949291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tangerine_Fish_Heal_Strip_0: -4966377493735529583
+      Tangerine_Fish_Heal_Strip_1: 6514819634818254943
+      Tangerine_Fish_Heal_Strip_10: -5666491031299603018
+      Tangerine_Fish_Heal_Strip_11: -6333968365826281251
+      Tangerine_Fish_Heal_Strip_12: 400731100423531436
+      Tangerine_Fish_Heal_Strip_13: -733263378220247268
+      Tangerine_Fish_Heal_Strip_14: -2096935918350454793
+      Tangerine_Fish_Heal_Strip_15: -8339884858059399118
+      Tangerine_Fish_Heal_Strip_16: 7730623744851470652
+      Tangerine_Fish_Heal_Strip_17: -1820148609534888616
+      Tangerine_Fish_Heal_Strip_18: 4608701448837007991
+      Tangerine_Fish_Heal_Strip_19: -7107854823091506791
+      Tangerine_Fish_Heal_Strip_2: -340089828360121038
+      Tangerine_Fish_Heal_Strip_20: -5782987066843621663
+      Tangerine_Fish_Heal_Strip_21: 2109178922166139401
+      Tangerine_Fish_Heal_Strip_22: 7804241924634876330
+      Tangerine_Fish_Heal_Strip_23: 3498014394636766780
+      Tangerine_Fish_Heal_Strip_24: -7536425796059147649
+      Tangerine_Fish_Heal_Strip_25: 6525232299329079317
+      Tangerine_Fish_Heal_Strip_26: -8387474374839864258
+      Tangerine_Fish_Heal_Strip_27: -1452495190779258260
+      Tangerine_Fish_Heal_Strip_28: -4465566831001224104
+      Tangerine_Fish_Heal_Strip_29: -2163454943650125007
+      Tangerine_Fish_Heal_Strip_3: -520128627228492658
+      Tangerine_Fish_Heal_Strip_30: 6022334455934569819
+      Tangerine_Fish_Heal_Strip_31: -1586933557159898904
+      Tangerine_Fish_Heal_Strip_32: 5509308434236392914
+      Tangerine_Fish_Heal_Strip_33: -813399696864058019
+      Tangerine_Fish_Heal_Strip_34: -3401202342843113351
+      Tangerine_Fish_Heal_Strip_35: 8302349984613929433
+      Tangerine_Fish_Heal_Strip_36: 3109538676609949291
+      Tangerine_Fish_Heal_Strip_4: -4097773815325889832
+      Tangerine_Fish_Heal_Strip_5: 323396584222576581
+      Tangerine_Fish_Heal_Strip_6: 6050270477515868734
+      Tangerine_Fish_Heal_Strip_7: 5162847680718948126
+      Tangerine_Fish_Heal_Strip_8: -9106193155408837859
+      Tangerine_Fish_Heal_Strip_9: 7182130544116650483
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
