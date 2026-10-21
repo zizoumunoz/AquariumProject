@@ -15,5 +15,6 @@ public class FoodSO : ScriptableObject
     public FoodType foodType;
     public float fullnessRestore = 30f;
     public float weight = 1; // 1 is normal!
+    public float price = 10;
 
 }
