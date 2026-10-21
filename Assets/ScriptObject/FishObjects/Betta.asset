@@ -14,6 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FishSO
   fishName: Betta
   sprite: {fileID: -3303973086772121031, guid: bfa07048ec3e2d8419b0c71c8f7c90c3, type: 3}
+  diet: 0
+  baseSize: 1
+  nutrition: 25
+  youngSizeMultiplier: 0.5
   fishSpeed: 1.5
   minRetargetTime: 2
   maxRetargetTime: 5
@@ -21,3 +25,9 @@ MonoBehaviour:
   fullnessDecayPerSecond: 2
   wanderThreshold: 70
   eatDistance: 0.2
+  happiness: 0
+  unhappyBelow: 50
+  happyAbove: 70
+  happinessLossPerSecond: 2
+  happinessGainPerSecond: 2
+  age: 0

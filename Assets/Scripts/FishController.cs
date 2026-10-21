@@ -24,6 +24,21 @@ public class FishController : MonoBehaviour
     [SerializeField] private float iconPadding = 0.15f;
     [SerializeField] private float iconSize = 1f;
 
+    [Header("Breeding")]
+    [SerializeField] private float breedHappiness = 90f;
+    [SerializeField] private float breedCooldown = 30f;
+    [SerializeField] private float breedDistance = 0.5f;
+
+    private float breedTimer;
+    private bool initialized;
+
+    [SerializeField]
+    [Header("Growth")]
+    private float ageTime = 60f;
+    private Age age;
+    private float growTimer;
+
+
     private Camera cam;
     private SpriteRenderer sr;
     private Vector2 min, max;
@@ -42,13 +57,22 @@ public class FishController : MonoBehaviour
     private float chasedTimer;
 
     public FishSO Data { get { return data; } }
-    public float Size { get { return data.baseSize * sizeMult; } }
+    public float Size { get { return data.baseSize * sizeMult * AgeMultiplier; } }
+    private float AgeMultiplier { get { return age == Age.Young ? data.youngSizeMultiplier : 1f; } }
     public float CurrentSpeed { get { return data.fishSpeed * speedMult; } }
+
+    private float happiness;
+    public float Happiness { get { return happiness; } }
+    public Age CurrentAge { get { return age; } }
 
     public void Init(FishSO so, List<TraitSO> newTraits = null)
     {
         data = so;
         fullness = data.startFullness;
+        happiness = data.happiness;
+        age = data.age;
+        initialized = true;
+        growTimer = ageTime;
         if (sr != null) sr.sprite = data.sprite;
 
         traits = newTraits != null ? newTraits : new List<TraitSO>();
@@ -97,7 +121,7 @@ public class FishController : MonoBehaviour
 
     private void Start()
     {
-        if (data != null) Init(data, traits);
+        if (data != null && !initialized) Init(data, traits);
     }
 
     private void Update()
@@ -106,6 +130,7 @@ public class FishController : MonoBehaviour
 
         CalculateBounds();
         fullness = Mathf.Max(0f, fullness - data.fullnessDecayPerSecond * hungerMult * Time.deltaTime);
+        breedTimer = Mathf.Max(0f, breedTimer - Time.deltaTime);
 
         if (chaser != null)
         {
@@ -114,10 +139,36 @@ public class FishController : MonoBehaviour
         }
 
         if (chaser != null) Flee();
-        else if (fullness > data.wanderThreshold) Wander();
-        else SeekFood();
+        else if (fullness <= data.wanderThreshold) SeekFood();
+        else if (!TryBreed()) Wander();
 
+        UpdateHappiness();
+        UpdateGrowth();
         UpdateIcons();
+    }
+
+
+
+    private void UpdateGrowth()
+    {
+        if (age != Age.Young) return;
+
+        growTimer -= Time.deltaTime;
+        if (growTimer > 0f) return;
+
+        age = Age.Adult;
+        transform.localScale = Vector3.one * Size;
+        Debug.Log(name + " grew up. Size = " + Size);
+    }
+
+    private void UpdateHappiness()
+    {
+        if (fullness < data.unhappyBelow)
+            happiness -= data.happinessLossPerSecond * Time.deltaTime;
+        else if (fullness > data.happyAbove)
+            happiness += data.happinessGainPerSecond * Time.deltaTime;
+
+        happiness = Mathf.Clamp(happiness, 0f, 100f);
     }
 
     private void LateUpdate()
@@ -325,4 +376,88 @@ public class FishController : MonoBehaviour
         if (sr != null)
             sr.flipY = spriteFacesLeft ? forward.x > 0f : forward.x < 0f;
     }
+
+    private bool CanBreed
+    {
+        get
+        {
+            return age == Age.Adult
+                && happiness >= breedHappiness
+                && breedTimer <= 0f
+                && chaser == null
+                && fullness > data.wanderThreshold;
+        }
+    }
+
+    public void SetAge(Age newAge)
+    {
+        age = newAge;
+        growTimer = ageTime;
+        transform.localScale = Vector3.one * Size;
+    }
+
+    private bool TryBreed()
+    {
+        if (!CanBreed) return false;
+
+        FishController mate = FindMate();
+        if (mate == null) return false;
+
+        MoveTo(mate.transform.position, CurrentSpeed);
+
+        if (Vector2.Distance(transform.position, mate.transform.position) <= breedDistance)
+            Breed(mate);
+
+        return true;
+    }
+
+    private FishController FindMate()
+    {
+        FishController nearest = null;
+        float best = float.MaxValue;
+
+        foreach (FishController other in All)
+        {
+            if (other == this || other.data != data || !other.CanBreed) continue;
+
+            float d = Vector2.Distance(transform.position, other.transform.position);
+            if (d < best)
+            {
+                best = d;
+                nearest = other;
+            }
+        }
+        return nearest;
+    }
+
+    private void Breed(FishController mate)
+    {
+        List<TraitSO> childTraits = InheritTraits(mate);
+        Vector3 pos = (transform.position + mate.transform.position) * 0.5f;
+
+        GameObject go = Instantiate(gameObject, pos, Quaternion.identity);
+        FishController child = go.GetComponent<FishController>();
+        child.Init(data, childTraits);
+        child.SetAge(Age.Young);
+
+        breedTimer = breedCooldown;
+        mate.breedTimer = breedCooldown;
+    }
+
+    private List<TraitSO> InheritTraits(FishController mate)
+    {
+        List<TraitSO> pool = new List<TraitSO>();
+        foreach (TraitSO t in traits) if (!pool.Contains(t)) pool.Add(t);
+        foreach (TraitSO t in mate.traits) if (!pool.Contains(t)) pool.Add(t);
+
+        List<TraitSO> result = new List<TraitSO>();
+        foreach (TraitSO t in pool)
+            if (Random.value < 0.5f) result.Add(t);
+
+        if (result.Count == 0 && pool.Count > 0)
+            result.Add(pool[Random.Range(0, pool.Count)]);
+
+        return result;
+    }
+
 }

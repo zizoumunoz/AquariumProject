@@ -421,6 +421,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1011413437108166273, guid: 7834d18013485a4409663d4ddbaa3ca9, type: 3}
+      propertyPath: ageTime
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1011413437108166273, guid: 7834d18013485a4409663d4ddbaa3ca9, type: 3}
       propertyPath: iconRoot
       value: 
       objectReference: {fileID: 810587636}
