@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: 8f225ad8b5557fc459efb1e3982971ca
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - data: {instanceID: 0}
+  - iconRenderer: {instanceID: 0}
+  - statusIcons: {fileID: 11400000, guid: 25a7fd334e56ef74bac62587f75b8533, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

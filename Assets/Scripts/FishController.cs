@@ -136,7 +136,7 @@ public class FishController : MonoBehaviour
         if (iconRenderer == null) return;
         if (statusIcons == null)
         {
-            Debug.LogWarning("FishController: statusIcons não atribuído em " + name);
+            Debug.LogWarning("missing" + name);
             return;
         }
 
