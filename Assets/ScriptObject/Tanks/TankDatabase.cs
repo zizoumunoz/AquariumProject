@@ -6,6 +6,7 @@ using UnityEngine;
 public class TankDatabase : ScriptableObject
 {
     public List<Tank> tanks = new() { new Tank() };
+    public Tank activeTank;
     public Sprite[] backgrounds = new Sprite[Enum.GetValues(typeof(TankType)).Length];
 }
 
@@ -18,12 +19,20 @@ public class Tank
         currentAttibutes = new float[Enum.GetValues(typeof(TankAttribute)).Length];
         maxFish = 8;
     }
-    public List<FishSO> fishes;
+    public List<SaveFish> fishes;
     public List<DecorationSO> decorations;
     public TankType type = TankType.Fresh;
     public float[] currentAttibutes = new float[Enum.GetValues(typeof(TankAttribute)).Length];
     public float maxFish = 8;
 
+}
+
+[Serializable]
+public class SaveFish
+{
+    public FishSO baseFish;
+    //public FishStatus multiplier;
+    public List<TraitSO> traits;
 }
 
 public enum TankType
