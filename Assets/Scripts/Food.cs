@@ -9,9 +9,13 @@ public class Food : MonoBehaviour
     [SerializeField] private float baseFallDelay = 3f;
     [SerializeField] private float sinkSpeed = 0.5f;
 
+    [SerializeField]
+    public float timeToDecay = 5;
+
     private Rigidbody2D rb;
     private float fallDelay;
     private bool sinking;
+    private bool landed;
 
     public float FullnessRestore { get { return data.fullnessRestore; } }
     public FoodType Type { get { return data.foodType; } }
@@ -58,4 +62,14 @@ public class Food : MonoBehaviour
         if (!sinking) return;
         rb.linearVelocity = Vector2.down * sinkSpeed * data.weight;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (landed) return;
+        if (!collision.gameObject.CompareTag("Bottom")) return;
+
+        landed = true;
+        Destroy(gameObject, timeToDecay);
+    }
+
 }
