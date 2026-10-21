@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: 49a2726afa4a3a748aeda558e601e486
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9168259400096039962
+    second: Tangerine_Fish_Bubble_Strip_0
+  - first:
+      213: 5367936018103304529
+    second: Tangerine_Fish_Bubble_Strip_1
+  - first:
+      213: -1772234590788044442
+    second: Tangerine_Fish_Bubble_Strip_2
+  - first:
+      213: 6018657894460384427
+    second: Tangerine_Fish_Bubble_Strip_3
+  - first:
+      213: 5163709814971294684
+    second: Tangerine_Fish_Bubble_Strip_4
+  - first:
+      213: 3038128470367115755
+    second: Tangerine_Fish_Bubble_Strip_5
+  - first:
+      213: -321201795179945981
+    second: Tangerine_Fish_Bubble_Strip_6
+  - first:
+      213: 2829152154249020181
+    second: Tangerine_Fish_Bubble_Strip_7
+  - first:
+      213: -8409614691814886403
+    second: Tangerine_Fish_Bubble_Strip_8
+  - first:
+      213: -2553440249925304785
+    second: Tangerine_Fish_Bubble_Strip_9
+  - first:
+      213: -4712926508831498765
+    second: Tangerine_Fish_Bubble_Strip_10
+  - first:
+      213: -4213395548596084594
+    second: Tangerine_Fish_Bubble_Strip_11
+  - first:
+      213: -1853702432378929599
+    second: Tangerine_Fish_Bubble_Strip_12
+  - first:
+      213: -6676943625264601248
+    second: Tangerine_Fish_Bubble_Strip_13
+  - first:
+      213: 3226403409377822979
+    second: Tangerine_Fish_Bubble_Strip_14
+  - first:
+      213: 6377081503069487411
+    second: Tangerine_Fish_Bubble_Strip_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a144c5f49533c3f70800000000000000
+      internalID: 9168259400096039962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15182103e5dbe7a40800000000000000
+      internalID: 5367936018103304529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6693b658702c767e0800000000000000
+      internalID: -1772234590788044442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 47
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba469ef7771968350800000000000000
+      internalID: 6018657894460384427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_4
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd3ef8cd7be29a740800000000000000
+      internalID: 5163709814971294684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be99b324fb9992a20800000000000000
+      internalID: 3038128470367115755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_6
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 47
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300e4194bacda8bf0800000000000000
+      internalID: -321201795179945981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_7
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5134b8115ea234720800000000000000
+      internalID: 2829152154249020181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_8
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 51
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3b77c6efb0b4b80800000000000000
+      internalID: -8409614691814886403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e74041f9b509cd0800000000000000
+      internalID: -2553440249925304785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd93947f42589eb0800000000000000
+      internalID: -4712926508831498765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_11
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80e7b372130785c0800000000000000
+      internalID: -4213395548596084594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_12
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 39
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14eb6c685735646e0800000000000000
+      internalID: -1853702432378929599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_13
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3
+        width: 58
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0676bc6162bb653a0800000000000000
+      internalID: -6676943625264601248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_14
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309031e7ecc76cc20800000000000000
+      internalID: 3226403409377822979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tangerine_Fish_Bubble_Strip_15
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331cb2ef6d1ff7850800000000000000
+      internalID: 6377081503069487411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tangerine_Fish_Bubble_Strip_0: 9168259400096039962
+      Tangerine_Fish_Bubble_Strip_1: 5367936018103304529
+      Tangerine_Fish_Bubble_Strip_10: -4712926508831498765
+      Tangerine_Fish_Bubble_Strip_11: -4213395548596084594
+      Tangerine_Fish_Bubble_Strip_12: -1853702432378929599
+      Tangerine_Fish_Bubble_Strip_13: -6676943625264601248
+      Tangerine_Fish_Bubble_Strip_14: 3226403409377822979
+      Tangerine_Fish_Bubble_Strip_15: 6377081503069487411
+      Tangerine_Fish_Bubble_Strip_2: -1772234590788044442
+      Tangerine_Fish_Bubble_Strip_3: 6018657894460384427
+      Tangerine_Fish_Bubble_Strip_4: 5163709814971294684
+      Tangerine_Fish_Bubble_Strip_5: 3038128470367115755
+      Tangerine_Fish_Bubble_Strip_6: -321201795179945981
+      Tangerine_Fish_Bubble_Strip_7: 2829152154249020181
+      Tangerine_Fish_Bubble_Strip_8: -8409614691814886403
+      Tangerine_Fish_Bubble_Strip_9: -2553440249925304785
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

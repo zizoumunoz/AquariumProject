@@ -1,0 +1,57 @@
+{
+  "frameW": 123,
+  "frameH": 116,
+  "hotX": 107,
+  "hotY": 84,
+  "frames": [
+    {
+      "name": "Idle_0",
+      "duration": 0.4
+    },
+    {
+      "name": "Idle_1",
+      "duration": 0.4
+    },
+    {
+      "name": "Cast_0",
+      "duration": 0.05
+    },
+    {
+      "name": "Cast_1",
+      "duration": 0.05
+    },
+    {
+      "name": "Cast_2",
+      "duration": 0.1
+    },
+    {
+      "name": "Cast_3",
+      "duration": 0.04
+    },
+    {
+      "name": "Cast_4",
+      "duration": 0.04
+    },
+    {
+      "name": "Cast_5",
+      "duration": 0.06
+    },
+    {
+      "name": "Cast_6",
+      "duration": 0.05
+    },
+    {
+      "name": "Cast_7",
+      "duration": 0.06
+    },
+    {
+      "name": "Cast_8",
+      "duration": 0.07
+    },
+    {
+      "name": "Cast_9",
+      "duration": 0.08
+    }
+  ],
+  "landFrame": "Cast_7"
+}

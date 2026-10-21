@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a1751b3e36a49489d28705547c0c1a, type: 3}
+  m_Name: Icons
+  m_EditorClassIdentifier: Assembly-CSharp::StatusIconSO
+  hunger: {fileID: -1671663248283000969, guid: 9ef78a3631992fb40b9bef1fc99f8ef2, type: 3}
+  fear: {fileID: -8379480884631466627, guid: 1fb188eeb3d33be47b78debaa7022a15, type: 3}

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: d9a1751b3e36a49489d28705547c0c1a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hunger: {fileID: -1671663248283000969, guid: 9ef78a3631992fb40b9bef1fc99f8ef2, type: 3}
+  - fear: {fileID: -8379480884631466627, guid: 1fb188eeb3d33be47b78debaa7022a15, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
