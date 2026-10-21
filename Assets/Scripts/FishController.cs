@@ -136,7 +136,7 @@ public class FishController : MonoBehaviour
         if (iconRenderer == null) return;
         if (statusIcons == null)
         {
-            Debug.LogWarning("missing" + name);
+            Debug.LogWarning("missing " + name);
             return;
         }
 
@@ -204,7 +204,7 @@ public class FishController : MonoBehaviour
         Food food = null;
         FishController prey = null;
 
-        if (data.diet != FishDiet.Carnivore) food = FindNearestFood();
+        food = FindNearestFood();
         if (data.diet != FishDiet.Herbivore) prey = FindNearestPrey();
 
         if (food == null && prey == null)
@@ -250,6 +250,7 @@ public class FishController : MonoBehaviour
         {
             Food food = f.GetComponent<Food>();
             if (food == null) continue;
+            if (!CanEatFood(food)) continue;
 
             float d = Vector2.Distance(transform.position, f.transform.position);
             if (d < best)
@@ -268,6 +269,15 @@ public class FishController : MonoBehaviour
         return other.Size <= Size;
     }
 
+    private bool CanEatFood(Food food)
+    {
+        switch (data.diet)
+        {
+            case FishDiet.Herbivore: return food.Type == FoodType.Plant;
+            case FishDiet.Carnivore: return food.Type == FoodType.Meat;
+            default: return true;
+        }
+    }
     private FishController FindNearestPrey()
     {
         FishController nearest = null;

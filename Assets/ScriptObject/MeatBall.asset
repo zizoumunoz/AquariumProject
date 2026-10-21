@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 905f9b08a0361a742b9e8633fbe4eda9, type: 3}
-  m_Name: BasicFood
+  m_Name: MeatBall
   m_EditorClassIdentifier: Assembly-CSharp::FoodSO
-  foodName: BasicFood
-  sprite: {fileID: -1045181238759104467, guid: 6854c0e0d434f8142b7e6c2ac052f154, type: 3}
-  fullnessRestore: 15
+  foodName: MeatBall
+  sprite: {fileID: -4952802837046464369, guid: b5ed9bf5f78d6f44aacb6f8beaa0fcc0, type: 3}
+  foodType: 1
+  fullnessRestore: 30
+  weight: 1
