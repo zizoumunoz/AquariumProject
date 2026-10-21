@@ -25,7 +25,7 @@ MonoBehaviour:
   fullnessDecayPerSecond: 2
   wanderThreshold: 70
   eatDistance: 0.2
-  happiness: 0
+  happiness: 100
   unhappyBelow: 50
   happyAbove: 70
   happinessLossPerSecond: 2
