@@ -6,36 +6,25 @@ public class FishController : MonoBehaviour
     public static readonly List<FishController> All = new List<FishController>();
 
     [SerializeField] private FishSO data;
-    [SerializeField] private float boundsMargin = 0.5f;
+
+    [SerializeField] private FishStatus statusMultiplier = new();
+
+    /// <summary>
+    /// Limits the fish to move inside of the bounds of the screen.
+    /// </summary>
+    private const float boundsMargin = 0.5f;
 
     [Header("Direction")]
-    [SerializeField] private bool spriteFacesLeft = true;
+    private bool spriteFacesLeft = true;
     [SerializeField] private float turnSpeed = 120f;
-
-    [Header("Flee")]
-    [SerializeField] private float fleeSpeedRatio = 0.9f;
-    [SerializeField] private float fleeDistance = 5f;
-    [SerializeField] private float fearMemoryTime = 0.5f;
-    [SerializeField] private float detectionRadius = 3f;
-
-    [Header("Icon")]
-    [SerializeField] private SpriteRenderer iconRenderer;
-    [SerializeField] private StatusIconSO statusIcons;
-    [SerializeField] private float iconPadding = 0.15f;
-    [SerializeField] private float iconSize = 1f;
-
-    [Header("Breeding")]
-    [SerializeField] private float breedHappiness = 90f;
-    [SerializeField] private float breedCooldown = 30f;
-    [SerializeField] private float breedDistance = 0.5f;
 
     private float breedTimer;
     private bool initialized;
 
     [SerializeField]
     [Header("Growth")]
-    private float ageTime = 60f;
-    private Age age;
+  
+    private Age age = Age.Young;
     private float growTimer;
 
 
@@ -57,9 +46,9 @@ public class FishController : MonoBehaviour
     private float chasedTimer;
 
     public FishSO Data { get { return data; } }
-    public float Size { get { return data.baseSize * sizeMult * AgeMultiplier; } }
-    private float AgeMultiplier { get { return age == Age.Young ? data.youngSizeMultiplier : 1f; } }
-    public float CurrentSpeed { get { return data.fishSpeed * speedMult; } }
+    public float Size { get { return data.fishStatus.baseSize * statusMultiplier.baseSize * sizeMult * AgeMultiplier; } }
+    private float AgeMultiplier { get { return age == Age.Young ? data.fishStatus.youngSizeMultiplier * statusMultiplier.youngSizeMultiplier : 1f; } }
+    public float CurrentSpeed { get { return data.fishStatus.fishSpeed * statusMultiplier.fishSpeed* speedMult; } }
 
     private float happiness;
     public float Happiness { get { return happiness; } }
@@ -68,11 +57,10 @@ public class FishController : MonoBehaviour
     public void Init(FishSO so, List<TraitSO> newTraits = null)
     {
         data = so;
-        fullness = data.startFullness;
-        happiness = data.happiness;
-        age = data.age;
+        fullness = data.fishStatus.startFullness * statusMultiplier.startFullness;
+        happiness = data.fishStatus.happiness * statusMultiplier.happiness;
         initialized = true;
-        growTimer = ageTime;
+        growTimer = data.fishStatus.ageTime * statusMultiplier.ageTime;
         if (sr != null) sr.sprite = data.sprite;
 
         traits = newTraits != null ? newTraits : new List<TraitSO>();
@@ -100,7 +88,7 @@ public class FishController : MonoBehaviour
     public void NotifyChased(FishController predator)
     {
         chaser = predator;
-        chasedTimer = fearMemoryTime;
+        chasedTimer = data.fishStatus.fearMemoryTime * statusMultiplier.fearMemoryTime;
     }
 
     private void Awake()
@@ -129,7 +117,7 @@ public class FishController : MonoBehaviour
         if (data == null) return;
 
         CalculateBounds();
-        fullness = Mathf.Max(0f, fullness - data.fullnessDecayPerSecond * hungerMult * Time.deltaTime);
+        fullness = Mathf.Max(0f, fullness - data.fishStatus.fullnessDecayPerSecond * statusMultiplier.fullnessDecayPerSecond* hungerMult * Time.deltaTime);
         breedTimer = Mathf.Max(0f, breedTimer - Time.deltaTime);
 
         if (chaser != null)
@@ -139,7 +127,7 @@ public class FishController : MonoBehaviour
         }
 
         if (chaser != null) Flee();
-        else if (fullness <= data.wanderThreshold) SeekFood();
+        else if (fullness <= data.fishStatus.wanderThreshold * statusMultiplier.wanderThreshold) SeekFood();
         else if (!TryBreed()) Wander();
 
         UpdateHappiness();
@@ -163,41 +151,41 @@ public class FishController : MonoBehaviour
 
     private void UpdateHappiness()
     {
-        if (fullness < data.unhappyBelow)
-            happiness -= data.happinessLossPerSecond * Time.deltaTime;
-        else if (fullness > data.happyAbove)
-            happiness += data.happinessGainPerSecond * Time.deltaTime;
+        if (fullness < data.fishStatus.unhappyBelow * statusMultiplier.unhappyBelow)
+            happiness -= data.fishStatus.happinessLossPerSecond  * statusMultiplier.happinessLossPerSecond* Time.deltaTime;
+        else if (fullness > data.fishStatus.happyAbove * statusMultiplier.happyAbove)
+            happiness += data.fishStatus.happinessGainPerSecond * statusMultiplier.happinessGainPerSecond* Time.deltaTime;
 
         happiness = Mathf.Clamp(happiness, 0f, 100f);
     }
 
     private void LateUpdate()
     {
-        if (iconRenderer == null || data == null || sr == null) return;
+        if (data.iconRenderer == null || data == null || sr == null) return;
 
         Bounds b = sr.bounds;
-        Transform t = iconRenderer.transform;
+        Transform t = data.iconRenderer.transform;
         t.rotation = Quaternion.identity;
-        t.position = new Vector3(b.center.x, b.max.y + iconPadding, transform.position.z);
-        t.localScale = Vector3.one * (iconSize / Size);
+        t.position = new Vector3(b.center.x, b.max.y + data.iconPadding, transform.position.z);
+        t.localScale = Vector3.one * (data.iconSize / Size);
     }
 
     private void UpdateIcons()
     {
-        if (iconRenderer == null) return;
-        if (statusIcons == null)
+        if (data.iconRenderer == null) return;
+        if (data.statusIcons == null)
         {
             Debug.LogWarning("missing " + name);
             return;
         }
 
         bool afraid = chaser != null;
-        bool hungry = fullness <= data.wanderThreshold;
+        bool hungry = fullness <= data.fishStatus.wanderThreshold * statusMultiplier.wanderThreshold;
 
-        if (afraid) iconRenderer.sprite = statusIcons.fear;
-        else if (hungry) iconRenderer.sprite = statusIcons.hunger;
+        if (afraid) data.iconRenderer.sprite = data.statusIcons.fear;
+        else if (hungry) data.iconRenderer.sprite = data.statusIcons.hunger;
 
-        iconRenderer.enabled = afraid || hungry;
+        data.iconRenderer.enabled = afraid || hungry;
     }
 
     private void CalculateBounds()
@@ -219,7 +207,7 @@ public class FishController : MonoBehaviour
     {
         CalculateBounds();
         target = new Vector2(Random.Range(min.x, max.x), Random.Range(min.y, max.y));
-        retargetTimer = Random.Range(data.minRetargetTime, data.maxRetargetTime);
+        retargetTimer = Random.Range(data.fishStatus.minRetargetTime * statusMultiplier.minRetargetTime, data.fishStatus.maxRetargetTime * statusMultiplier.maxRetargetTime);
     }
 
     private void Wander()
@@ -236,17 +224,17 @@ public class FishController : MonoBehaviour
         Vector2 pos = transform.position;
         Vector2 away = (pos - (Vector2)chaser.transform.position).normalized;
 
-        Vector2 dest = ClampToBounds(pos + away * fleeDistance);
+        Vector2 dest = ClampToBounds(pos + away * data.fishStatus.fleeDistance * statusMultiplier.fleeDistance);
 
         if (Vector2.Distance(dest, pos) < 1f)
         {
             Vector2 center = (min + max) * 0.5f;
             Vector2 perp = new Vector2(-away.y, away.x);
             if (Vector2.Dot(perp, center - pos) < 0f) perp = -perp;
-            dest = ClampToBounds(pos + perp * fleeDistance);
+            dest = ClampToBounds(pos + perp * data.fishStatus.fleeDistance * statusMultiplier.fleeDistance);
         }
 
-        float speed = Mathf.Min(CurrentSpeed, chaser.CurrentSpeed * fleeSpeedRatio);
+        float speed = Mathf.Min(CurrentSpeed, chaser.CurrentSpeed * data.fishStatus.fleeSpeedRatio * statusMultiplier.fleeSpeedRatio);
         MoveTo(dest, speed);
     }
 
@@ -266,7 +254,7 @@ public class FishController : MonoBehaviour
 
         float dFood = food != null ? Vector2.Distance(transform.position, food.transform.position) : float.MaxValue;
         float dPrey = prey != null ? Vector2.Distance(transform.position, prey.transform.position) : float.MaxValue;
-        float eatDist = data.eatDistance * Size;
+        float eatDist = data.fishStatus.eatDistance * statusMultiplier.eatDistance* Size;
 
         if (dFood <= dPrey)
         {
@@ -280,12 +268,12 @@ public class FishController : MonoBehaviour
         }
         else
         {
-            if (dPrey <= prey.detectionRadius) prey.NotifyChased(this);
+            if (dPrey <= prey.data.fishStatus.detectionRadius) prey.NotifyChased(this);
             MoveTo(prey.transform.position, CurrentSpeed);
 
             if (dPrey <= eatDist)
             {
-                fullness = Mathf.Min(100f, fullness + prey.data.nutrition * prey.Size);
+                fullness = Mathf.Min(100f, fullness + prey.data.fishStatus.nutrition * prey.Size);
                 Destroy(prey.gameObject);
             }
         }
@@ -382,17 +370,17 @@ public class FishController : MonoBehaviour
         get
         {
             return age == Age.Adult
-                && happiness >= breedHappiness
+                && happiness >= data.fishStatus.breedHappiness * statusMultiplier.breedHappiness
                 && breedTimer <= 0f
                 && chaser == null
-                && fullness > data.wanderThreshold;
+                && fullness > data.fishStatus.wanderThreshold * statusMultiplier.wanderThreshold;
         }
     }
 
     public void SetAge(Age newAge)
     {
         age = newAge;
-        growTimer = ageTime;
+        growTimer = data.fishStatus.ageTime * statusMultiplier.ageTime;
         transform.localScale = Vector3.one * Size;
     }
 
@@ -405,7 +393,7 @@ public class FishController : MonoBehaviour
 
         MoveTo(mate.transform.position, CurrentSpeed);
 
-        if (Vector2.Distance(transform.position, mate.transform.position) <= breedDistance)
+        if (Vector2.Distance(transform.position, mate.transform.position) <= data.fishStatus.breedDistance * statusMultiplier.breedHappiness)
             Breed(mate);
 
         return true;
@@ -440,8 +428,8 @@ public class FishController : MonoBehaviour
         child.Init(data, childTraits);
         child.SetAge(Age.Young);
 
-        breedTimer = breedCooldown;
-        mate.breedTimer = breedCooldown;
+        breedTimer = data.fishStatus.breedCooldown * statusMultiplier.breedCooldown;
+        mate.breedTimer = data.fishStatus.breedCooldown * statusMultiplier.breedCooldown;
     }
 
     private List<TraitSO> InheritTraits(FishController mate)
