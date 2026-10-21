@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 1439999637}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Bottom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -430,7 +430,7 @@ PrefabInstance:
       objectReference: {fileID: 810587637}
     - target: {fileID: 1283583868285877914, guid: 7834d18013485a4409663d4ddbaa3ca9, type: 3}
       propertyPath: m_Name
-      value: Fish
+      value: Beta
       objectReference: {fileID: 0}
     - target: {fileID: 1283583868285877914, guid: 7834d18013485a4409663d4ddbaa3ca9, type: 3}
       propertyPath: m_TagString
@@ -807,6 +807,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: be5e7a045c7a0004aad01f9231eb47f9, type: 2}
   baseFallDelay: 1
   sinkSpeed: 0.5
+  timeToDecay: 5
 --- !u!1001 &5654899090293617074
 PrefabInstance:
   m_ObjectHideFlags: 0
