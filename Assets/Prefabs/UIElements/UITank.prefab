@@ -194,7 +194,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8203781602763472752}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2326717166587735966}
+        m_TargetAssemblyTypeName: UITankController, Assembly-CSharp
+        m_MethodName: LoadNewTank
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4840573137170850089
 GameObject:
   m_ObjectHideFlags: 0

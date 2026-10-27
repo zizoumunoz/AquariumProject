@@ -17,6 +17,6 @@ public class UITankController : MonoBehaviour
     }
     public void LoadNewTank()
     {
-
+        TankManager.instance.LoadNewTank(myTank);
     }
 }
