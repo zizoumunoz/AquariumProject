@@ -32,6 +32,7 @@ public class MarketSlotUI : MonoBehaviour
 
     private void OnBuyClicked()
     {
+        Debug.Log(fish);
         if (fish != null && Bought != null) Bought(fish);
     }
 }

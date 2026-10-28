@@ -53,6 +53,7 @@ public class FishController : MonoBehaviour
     public void Init(FishSO so, FishStatus status, List<TraitSO> newTraits = null)
     {
         data = so;
+        statusMultiplier = status;
         fullness = data.fishStatus.startFullness * statusMultiplier.startFullness;
         happiness = data.fishStatus.happiness * statusMultiplier.happiness;
         initialized = true;

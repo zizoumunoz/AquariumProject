@@ -15,13 +15,9 @@ MonoBehaviour:
   fishes:
   - {fileID: 11400000, guid: 4d860ee4cf3738646bcda2b4dc7e1b88, type: 2}
   - {fileID: 11400000, guid: 1e58052344a642a469eb469f2c70fc0a, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 9ab6c497fd73a3144888d885d811a266, type: 2}
+  - {fileID: 11400000, guid: af469f779e00c1640b7ec50484986726, type: 2}
+  - {fileID: 11400000, guid: 9ce21ef6ee7b41a4dbf0f326ca368e0d, type: 2}
+  - {fileID: 11400000, guid: 7f635945748737446b25ff944c30ab5f, type: 2}
   traits: []
   statusIcons: {fileID: 11400000, guid: 25a7fd334e56ef74bac62587f75b8533, type: 2}

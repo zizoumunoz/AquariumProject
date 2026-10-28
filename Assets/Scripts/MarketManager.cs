@@ -64,9 +64,9 @@ public class MarketManager : MonoBehaviour
     private void TryBuy(FishSO fish)
     {
         int price = (int)fish.price;
-        if (MoneyDisplay.Instance.money < price) return;
+        //if (MoneyDisplay.Instance.money < price) return;
 
-        MoneyDisplay.Instance.AddMoney(-price);
+        //MoneyDisplay.Instance.AddMoney(-price);
         if (FishPurchased != null) FishPurchased(fish);
     }
 }
