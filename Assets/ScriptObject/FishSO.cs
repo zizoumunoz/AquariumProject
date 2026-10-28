@@ -21,7 +21,7 @@ public class FishSO : ScriptableObject
     public string fishName;
     public Sprite sprite;
     public FishDiet diet = FishDiet.Herbivore;
-    public float price = 100;
+    public int price = 50;
 
     [Header("Icon")]
     public SpriteRenderer iconRenderer;

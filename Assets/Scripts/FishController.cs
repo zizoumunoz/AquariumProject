@@ -6,9 +6,9 @@ public class FishController : MonoBehaviour
 {
     public static readonly List<FishController> All = new List<FishController>();
 
-    [SerializeField] private FishSO data;
+    [SerializeField] public FishSO data;
 
-    [SerializeField] private FishStatus statusMultiplier = new();
+    [SerializeField] public FishStatus statusMultiplier = new();
 
     /// <summary>
     /// Limits the fish to move inside of the bounds of the screen.
