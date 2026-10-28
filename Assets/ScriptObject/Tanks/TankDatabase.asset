@@ -13,7 +13,58 @@ MonoBehaviour:
   m_Name: TankDatabase
   m_EditorClassIdentifier: Assembly-CSharp::TankDatabase
   tanks:
-  - type: 0
+  - fishes: []
+    decorations: []
+    type: 0
+    currentAttibutes:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    maxFish: 8
+  - fishes:
+    - baseFish: {fileID: 11400000, guid: 1e58052344a642a469eb469f2c70fc0a, type: 2}
+      multiplier:
+        baseSize: 1
+        nutrition: 1
+        youngSizeMultiplier: 1
+        fishSpeed: 1
+        minRetargetTime: 1
+        maxRetargetTime: 1
+        startFullness: 1
+        fullnessDecayPerSecond: 1
+        wanderThreshold: 1
+        eatDistance: 1
+        happiness: 1
+        unhappyBelow: 1
+        happyAbove: 1
+        happinessLossPerSecond: 1
+        happinessGainPerSecond: 1
+        fleeSpeedRatio: 1
+        fleeDistance: 1
+        fearMemoryTime: 1
+        detectionRadius: 1
+        breedHappiness: 1
+        breedCooldown: 1
+        breedDistance: 1
+        ageTime: 1
+      traits: []
+    decorations: []
+    type: 3
+    currentAttibutes:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    maxFish: 8
+  activeTank:
+    fishes: []
+    decorations: []
+    type: 0
     currentAttibutes:
     - 0
     - 0

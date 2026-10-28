@@ -36,26 +36,21 @@ public class FishController : MonoBehaviour
     private float retargetTimer;
     private float fullness;
     private float heading;
-
-    private float sizeMult = 1f;
-    private float speedMult = 1f;
-    private float turnMult = 1f;
-    private float hungerMult = 1f;
     private List<TraitSO> traits = new List<TraitSO>();
 
     private FishController chaser;
     private float chasedTimer;
 
     public FishSO Data { get { return data; } }
-    public float Size { get { return data.fishStatus.baseSize * statusMultiplier.baseSize * sizeMult * AgeMultiplier; } }
+    public float Size { get { return data.fishStatus.baseSize * statusMultiplier.baseSize * AgeMultiplier; } }
     private float AgeMultiplier { get { return age == Age.Young ? data.fishStatus.youngSizeMultiplier * statusMultiplier.youngSizeMultiplier : 1f; } }
-    public float CurrentSpeed { get { return data.fishStatus.fishSpeed * statusMultiplier.fishSpeed* speedMult; } }
+    public float CurrentSpeed { get { return data.fishStatus.fishSpeed * statusMultiplier.fishSpeed; } }
 
     private float happiness;
     public float Happiness { get { return happiness; } }
     public Age CurrentAge { get { return age; } }
 
-    public void Init(FishSO so, List<TraitSO> newTraits = null)
+    public void Init(FishSO so, FishStatus status, List<TraitSO> newTraits = null)
     {
         data = so;
         fullness = data.fishStatus.startFullness * statusMultiplier.startFullness;
@@ -65,18 +60,6 @@ public class FishController : MonoBehaviour
         if (sr != null) sr.sprite = data.sprite;
 
         traits = newTraits != null ? newTraits : new List<TraitSO>();
-        sizeMult = 1f;
-        speedMult = 1f;
-        turnMult = 1f;
-        hungerMult = 1f;
-
-        foreach (TraitSO t in traits)
-        {
-            sizeMult *= t.sizeMultiplier;
-            speedMult *= t.speedMultiplier;
-            turnMult *= t.turnSpeedMultiplier;
-            hungerMult *= t.hungerDecayMultiplier;
-        }
 
         chaser = null;
         chasedTimer = 0f;
@@ -110,7 +93,7 @@ public class FishController : MonoBehaviour
 
     private void Start()
     {
-        if (data != null && !initialized) Init(data, traits);
+        if (data != null && !initialized) Init(data, statusMultiplier, traits);
     }
 
     private void Update()
@@ -118,7 +101,7 @@ public class FishController : MonoBehaviour
         if (data == null) return;
 
         CalculateBounds();
-        fullness = Mathf.Max(0f, fullness - data.fishStatus.fullnessDecayPerSecond * statusMultiplier.fullnessDecayPerSecond* hungerMult * Time.deltaTime);
+        fullness = Mathf.Max(0f, fullness - data.fishStatus.fullnessDecayPerSecond * statusMultiplier.fullnessDecayPerSecond * Time.deltaTime);
         breedTimer = Mathf.Max(0f, breedTimer - Time.deltaTime);
 
         if (chaser != null)
@@ -344,7 +327,7 @@ public class FishController : MonoBehaviour
 
         float desiredAngle = Mathf.Atan2(toTarget.y, toTarget.x) * Mathf.Rad2Deg;
         float diff = Mathf.DeltaAngle(heading, desiredAngle);
-        heading = Mathf.MoveTowardsAngle(heading, desiredAngle, turnSpeed * turnMult * Time.deltaTime);
+        heading = Mathf.MoveTowardsAngle(heading, desiredAngle, turnSpeed * Time.deltaTime);
 
         float speedFactor = Mathf.Lerp(0.4f, 1f, Mathf.Clamp01(Mathf.Cos(diff * Mathf.Deg2Rad) * 0.5f + 0.5f));
         float headingRad = heading * Mathf.Deg2Rad;
@@ -426,7 +409,7 @@ public class FishController : MonoBehaviour
 
         GameObject go = Instantiate(gameObject, pos, Quaternion.identity);
         FishController child = go.GetComponent<FishController>();
-        child.Init(data, childTraits);
+        child.Init(data, statusMultiplier, childTraits);
         child.SetAge(Age.Young);
 
         breedTimer = data.fishStatus.breedCooldown * statusMultiplier.breedCooldown;
