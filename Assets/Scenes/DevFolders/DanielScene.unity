@@ -291,17 +291,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1608421917167283739, guid: 7e5f7ea710a96ab4386daae4a5ef0fae, type: 3}
   m_PrefabInstance: {fileID: 7415983154459104148}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &397402856 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8081654362420733748, guid: 7e5f7ea710a96ab4386daae4a5ef0fae, type: 3}
-  m_PrefabInstance: {fileID: 7415983154459104148}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6cd8ef2590aded4eb89ec76d70d2618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MarketPanel
 --- !u!1001 &587300818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -638,7 +627,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9822c5379b912af4ab42cdfccea44aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LeftClick
-  foodToSpawn: {fileID: 8707225565037932833, guid: f8eae5a67cb03a741affcf98665b5b42, type: 3}
+  foodPrefab: {fileID: 1983759326}
+  foodToSpawn: {fileID: 11400000, guid: be5e7a045c7a0004aad01f9231eb47f9, type: 2}
+  foodRoot: {fileID: 253092685}
   topOffset: 0.2
 --- !u!4 &1075362268
 Transform:
@@ -683,7 +674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MarketManager
   database: {fileID: 11400000, guid: b22b458589e56d94597e03bc34f1210b, type: 2}
-  panelPrefab: {fileID: 397402856}
+  panelPrefab: {fileID: 7415983154459104149}
   canvasRoot: {fileID: 906378743}
   refreshInterval: 60
   offerCount: 6
@@ -1404,6 +1395,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd3adf3d05194cf46a530d55975c74d3, type: 3}
+--- !u!114 &1983759326 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3017575449951369872, guid: dd3adf3d05194cf46a530d55975c74d3, type: 3}
+  m_PrefabInstance: {fileID: 1983759325}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d196740cb9316fc49b20b8f56b9a2751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Food
 --- !u!1001 &5654899090293617074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1581,6 +1583,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3059394241109537737, guid: 7e5f7ea710a96ab4386daae4a5ef0fae, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059394241109537737, guid: 7e5f7ea710a96ab4386daae4a5ef0fae, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059394241109537737, guid: 7e5f7ea710a96ab4386daae4a5ef0fae, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 4500325038562470322, guid: 7e5f7ea710a96ab4386daae4a5ef0fae, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1706,6 +1720,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e5f7ea710a96ab4386daae4a5ef0fae, type: 3}
+--- !u!114 &7415983154459104149 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7075784436147360760, guid: 7e5f7ea710a96ab4386daae4a5ef0fae, type: 3}
+  m_PrefabInstance: {fileID: 7415983154459104148}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6cd8ef2590aded4eb89ec76d70d2618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MarketPanel
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
