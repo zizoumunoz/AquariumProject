@@ -31,7 +31,7 @@ public class Tank
 public class SaveFish
 {
     public FishSO baseFish;
-    //public FishStatus multiplier;
+    public FishStatus multiplier;
     public List<TraitSO> traits;
 }
 
