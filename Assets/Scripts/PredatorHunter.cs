@@ -11,7 +11,7 @@ using UnityEngine;
 /// If someone renames those fields, this script logs an error and stops working.
 /// </summary>
 [RequireComponent(typeof(FishController))]
-[DefaultExecutionOrder(-50)] // runs before FishController, so our target is used this frame
+[DefaultExecutionOrder(-50)] 
 public class PredatorHunter : MonoBehaviour
 {
     private const BindingFlags Flags = BindingFlags.Instance | BindingFlags.NonPublic;
@@ -55,11 +55,9 @@ public class PredatorHunter : MonoBehaviour
     {
         if (!ready || controller.Data == null) return;
 
-        // Only hunt when hungry
         float fullness = (float)fullnessField.GetValue(controller);
         if (fullness > hungryBelow) return;
 
-        // Running away from something bigger comes first
         if (chaserField != null)
         {
             FishController chaser = chaserField.GetValue(controller) as FishController;
@@ -73,7 +71,7 @@ public class PredatorHunter : MonoBehaviour
         float reach = Mathf.Max(eatDistance * controller.Size, 0.5f);
 
         if (distance <= scareRadius)
-            prey.NotifyChased(controller); // makes the cleaner flee
+            prey.NotifyChased(controller); 
 
         if (distance <= reach)
         {
@@ -83,7 +81,7 @@ public class PredatorHunter : MonoBehaviour
             return;
         }
 
-        // Point the fish's normal wandering at the cleaner
+        /// Point the fish's normal wandering at the cleaner
         targetField.SetValue(controller, (Vector2)prey.transform.position);
         retargetTimerField.SetValue(controller, 1f);
     }

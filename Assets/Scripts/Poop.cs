@@ -91,12 +91,10 @@ public class Poop : MonoBehaviour
 
     private void Start()
     {
-        // Fish can't swim lower than a little above the bottom of the screen,
-        // so never rest the poop below that or it can't be reached.
+        /// Fish can't swim lower than a little above the bottom of the screen,
         float camBottom = cam.transform.position.y - cam.orthographicSize;
         floorY = camBottom + 0.7f;
 
-        // Use the real floor from the scene (same "Bottom" tag Food.cs uses)
         GameObject bottom = FindBottom();
         if (bottom != null)
         {
@@ -141,11 +139,13 @@ public class Poop : MonoBehaviour
         }
         catch (UnityException)
         {
-            return null; // the tag doesn't exist in this project
+            return null; 
         }
     }
-
-    // A small brown pixel blob, used when there is no Resources/Poop prefab
+    /// <summary>
+    /// A small brown pixel blob, used when there is no Resources/Poop prefab
+    /// </summary>
+    /// <returns></returns>
     private static Sprite GetPlaceholderSprite()
     {
         if (placeholderSprite != null) return placeholderSprite;
