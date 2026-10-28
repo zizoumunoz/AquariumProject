@@ -22,6 +22,6 @@ public class FishSpawner : MonoBehaviour
         pos.z = 0f;
 
         FishController fish = Instantiate(fishPrefab, pos, Quaternion.identity, fishRoot);
-        fish.Init(so);
+        fish.Init(so, new FishStatus(1));
     }
 }

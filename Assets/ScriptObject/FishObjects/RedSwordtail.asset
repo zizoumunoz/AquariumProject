@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddfae909e6c71284cb1c6c9327643532, type: 3}
+  m_Name: RedSwordtail
+  m_EditorClassIdentifier: Assembly-CSharp::FishSO
+  fishName: Red Swordtail
+  sprite: {fileID: 3146969212575866831, guid: ca3e1019260853a4794a7ab649556127, type: 3}
+  diet: 0
+  price: 100
+  iconRenderer: {fileID: 0}
+  statusIcons: {fileID: 0}
+  iconPadding: 0.15
+  iconSize: 1
+  fishStatus:
+    baseSize: 1
+    nutrition: 25
+    youngSizeMultiplier: 0.5
+    fishSpeed: 1.5
+    minRetargetTime: 2
+    maxRetargetTime: 5
+    startFullness: 100
+    fullnessDecayPerSecond: 2
+    wanderThreshold: 70
+    eatDistance: 0.2
+    happiness: 0
+    unhappyBelow: 50
+    happyAbove: 70
+    happinessLossPerSecond: 2
+    happinessGainPerSecond: 2
+    fleeSpeedRatio: 0.9
+    fleeDistance: 5
+    fearMemoryTime: 0.5
+    detectionRadius: 3
+    breedHappiness: 90
+    breedCooldown: 30
+    breedDistance: 0.5
+    ageTime: 60

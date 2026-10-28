@@ -15,19 +15,32 @@ MonoBehaviour:
   fishName: Betta
   sprite: {fileID: -3303973086772121031, guid: bfa07048ec3e2d8419b0c71c8f7c90c3, type: 3}
   diet: 0
-  baseSize: 1
-  nutrition: 25
-  youngSizeMultiplier: 0.5
-  fishSpeed: 1.5
-  minRetargetTime: 2
-  maxRetargetTime: 5
-  startFullness: 100
-  fullnessDecayPerSecond: 2
-  wanderThreshold: 70
-  eatDistance: 0.2
-  happiness: 100
-  unhappyBelow: 50
-  happyAbove: 70
-  happinessLossPerSecond: 2
-  happinessGainPerSecond: 2
-  age: 0
+  price: 100
+  iconRenderer: {fileID: 0}
+  statusIcons: {fileID: 0}
+  iconPadding: 0.15
+  iconSize: 1
+  fishStatus:
+    baseSize: 1
+    nutrition: 25
+    youngSizeMultiplier: 0.5
+    fishSpeed: 1.5
+    minRetargetTime: 2
+    maxRetargetTime: 5
+    startFullness: 100
+    fullnessDecayPerSecond: 2
+    wanderThreshold: 70
+    eatDistance: 0.2
+    happiness: 0
+    unhappyBelow: 50
+    happyAbove: 70
+    happinessLossPerSecond: 2
+    happinessGainPerSecond: 2
+    fleeSpeedRatio: 0.9
+    fleeDistance: 5
+    fearMemoryTime: 0.5
+    detectionRadius: 3
+    breedHappiness: 90
+    breedCooldown: 30
+    breedDistance: 0.5
+    ageTime: 60
