@@ -15,7 +15,7 @@ MonoBehaviour:
   fishName: Red Swordtail
   sprite: {fileID: 3146969212575866831, guid: ca3e1019260853a4794a7ab649556127, type: 3}
   diet: 0
-  price: 100
+  price: 50
   iconRenderer: {fileID: 0}
   statusIcons: {fileID: 0}
   iconPadding: 0.15

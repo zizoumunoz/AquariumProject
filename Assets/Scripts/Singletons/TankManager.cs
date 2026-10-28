@@ -7,6 +7,7 @@ public class TankManager : MonoBehaviour
     public SpriteRenderer sr;
     public Transform fishRoot;
     public Transform decoRoot;
+    public Transform foodRoot;
     public static TankManager instance;
     public TankDatabase database;
     [SerializeField] private UITankController tankUIPrefab;
@@ -34,6 +35,10 @@ public class TankManager : MonoBehaviour
         foreach (Transform deco in decoRoot)
         {
             Destroy(deco.gameObject);
+        }
+        foreach (Transform food in foodRoot)
+        {
+            Destroy(food.gameObject);
         }
     }
     public void UpdateUI()
