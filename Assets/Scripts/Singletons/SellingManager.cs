@@ -13,7 +13,7 @@ public class SellingManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (click.pressed)
+        if (click.pressed && ScreenManager.instance.Empty())
         {
             Vector3 pos = Camera.main.ScreenToWorldPoint(mousePosition.value);
             pos.z = 0;
