@@ -12,7 +12,7 @@ public class MarketSlotUI : MonoBehaviour
 
     public event Action<FishSO> Bought;
 
-    private FishSO fish;
+    [SerializeField] private FishSO fish;
 
     private void Awake()
     {
@@ -22,12 +22,10 @@ public class MarketSlotUI : MonoBehaviour
     public void Set(FishSO so)
     {
         fish = so;
-        gameObject.SetActive(so != null);
-        if (so == null) return;
-
+        Debug.Log(transform.position);
         fishImage.sprite = so.sprite;
         nameLabel.text = so.fishName;
-        priceLabel.text = "$ " + so.price.ToString("N0");
+        priceLabel.text = "$" + so.price.ToString();
     }
 
     private void OnBuyClicked()

@@ -40,6 +40,7 @@ public class TankManager : MonoBehaviour
         {
             Destroy(food.gameObject);
         }
+        ScreenManager.instance.EmptyStack();
     }
     public void UpdateUI()
     {
