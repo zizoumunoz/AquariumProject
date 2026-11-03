@@ -1,27 +1,24 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class FishSpawner : MonoBehaviour
 {
-    [SerializeField] private MarketManager market;
+    public static FishSpawner instance;
     [SerializeField] private FishController fishPrefab;
     [SerializeField] private Transform fishRoot;
 
-    private void OnEnable()
+    private void Awake()
     {
-        market.FishPurchased += Spawn;
+        instance = this;
     }
-
-    private void OnDisable()
+    public void Spawn(FishSO so)
     {
-        market.FishPurchased -= Spawn;
+        FishController fish = Instantiate(fishPrefab, Vector2.zero, Quaternion.identity, fishRoot);
+        fish.Init(so, new FishStatus(() => Random.Range(0.8f, 1.2f)));
     }
-
-    private void Spawn(FishSO so)
+    public void SpawnChild(FishSO so, FishStatus newStatus, List<TraitSO> traits, Vector2 pos)
     {
-        Vector3 pos = Camera.main.transform.position;
-        pos.z = 0f;
-
         FishController fish = Instantiate(fishPrefab, pos, Quaternion.identity, fishRoot);
-        fish.Init(so, new FishStatus(1));
+        fish.Init(so, newStatus, traits);
     }
 }

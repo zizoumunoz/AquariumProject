@@ -408,13 +408,13 @@ public class FishController : MonoBehaviour
         List<TraitSO> childTraits = InheritTraits(mate);
         Vector3 pos = (transform.position + mate.transform.position) * 0.5f;
 
-        GameObject go = Instantiate(gameObject, pos, Quaternion.identity);
-        FishController child = go.GetComponent<FishController>();
-        child.Init(data, statusMultiplier, childTraits);
-        child.SetAge(Age.Young);
+        FishSpawner.instance.SpawnChild(data,
+            new FishStatus((float x, float y) => Random.Range(Mathf.Min(x, y) - 0.2f, Mathf.Max(x, y) + 0.2f),
+            statusMultiplier, mate.statusMultiplier),
+            childTraits, pos);
 
         breedTimer = data.fishStatus.breedCooldown * statusMultiplier.breedCooldown;
-        mate.breedTimer = data.fishStatus.breedCooldown * statusMultiplier.breedCooldown;
+        mate.breedTimer = data.fishStatus.breedCooldown * mate.statusMultiplier.breedCooldown;
     }
 
     private List<TraitSO> InheritTraits(FishController mate)

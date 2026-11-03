@@ -22,7 +22,6 @@ public class MarketSlotUI : MonoBehaviour
     public void Set(FishSO so)
     {
         fish = so;
-        Debug.Log(transform.position);
         fishImage.sprite = so.sprite;
         nameLabel.text = so.fishName;
         priceLabel.text = "$" + so.price.ToString();

@@ -13,7 +13,6 @@ public class InputManager : MonoBehaviour
     {
         foreach (BoolInput boolInput in bools)
         {
-            Debug.Log(boolInput.actionName);
             if (actionName == boolInput.actionName)
             {
                 return boolInput;

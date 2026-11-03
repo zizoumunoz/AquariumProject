@@ -9,8 +9,6 @@ public class MarketManager : MonoBehaviour
     [SerializeField] private float refreshInterval = 60f;
     [SerializeField] private int offerCount = 6;
 
-    public event Action<FishSO> FishPurchased;
-
     [SerializeField] private MarketPanel panel;
     private float lastRefreshTime = float.NegativeInfinity;
 
@@ -52,10 +50,10 @@ public class MarketManager : MonoBehaviour
 
     private void TryBuy(FishSO fish)
     {
-        int price = (int)fish.price;
+        int price = fish.price;
         if (MoneyDisplay.Instance.money < price) return;
 
         MoneyDisplay.Instance.AddMoney(-price);
-        if (FishPurchased != null) FishPurchased(fish);
+        FishSpawner.instance.Spawn(fish);
     }
 }
