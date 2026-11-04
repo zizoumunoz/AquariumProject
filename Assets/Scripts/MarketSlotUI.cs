@@ -8,7 +8,6 @@ public class MarketSlotUI : MonoBehaviour
     [SerializeField] private Image fishImage;
     [SerializeField] private TMP_Text nameLabel;
     [SerializeField] private TMP_Text priceLabel;
-    [SerializeField] private TMP_Text expensivePriceLabel;
     [SerializeField] private Button buyButton;
     [SerializeField] private FishSO fish;
     [SerializeField] private Transform starHolder;
@@ -29,7 +28,6 @@ public class MarketSlotUI : MonoBehaviour
         fishImage.sprite = so.sprite;
         nameLabel.text = so.fishName;
         priceLabel.text = "$" + so.price;
-        expensivePriceLabel.text = "$" + so.price;
         foreach (Transform star in starHolder)
         {
             star.gameObject.SetActive(false);
@@ -50,12 +48,12 @@ public class MarketSlotUI : MonoBehaviour
         if (money >= fish.price)
         {
             buyButton.interactable = true;
-            expensivePriceLabel.gameObject.SetActive(false);
+            priceLabel.color = Color.black;
         }
         else
         {
             buyButton.interactable = false;
-            expensivePriceLabel.gameObject.SetActive(true);
+            priceLabel.color = Color.red;
         }
     }
 }
