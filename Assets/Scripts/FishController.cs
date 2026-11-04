@@ -229,7 +229,7 @@ public class FishController : MonoBehaviour, IMotionSource
 
     private void SeekFood()
     {
-        Food food = null;
+        IFoodSource food = null;
         FishController prey = null;
 
         food = FindNearestFood();
@@ -241,19 +241,16 @@ public class FishController : MonoBehaviour, IMotionSource
             return;
         }
 
-        float dFood = food != null ? Vector2.Distance(transform.position, food.transform.position) : float.MaxValue;
+        float dFood = food != null ? Vector2.Distance(transform.position, food.Position) : float.MaxValue;
         float dPrey = prey != null ? Vector2.Distance(transform.position, prey.transform.position) : float.MaxValue;
-        float eatDist = data.fishStatus.eatDistance * statusMultiplier.eatDistance* Size;
+        float eatDist = data.fishStatus.eatDistance * statusMultiplier.eatDistance * Size;
 
         if (dFood <= dPrey)
         {
-            MoveTo(food.transform.position, CurrentSpeed);
+            MoveTo(food.Position, CurrentSpeed);
 
             if (dFood <= eatDist)
-            {
-                fullness = Mathf.Min(100f, fullness + food.FullnessRestore);
-                Destroy(food.gameObject);
-            }
+                fullness = Mathf.Min(100f, fullness + food.Eat());
         }
         else
         {
@@ -268,19 +265,16 @@ public class FishController : MonoBehaviour, IMotionSource
         }
     }
 
-    private Food FindNearestFood()
+    private IFoodSource FindNearestFood()
     {
-        GameObject[] foods = GameObject.FindGameObjectsWithTag("Food");
-        Food nearest = null;
+        IFoodSource nearest = null;
         float best = float.MaxValue;
 
-        foreach (GameObject f in foods)
+        foreach (IFoodSource food in FoodSources.All)
         {
-            Food food = f.GetComponent<Food>();
-            if (food == null) continue;
-            if (!CanEatFood(food)) continue;
+            if (!food.IsAvailable || !CanEatFood(food)) continue;
 
-            float d = Vector2.Distance(transform.position, f.transform.position);
+            float d = Vector2.Distance(transform.position, food.Position);
             if (d < best)
             {
                 best = d;
@@ -290,14 +284,7 @@ public class FishController : MonoBehaviour, IMotionSource
         return nearest;
     }
 
-    private bool CanEat(FishController other)
-    {
-        if (other == null || other == this || other.data == null) return false;
-        if (other.data.diet == FishDiet.Carnivore) return false;
-        return other.Size <= Size;
-    }
-
-    private bool CanEatFood(Food food)
+    private bool CanEatFood(IFoodSource food)
     {
         switch (data.diet)
         {
@@ -306,6 +293,14 @@ public class FishController : MonoBehaviour, IMotionSource
             default: return true;
         }
     }
+
+    private bool CanEat(FishController other)
+    {
+        if (other == null || other == this || other.data == null) return false;
+        if (other.data.diet == FishDiet.Carnivore) return false;
+        return other.Size <= Size;
+    }
+
     private FishController FindNearestPrey()
     {
         FishController nearest = null;
