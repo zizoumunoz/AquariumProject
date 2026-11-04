@@ -5,24 +5,17 @@ public class SceneFlow : MonoBehaviour
 {
     public void NewGame()
     {
-        //TODO delete save
-        // CHANGE BACK TO ORIGINAL BEFORE MERGE
-        //ChangeScene("GameScene");
-        ChangeScene("Z_GameScene");
+        ChangeScene("GameScene");
     }
     public void LoadGame()
     {
-        //TODO load save
-
-        //ChangeScene("GameScene");
-        ChangeScene("Z_GameScene");
+        ChangeScene("GameScene");
     }
     public void GoToMainMenu()
     {
         //TODO save game
 
-        ChangeScene("Z_MainMenu");
-        //ChangeScene("MainMenu");
+        ChangeScene("MainMenu");
     }
 
     public void ToggleSettings(GameObject settingsGO)
