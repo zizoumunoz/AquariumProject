@@ -14,6 +14,13 @@ public enum Age
     Adult
 }
 
+public enum Rarity
+{
+    Common,
+    Rare,
+    Legendary,
+}
+
 
 [CreateAssetMenu(fileName = "FishSO", menuName = "Scriptable Objects/FishSO")]
 public class FishSO : ScriptableObject
@@ -22,6 +29,7 @@ public class FishSO : ScriptableObject
     public string fishName;
     public Sprite sprite;
     public FishDiet diet = FishDiet.Herbivore;
+    public Rarity rarity = Rarity.Common;
     public int price = 50;
 
     [Header("Icon")]
