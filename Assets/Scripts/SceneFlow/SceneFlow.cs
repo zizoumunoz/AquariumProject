@@ -5,14 +5,10 @@ public class SceneFlow : MonoBehaviour
 {
     public void NewGame()
     {
-        //TODO delete save
-
         ChangeScene("GameScene");
     }
     public void LoadGame()
     {
-        //TODO load save
-
         ChangeScene("GameScene");
     }
     public void GoToMainMenu()
