@@ -41,12 +41,7 @@ public class TankManager : MonoBehaviour
         }
         foreach (SaveDecoration saveDecoration in tank.decorations)
         {
-            GameObject newDeco = Instantiate(saveDecoration.baseDecoration.prefab, decoRoot);
-            newDeco.transform.position = saveDecoration.pos;
-            foreach (MonoBehaviour component in newDeco.GetComponents<MonoBehaviour>())
-            {
-                component.enabled = true;
-            }
+            DecorationSpawner.instance.Spawn(saveDecoration.baseDecoration, saveDecoration.pos);
         }
         foreach (Transform food in foodRoot)
         {
@@ -91,6 +86,7 @@ public class TankManager : MonoBehaviour
             };
             database.activeTank.fishes.Add(saveFish);
         }
+        database.activeTank.decorations.Clear();
         foreach (Transform deco in decoRoot)
         {
             DecorationSOHolder holder = deco.GetComponent<DecorationSOHolder>();
