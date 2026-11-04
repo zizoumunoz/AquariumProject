@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 4913327124905202694}
   - component: {fileID: 6105630987163528891}
   - component: {fileID: 2219912794423391511}
+  - component: {fileID: 8563355856941760247}
   m_Layer: 0
   m_Name: MeatFeeder
   m_TagString: Untagged
@@ -133,7 +134,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5844645459085424257}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3df7b04bcb1ebd4ab90350bbbd4d9d8, type: 3}
   m_Name: 
@@ -145,7 +146,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5844645459085424257}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01b28477cbda3f24981b072f79443fd4, type: 3}
   m_Name: 
@@ -153,3 +154,19 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: c982fec6f5a4750468a1804b79fc0e94, type: 2}
   foodPrefab: {fileID: 3017575449951369872, guid: dd3adf3d05194cf46a530d55975c74d3, type: 3}
   dropPoint: {fileID: 825968534706764250}
+  foodRoot: {fileID: 0}
+--- !u!114 &8563355856941760247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5844645459085424257}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7fdb42c3ae600f4ba07e87d50cc7f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallSnap
+  direction: {x: -1, y: 0}
+  wallTag: Wall
+  searchDistance: 30

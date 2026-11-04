@@ -14,7 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecorationsDatabaseSO
   decorations:
   - {fileID: 11400000, guid: 2a3a9aa356d11cb4eab615c956c5ee65, type: 2}
-  - {fileID: 11400000, guid: a394d35375ee51a43857a6773e49738c, type: 2}
-  - {fileID: 11400000, guid: 943211f0d23a47046bbc786995618480, type: 2}
-  - {fileID: 11400000, guid: e2b2e05ce1f398e4c993debc07bc646a, type: 2}
-  - {fileID: 11400000, guid: 51769b5bed50f764a890811e489bf2e2, type: 2}
+  - {fileID: 11400000, guid: 0b2c3f47b7bacd84b9686c51073bb99d, type: 2}
+  - {fileID: 11400000, guid: 954ceb6a6a69d0743a7bc07e31685b35, type: 2}

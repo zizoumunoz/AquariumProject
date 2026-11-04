@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5899ec8f7c780e4790408adaacbb842, type: 3}
-  m_Name: Snail 2
+  m_Name: Kelp
   m_EditorClassIdentifier: Assembly-CSharp::DecorationSO
-  prefab: {fileID: 6797518887898634026, guid: 62006cab018abbc4180c4cf6d17449e0, type: 3}
-  icon: {fileID: 585679349008182817, guid: 0a9c5ea573a5001448f05ca01488906c, type: 3}
+  prefab: {fileID: 7691902860742860120, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
+  sprite: {fileID: 954295811239133582, guid: 42b44fdf6f1cae447ac3ff1a1d7df1fc, type: 3}
   currentAttibutes:
   - 0
   - 0
@@ -21,4 +21,5 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  price: 100
+  description: Feed Herbivores
+  price: 300
