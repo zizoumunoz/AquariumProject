@@ -174,7 +174,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -3, y: 340}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &141671534105996688
 MonoBehaviour:
@@ -368,7 +368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1392990742489694111
 RectTransform:
   m_ObjectHideFlags: 0
@@ -463,7 +463,7 @@ RectTransform:
   m_Father: {fileID: 3098239793604731491}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -672,9 +672,9 @@ RectTransform:
   m_Father: {fileID: 6912706889257732900}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &4457061606149777481
 CanvasRenderer:
@@ -847,7 +847,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3526762963694615459}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ScreenManager, Assembly-CSharp
+        m_MethodName: OpenScreen
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7248838454679449606}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5652590300091675859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,10 +1019,10 @@ RectTransform:
   - {fileID: 4514751949679192032}
   m_Father: {fileID: 2036736383612496271}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 845, y: -170}
+  m_SizeDelta: {x: 510, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3702957272349730722
 CanvasRenderer:
@@ -1216,7 +1228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627312619457469312, guid: 8950258c325cbe14094a7a6ce99ce6b1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1627312619457469312, guid: 8950258c325cbe14094a7a6ce99ce6b1, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1224,15 +1236,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627312619457469312, guid: 8950258c325cbe14094a7a6ce99ce6b1, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1627312619457469312, guid: 8950258c325cbe14094a7a6ce99ce6b1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 510
       objectReference: {fileID: 0}
     - target: {fileID: 1627312619457469312, guid: 8950258c325cbe14094a7a6ce99ce6b1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1627312619457469312, guid: 8950258c325cbe14094a7a6ce99ce6b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1264,11 +1276,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627312619457469312, guid: 8950258c325cbe14094a7a6ce99ce6b1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 275
       objectReference: {fileID: 0}
     - target: {fileID: 1627312619457469312, guid: 8950258c325cbe14094a7a6ce99ce6b1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -170
       objectReference: {fileID: 0}
     - target: {fileID: 1627312619457469312, guid: 8950258c325cbe14094a7a6ce99ce6b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1304,6 +1316,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1392990742489694111}
     m_Modifications:
+    - target: {fileID: 989536658301716625, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 7692977151064577536}
+    - target: {fileID: 989536658301716625, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3218839938923046422}
+    - target: {fileID: 989536658301716625, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuyTank
+      objectReference: {fileID: 0}
+    - target: {fileID: 989536658301716625, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BuyTankButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424074801736260425, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424074801736260425, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424074801736260425, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3218839938923046422}
+    - target: {fileID: 1424074801736260425, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424074801736260425, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424074801736260425, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BuyTankButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424074801736260425, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423064963985591087, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2563578155571799183, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1384,17 +1444,209 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3264386492151108394, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3690789763025697082, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3690789763025697082, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3690789763025697082, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185382889387030028, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185382889387030028, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185382889387030028, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024717095490845358, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024717095490845358, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024717095490845358, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024717095490845358, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6757622214336371880, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
       propertyPath: m_Name
       value: TankShop
       objectReference: {fileID: 0}
+    - target: {fileID: 6757622214336371880, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725922797947558876, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725922797947558876, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725922797947558876, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3218839938923046422}
+    - target: {fileID: 7725922797947558876, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725922797947558876, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725922797947558876, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BuyTankButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725922797947558876, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9202795729104757522, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9202795729104757522, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9202795729104757522, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6757622214336371880, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3218839938923046422}
   m_SourcePrefab: {fileID: 100100000, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+--- !u!114 &237457276590070434 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4185382889387030028, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+  m_PrefabInstance: {fileID: 4133998461346573486}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &749488760476505492 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3690789763025697082, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+  m_PrefabInstance: {fileID: 4133998461346573486}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!224 &1931271775683610657 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2563578155571799183, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
   m_PrefabInstance: {fileID: 4133998461346573486}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3070819214160951271 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1424074801736260425, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+  m_PrefabInstance: {fileID: 4133998461346573486}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!114 &3811562522970940479 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 989536658301716625, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+  m_PrefabInstance: {fileID: 4133998461346573486}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!114 &5784119419535357375 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7573849808960821521, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+  m_PrefabInstance: {fileID: 4133998461346573486}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!114 &5938300034588309362 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7725922797947558876, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+  m_PrefabInstance: {fileID: 4133998461346573486}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!1 &7248838454679449606 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6757622214336371880, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+  m_PrefabInstance: {fileID: 4133998461346573486}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3218839938923046422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7248838454679449606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff5107c1becd7804dac4c9d54df00c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuyTankButton
+  buyButton: {fileID: 3811562522970940479}
+  leftButton: {fileID: 5938300034588309362}
+  rightButton: {fileID: 3070819214160951271}
+  tankName: {fileID: 237457276590070434}
+  tankPrice: {fileID: 749488760476505492}
+  tankSprite: {fileID: 5784119419535357375}
+  database: {fileID: 11400000, guid: ad695cf2b600dd24f959458957cb25d8, type: 2}
+--- !u!114 &7692977151064577536 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6024717095490845358, guid: 106d3a0d15316804eb4db674daee75dc, type: 3}
+  m_PrefabInstance: {fileID: 4133998461346573486}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image

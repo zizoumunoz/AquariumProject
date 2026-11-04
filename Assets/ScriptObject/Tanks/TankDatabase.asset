@@ -12,47 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d8bf20aad3a474095e3663be187b91, type: 3}
   m_Name: TankDatabase
   m_EditorClassIdentifier: Assembly-CSharp::TankDatabase
+  tankSOs:
+  - {fileID: 11400000, guid: c3030ecbfaff8994a8ef82f0cc01b6b4, type: 2}
+  - {fileID: 11400000, guid: e5a3b43a19b013d4584729ff27261bdd, type: 2}
+  - {fileID: 11400000, guid: 7c5c63b716edc6b4db0973257fe8bb10, type: 2}
+  - {fileID: 11400000, guid: 88a9a72e5a890174e8769e315ecf87d7, type: 2}
   tanks:
   - fishes: []
     decorations: []
     type: 0
-    currentAttibutes:
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    maxFish: 8
-  - fishes:
-    - baseFish: {fileID: 11400000, guid: 1e58052344a642a469eb469f2c70fc0a, type: 2}
-      multiplier:
-        baseSize: 1
-        nutrition: 1
-        youngSizeMultiplier: 1
-        fishSpeed: 1
-        minRetargetTime: 1
-        maxRetargetTime: 1
-        startFullness: 1
-        fullnessDecayPerSecond: 1
-        wanderThreshold: 1
-        eatDistance: 1
-        happiness: 1
-        unhappyBelow: 1
-        happyAbove: 1
-        happinessLossPerSecond: 1
-        happinessGainPerSecond: 1
-        fleeSpeedRatio: 1
-        fleeDistance: 1
-        fearMemoryTime: 1
-        detectionRadius: 1
-        breedHappiness: 1
-        breedCooldown: 1
-        breedDistance: 1
-        ageTime: 1
-      traits: []
-    decorations: []
-    type: 3
     currentAttibutes:
     - 0
     - 0
@@ -73,8 +41,3 @@ MonoBehaviour:
     - 0
     - 0
     maxFish: 8
-  backgrounds:
-  - {fileID: 4109339757902598570, guid: c6cac17aade00d144814dd43b3382c15, type: 3}
-  - {fileID: 6287959052576420986, guid: 1d0c19160aba9604a8df2c58682d61bc, type: 3}
-  - {fileID: -1801145061283202183, guid: 33f3a7f0177dd3b4596bb946ecdca116, type: 3}
-  - {fileID: -5804196264385546682, guid: e039bccde33bf5f4c9c642d3137b9c6c, type: 3}

@@ -6,6 +6,7 @@ using UnityEngine;
 public class TankSO : ScriptableObject
 {
     public TankType type;
+    public Sprite sprite;
     public float[] startAttributes = new float[Enum.GetValues(typeof(TankAttribute)).Length];
     public int maxFish = 8;
     public int price = 1;

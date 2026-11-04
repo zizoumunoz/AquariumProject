@@ -511,7 +511,6 @@ MonoBehaviour:
   fishImage: {fileID: 7043952806807602929}
   nameLabel: {fileID: 502443742267379664}
   priceLabel: {fileID: 1522008361544973964}
-  expensivePriceLabel: {fileID: 7119320777144695868}
   buyButton: {fileID: 9149974724141177678}
   fish: {fileID: 0}
   starHolder: {fileID: 8789009543203605513}
@@ -753,7 +752,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.25490198}
     m_PressedColor: {r: 0, g: 0, b: 0, a: 0.43137255}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0}
-    m_DisabledColor: {r: 0, g: 0, b: 0, a: 1}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 0.3529412}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
