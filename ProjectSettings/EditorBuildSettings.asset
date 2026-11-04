@@ -11,5 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameplayScene/GameScene.unity
     guid: 5dedbcda7fc393d4db7621df7d62a7f9
+  - enabled: 1
+    path: Assets/Scenes/DevFolders/Zinadine/Z_MainMenu.unity
+    guid: d7bd907b18d7f4d4f82f614c96d81f8b
+  - enabled: 1
+    path: Assets/Scenes/DevFolders/Zinadine/Z_GameScene.unity
+    guid: b0e802d7dd726c14da4f5819df68820b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
