@@ -4,8 +4,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "FishDatabase", menuName = "Scriptable Objects/FishDatabase")]
 public class FishDatabaseSO : ScriptableObject
 {
-    public List<FishSO> fishes = new List<FishSO>();
-    public List<TraitSO> traits = new List<TraitSO>();
+    public List<FishSO> fishes = new();
+    public List<TraitSO> traits = new();
     public StatusIconSO statusIcons;
     public FishSO GetByName(string name)
     {
@@ -20,8 +20,8 @@ public class FishDatabaseSO : ScriptableObject
 
     public List<TraitSO> GetRandomTraits(int count)
     {
-        List<TraitSO> pool = new List<TraitSO>(traits);
-        List<TraitSO> result = new List<TraitSO>();
+        List<TraitSO> pool = new(traits);
+        List<TraitSO> result = new();
 
         for (int i = 0; i < count && pool.Count > 0; i++)
         {

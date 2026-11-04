@@ -9,7 +9,7 @@ public class GroundWalker : MonoBehaviour, IMotionSource
 
     [Header("Ground")]
     [SerializeField] private string groundTag = "Bottom";
-    [SerializeField] private float groundSearchDistance = 20f;
+    [SerializeField] private float groundSearchDistance = 40f;
 
     private Camera cam;
     private SpriteRenderer sr;
@@ -54,7 +54,6 @@ public class GroundWalker : MonoBehaviour, IMotionSource
 
     private void SnapToGround()
     {
-        float feetOffset = transform.position.y - sr.bounds.min.y;
         RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, Vector2.down, groundSearchDistance);
 
         foreach (RaycastHit2D hit in hits)
@@ -62,7 +61,7 @@ public class GroundWalker : MonoBehaviour, IMotionSource
             if (!hit.collider.CompareTag(groundTag)) continue;
 
             Vector3 pos = transform.position;
-            pos.y = hit.point.y + feetOffset;
+            pos.y = hit.point.y + transform.position.y - sr.bounds.min.y;
             transform.position = pos;
             return;
         }
