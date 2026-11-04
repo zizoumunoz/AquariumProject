@@ -644,11 +644,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4468163488679197710, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
   m_PrefabInstance: {fileID: 261200428}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &261200430 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6217947804156848, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
+--- !u!114 &261200431 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8531978300606475536, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
   m_PrefabInstance: {fileID: 261200428}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad017752896f258479d14fc0c07ee1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlbumPanel
 --- !u!1 &413210212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,16 +1539,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
---- !u!1 &866579679 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6217947804156848, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
-  m_PrefabInstance: {fileID: 4258697535949567637}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &866579680 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4468163488679197710, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
   m_PrefabInstance: {fileID: 4258697535949567637}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &866579681 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8531978300606475536, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
+  m_PrefabInstance: {fileID: 4258697535949567637}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad017752896f258479d14fc0c07ee1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlbumPanel
 --- !u!1001 &880000464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2867,11 +2879,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4468163488679197710, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
   m_PrefabInstance: {fileID: 1209804599}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1209804601 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6217947804156848, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
+--- !u!114 &1209804602 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8531978300606475536, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
   m_PrefabInstance: {fileID: 1209804599}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad017752896f258479d14fc0c07ee1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlbumPanel
 --- !u!1 &1249141096
 GameObject:
   m_ObjectHideFlags: 0
@@ -3111,11 +3129,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4468163488679197710, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
   m_PrefabInstance: {fileID: 1254312248}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1254312250 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6217947804156848, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
+--- !u!114 &1254312251 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8531978300606475536, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
   m_PrefabInstance: {fileID: 1254312248}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad017752896f258479d14fc0c07ee1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlbumPanel
 --- !u!1 &1257826634
 GameObject:
   m_ObjectHideFlags: 0
@@ -3451,7 +3475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1294910538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3464,16 +3488,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961f76dbc79465948a220baa15a9f02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AlbumScript
-  _fishDatabase: {fileID: 0}
-  _currentPage: 0
+  _fishDatabase: {fileID: 11400000, guid: b22b458589e56d94597e03bc34f1210b, type: 2}
+  _currentPage: 1
   _pageNumber: {fileID: 617489689}
   _albumPanels:
-  - {fileID: 866579679}
-  - {fileID: 1699393401}
-  - {fileID: 1582488896}
-  - {fileID: 1209804601}
-  - {fileID: 1254312250}
-  - {fileID: 261200430}
+  - {fileID: 866579681}
+  - {fileID: 1699393402}
+  - {fileID: 1582488897}
+  - {fileID: 1209804602}
+  - {fileID: 1254312251}
+  - {fileID: 261200431}
 --- !u!114 &1294910539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3684,7 +3708,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 197, y: 277}
+  m_AnchoredPosition: {x: 434.75, y: 253}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1355316221
@@ -4402,11 +4426,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4468163488679197710, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
   m_PrefabInstance: {fileID: 1582488894}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1582488896 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6217947804156848, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
+--- !u!114 &1582488897 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8531978300606475536, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
   m_PrefabInstance: {fileID: 1582488894}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad017752896f258479d14fc0c07ee1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlbumPanel
 --- !u!1 &1597512081
 GameObject:
   m_ObjectHideFlags: 0
@@ -4859,11 +4889,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4468163488679197710, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
   m_PrefabInstance: {fileID: 1699393399}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1699393401 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6217947804156848, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
+--- !u!114 &1699393402 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8531978300606475536, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
   m_PrefabInstance: {fileID: 1699393399}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad017752896f258479d14fc0c07ee1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlbumPanel
 --- !u!1 &1701980805
 GameObject:
   m_ObjectHideFlags: 0
@@ -6421,6 +6457,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8531978300606475536, guid: effe21626bc1fc2409f91cb59ea8bdb6, type: 3}
+      propertyPath: _fish
+      value: 
+      objectReference: {fileID: 11400000, guid: 4d860ee4cf3738646bcda2b4dc7e1b88, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

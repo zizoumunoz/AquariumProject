@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4468163488679197710}
   - component: {fileID: 3821519838385018329}
   - component: {fileID: 1979589659662324387}
+  - component: {fileID: 8531978300606475536}
   m_Layer: 5
   m_Name: AlbumPanel
   m_TagString: Untagged
@@ -77,6 +78,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8531978300606475536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6217947804156848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad017752896f258479d14fc0c07ee1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlbumPanel
+  _fishImage: {fileID: 5738937940831457697}
+  _fishName: {fileID: 2018024135433781356}
+  _fish: {fileID: 0}
+  _undiscoveredSprite: {fileID: 8403274607910343662, guid: 3a001500638a96c449712be6c8801b8f, type: 3}
 --- !u!1 &5846242595188236979
 GameObject:
   m_ObjectHideFlags: 0
