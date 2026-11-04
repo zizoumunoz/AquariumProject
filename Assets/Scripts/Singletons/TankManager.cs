@@ -23,7 +23,9 @@ public class TankManager : MonoBehaviour
     public void LoadNewTank(Tank tank)
     {
         sr.sprite = tankSprites[(int)tank.type];
-        //TODO save fish and decoration on pc
+
+        SaveTankData();
+
         foreach (Transform fish in fishRoot)
         {
             Destroy(fish.gameObject);
@@ -36,6 +38,15 @@ public class TankManager : MonoBehaviour
         foreach (Transform deco in decoRoot)
         {
             Destroy(deco.gameObject);
+        }
+        foreach (SaveDecoration saveDecoration in tank.decorations)
+        {
+            GameObject newDeco = Instantiate(saveDecoration.baseDecoration.prefab, decoRoot);
+            newDeco.transform.position = saveDecoration.pos;
+            foreach (MonoBehaviour component in newDeco.GetComponents<MonoBehaviour>())
+            {
+                component.enabled = true;
+            }
         }
         foreach (Transform food in foodRoot)
         {
@@ -79,6 +90,16 @@ public class TankManager : MonoBehaviour
                 growTimer = controller.growTimer
             };
             database.activeTank.fishes.Add(saveFish);
+        }
+        foreach (Transform deco in decoRoot)
+        {
+            DecorationSOHolder holder = deco.GetComponent<DecorationSOHolder>();
+            SaveDecoration saveDeco = new()
+            {
+                baseDecoration = holder.so,
+                pos = deco.position
+            };
+            database.activeTank.decorations.Add(saveDeco);
         }
     }
 }

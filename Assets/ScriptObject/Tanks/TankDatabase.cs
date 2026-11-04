@@ -20,7 +20,7 @@ public class Tank
         maxFish = 8;
     }
     public List<SaveFish> fishes = new();
-    public List<DecorationSO> decorations = new();
+    public List<SaveDecoration> decorations = new();
     public TankType type = TankType.Fresh;
     public float[] currentAttibutes = new float[Enum.GetValues(typeof(TankAttribute)).Length];
     public float maxFish = 8;

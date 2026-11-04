@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Snail
   m_EditorClassIdentifier: Assembly-CSharp::DecorationSO
   prefab: {fileID: 6797518887898634026, guid: 62006cab018abbc4180c4cf6d17449e0, type: 3}
-  icon: {fileID: 585679349008182817, guid: 0a9c5ea573a5001448f05ca01488906c, type: 3}
+  sprite: {fileID: 585679349008182817, guid: 0a9c5ea573a5001448f05ca01488906c, type: 3}
   currentAttibutes:
   - 0
   - 0
@@ -21,4 +21,5 @@ MonoBehaviour:
   - 0
   - 0
   - 0
+  description: This piece of shit lowkey eats shit
   price: 100
