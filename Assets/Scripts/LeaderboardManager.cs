@@ -93,6 +93,9 @@ public class LeaderboardManager : MonoBehaviour
 
         if (closeButton != null)
             closeButton.onClick.AddListener(CloseLeaderboard);
+
+        // Start with the leaderboard closed.
+        CloseLeaderboard();
     }
 
     private void OnEnable()
