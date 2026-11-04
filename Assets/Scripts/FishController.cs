@@ -55,7 +55,6 @@ public class FishController : MonoBehaviour, IMotionSource
     public bool IsHungry { get { return fullness <= data.fishStatus.wanderThreshold * statusMultiplier.wanderThreshold; } }
     public float PoopInterval { get { return data.fishStatus.poopInterval * statusMultiplier.poopInterval; } }
 
-    public void Init(FishSO so, FishStatus status, List<TraitSO> newTraits = null)
     public void Init(FishSO so, FishStatus status, List<TraitSO> newTraits = null, float growTimer = -1f)
     {
         data = so;
