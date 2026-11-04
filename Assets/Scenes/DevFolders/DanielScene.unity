@@ -663,6 +663,34 @@ MonoBehaviour:
   foodToSpawn: {fileID: 11400000, guid: be5e7a045c7a0004aad01f9231eb47f9, type: 2}
   foodRoot: {fileID: 253092685}
   topOffset: 0.2
+  click:
+    action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 9a356e5f-167b-4814-8bdf-7f8502f0fc83
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+      m_Priority: 0
+    actionName: 
+    pressed: 0
+    released: 0
+    held: 0
+  mousePosition:
+    action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 3d11a73e-e439-46d6-b062-923c185e31e8
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+      m_Priority: 0
+    actionName: 
+    value: {x: 0, y: 0}
 --- !u!4 &1075362268
 Transform:
   m_ObjectHideFlags: 0
@@ -690,7 +718,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ddefdecf74e498448f43e053d232654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishSpawner
-  market: {fileID: 1075362270}
   fishPrefab: {fileID: 1011413437108166273, guid: 7834d18013485a4409663d4ddbaa3ca9, type: 3}
   fishRoot: {fileID: 253092685}
 --- !u!114 &1075362270
@@ -706,10 +733,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MarketManager
   database: {fileID: 11400000, guid: b22b458589e56d94597e03bc34f1210b, type: 2}
-  panelPrefab: {fileID: 7415983154459104149}
-  canvasRoot: {fileID: 906378743}
   refreshInterval: 60
   offerCount: 6
+  panel: {fileID: 0}
 --- !u!114 &1075362271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1195,6 +1221,7 @@ MonoBehaviour:
   - {fileID: -7574233937097828409, guid: 0a9c5ea573a5001448f05ca01488906c, type: 3}
   - {fileID: -1243129457217457053, guid: 0a9c5ea573a5001448f05ca01488906c, type: 3}
   framesPerSecond: 3
+  randomStartFrame: 0
 --- !u!114 &1560662698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1678,6 +1705,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PoopSpawner
   poopPrefab: {fileID: 1731739461456231715, guid: 2599e366b56728a4b806376897b6b7ed, type: 3}
   poopRoot: {fileID: 983513901}
+--- !u!1001 &593563979096386952
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1417295932948774260, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417295932948774260, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417295932948774260, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417295932948774260, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417295932948774260, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417295932948774260, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417295932948774260, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417295932948774260, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417295932948774260, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417295932948774260, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4805278927558220777, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691902860742860120, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
+      propertyPath: m_Name
+      value: Kelp
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 78cb7d43e6c240c4e822dc597795b878, type: 3}
 --- !u!1001 &7415983154459104148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1935,17 +2023,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e5f7ea710a96ab4386daae4a5ef0fae, type: 3}
---- !u!114 &7415983154459104149 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7075784436147360760, guid: 7e5f7ea710a96ab4386daae4a5ef0fae, type: 3}
-  m_PrefabInstance: {fileID: 7415983154459104148}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6cd8ef2590aded4eb89ec76d70d2618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MarketPanel
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1970,3 +2047,4 @@ SceneRoots:
   - {fileID: 2066991288}
   - {fileID: 983513901}
   - {fileID: 1560662696}
+  - {fileID: 593563979096386952}

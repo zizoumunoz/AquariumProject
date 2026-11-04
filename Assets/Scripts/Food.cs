@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Food : MonoBehaviour
+public class Food : MonoBehaviour, IFoodSource
 {
     [SerializeField] private FoodSO data;
 
@@ -21,6 +21,15 @@ public class Food : MonoBehaviour
     public FoodType Type { get { return data.foodType; } }
     public float Weight { get { return data.weight; } }
 
+    public bool IsAvailable { get { return true; } }
+    public Vector2 Position { get { return transform.position; } }
+
+    public float Eat()
+    {
+        Destroy(gameObject);
+        return FullnessRestore;
+    }
+
     public void Init(FoodSO so)
     {
         data = so;
@@ -37,6 +46,16 @@ public class Food : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void OnEnable()
+    {
+        FoodSources.Register(this);
+    }
+
+    private void OnDisable()
+    {
+        FoodSources.Unregister(this);
     }
 
     private void Start()

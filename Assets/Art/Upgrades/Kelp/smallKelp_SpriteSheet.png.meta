@@ -1,0 +1,964 @@
+fileFormatVersion: 2
+guid: 62c80ce9da663a44c98463d7ad0e1958
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6554122984980606518
+    second: smallKelp_SpriteSheet_0
+  - first:
+      213: 97812181852643552
+    second: smallKelp_SpriteSheet_1
+  - first:
+      213: 6592191719128676019
+    second: smallKelp_SpriteSheet_2
+  - first:
+      213: -5029497487119883010
+    second: smallKelp_SpriteSheet_3
+  - first:
+      213: -5266449805805557062
+    second: smallKelp_SpriteSheet_4
+  - first:
+      213: 4080059224831573875
+    second: smallKelp_SpriteSheet_5
+  - first:
+      213: 8893988105202879313
+    second: smallKelp_SpriteSheet_6
+  - first:
+      213: 8168746462389691271
+    second: smallKelp_SpriteSheet_7
+  - first:
+      213: -6801719986504807300
+    second: smallKelp_SpriteSheet_8
+  - first:
+      213: -4293936425844178877
+    second: smallKelp_SpriteSheet_9
+  - first:
+      213: 2941354880191310341
+    second: smallKelp_SpriteSheet_10
+  - first:
+      213: 1282792567709144482
+    second: smallKelp_SpriteSheet_11
+  - first:
+      213: -6307155229606277323
+    second: smallKelp_SpriteSheet_12
+  - first:
+      213: -2697379919853789638
+    second: smallKelp_SpriteSheet_13
+  - first:
+      213: 2470479938373092060
+    second: smallKelp_SpriteSheet_14
+  - first:
+      213: 3437189347386500581
+    second: smallKelp_SpriteSheet_15
+  - first:
+      213: 7089412062999104611
+    second: smallKelp_SpriteSheet_16
+  - first:
+      213: 2528198648466171183
+    second: smallKelp_SpriteSheet_17
+  - first:
+      213: 3993811401586131099
+    second: smallKelp_SpriteSheet_18
+  - first:
+      213: 5889951022215279405
+    second: smallKelp_SpriteSheet_19
+  - first:
+      213: 7808409434436085048
+    second: smallKelp_SpriteSheet_20
+  - first:
+      213: 4706320631896287284
+    second: smallKelp_SpriteSheet_21
+  - first:
+      213: 442811747428363640
+    second: smallKelp_SpriteSheet_22
+  - first:
+      213: -3830780987537122206
+    second: smallKelp_SpriteSheet_23
+  - first:
+      213: -6618733334110370882
+    second: smallKelp_SpriteSheet_24
+  - first:
+      213: -6107319914014186264
+    second: smallKelp_SpriteSheet_25
+  - first:
+      213: -460152507271598752
+    second: smallKelp_SpriteSheet_26
+  - first:
+      213: -2318855170800976558
+    second: smallKelp_SpriteSheet_27
+  - first:
+      213: 519454290047589003
+    second: smallKelp_SpriteSheet_28
+  - first:
+      213: -2715066865751201227
+    second: smallKelp_SpriteSheet_29
+  - first:
+      213: -6555040864441699975
+    second: smallKelp_SpriteSheet_30
+  - first:
+      213: -8201544292962073371
+    second: smallKelp_SpriteSheet_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 92
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63eedfd212ce4fa50800000000000000
+      internalID: 6554122984980606518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 126
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0680249af7b5100800000000000000
+      internalID: 97812181852643552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 0
+        width: 92
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6bfed017b2c7b50800000000000000
+      internalID: 6592191719128676019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 126
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4ef71dea2a33ab0800000000000000
+      internalID: -5029497487119883010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 91
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abae881fdcfc9e6b0800000000000000
+      internalID: -5266449805805557062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 126
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f34a67f384f9830800000000000000
+      internalID: 4080059224831573875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 0
+        width: 91
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15bca2f2f0bcd6b70800000000000000
+      internalID: 8893988105202879313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 126
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78367fea0a73d5170800000000000000
+      internalID: 8168746462389691271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 91
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7cc4b695bf6b91a0800000000000000
+      internalID: -6801719986504807300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 126
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3408279229fd864c0800000000000000
+      internalID: -4293936425844178877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 0
+        width: 91
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a2a28fdaac1d820800000000000000
+      internalID: 2941354880191310341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 126
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a590d63b056dc110800000000000000
+      internalID: 1282792567709144482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 0
+        width: 91
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f02144cbb7878a0800000000000000
+      internalID: -6307155229606277323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 126
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ed7d4114bf09ad0800000000000000
+      internalID: -2697379919853789638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 0
+        width: 91
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2057f2a68e84220800000000000000
+      internalID: 2470479938373092060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 126
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5aabc108953bf20800000000000000
+      internalID: 3437189347386500581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 92
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c4e61c5b6a26260800000000000000
+      internalID: 7089412062999104611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 126
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25e27b9647f51320800000000000000
+      internalID: 2528198648466171183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 0
+        width: 92
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9042734f4edc6730800000000000000
+      internalID: 3993811401586131099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 126
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2337979f3f4db150800000000000000
+      internalID: 5889951022215279405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 0
+        width: 93
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8352f58820b0d5c60800000000000000
+      internalID: 7808409434436085048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 126
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4382547fda5305140800000000000000
+      internalID: 4706320631896287284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 0
+        width: 93
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d66db20fe252600800000000000000
+      internalID: 442811747428363640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 126
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c9789fcf456dac0800000000000000
+      internalID: -3830780987537122206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 0
+        width: 93
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb38055a9198524a0800000000000000
+      internalID: -6618733334110370882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 126
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4e38b65e07e3ba0800000000000000
+      internalID: -6107319914014186264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 0
+        width: 93
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d229d8bb53d99f0800000000000000
+      internalID: -460152507271598752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 126
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d74da0285c1dfd0800000000000000
+      internalID: -2318855170800976558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 0
+        width: 93
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ad653bce8753700800000000000000
+      internalID: 519454290047589003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 126
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a67751215225ad0800000000000000
+      internalID: -2715066865751201227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 0
+        width: 93
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97178ca5011d705a0800000000000000
+      internalID: -6555040864441699975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smallKelp_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 126
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e40d505be24e2e80800000000000000
+      internalID: -8201544292962073371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      smallKelp_SpriteSheet_0: 6554122984980606518
+      smallKelp_SpriteSheet_1: 97812181852643552
+      smallKelp_SpriteSheet_10: 2941354880191310341
+      smallKelp_SpriteSheet_11: 1282792567709144482
+      smallKelp_SpriteSheet_12: -6307155229606277323
+      smallKelp_SpriteSheet_13: -2697379919853789638
+      smallKelp_SpriteSheet_14: 2470479938373092060
+      smallKelp_SpriteSheet_15: 3437189347386500581
+      smallKelp_SpriteSheet_16: 7089412062999104611
+      smallKelp_SpriteSheet_17: 2528198648466171183
+      smallKelp_SpriteSheet_18: 3993811401586131099
+      smallKelp_SpriteSheet_19: 5889951022215279405
+      smallKelp_SpriteSheet_2: 6592191719128676019
+      smallKelp_SpriteSheet_20: 7808409434436085048
+      smallKelp_SpriteSheet_21: 4706320631896287284
+      smallKelp_SpriteSheet_22: 442811747428363640
+      smallKelp_SpriteSheet_23: -3830780987537122206
+      smallKelp_SpriteSheet_24: -6618733334110370882
+      smallKelp_SpriteSheet_25: -6107319914014186264
+      smallKelp_SpriteSheet_26: -460152507271598752
+      smallKelp_SpriteSheet_27: -2318855170800976558
+      smallKelp_SpriteSheet_28: 519454290047589003
+      smallKelp_SpriteSheet_29: -2715066865751201227
+      smallKelp_SpriteSheet_3: -5029497487119883010
+      smallKelp_SpriteSheet_30: -6555040864441699975
+      smallKelp_SpriteSheet_31: -8201544292962073371
+      smallKelp_SpriteSheet_4: -5266449805805557062
+      smallKelp_SpriteSheet_5: 4080059224831573875
+      smallKelp_SpriteSheet_6: 8893988105202879313
+      smallKelp_SpriteSheet_7: 8168746462389691271
+      smallKelp_SpriteSheet_8: -6801719986504807300
+      smallKelp_SpriteSheet_9: -4293936425844178877
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
