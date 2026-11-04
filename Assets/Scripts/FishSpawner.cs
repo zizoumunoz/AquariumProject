@@ -13,11 +13,19 @@ public class FishSpawner : MonoBehaviour
     }
     public void Spawn(FishSO so)
     {
+        if (fishRoot.childCount == TankManager.instance.database.activeTank.maxFish)
+        {
+            return;
+        }
         FishController fish = Instantiate(fishPrefab, Vector2.zero, Quaternion.identity, fishRoot);
-        fish.Init(so, new FishStatus(() => Random.Range(0.8f, 1.2f)));
+        fish.Init(so, new FishStatus(1));
     }
     public void SpawnChild(FishSO so, FishStatus newStatus, List<TraitSO> traits, Vector2 pos)
     {
+        if (fishRoot.childCount == TankManager.instance.database.activeTank.maxFish)
+        {
+            return;
+        }
         FishController fish = Instantiate(fishPrefab, pos, Quaternion.identity, fishRoot);
         fish.Init(so, newStatus, traits);
     }

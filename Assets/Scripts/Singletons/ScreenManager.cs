@@ -27,7 +27,11 @@ public class ScreenManager : MonoBehaviour
     }
     public void EmptyStack()
     {
-        screenStack.Clear();
+        while (screenStack.Count > 0)
+        {
+            screenStack.Peek().SetActive(false);
+            screenStack.Pop();
+        }
     }
     private void Awake()
     {

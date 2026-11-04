@@ -281,7 +281,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ddefdecf74e498448f43e053d232654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishSpawner
-  market: {fileID: 1895809341}
   fishPrefab: {fileID: 1011413437108166273, guid: 7834d18013485a4409663d4ddbaa3ca9, type: 3}
   fishRoot: {fileID: 2044785690}
 --- !u!1 &240634002 stripped
@@ -516,7 +515,7 @@ GameObject:
   - component: {fileID: 741467299}
   - component: {fileID: 741467300}
   m_Layer: 0
-  m_Name: StatisticsManager
+  m_Name: MoneyManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -546,12 +545,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 741467298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92710e0309593f04794c29dcb75f27e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 09c9801724f980d42869cd9a81c4eb32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoneyDisplay
   money: 100
-  label: {fileID: 1249141098}
-  prefix: $
 --- !u!1 &780869033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2002,6 +1999,7 @@ GameObject:
   - component: {fileID: 1351868789}
   - component: {fileID: 1351868791}
   - component: {fileID: 1351868790}
+  - component: {fileID: 1351868792}
   m_Layer: 5
   m_Name: MoneyBox
   m_TagString: Untagged
@@ -2016,7 +2014,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351868788}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2067,6 +2065,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351868788}
   m_CullTransparentMesh: 1
+--- !u!114 &1351868792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351868788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e2429cb91a100945ab5ee0e808c5a86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoneyDisplay
+  label: {fileID: 1249141098}
+  prefix: $
 --- !u!1 &1356264449
 GameObject:
   m_ObjectHideFlags: 0
@@ -2165,10 +2177,10 @@ RectTransform:
   m_Children:
   - {fileID: 1281598332}
   - {fileID: 1259926184}
-  - {fileID: 1351868789}
   - {fileID: 1461890962}
   - {fileID: 930258087}
   - {fileID: 880000465}
+  - {fileID: 1351868789}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

@@ -16,11 +16,6 @@ public class MarketManager : MonoBehaviour
     {
         instance = this;
     }
-    private void Start()
-    {
-        panel.FishBought += TryBuy;
-        panel.gameObject.SetActive(false);
-    }
 
     public void OpenMarket()
     {
@@ -48,12 +43,15 @@ public class MarketManager : MonoBehaviour
         return result;
     }
 
-    private void TryBuy(FishSO fish)
+    public void TryBuy(FishSO fish)
     {
-        int price = fish.price;
-        if (MoneyDisplay.Instance.money < price) return;
+        if (MoneyManager.Instance.money < fish.price) return;
+        if (TankManager.instance.fishRoot.childCount == TankManager.instance.database.activeTank.maxFish)
+        {
+            return;
+        }
 
-        MoneyDisplay.Instance.AddMoney(-price);
+        MoneyManager.Instance.SpendMoney(fish.price);
         FishSpawner.instance.Spawn(fish);
     }
 }

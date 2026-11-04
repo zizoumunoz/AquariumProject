@@ -22,7 +22,7 @@ public class SellingManager : MonoBehaviour
             if (hits.Length > 0)
             {
                 FishController fish = hits[0].GetComponent<FishController>();
-                MoneyDisplay.Instance.AddMoney(fish.data.price * 2);
+                MoneyManager.Instance.AddMoney(fish.data.price * 2);
 
                 Destroy(hits[0].gameObject);
             }
