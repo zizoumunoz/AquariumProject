@@ -4,7 +4,7 @@ using UnityEngine;
 public class MarketManager : MonoBehaviour
 {
     public static MarketManager instance;
-    [SerializeField] private FishDatabaseSO database;
+    public FishDatabaseSO database;
     [SerializeField] private float refreshInterval = 60f;
     [SerializeField] private int offerCount = 6;
 
