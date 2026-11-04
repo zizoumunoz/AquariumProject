@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 using static UnityEditor.Tilemaps.RuleTileTemplate;
 
@@ -11,9 +10,6 @@ public class FishController : MonoBehaviour, IMotionSource
 
     [SerializeField] public FishStatus statusMultiplier = new();
 
-    /// <summary>
-    /// Limits the fish to move inside of the bounds of the screen.
-    /// </summary>
     private const float boundsMargin = 0.5f;
 
     [Header("Direction")]
@@ -27,7 +23,7 @@ public class FishController : MonoBehaviour, IMotionSource
     [Header("Growth")]
   
     private Age age = Age.Young;
-    private float growTimer;
+    public float growTimer;
 
 
     private Camera cam;
@@ -37,7 +33,7 @@ public class FishController : MonoBehaviour, IMotionSource
     private float retargetTimer;
     private float fullness;
     private float heading;
-    private List<TraitSO> traits = new List<TraitSO>();
+    public List<TraitSO> traits = new List<TraitSO>();
 
     private FishController chaser;
     private float chasedTimer;
@@ -60,16 +56,18 @@ public class FishController : MonoBehaviour, IMotionSource
     public float PoopInterval { get { return data.fishStatus.poopInterval * statusMultiplier.poopInterval; } }
 
     public void Init(FishSO so, FishStatus status, List<TraitSO> newTraits = null)
+    public void Init(FishSO so, FishStatus status, List<TraitSO> newTraits = null, float growTimer = -1f)
     {
         data = so;
         statusMultiplier = status;
         fullness = data.fishStatus.startFullness * statusMultiplier.startFullness;
         happiness = data.fishStatus.happiness * statusMultiplier.happiness;
         initialized = true;
-        growTimer = data.fishStatus.ageTime * statusMultiplier.ageTime;
+        
+        this.growTimer = growTimer != -1f ? growTimer : data.fishStatus.ageTime * statusMultiplier.ageTime;
         if (sr != null) sr.sprite = data.sprite;
 
-        traits = newTraits != null ? newTraits : new List<TraitSO>();
+        traits = newTraits ?? new List<TraitSO>();
 
         chaser = null;
         chasedTimer = 0f;
@@ -139,7 +137,6 @@ public class FishController : MonoBehaviour, IMotionSource
 
         age = Age.Adult;
         transform.localScale = Vector3.one * Size;
-        Debug.Log(name + " grew up. Size = " + Size);
     }
 
     private void UpdateHappiness()
@@ -377,6 +374,12 @@ public class FishController : MonoBehaviour, IMotionSource
         growTimer = data.fishStatus.ageTime * statusMultiplier.ageTime;
         transform.localScale = Vector3.one * Size;
     }
+    public void LoadFish(Age newAge, float growTimer)
+    {
+        age = newAge;
+        this.growTimer = growTimer;
+        transform.localScale = Vector3.one * Size;
+    }
 
     private bool TryBreed()
     {
@@ -417,13 +420,13 @@ public class FishController : MonoBehaviour, IMotionSource
         List<TraitSO> childTraits = InheritTraits(mate);
         Vector3 pos = (transform.position + mate.transform.position) * 0.5f;
 
-        GameObject go = Instantiate(gameObject, pos, Quaternion.identity);
-        FishController child = go.GetComponent<FishController>();
-        child.Init(data, statusMultiplier, childTraits);
-        child.SetAge(Age.Young);
+        FishSpawner.instance.SpawnChild(data,
+            new FishStatus((float x, float y) => Random.Range(Mathf.Min(x, y) - 0.2f, Mathf.Max(x, y) + 0.2f),
+            statusMultiplier, mate.statusMultiplier),
+            childTraits, pos);
 
         breedTimer = data.fishStatus.breedCooldown * statusMultiplier.breedCooldown;
-        mate.breedTimer = data.fishStatus.breedCooldown * statusMultiplier.breedCooldown;
+        mate.breedTimer = data.fishStatus.breedCooldown * mate.statusMultiplier.breedCooldown;
     }
 
     private List<TraitSO> InheritTraits(FishController mate)

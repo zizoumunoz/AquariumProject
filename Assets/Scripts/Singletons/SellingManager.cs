@@ -13,7 +13,7 @@ public class SellingManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (click.pressed)
+        if (click.pressed && ScreenManager.instance.Empty())
         {
             Vector3 pos = Camera.main.ScreenToWorldPoint(mousePosition.value);
             pos.z = 0;
@@ -22,7 +22,7 @@ public class SellingManager : MonoBehaviour
             if (hits.Length > 0)
             {
                 FishController fish = hits[0].GetComponent<FishController>();
-                MoneyDisplay.Instance.AddMoney(fish.data.price * 2);
+                MoneyManager.Instance.AddMoney(fish.data.price * 2);
 
                 Destroy(hits[0].gameObject);
             }

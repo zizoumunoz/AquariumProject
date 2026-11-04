@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public enum FishDiet
 {
@@ -33,7 +34,7 @@ public class FishSO : ScriptableObject
     public FishStatus fishStatus = new();
 }
 
-[System.Serializable]
+[Serializable]
 public class FishStatus
 {
 
@@ -71,9 +72,72 @@ public class FishStatus
         poopInterval = initialValue;
     }
 
+    public FishStatus(Func<float, float, float> initialValue, FishStatus parent1, FishStatus parent2)
+    {
+        baseSize = initialValue(parent1.baseSize, parent2.baseSize);
+        nutrition = initialValue(parent1.nutrition, parent2.nutrition);
+        youngSizeMultiplier = initialValue(parent1.youngSizeMultiplier, parent2.youngSizeMultiplier);
+
+        fishSpeed = initialValue(parent1.fishSpeed, parent2.fishSpeed);
+        minRetargetTime = initialValue(parent1.minRetargetTime, parent2.minRetargetTime);
+        maxRetargetTime = initialValue(parent1.maxRetargetTime, parent2.maxRetargetTime);
+
+        startFullness = initialValue(parent1.startFullness, parent2.startFullness);
+        fullnessDecayPerSecond = initialValue(parent1.fullnessDecayPerSecond, parent2.fullnessDecayPerSecond);
+        wanderThreshold = initialValue(parent1.wanderThreshold, parent2.wanderThreshold);
+        eatDistance = initialValue(parent1.eatDistance, parent2.eatDistance);
+
+        happiness = initialValue(parent1.happiness, parent2.happiness);
+        unhappyBelow = initialValue(parent1.unhappyBelow, parent2.unhappyBelow);
+        happyAbove = initialValue(parent1.happyAbove, parent2.happyAbove);
+        happinessLossPerSecond = initialValue(parent1.happinessLossPerSecond, parent2.happinessLossPerSecond);
+        happinessGainPerSecond = initialValue(parent1.happinessGainPerSecond, parent2.happinessGainPerSecond);
+
+        fleeSpeedRatio = initialValue(parent1.fleeSpeedRatio, parent2.fleeSpeedRatio);
+        fleeDistance = initialValue(parent1.fleeDistance, parent2.fleeDistance);
+        fearMemoryTime = initialValue(parent1.fearMemoryTime, parent2.fearMemoryTime);
+        detectionRadius = initialValue(parent1.detectionRadius, parent2.detectionRadius);
+
+        breedHappiness = initialValue(parent1.breedHappiness, parent2.breedHappiness);
+        breedCooldown = initialValue(parent1.breedCooldown, parent2.breedCooldown);
+        breedDistance = initialValue(parent1.breedDistance, parent2.breedDistance);
+        ageTime = initialValue(parent1.ageTime, parent2.ageTime);
+
+        poopInterval = initialValue(parent1.poopInterval, parent2.poopInterval);
+    }
+
     public FishStatus()
     {
+        baseSize = 1f;
+        nutrition = 25f;
+        youngSizeMultiplier = 0.5f;
 
+        fishSpeed = 1.5f;
+        minRetargetTime = 2f;
+        maxRetargetTime = 5f;
+
+        startFullness = 100f;
+        fullnessDecayPerSecond = 2f;
+        wanderThreshold = 70f;
+        eatDistance = 0.2f;
+
+        happiness = 0;
+        unhappyBelow = 50f;
+        happyAbove = 70f;
+        happinessLossPerSecond = 2f;
+        happinessGainPerSecond = 2f;
+
+        fleeSpeedRatio = 0.9f;
+        fleeDistance = 5f;
+        fearMemoryTime = 0.5f;
+        detectionRadius = 3f;
+
+        breedHappiness = 90f;
+        breedCooldown = 30f;
+        breedDistance = 0.5f;
+        ageTime = 60f;
+
+        poopInterval = 20f;
     }
 
     [Header("Body")]

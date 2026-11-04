@@ -9,8 +9,8 @@ public class FoodSpawner : MonoBehaviour
     [SerializeField] FoodSO foodToSpawn;
     [SerializeField] private Transform foodRoot;
     public float topOffset = 0.5f;
-    private BoolInput click;
-    private Vector2Input mousePosition;
+    [SerializeField] private BoolInput click;
+    [SerializeField] private Vector2Input mousePosition;
 
     private void Start()
     {
@@ -20,7 +20,7 @@ public class FoodSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (click.pressed)
+        if (click.pressed && ScreenManager.instance.Empty())
         {
             Vector3 pos = Camera.main.ScreenToWorldPoint(mousePosition.value);
 
