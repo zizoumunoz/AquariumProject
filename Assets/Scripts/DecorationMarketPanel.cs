@@ -1,16 +1,26 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DecorationMarketPanel : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private DecorationMarketSlotUI slotPrefab;
+    [SerializeField] private List<DecorationMarketSlotUI> slotUIs;
+    [SerializeField] private Transform contentRoot;
 
-    // Update is called once per frame
-    void Update()
+    public void SetUI(List<DecorationSO> decorations)
     {
-        
+        for (int i = 0; i < decorations.Count; i++)
+        {
+            if (slotUIs.Count > i)
+            {
+                slotUIs[i].Set(decorations[i]);
+            }
+            else
+            {
+                slotUIs.Add(Instantiate(slotPrefab, contentRoot));
+                slotUIs[^1].Set(decorations[i]);
+            }
+        }
     }
 }

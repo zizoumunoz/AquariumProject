@@ -4,6 +4,7 @@ using UnityEngine;
 public class DecorationMarketManager : MonoBehaviour
 {
     public static DecorationMarketManager instance;
+    public DecorationsDatabaseSO database;
     [SerializeField] private DecorationMarketPanel panel;
 
     private void Awake()
@@ -16,5 +17,10 @@ public class DecorationMarketManager : MonoBehaviour
         if (MoneyManager.Instance.money < deco.price) return;
 
         DecorationSpawner.instance.Spawn(deco);
+    }
+
+    private void Start()
+    {
+        panel.SetUI(database.decorations);
     }
 }

@@ -26,6 +26,7 @@ public class DecorationMarketSlotUI : MonoBehaviour
         deco = so;
         decoImage.sprite = so.sprite;
         nameLabel.text = so.name;
+        descriptionLabel.text = so.description;
         priceLabel.text = "$" + so.price;
     }
 

@@ -55,7 +55,6 @@ public class GroundWalker : MonoBehaviour, IMotionSource
     private void SnapToGround()
     {
         RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, Vector2.down, groundSearchDistance);
-        Debug.Log(transform.position);
 
         foreach (RaycastHit2D hit in hits)
         {

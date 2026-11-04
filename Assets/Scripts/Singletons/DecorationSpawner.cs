@@ -46,6 +46,10 @@ public class DecorationSpawner : MonoBehaviour
 
         if (placed.pressed)
         {
+            foreach (MonoBehaviour component in spawningDeco.GetComponents<MonoBehaviour>())
+            {
+                component.enabled = true;
+            }
             spawningDeco = null;
             MoneyManager.Instance.SpendMoney(spawningDecoSO.price);
             ScreenManager.instance.PopScreen();
