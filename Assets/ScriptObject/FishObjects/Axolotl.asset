@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Axolotl
   m_EditorClassIdentifier: Assembly-CSharp::FishSO
   fishName: Axolotl
-  sprite: {fileID: -843794117142609214, guid: 000db8ad83c9bc54aadf4285bf1395d9, type: 3}
+  sprite: {fileID: 2629135747056496516, guid: 017fdbbdd00c1d8479606d6ec2b629f9, type: 3}
   diet: 1
   rarity: 2
   price: 50
@@ -25,7 +25,7 @@ MonoBehaviour:
     baseSize: 1
     nutrition: 25
     youngSizeMultiplier: 0.5
-    fishSpeed: 1.5
+    fishSpeed: 0.75
     minRetargetTime: 2
     maxRetargetTime: 5
     startFullness: 100

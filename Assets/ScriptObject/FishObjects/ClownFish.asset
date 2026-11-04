@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddfae909e6c71284cb1c6c9327643532, type: 3}
   m_Name: ClownFish
   m_EditorClassIdentifier: Assembly-CSharp::FishSO
-  fishName: 
-  sprite: {fileID: 0}
-  diet: 0
+  fishName: Clown Fish
+  sprite: {fileID: -3040762595238011028, guid: 50c51f34382821b44bf3a608bbfa1bee, type: 3}
+  diet: 2
   rarity: 0
   price: 50
   iconRenderer: {fileID: 0}
@@ -25,7 +25,7 @@ MonoBehaviour:
     baseSize: 1
     nutrition: 25
     youngSizeMultiplier: 0.5
-    fishSpeed: 1.5
+    fishSpeed: 0.45
     minRetargetTime: 2
     maxRetargetTime: 5
     startFullness: 100
