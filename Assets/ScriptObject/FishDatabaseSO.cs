@@ -33,6 +33,6 @@ public class FishDatabaseSO : ScriptableObject
     }
     private void OnValidate()
     {
-        fishes.Sort((x, y) => x.rarity - y.rarity);
+        fishes.Sort((x, y) => y.rarity - x.rarity);
     }
 }

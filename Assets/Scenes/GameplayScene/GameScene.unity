@@ -2973,7 +2973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MarketManager
   database: {fileID: 11400000, guid: b22b458589e56d94597e03bc34f1210b, type: 2}
-  refreshInterval: 5
+  refreshInterval: 60
   offerCount: 6
   panel: {fileID: 880000466}
 --- !u!1 &1987798403
