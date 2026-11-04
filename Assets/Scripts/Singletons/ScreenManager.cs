@@ -4,7 +4,9 @@ using UnityEngine;
 public class ScreenManager : MonoBehaviour
 {
     public static ScreenManager instance;
-    private Stack<GameObject> screenStack = new Stack<GameObject>();
+#pragma warning disable UAC1009 // Unsupported collection type for serialization
+    [SerializeField] private Stack<GameObject> screenStack = new();
+#pragma warning restore UAC1009 // Unsupported collection type for serialization
 
     public bool Empty()
     {
