@@ -4,7 +4,7 @@ using UnityEngine;
 public class ScreenManager : MonoBehaviour
 {
     public static ScreenManager instance;
-    [SerializeField] private Stack<GameObject> screenStack = new();
+    private Stack<GameObject> screenStack = new Stack<GameObject>();
 
     public bool Empty()
     {
