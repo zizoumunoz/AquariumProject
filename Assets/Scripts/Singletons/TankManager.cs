@@ -17,6 +17,8 @@ public class TankManager : MonoBehaviour
     private void Start()
     {
         instance = this;
+        database.tanks.Clear();
+        database.tanks.Add(new Tank());
         LoadNewTank(database.tanks[0]);
     }
     public void LoadNewTank(Tank tank)
@@ -30,7 +32,7 @@ public class TankManager : MonoBehaviour
         foreach (SaveFish saveFish in tank.fishes)
         {
             FishController newFish = Instantiate(fishPrefab, fishRoot);
-            newFish.Init(saveFish.baseFish, saveFish.multiplier, saveFish.traits);
+            newFish.Init(saveFish.baseFish, saveFish.multiplier, saveFish.traits, saveFish.growTimer);
         }
         foreach (Transform deco in decoRoot)
         {
@@ -40,11 +42,13 @@ public class TankManager : MonoBehaviour
         {
             Destroy(food.gameObject);
         }
+
+        database.activeTank = tank;
         ScreenManager.instance.EmptyStack();
     }
     public void UpdateUI()
     {
-        // Save active tank to database
+        SaveTankData();
         int maxTanksUIIndex = tankPanel.childCount;
         for (int i = 0; i < database.tanks.Count; i++)
         {
@@ -58,12 +62,24 @@ public class TankManager : MonoBehaviour
                 tankController = Instantiate(tankUIPrefab, tankPanel);
             }
             tankController.UpdateTank(database.tanks[i]);
-            if (database.tanks[i] == database.activeTank)
-            {
-                tankController.GetComponent<Button>().enabled = false;
-            }
         }
         Transform shopButton = tankPanel.GetChild(maxTanksUIIndex - 1);
         shopButton.SetAsLastSibling();
+    }
+    public void SaveTankData()
+    {
+        database.activeTank.fishes.Clear();
+        foreach (Transform fish in fishRoot)
+        {
+            FishController controller = fish.GetComponent<FishController>();
+            SaveFish saveFish = new()
+            {
+                baseFish = controller.data,
+                multiplier = controller.statusMultiplier,
+                traits = controller.traits,
+                growTimer = controller.growTimer
+            };
+            database.activeTank.fishes.Add(saveFish);
+        }
     }
 }

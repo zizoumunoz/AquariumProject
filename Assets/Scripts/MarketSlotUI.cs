@@ -8,29 +8,45 @@ public class MarketSlotUI : MonoBehaviour
     [SerializeField] private Image fishImage;
     [SerializeField] private TMP_Text nameLabel;
     [SerializeField] private TMP_Text priceLabel;
+    [SerializeField] private TMP_Text expensivePriceLabel;
     [SerializeField] private Button buyButton;
-
-    public event Action<FishSO> Bought;
-
     [SerializeField] private FishSO fish;
 
     private void Awake()
     {
-        buyButton.onClick.AddListener(OnBuyClicked);
+        MoneyManager.Instance.moneyChanged += UpdateUI;
+    }
+
+    private void OnDestroy()
+    {
+        MoneyManager.Instance.moneyChanged -= UpdateUI;
     }
 
     public void Set(FishSO so)
     {
         fish = so;
-        Debug.Log(transform.position);
         fishImage.sprite = so.sprite;
         nameLabel.text = so.fishName;
-        priceLabel.text = "$" + so.price.ToString();
+        priceLabel.text = "$" + so.price;
+        expensivePriceLabel.text = "$" + so.price;
     }
 
-    private void OnBuyClicked()
+    public void OnBuyClicked()
     {
-        Debug.Log(fish);
-        if (fish != null && Bought != null) Bought(fish);
+        MarketManager.instance.TryBuy(fish);
+    }
+
+    public void UpdateUI(int money)
+    {
+        if (money >= fish.price)
+        {
+            buyButton.interactable = true;
+            expensivePriceLabel.gameObject.SetActive(false);
+        }
+        else
+        {
+            buyButton.interactable = false;
+            expensivePriceLabel.gameObject.SetActive(true);
+        }
     }
 }

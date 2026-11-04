@@ -9,19 +9,12 @@ public class MarketManager : MonoBehaviour
     [SerializeField] private float refreshInterval = 60f;
     [SerializeField] private int offerCount = 6;
 
-    public event Action<FishSO> FishPurchased;
-
     [SerializeField] private MarketPanel panel;
     private float lastRefreshTime = float.NegativeInfinity;
 
     private void Awake()
     {
         instance = this;
-    }
-    private void Start()
-    {
-        panel.FishBought += TryBuy;
-        panel.gameObject.SetActive(false);
     }
 
     public void OpenMarket()
@@ -50,12 +43,15 @@ public class MarketManager : MonoBehaviour
         return result;
     }
 
-    private void TryBuy(FishSO fish)
+    public void TryBuy(FishSO fish)
     {
-        int price = (int)fish.price;
-        if (MoneyDisplay.Instance.money < price) return;
+        if (MoneyManager.Instance.money < fish.price) return;
+        if (TankManager.instance.fishRoot.childCount == TankManager.instance.database.activeTank.maxFish)
+        {
+            return;
+        }
 
-        MoneyDisplay.Instance.AddMoney(-price);
-        if (FishPurchased != null) FishPurchased(fish);
+        MoneyManager.Instance.SpendMoney(fish.price);
+        FishSpawner.instance.Spawn(fish);
     }
 }
