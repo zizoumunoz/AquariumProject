@@ -1,0 +1,550 @@
+fileFormatVersion: 2
+guid: eeb5dd02d763e834bb75ca0ae69e9499
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4709586457989396098
+    second: BigKelp_NoFood_SpriteSheet-export_0
+  - first:
+      213: 4510235930349707454
+    second: BigKelp_NoFood_SpriteSheet-export_1
+  - first:
+      213: 3260758426712985355
+    second: BigKelp_NoFood_SpriteSheet-export_2
+  - first:
+      213: -3450788928639599628
+    second: BigKelp_NoFood_SpriteSheet-export_3
+  - first:
+      213: -5215618245917534619
+    second: BigKelp_NoFood_SpriteSheet-export_4
+  - first:
+      213: -6313513956175326864
+    second: BigKelp_NoFood_SpriteSheet-export_5
+  - first:
+      213: -5825859782527392263
+    second: BigKelp_NoFood_SpriteSheet-export_6
+  - first:
+      213: 7581124350062707644
+    second: BigKelp_NoFood_SpriteSheet-export_7
+  - first:
+      213: -6932625531999498268
+    second: BigKelp_NoFood_SpriteSheet-export_8
+  - first:
+      213: -5830891630060311436
+    second: BigKelp_NoFood_SpriteSheet-export_9
+  - first:
+      213: -770563556457243108
+    second: BigKelp_NoFood_SpriteSheet-export_10
+  - first:
+      213: 383283829254931321
+    second: BigKelp_NoFood_SpriteSheet-export_11
+  - first:
+      213: 6712815640213014507
+    second: BigKelp_NoFood_SpriteSheet-export_12
+  - first:
+      213: 8143590611297671886
+    second: BigKelp_NoFood_SpriteSheet-export_13
+  - first:
+      213: -5907766543857927538
+    second: BigKelp_NoFood_SpriteSheet-export_14
+  - first:
+      213: 1622467789808047919
+    second: BigKelp_NoFood_SpriteSheet-export_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 286b27b5eefcb5140800000000000000
+      internalID: 4709586457989396098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0a2b1bea3979e30800000000000000
+      internalID: 4510235930349707454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_2
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0fc69a438a804d20800000000000000
+      internalID: 3260758426712985355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_3
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbf591a0c55c10d0800000000000000
+      internalID: -3450788928639599628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_4
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5661a00c6d66e97b0800000000000000
+      internalID: -5215618245917534619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_5
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071d2bdd184e168a0800000000000000
+      internalID: -6313513956175326864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_6
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5683ff463662fa0800000000000000
+      internalID: -5825859782527392263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_7
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb34d8b0e60953960800000000000000
+      internalID: 7581124350062707644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_8
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4efcd5c2fcd5acf90800000000000000
+      internalID: -6932625531999498268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_9
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ce472b4f2841fa0800000000000000
+      internalID: -5830891630060311436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_10
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e118c27886e45f0800000000000000
+      internalID: -770563556457243108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_11
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97344eaac92b15500800000000000000
+      internalID: 383283829254931321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_12
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7459d3246b82d50800000000000000
+      internalID: 6712815640213014507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_13
+      rect:
+        serializedVersion: 2
+        x: 2366
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca9a9ea388d30170800000000000000
+      internalID: 8143590611297671886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_14
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a396901a5630ea0800000000000000
+      internalID: -5907766543857927538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigKelp_NoFood_SpriteSheet-export_15
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 0
+        width: 182
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27950fcbd9248610800000000000000
+      internalID: 1622467789808047919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c2f031a88cb8b0d43ace08d931223266
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":16.0,"y":1.0},"gridSpriteSize":{"x":182.0,"y":353.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      BigKelp_NoFood_SpriteSheet-export_0: 4709586457989396098
+      BigKelp_NoFood_SpriteSheet-export_1: 4510235930349707454
+      BigKelp_NoFood_SpriteSheet-export_10: -770563556457243108
+      BigKelp_NoFood_SpriteSheet-export_11: 383283829254931321
+      BigKelp_NoFood_SpriteSheet-export_12: 6712815640213014507
+      BigKelp_NoFood_SpriteSheet-export_13: 8143590611297671886
+      BigKelp_NoFood_SpriteSheet-export_14: -5907766543857927538
+      BigKelp_NoFood_SpriteSheet-export_15: 1622467789808047919
+      BigKelp_NoFood_SpriteSheet-export_2: 3260758426712985355
+      BigKelp_NoFood_SpriteSheet-export_3: -3450788928639599628
+      BigKelp_NoFood_SpriteSheet-export_4: -5215618245917534619
+      BigKelp_NoFood_SpriteSheet-export_5: -6313513956175326864
+      BigKelp_NoFood_SpriteSheet-export_6: -5825859782527392263
+      BigKelp_NoFood_SpriteSheet-export_7: 7581124350062707644
+      BigKelp_NoFood_SpriteSheet-export_8: -6932625531999498268
+      BigKelp_NoFood_SpriteSheet-export_9: -5830891630060311436
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
