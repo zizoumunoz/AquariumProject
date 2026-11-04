@@ -11,6 +11,7 @@ public class MarketSlotUI : MonoBehaviour
     [SerializeField] private TMP_Text expensivePriceLabel;
     [SerializeField] private Button buyButton;
     [SerializeField] private FishSO fish;
+    [SerializeField] private Transform starHolder;
 
     private void Awake()
     {
@@ -29,6 +30,14 @@ public class MarketSlotUI : MonoBehaviour
         nameLabel.text = so.fishName;
         priceLabel.text = "$" + so.price;
         expensivePriceLabel.text = "$" + so.price;
+        foreach (Transform star in starHolder)
+        {
+            star.gameObject.SetActive(false);
+        }
+        for (int i = 0; i <= (int)fish.rarity; i++)
+        {
+            starHolder.GetChild(i).gameObject.SetActive(true);
+        }
     }
 
     public void OnBuyClicked()

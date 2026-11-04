@@ -15,6 +15,7 @@ MonoBehaviour:
   fishName: Sturgeon
   sprite: {fileID: 4944402164476025713, guid: e355867fc13e8c34490f91fc0d71702c, type: 3}
   diet: 0
+  rarity: 1
   price: 50
   iconRenderer: {fileID: 0}
   statusIcons: {fileID: 0}
@@ -44,3 +45,4 @@ MonoBehaviour:
     breedCooldown: 30
     breedDistance: 0.5
     ageTime: 60
+    poopInterval: 20
