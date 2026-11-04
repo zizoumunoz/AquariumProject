@@ -31,4 +31,8 @@ public class FishDatabaseSO : ScriptableObject
         }
         return result;
     }
+    private void OnValidate()
+    {
+        fishes.Sort((x, y) => x.rarity - y.rarity);
+    }
 }

@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -31,14 +30,14 @@ public class MarketManager : MonoBehaviour
 
     private List<FishSO> PickOffers()
     {
-        List<FishSO> pool = new(database.fishes);
         List<FishSO> result = new();
 
-        for (int i = 0; i < offerCount && pool.Count > 0; i++)
+        for (int i = 0; i < offerCount; i++)
         {
-            int index = UnityEngine.Random.Range(0, pool.Count);
-            result.Add(pool[index]);
-            pool.RemoveAt(index);
+            int index = Random.Range(0, database.fishes.Count);
+            const float rarityIndex = 10;
+            index = Mathf.RoundToInt(Mathf.Pow(Mathf.Pow(index, rarityIndex), 1f / rarityIndex));
+            result.Add(database.fishes[index]);
         }
         return result;
     }
