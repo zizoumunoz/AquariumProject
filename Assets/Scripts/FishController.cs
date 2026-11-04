@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
+using static UnityEditor.Tilemaps.RuleTileTemplate;
 
-public class FishController : MonoBehaviour
+public class FishController : MonoBehaviour, IMotionSource
 {
     public static readonly List<FishController> All = new List<FishController>();
 
@@ -30,7 +31,7 @@ public class FishController : MonoBehaviour
 
 
     private Camera cam;
-    private SpriteRenderer sr;
+    [SerializeField] private SpriteRenderer sr;
     private Vector2 min, max;
     private Vector2 target;
     private float retargetTimer;
@@ -49,6 +50,14 @@ public class FishController : MonoBehaviour
     private float happiness;
     public float Happiness { get { return happiness; } }
     public Age CurrentAge { get { return age; } }
+
+    // used for the animation! :P
+    private float normalizedSpeed;
+    public float NormalizedSpeed { get { return normalizedSpeed; } }
+
+    // used for the poop!
+    public bool IsHungry { get { return fullness <= data.fishStatus.wanderThreshold * statusMultiplier.wanderThreshold; } }
+    public float PoopInterval { get { return data.fishStatus.poopInterval * statusMultiplier.poopInterval; } }
 
     public void Init(FishSO so, FishStatus status, List<TraitSO> newTraits = null)
     {
@@ -79,7 +88,6 @@ public class FishController : MonoBehaviour
     private void Awake()
     {
         cam = Camera.main;
-        sr = GetComponent<SpriteRenderer>();
     }
 
     private void OnEnable()
@@ -146,7 +154,7 @@ public class FishController : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (data.iconRenderer == null || data == null || sr == null) return;
+        if (data == null || data.iconRenderer == null || sr == null) return;
 
         Bounds b = sr.bounds;
         Transform t = data.iconRenderer.transform;
@@ -331,6 +339,7 @@ public class FishController : MonoBehaviour
         heading = Mathf.MoveTowardsAngle(heading, desiredAngle, turnSpeed * Time.deltaTime);
 
         float speedFactor = Mathf.Lerp(0.4f, 1f, Mathf.Clamp01(Mathf.Cos(diff * Mathf.Deg2Rad) * 0.5f + 0.5f));
+        normalizedSpeed = CurrentSpeed > 0f ? Mathf.Clamp01(speed * speedFactor / CurrentSpeed) : 0f;
         float headingRad = heading * Mathf.Deg2Rad;
         Vector2 forward = new Vector2(Mathf.Cos(headingRad), Mathf.Sin(headingRad));
 
@@ -378,7 +387,7 @@ public class FishController : MonoBehaviour
 
         MoveTo(mate.transform.position, CurrentSpeed);
 
-        if (Vector2.Distance(transform.position, mate.transform.position) <= data.fishStatus.breedDistance * statusMultiplier.breedHappiness)
+        if (Vector2.Distance(transform.position, mate.transform.position) <= statusMultiplier.breedHappiness)
             Breed(mate);
 
         return true;

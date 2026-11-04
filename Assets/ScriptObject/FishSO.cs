@@ -68,6 +68,7 @@ public class FishStatus
         breedDistance = initialValue;
         ageTime = initialValue;
 
+        poopInterval = initialValue;
     }
 
     public FishStatus()
@@ -109,4 +110,7 @@ public class FishStatus
     public float breedCooldown = 30f;
     public float breedDistance = 0.5f;
     public float ageTime = 60f;
+
+    [Header("Poop")]
+    public float poopInterval = 20f;
 }
