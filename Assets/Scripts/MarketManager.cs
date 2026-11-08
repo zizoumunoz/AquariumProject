@@ -7,6 +7,8 @@ public class MarketManager : MonoBehaviour
     public FishDatabaseSO database;
     [SerializeField] private float refreshInterval = 60f;
     [SerializeField] private int offerCount = 6;
+    [SerializeField] private float rarityIndex = 2.5f;
+
 
     [SerializeField] private MarketPanel panel;
     private float lastRefreshTime = float.NegativeInfinity;
@@ -34,7 +36,6 @@ public class MarketManager : MonoBehaviour
 
         for (int i = 0; i < offerCount; i++)
         {
-            const float rarityIndex = 4;
             int index = Random.Range(0, (int)Mathf.Pow(database.fishes.Count - 1, rarityIndex));
             index = Mathf.RoundToInt(Mathf.Pow(index, 1f / rarityIndex));
             result.Add(database.fishes[index]);

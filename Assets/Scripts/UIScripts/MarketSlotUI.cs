@@ -17,6 +17,10 @@ public class MarketSlotUI : MonoBehaviour
         MoneyManager.Instance.moneyChanged += UpdateUI;
     }
 
+    private void Start()
+    {
+        UpdateUI(MoneyManager.Instance.money);
+    }
     private void OnDestroy()
     {
         MoneyManager.Instance.moneyChanged -= UpdateUI;
