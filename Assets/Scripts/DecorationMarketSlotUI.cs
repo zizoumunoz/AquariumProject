@@ -14,6 +14,7 @@ public class DecorationMarketSlotUI : MonoBehaviour
     private void Awake()
     {
         MoneyManager.Instance.moneyChanged += UpdateUI;
+        UpdateUI(MoneyManager.Instance.money);
     }
 
     private void OnDestroy()

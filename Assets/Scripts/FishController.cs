@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Tilemaps.RuleTileTemplate;
 
 public class FishController : MonoBehaviour, IMotionSource
 {
@@ -31,7 +30,7 @@ public class FishController : MonoBehaviour, IMotionSource
     private Vector2 min, max;
     private Vector2 target;
     private float retargetTimer;
-    private float fullness;
+    [SerializeField] private float fullness;
     private float heading;
     public List<TraitSO> traits = new List<TraitSO>();
 

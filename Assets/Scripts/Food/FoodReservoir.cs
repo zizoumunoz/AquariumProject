@@ -6,10 +6,10 @@ public class FoodReservoir : MonoBehaviour
     public event Action Depleted;
     public event Action Refilled;
 
-    private int capacity;
-    private float reloadTime;
-    private int bitesLeft;
-    private float reloadTimer;
+    [SerializeField] private int capacity;
+    [SerializeField] private float reloadTime;
+    [SerializeField] private int bitesLeft;
+    [SerializeField] private float reloadTimer;
 
     public bool IsReloading { get; private set; }
 

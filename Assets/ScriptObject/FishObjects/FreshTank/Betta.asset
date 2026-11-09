@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddfae909e6c71284cb1c6c9327643532, type: 3}
-  m_Name: RedPiranha
+  m_Name: Betta
   m_EditorClassIdentifier: Assembly-CSharp::FishSO
-  fishName: Red Bellied Piranha
-  sprite: {fileID: 7880602432240417576, guid: b87ee78aad5e2634b931cd6a2baa1cd3, type: 3}
-  diet: 1
-  rarity: 2
-  price: 50
+  fishName: Betta
+  sprite: {fileID: -3303973086772121031, guid: bfa07048ec3e2d8419b0c71c8f7c90c3, type: 3}
+  diet: 0
+  rarity: 0
+  price: 20
   iconRenderer: {fileID: 0}
   statusIcons: {fileID: 0}
   iconPadding: 0.15

@@ -11,12 +11,17 @@ public class MarketSlotUI : MonoBehaviour
     [SerializeField] private Button buyButton;
     [SerializeField] private FishSO fish;
     [SerializeField] private Transform starHolder;
+    public bool bought = false;
 
     private void Awake()
     {
         MoneyManager.Instance.moneyChanged += UpdateUI;
     }
 
+    private void Start()
+    {
+        UpdateUI(MoneyManager.Instance.money);
+    }
     private void OnDestroy()
     {
         MoneyManager.Instance.moneyChanged -= UpdateUI;
@@ -24,6 +29,7 @@ public class MarketSlotUI : MonoBehaviour
 
     public void Set(FishSO so)
     {
+        bought = false;
         fish = so;
         fishImage.sprite = so.sprite;
         nameLabel.text = so.fishName;
@@ -40,12 +46,15 @@ public class MarketSlotUI : MonoBehaviour
 
     public void OnBuyClicked()
     {
-        MarketManager.instance.TryBuy(fish);
+        if (MarketManager.instance.TryBuy(fish))
+        {
+            bought = true;
+        }
     }
 
     public void UpdateUI(int money)
     {
-        if (money >= fish.price)
+        if (money >= fish.price && !bought)
         {
             buyButton.interactable = true;
             priceLabel.color = Color.black;
