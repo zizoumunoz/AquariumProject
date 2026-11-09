@@ -43,15 +43,16 @@ public class MarketManager : MonoBehaviour
         return result;
     }
 
-    public void TryBuy(FishSO fish)
+    public bool TryBuy(FishSO fish)
     {
-        if (MoneyManager.Instance.money < fish.price) return;
+        if (MoneyManager.Instance.money < fish.price) return false;
         if (TankManager.instance.fishRoot.childCount == TankManager.instance.database.activeTank.maxFish)
         {
-            return;
+            return false;
         }
 
-        MoneyManager.Instance.SpendMoney(fish.price);
         FishSpawner.instance.Spawn(fish);
+        MoneyManager.Instance.SpendMoney(fish.price);
+        return true;
     }
 }
