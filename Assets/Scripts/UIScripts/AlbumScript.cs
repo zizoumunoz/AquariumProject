@@ -9,9 +9,6 @@ public class AlbumScript : MonoBehaviour
     [Header("Database")]
     [SerializeField] private FishDatabaseSO _fishDatabase;
 
-
-    private HashSet<FishSO> _unlockedFish = new();
-
     private const int _fishPerPage = 6;
     public int _currentPage = 1;
     private int _minimumPage = 1;
@@ -21,16 +18,24 @@ public class AlbumScript : MonoBehaviour
 
     [SerializeField] private AlbumPanel[] _albumPanels;
 
-    private void Start()
+    private void Awake()
     {
-        //RefreshView();
-
-        for(int i = 0; i < _fishPerPage; i++)
-        {
-            _unlockedFish.Add(_fishDatabase.fishes[i]);
-            _albumPanels[i].SetFish(_fishDatabase.fishes[i]);
-        }
+        _maximumPage = Mathf.Max(1, Mathf.CeilToInt(_fishDatabase.fishes.Count / (float)_fishPerPage));
     }
+
+    private void OnEnable()
+    {
+        FishCollection.FishDiscovered += OnFishDiscovered;
+        SetPageNumberText();
+        RefreshView();
+    }
+
+    private void OnFishDiscovered(FishSO fish)
+    {
+        RefreshView();
+    }
+
+
 
     private void SetPageNumberText()
     {
@@ -65,7 +70,7 @@ public class AlbumScript : MonoBehaviour
 
         int pageStartIndex = (_currentPage - 1) * _fishPerPage;
 
-        for (int i = 0; i < _fishPerPage; i++)
+        for (int i = 0; i < _albumPanels.Length; i++)
         {
             int fishIndex = pageStartIndex + i;
 
@@ -80,17 +85,15 @@ public class AlbumScript : MonoBehaviour
 
             FishSO fish = _fishDatabase.fishes[fishIndex];
 
-            _albumPanels[i].SetFish(fish);
-
-            //if (_unlockedFish.Contains(fish))
-            //{
-            //    _albumPanels[i].SetFish(fish);
-            //}
-
-            //else
-            //{
-            //    _albumPanels[i].SetUndiscovered();
-            //}
+            // show fish only if player obtained
+            if (FishCollection.IsDiscovered(fish))
+            {
+                _albumPanels[i].SetFish(fish);
+            }
+            else
+            {
+                _albumPanels[i].SetUndiscovered();
+            }
         }
     }
 }
