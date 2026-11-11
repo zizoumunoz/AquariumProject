@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Food : MonoBehaviour, IFoodSource
+public class Food : MonoBehaviour
 {
     [SerializeField] private FoodSO data;
 
@@ -9,38 +9,27 @@ public class Food : MonoBehaviour, IFoodSource
     [SerializeField] private float baseFallDelay = 3f;
     [SerializeField] private float sinkSpeed = 0.5f;
 
-    [SerializeField]
-    public float timeToDecay = 5;
+    [SerializeField] public float timeToDecay = 5;
 
     private Rigidbody2D rb;
     private float fallDelay;
     private bool sinking;
     private bool landed;
 
-    public float FullnessRestore { get { return data.fullnessRestore; } }
-    public FoodType Type { get { return data.foodType; } }
-    public float Weight { get { return data.weight; } }
-
-    public bool IsAvailable { get { return true; } }
-    public Vector2 Position { get { return transform.position; } }
-
-    public float Eat()
-    {
-        Destroy(gameObject);
-        return FullnessRestore;
-    }
-
     public void Init(FoodSO so)
     {
         data = so;
-        SpriteRenderer sr = GetComponent<SpriteRenderer>();
-        if (sr != null) sr.sprite = data.sprite;
+        GetComponent<SpriteRenderer>().sprite = data.sprite;
 
         fallDelay = baseFallDelay / Mathf.Max(data.weight, 0.01f);
         sinking = false;
 
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.linearVelocity = Vector2.zero;
+
+        FoodSource source = GetComponent<FoodSource>();
+        source.fullnessRestore = data.fullnessRestore;
+        source.type = data.foodType;
     }
 
     private void Awake()
@@ -48,19 +37,9 @@ public class Food : MonoBehaviour, IFoodSource
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void OnEnable()
-    {
-        FoodSources.Register(this);
-    }
-
-    private void OnDisable()
-    {
-        FoodSources.Unregister(this);
-    }
-
     private void Start()
     {
-        if (data != null) Init(data);
+        Init(data);
     }
 
     private void Update()
@@ -79,7 +58,7 @@ public class Food : MonoBehaviour, IFoodSource
     private void FixedUpdate()
     {
         if (!sinking) return;
-        rb.linearVelocity = Vector2.down * sinkSpeed * data.weight;
+        rb.linearVelocity = data.weight * sinkSpeed * Vector2.down;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8820307956733812278}
   - component: {fileID: 4146103847536760110}
   - component: {fileID: 3017575449951369872}
+  - component: {fileID: 7712172714012249840}
   - component: {fileID: 7117221734594811611}
   - component: {fileID: 2121606769672973572}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MeatBall
   m_TagString: Food
   m_Icon: {fileID: 0}
@@ -110,6 +111,24 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: d9d517373a8c4f94c9e420ce12d5a3d5, type: 2}
   baseFallDelay: 0.1
   sinkSpeed: 0.5
+  timeToDecay: 5
+--- !u!114 &7712172714012249840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707225565037932833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a3e39c971f7b37479f1505b1cc9d2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodSource
+  type: 1
+  fullnessRestore: 0
+  deleteWhenEaten: 1
+  bitesLeft: 1
+  size: 0.2
 --- !u!50 &7117221734594811611
 Rigidbody2D:
   serializedVersion: 5

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FishSO
   fishName: JellyFish
   sprite: {fileID: 5129743184734812743, guid: 6cc43c4804fa6f34f89ed9e83dca1866, type: 3}
-  diet: 1
+  diet: 2
   rarity: 1
   price: 110
   iconRenderer: {fileID: 0}
@@ -22,7 +22,7 @@ MonoBehaviour:
   iconPadding: 0.15
   iconSize: 1
   fishStatus:
-    baseSize: 0.1
+    baseSize: 1
     nutrition: 25
     youngSizeMultiplier: 0.5
     fishSpeed: 0.3
