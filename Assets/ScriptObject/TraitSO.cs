@@ -12,4 +12,5 @@ public class TraitSO : ScriptableObject
     public float speedMultiplier = 1f;
     public float turnSpeedMultiplier = 1f;
     public float hungerDecayMultiplier = 1f;
+    public float priceMultiplier = 1f;
 }

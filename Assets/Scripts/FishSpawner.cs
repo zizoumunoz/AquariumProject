@@ -6,6 +6,8 @@ public class FishSpawner : MonoBehaviour
     public static FishSpawner instance;
     [SerializeField] private FishController fishPrefab;
     [SerializeField] private Transform fishRoot;
+    [SerializeField] private FishDatabaseSO database;
+    [SerializeField] private TraitRules traitRules;
 
     private void Awake()
     {
@@ -18,15 +20,15 @@ public class FishSpawner : MonoBehaviour
             return;
         }
         FishController fish = Instantiate(fishPrefab, Vector2.zero, Quaternion.identity, fishRoot);
-        fish.Init(so, new FishStatus(1));
+        fish.Init(so, new FishStatus(1), traitRules.RollPurchase(database));
     }
-    public void SpawnChild(FishSO so, FishStatus newStatus, List<TraitSO> traits, Vector2 pos)
+    public void SpawnChild(FishSO so, FishStatus newStatus, List<TraitSO> parentATraits, List<TraitSO> parentBTraits, Vector2 pos)
     {
         if (fishRoot.childCount == TankManager.instance.database.activeTank.maxFish)
         {
             return;
         }
         FishController fish = Instantiate(fishPrefab, pos, Quaternion.identity, fishRoot);
-        fish.Init(so, newStatus, traits);
+        fish.Init(so, newStatus, traitRules.RollChild(parentATraits, parentBTraits, database));
     }
 }

@@ -13,6 +13,7 @@ public class MarketManager : MonoBehaviour
     [SerializeField] private MarketPanel panel;
     private float lastRefreshTime = float.NegativeInfinity;
 
+
     private void Awake()
     {
         instance = this;
@@ -55,4 +56,5 @@ public class MarketManager : MonoBehaviour
         MoneyManager.Instance.SpendMoney(fish.price);
         return true;
     }
+
 }

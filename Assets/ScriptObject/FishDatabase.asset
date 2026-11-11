@@ -23,5 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4d860ee4cf3738646bcda2b4dc7e1b88, type: 2}
   - {fileID: 11400000, guid: 9ab6c497fd73a3144888d885d811a266, type: 2}
   - {fileID: 11400000, guid: af469f779e00c1640b7ec50484986726, type: 2}
-  traits: []
+  traits:
+  - {fileID: 11400000, guid: 69090d95a4ace244298a899a04f2e50d, type: 2}
   statusIcons: {fileID: 11400000, guid: 25a7fd334e56ef74bac62587f75b8533, type: 2}

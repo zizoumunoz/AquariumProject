@@ -38,10 +38,10 @@ public class FishController : MonoBehaviour, IMotionSource
     private float chasedTimer;
 
     public FishSO Data { get { return data; } }
-    public float Size { get { return data.fishStatus.baseSize * statusMultiplier.baseSize * AgeMultiplier; } }
+    public float Size { get { return data.fishStatus.baseSize * statusMultiplier.baseSize * AgeMultiplier * modifiers.Size; } }
+    public int Price { get { return Mathf.RoundToInt(data.price * modifiers.Price); } }
     private float AgeMultiplier { get { return age == Age.Young ? data.fishStatus.youngSizeMultiplier * statusMultiplier.youngSizeMultiplier : 1f; } }
-    public float CurrentSpeed { get { return data.fishStatus.fishSpeed * statusMultiplier.fishSpeed; } }
-
+    public float CurrentSpeed { get { return data.fishStatus.fishSpeed * statusMultiplier.fishSpeed * modifiers.Speed; } }
     private float happiness;
     public float Happiness { get { return happiness; } }
     public Age CurrentAge { get { return age; } }
@@ -53,6 +53,11 @@ public class FishController : MonoBehaviour, IMotionSource
     // used for the poop!
     public bool IsHungry { get { return fullness <= data.fishStatus.wanderThreshold * statusMultiplier.wanderThreshold; } }
     public float PoopInterval { get { return data.fishStatus.poopInterval * statusMultiplier.poopInterval; } }
+
+    // used for traits
+
+    private TraitModifiers modifiers = new TraitModifiers(null);
+    public TraitModifiers Modifiers { get { return modifiers; } }
 
     public void Init(FishSO so, FishStatus status, List<TraitSO> newTraits = null, float growTimer = -1f)
     {
@@ -66,6 +71,7 @@ public class FishController : MonoBehaviour, IMotionSource
         if (sr != null) sr.sprite = data.sprite;
 
         traits = newTraits ?? new List<TraitSO>();
+        modifiers = new TraitModifiers(traits);
 
         chaser = null;
         chasedTimer = 0f;
@@ -106,8 +112,7 @@ public class FishController : MonoBehaviour, IMotionSource
         if (data == null) return;
 
         CalculateBounds();
-        fullness = Mathf.Max(0f, fullness - data.fishStatus.fullnessDecayPerSecond * statusMultiplier.fullnessDecayPerSecond * Time.deltaTime);
-        breedTimer = Mathf.Max(0f, breedTimer - Time.deltaTime);
+        fullness = Mathf.Max(0f, fullness - data.fishStatus.fullnessDecayPerSecond * statusMultiplier.fullnessDecayPerSecond * modifiers.HungerDecay * Time.deltaTime); breedTimer = Mathf.Max(0f, breedTimer - Time.deltaTime);
 
         if (chaser != null)
         {
@@ -326,7 +331,7 @@ public class FishController : MonoBehaviour, IMotionSource
 
         float desiredAngle = Mathf.Atan2(toTarget.y, toTarget.x) * Mathf.Rad2Deg;
         float diff = Mathf.DeltaAngle(heading, desiredAngle);
-        heading = Mathf.MoveTowardsAngle(heading, desiredAngle, turnSpeed * Time.deltaTime);
+        heading = Mathf.MoveTowardsAngle(heading, desiredAngle, turnSpeed * modifiers.TurnSpeed * Time.deltaTime);
 
         float speedFactor = Mathf.Lerp(0.4f, 1f, Mathf.Clamp01(Mathf.Cos(diff * Mathf.Deg2Rad) * 0.5f + 0.5f));
         normalizedSpeed = CurrentSpeed > 0f ? Mathf.Clamp01(speed * speedFactor / CurrentSpeed) : 0f;
@@ -410,32 +415,14 @@ public class FishController : MonoBehaviour, IMotionSource
 
     private void Breed(FishController mate)
     {
-        List<TraitSO> childTraits = InheritTraits(mate);
         Vector3 pos = (transform.position + mate.transform.position) * 0.5f;
 
         FishSpawner.instance.SpawnChild(data,
             new FishStatus((float x, float y) => Random.Range(Mathf.Min(x, y) - 0.2f, Mathf.Max(x, y) + 0.2f),
             statusMultiplier, mate.statusMultiplier),
-            childTraits, pos);
+            traits, mate.traits, pos);
 
         breedTimer = data.fishStatus.breedCooldown * statusMultiplier.breedCooldown;
         mate.breedTimer = data.fishStatus.breedCooldown * mate.statusMultiplier.breedCooldown;
     }
-
-    private List<TraitSO> InheritTraits(FishController mate)
-    {
-        List<TraitSO> pool = new List<TraitSO>();
-        foreach (TraitSO t in traits) if (!pool.Contains(t)) pool.Add(t);
-        foreach (TraitSO t in mate.traits) if (!pool.Contains(t)) pool.Add(t);
-
-        List<TraitSO> result = new List<TraitSO>();
-        foreach (TraitSO t in pool)
-            if (Random.value < 0.5f) result.Add(t);
-
-        if (result.Count == 0 && pool.Count > 0)
-            result.Add(pool[Random.Range(0, pool.Count)]);
-
-        return result;
-    }
-
 }

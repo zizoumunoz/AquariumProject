@@ -798,6 +798,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FishSpawner
   fishPrefab: {fileID: 1011413437108166273, guid: 7834d18013485a4409663d4ddbaa3ca9, type: 3}
   fishRoot: {fileID: 253092685}
+  database: {fileID: 11400000, guid: b22b458589e56d94597e03bc34f1210b, type: 2}
+  traitRules:
+    purchaseChance: 0.2
+    inheritChance: 0.5
+    mutationChance: 0.1
 --- !u!114 &1075362270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -810,8 +815,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecfc4afd9c0ddae48a819c528ad3dcc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MarketManager
+  database: {fileID: 0}
   refreshInterval: 60
   offerCount: 6
+  rarityIndex: 2.5
   panel: {fileID: 0}
 --- !u!114 &1075362271
 MonoBehaviour:
@@ -868,6 +875,37 @@ MonoBehaviour:
       m_Priority: 0
     actionName: MousePosition
     value: {x: 0, y: 0}
+--- !u!1 &1153270525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1153270526}
+  m_Layer: 0
+  m_Name: FishSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1153270526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153270525}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.86426, y: 0.04592, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1205053246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2053,6 +2091,6 @@ SceneRoots:
   - {fileID: 253092685}
   - {fileID: 2066991288}
   - {fileID: 983513901}
-  - {fileID: 1560662696}
   - {fileID: 593563979096386952}
   - {fileID: 2049910795960796111}
+  - {fileID: 1153270526}
