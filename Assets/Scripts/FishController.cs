@@ -57,6 +57,7 @@ public class FishController : MonoBehaviour, IMotionSource
     public void Init(FishSO so, FishStatus status, List<TraitSO> newTraits = null, float growTimer = -1f)
     {
         data = so;
+        FishCollection.Discover(so);    // Calls FishCollection event to add to album
         statusMultiplier = status;
         fullness = data.fishStatus.startFullness * statusMultiplier.startFullness;
         happiness = data.fishStatus.happiness * statusMultiplier.happiness;
