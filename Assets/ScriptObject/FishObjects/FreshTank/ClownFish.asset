@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FishSO
   fishName: Clown Fish
   sprite: {fileID: -3040762595238011028, guid: 50c51f34382821b44bf3a608bbfa1bee, type: 3}
-  diet: 2
+  diet: 0
   rarity: 0
   price: 30
   iconRenderer: {fileID: 0}
