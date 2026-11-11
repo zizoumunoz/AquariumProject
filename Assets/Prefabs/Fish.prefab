@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 366627789795619100}
   - component: {fileID: 1313483995785125302}
   - component: {fileID: 2854351956802473783}
+  - component: {fileID: 1363658366340760977}
   m_Layer: 6
   m_Name: Fish
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +78,11 @@ MonoBehaviour:
     poopInterval: 1
   turnSpeed: 120
   age: 0
+  growTimer: 0
   sr: {fileID: 8486787847657908472}
+  fullness: 0
+  traits: []
+  aimedFoodSorce: {fileID: 0}
 --- !u!70 &366627789795619100
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -154,6 +159,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34efd18669e82f04685a7a8517b64530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PoopEmitter
+--- !u!114 &1363658366340760977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283583868285877914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a3e39c971f7b37479f1505b1cc9d2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodSource
+  type: 1
+  fullnessRestore: 35
+  deleteWhenEaten: 1
+  bitesLeft: 1
+  size: 0
 --- !u!1 &2220960920421853631
 GameObject:
   m_ObjectHideFlags: 0

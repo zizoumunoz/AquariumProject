@@ -3,11 +3,9 @@ using UnityEngine;
 
 public class FishController : MonoBehaviour, IMotionSource
 {
-    public static readonly List<FishController> All = new List<FishController>();
+    public FishSO data;
 
-    [SerializeField] public FishSO data;
-
-    [SerializeField] public FishStatus statusMultiplier = new();
+    public FishStatus statusMultiplier = new();
 
     private const float boundsMargin = 0.5f;
 
@@ -18,9 +16,8 @@ public class FishController : MonoBehaviour, IMotionSource
     private float breedTimer;
     private bool initialized;
 
-    [SerializeField]
     [Header("Growth")]
-  
+
     private Age age = Age.Young;
     public float growTimer;
 
@@ -53,6 +50,8 @@ public class FishController : MonoBehaviour, IMotionSource
     // used for the poop!
     public bool IsHungry { get { return fullness <= data.fishStatus.wanderThreshold * statusMultiplier.wanderThreshold; } }
     public float PoopInterval { get { return data.fishStatus.poopInterval * statusMultiplier.poopInterval; } }
+    public FoodSource aimedFoodSorce = null;
+    private float eatTimer = 5f;
 
     public void Init(FishSO so, FishStatus status, List<TraitSO> newTraits = null, float growTimer = -1f)
     {
@@ -61,7 +60,7 @@ public class FishController : MonoBehaviour, IMotionSource
         fullness = data.fishStatus.startFullness * statusMultiplier.startFullness;
         happiness = data.fishStatus.happiness * statusMultiplier.happiness;
         initialized = true;
-        
+
         this.growTimer = growTimer != -1f ? growTimer : data.fishStatus.ageTime * statusMultiplier.ageTime;
         if (sr != null) sr.sprite = data.sprite;
 
@@ -86,16 +85,6 @@ public class FishController : MonoBehaviour, IMotionSource
         cam = Camera.main;
     }
 
-    private void OnEnable()
-    {
-        All.Add(this);
-    }
-
-    private void OnDisable()
-    {
-        All.Remove(this);
-    }
-
     private void Start()
     {
         if (data != null && !initialized) Init(data, statusMultiplier, traits);
@@ -103,8 +92,6 @@ public class FishController : MonoBehaviour, IMotionSource
 
     private void Update()
     {
-        if (data == null) return;
-
         CalculateBounds();
         fullness = Mathf.Max(0f, fullness - data.fishStatus.fullnessDecayPerSecond * statusMultiplier.fullnessDecayPerSecond * Time.deltaTime);
         breedTimer = Mathf.Max(0f, breedTimer - Time.deltaTime);
@@ -116,9 +103,13 @@ public class FishController : MonoBehaviour, IMotionSource
         }
 
         if (chaser != null) Flee();
-        else if (fullness <= data.fishStatus.wanderThreshold * statusMultiplier.wanderThreshold) SeekFood();
+        else if (fullness <= data.fishStatus.wanderThreshold * statusMultiplier.wanderThreshold && eatTimer < 0)
+        {
+            SeekFood(); 
+        }
         else if (!TryBreed()) Wander();
 
+        eatTimer -= Time.deltaTime;
         UpdateHappiness();
         UpdateGrowth();
         UpdateIcons();
@@ -135,14 +126,15 @@ public class FishController : MonoBehaviour, IMotionSource
 
         age = Age.Adult;
         transform.localScale = Vector3.one * Size;
+        GetComponent<FoodSource>().size = Size;
     }
 
     private void UpdateHappiness()
     {
         if (fullness < data.fishStatus.unhappyBelow * statusMultiplier.unhappyBelow)
-            happiness -= data.fishStatus.happinessLossPerSecond  * statusMultiplier.happinessLossPerSecond* Time.deltaTime;
+            happiness -= data.fishStatus.happinessLossPerSecond * statusMultiplier.happinessLossPerSecond * Time.deltaTime;
         else if (fullness > data.fishStatus.happyAbove * statusMultiplier.happyAbove)
-            happiness += data.fishStatus.happinessGainPerSecond * statusMultiplier.happinessGainPerSecond* Time.deltaTime;
+            happiness += data.fishStatus.happinessGainPerSecond * statusMultiplier.happinessGainPerSecond * Time.deltaTime;
 
         happiness = Mathf.Clamp(happiness, 0f, 100f);
     }
@@ -228,94 +220,66 @@ public class FishController : MonoBehaviour, IMotionSource
 
     private void SeekFood()
     {
-        IFoodSource food = null;
-        FishController prey = null;
-
-        food = FindNearestFood();
-        if (data.diet != FishDiet.Herbivore) prey = FindNearestPrey();
-
-        if (food == null && prey == null)
+        if (aimedFoodSorce == null)
         {
-            Wander();
-            return;
+            aimedFoodSorce = FindNearestFood();
+            if (aimedFoodSorce == null)
+            {
+                Wander();
+                return;
+            }
+            aimedFoodSorce.AddTarget(this);
         }
 
-        float dFood = food != null ? Vector2.Distance(transform.position, food.Position) : float.MaxValue;
-        float dPrey = prey != null ? Vector2.Distance(transform.position, prey.transform.position) : float.MaxValue;
+        MoveTo(aimedFoodSorce.transform.position, CurrentSpeed);
+
+        float dFood = Vector2.Distance(transform.position, aimedFoodSorce.transform.position);
         float eatDist = data.fishStatus.eatDistance * statusMultiplier.eatDistance * Size;
 
-        if (dFood <= dPrey)
+        if (dFood <= eatDist)
         {
-            MoveTo(food.Position, CurrentSpeed);
-
-            if (dFood <= eatDist)
-                fullness = Mathf.Min(100f, fullness + food.Eat());
-        }
-        else
-        {
-            if (dPrey <= prey.data.fishStatus.detectionRadius) prey.NotifyChased(this);
-            MoveTo(prey.transform.position, CurrentSpeed);
-
-            if (dPrey <= eatDist)
-            {
-                fullness = Mathf.Min(100f, fullness + prey.data.fishStatus.nutrition * prey.Size);
-                Destroy(prey.gameObject);
-            }
+            aimedFoodSorce.RemoveTarget(this);
+            fullness = Mathf.Min(100f, fullness + aimedFoodSorce.Eat());
+            aimedFoodSorce = null;
+            eatTimer = 5f;
         }
     }
 
-    private IFoodSource FindNearestFood()
+    private FoodSource FindNearestFood()
     {
-        IFoodSource nearest = null;
+        FoodSource nearest = null;
         float best = float.MaxValue;
 
-        foreach (IFoodSource food in FoodSources.All)
-        {
-            if (!food.IsAvailable || !CanEatFood(food)) continue;
+        Collider2D[] foods = Physics2D.OverlapCircleAll(transform.position, 50f, LayerMask.GetMask("Food", "Fish"));
 
-            float d = Vector2.Distance(transform.position, food.Position);
+        foreach (Collider2D food in foods)
+        {
+            Debug.Log(food.gameObject.name);
+            FoodSource source = food.GetComponent<FoodSource>();
+            if (!source.IsAvailable() || !CanEatFood(source)) continue;
+            if (source.CompareTag("Fish") && source.GetComponent<FishController>().data == data) continue;
+
+            float d = Vector2.SqrMagnitude(transform.position - food.transform.position);
             if (d < best)
             {
                 best = d;
-                nearest = food;
+                nearest = source;
             }
         }
         return nearest;
     }
 
-    private bool CanEatFood(IFoodSource food)
+    private bool CanEatFood(FoodSource food)
     {
         switch (data.diet)
         {
-            case FishDiet.Herbivore: return food.Type == FoodType.Plant;
-            case FishDiet.Carnivore: return food.Type == FoodType.Meat;
+            case FishDiet.Herbivore: return food.type == FoodType.Plant;
+            case FishDiet.Carnivore:
+                {
+                    return food.type == FoodType.Meat && Size >= food.size;
+                }
             default: return true;
         }
-    }
-
-    private bool CanEat(FishController other)
-    {
-        if (other.data == data){ return false; }
-        return other.Size <= Size;
-    }
-
-    private FishController FindNearestPrey()
-    {
-        FishController nearest = null;
-        float best = float.MaxValue;
-
-        foreach (FishController other in All)
-        {
-            if (!CanEat(other)) continue;
-
-            float d = Vector2.Distance(transform.position, other.transform.position);
-            if (d < best)
-            {
-                best = d;
-                nearest = other;
-            }
-        }
-        return nearest;
     }
 
     private void MoveTo(Vector2 dest, float speed)
@@ -393,8 +357,10 @@ public class FishController : MonoBehaviour, IMotionSource
         FishController nearest = null;
         float best = float.MaxValue;
 
-        foreach (FishController other in All)
+        Collider2D[] fishes = Physics2D.OverlapCircleAll(transform.position, 50f, LayerMask.GetMask("Fish"));
+        foreach (Collider2D otherCollider in fishes)
         {
+            FishController other = otherCollider.GetComponent<FishController>();
             if (other == this || other.data != data || !other.CanBreed) continue;
 
             float d = Vector2.Distance(transform.position, other.transform.position);
@@ -436,5 +402,4 @@ public class FishController : MonoBehaviour, IMotionSource
 
         return result;
     }
-
 }
