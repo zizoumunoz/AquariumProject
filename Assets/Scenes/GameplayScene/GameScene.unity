@@ -305,6 +305,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FishSpawner
   fishPrefab: {fileID: 1011413437108166273, guid: 7834d18013485a4409663d4ddbaa3ca9, type: 3}
   fishRoot: {fileID: 2044785690}
+  database: {fileID: 11400000, guid: b22b458589e56d94597e03bc34f1210b, type: 2}
+  traitRules:
+    purchaseChance: 0.2
+    inheritChance: 0.5
+    mutationChance: 0.1
 --- !u!114 &219019578
 MonoBehaviour:
   m_ObjectHideFlags: 0
