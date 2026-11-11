@@ -295,8 +295,7 @@ public class FishController : MonoBehaviour, IMotionSource
 
     private bool CanEat(FishController other)
     {
-        if (other == null || other == this || other.data == null) return false;
-        if (other.data.diet == FishDiet.Carnivore) return false;
+        if (other.data == data){ return false; }
         return other.Size <= Size;
     }
 
