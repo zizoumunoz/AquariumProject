@@ -15,11 +15,11 @@ MonoBehaviour:
   type: 1
   sprite: {fileID: -216754732723819541, guid: b54408d062ff472458d8be8e818babb4, type: 3}
   startAttributes:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+    oxigen: 50
+    temperature: 50
+    moldLevel: 0
+    pHLevel: 50
+    salinity: 0
+    light: 50
   maxFish: 8
   price: 1000

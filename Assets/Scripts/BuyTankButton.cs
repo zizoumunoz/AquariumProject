@@ -56,7 +56,7 @@ public class BuyTankButton : MonoBehaviour
     {
         database.tanks.Add(new Tank
         {
-            currentAttibutes = (float[])database.tankSOs[index].startAttributes.Clone(),
+            currentAttibutes = new(database.tankSOs[index].startAttributes),
             type = database.tankSOs[index].type,
             maxFish = database.tankSOs[index].maxFish
         });

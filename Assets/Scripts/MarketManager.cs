@@ -39,7 +39,7 @@ public class MarketManager : MonoBehaviour
         {
             int index = Random.Range(0, (int)Mathf.Pow(database.fishes.Count - 1, rarityIndex));
             index = Mathf.RoundToInt(Mathf.Pow(index, 1f / rarityIndex));
-            result.Add(database.fishes[index]);
+            result.Add(database.fishes[database.fishes.Count - index - 1]);
         }
         return result;
     }

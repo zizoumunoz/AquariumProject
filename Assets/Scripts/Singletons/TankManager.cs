@@ -7,6 +7,7 @@ public class TankManager : MonoBehaviour
     public Transform fishRoot;
     public Transform decoRoot;
     public Transform foodRoot;
+    public Transform restRoot;
     public static TankManager instance;
     public TankDatabase database;
     [SerializeField] private UITankController tankUIPrefab;
@@ -46,6 +47,10 @@ public class TankManager : MonoBehaviour
         foreach (Transform food in foodRoot)
         {
             Destroy(food.gameObject);
+        }
+        foreach (Transform rest in restRoot)
+        {
+            Destroy(rest.gameObject);
         }
 
         database.activeTank = tank;

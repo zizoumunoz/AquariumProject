@@ -2,20 +2,15 @@ using UnityEngine;
 
 public class PoopSpawner : MonoBehaviour
 {
+    public static PoopSpawner instance;
     [SerializeField] private Poop poopPrefab;
     [SerializeField] private Transform poopRoot;
 
-    private void OnEnable()
+    private void Awake()
     {
-        PoopEmitter.PoopDropped += Spawn;
+        instance = this;
     }
-
-    private void OnDisable()
-    {
-        PoopEmitter.PoopDropped -= Spawn;
-    }
-
-    private void Spawn(Vector3 position)
+    public void Spawn(Vector3 position)
     {
         Instantiate(poopPrefab, position, Quaternion.identity, poopRoot);
     }
