@@ -41,9 +41,11 @@ public class SnailController : MonoBehaviour
         Poop nearest = null;
         float best = sightRange;
 
-        foreach (Poop poop in Poop.All)
+        Collider2D[] shits = Physics2D.OverlapCircleAll(transform.position, 50f, LayerMask.GetMask("Poop"));
+        foreach (Collider2D shit in shits)
         {
-            if (!poop.IsLanded) continue;
+            Poop poop = shit.GetComponent<Poop>();
+            if (!poop.landed) continue;
 
             float d = Vector2.Distance(transform.position, poop.transform.position);
             if (d > best) continue;

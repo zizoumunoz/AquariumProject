@@ -260,7 +260,6 @@ public class FishController : MonoBehaviour, IMotionSource
 
         foreach (Collider2D food in foods)
         {
-            Debug.Log(food.gameObject.name);
             FoodSource source = food.GetComponent<FoodSource>();
             if (!source.IsAvailable() || !CanEatFood(source)) continue;
             if (source.CompareTag("Fish") && source.GetComponent<FishController>().data == data) continue;

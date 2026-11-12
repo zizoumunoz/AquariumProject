@@ -7,7 +7,7 @@ public class TankSO : ScriptableObject
 {
     public TankType type;
     public Sprite sprite;
-    public float[] startAttributes = new float[Enum.GetValues(typeof(TankAttribute)).Length];
+    public TankAttribute startAttributes = new();
     public int maxFish = 8;
     public int price = 1;
 }
@@ -18,13 +18,12 @@ public class Tank
     public Tank()
     {
         type = TankType.Fresh;
-        currentAttibutes = new float[Enum.GetValues(typeof(TankAttribute)).Length];
         maxFish = 8;
     }
     public List<SaveFish> fishes = new();
     public List<SaveDecoration> decorations = new();
     public TankType type = TankType.Fresh;
-    public float[] currentAttibutes = new float[Enum.GetValues(typeof(TankAttribute)).Length];
+    public TankAttribute currentAttibutes = new();
     public float maxFish = 8;
 
 }
@@ -37,12 +36,26 @@ public enum TankType
     Candy
 }
 
-public enum TankAttribute
+[Serializable]
+public class TankAttribute
 {
-    Oxygen,
-    Temperature,
-    MoldLevel,
-    PHLevel,
-    Salinity,
-    Light
+    public TankAttribute()
+    {
+
+    }
+    public TankAttribute(TankAttribute other)
+    {
+        oxigen = other.oxigen;
+        temperature = other.temperature;
+        moldLevel = other.moldLevel;
+        pHLevel = other.pHLevel;
+        salinity = other.salinity;
+        light = other.light;
+    }
+    public float oxigen = 50;
+    public float temperature = 50;
+    public float moldLevel = 0;
+    public float pHLevel = 50;
+    public float salinity = 50;
+    public float light = 50;
 }
