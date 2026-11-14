@@ -15,12 +15,18 @@ public class AlbumScript : MonoBehaviour
     private int _maximumPage = 10;
 
     [SerializeField] private TMP_Text _pageNumber;
-
     [SerializeField] private AlbumPanel[] _albumPanels;
+    [SerializeField] private FishLorePanel _lorePanel;
 
     private void Awake()
     {
+        // gets the maximum number of pages according to how many fishes there are
         _maximumPage = Mathf.Max(1, Mathf.CeilToInt(_fishDatabase.fishes.Count / (float)_fishPerPage));
+
+        foreach(AlbumPanel panel in _albumPanels)
+        {
+            panel.Clicked += fish => _lorePanel.Show(fish);
+        }
     }
 
     private void OnEnable()

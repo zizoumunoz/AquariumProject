@@ -1,17 +1,18 @@
-using System.Runtime.CompilerServices;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class FishLorePanel : MonoBehaviour
 {
     [SerializeField] private Image _fishImage;
     [SerializeField] private TMP_Text _nameText;
     [SerializeField] private TMP_Text _descriptionText;
     [SerializeField] private TMP_Text _statsText;
 
-    private void OnEnable() => Clear();
+    private void OnEnable()
+    {
+        Clear();
+    }
 
     public void Show(FishSO fish)
     {
