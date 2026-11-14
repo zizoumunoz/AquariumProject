@@ -1,11 +1,11 @@
-using System;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class AlbumScript : MonoBehaviour
 {
+    [Header("Hidden while the album is open")]
+    [SerializeField] private GameObject[] _hideWhileOpen;
+
     [Header("Database")]
     [SerializeField] private FishDatabaseSO _fishDatabase;
 
@@ -17,6 +17,32 @@ public class AlbumScript : MonoBehaviour
     [SerializeField] private TMP_Text _pageNumber;
     [SerializeField] private AlbumPanel[] _albumPanels;
     [SerializeField] private FishLorePanel _lorePanel;
+
+    public void OpenAlbum()
+    {
+        foreach (GameObject obj in _hideWhileOpen)
+        {
+            if (obj != null)
+            {
+                obj.SetActive(false);
+            }
+        }
+
+        gameObject.SetActive(true);
+    }
+
+    public void CloseAlbum()
+    {
+        gameObject.SetActive(false);
+
+        foreach(GameObject obj in _hideWhileOpen)
+        {
+            if (obj != null)
+            {
+                obj.SetActive(true);
+            }
+        }
+    }
 
     private void Awake()
     {

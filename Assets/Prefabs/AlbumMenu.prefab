@@ -1443,6 +1443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961f76dbc79465948a220baa15a9f02b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AlbumScript
+  _hideWhileOpen: []
   _fishDatabase: {fileID: 11400000, guid: b22b458589e56d94597e03bc34f1210b, type: 2}
   _currentPage: 1
   _pageNumber: {fileID: 2991854704806427693}
@@ -1849,10 +1850,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5580154264885952872}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 8606305835223177184}
+        m_TargetAssemblyTypeName: AlbumScript, Assembly-CSharp
+        m_MethodName: CloseAlbum
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
