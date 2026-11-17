@@ -24,6 +24,7 @@ public class FishController : MonoBehaviour, IMotionSource
 
     private Camera cam;
     [SerializeField] private SpriteRenderer sr;
+    [SerializeField] public SpriteRenderer highlight;
     private Vector2 min, max;
     private Vector2 target;
     private float retargetTimer;
@@ -36,7 +37,7 @@ public class FishController : MonoBehaviour, IMotionSource
 
     public FishSO Data { get { return data; } }
     public float Size { get { return data.fishStatus.baseSize * statusMultiplier.baseSize * AgeMultiplier * modifiers.Size; } }
-    public int Price { get { return Mathf.RoundToInt(data.price * modifiers.Price); } }
+    public int Price { get { return Mathf.RoundToInt(data.price * modifiers.Price * (age == Age.Adult ? 2 : 0.5f)); } }
     private float AgeMultiplier { get { return age == Age.Young ? data.fishStatus.youngSizeMultiplier * statusMultiplier.youngSizeMultiplier : 1f; } }
     public float CurrentSpeed { get { return data.fishStatus.fishSpeed * statusMultiplier.fishSpeed * modifiers.Speed; } }
     private float happiness;
@@ -68,7 +69,8 @@ public class FishController : MonoBehaviour, IMotionSource
         initialized = true;
 
         this.growTimer = growTimer != -1f ? growTimer : data.fishStatus.ageTime * statusMultiplier.ageTime;
-        if (sr != null) sr.sprite = data.sprite;
+        sr.sprite = data.sprite;
+        highlight.sprite = data.sprite;
 
         traits = newTraits ?? new List<TraitSO>();
         modifiers = new TraitModifiers(traits);
@@ -313,8 +315,8 @@ public class FishController : MonoBehaviour, IMotionSource
         float offset = spriteFacesLeft ? 180f : 0f;
         transform.rotation = Quaternion.Euler(0f, 0f, heading - offset);
 
-        if (sr != null)
-            sr.flipY = spriteFacesLeft ? forward.x > 0f : forward.x < 0f;
+        sr.flipY = spriteFacesLeft ? forward.x > 0f : forward.x < 0f;
+        highlight.flipY = spriteFacesLeft ? forward.x > 0f : forward.x < 0f;
     }
 
     private bool CanBreed

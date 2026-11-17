@@ -8,7 +8,7 @@ public class ScreenManager : MonoBehaviour
     [SerializeField] private Stack<GameObject> screenStack = new();
 #pragma warning restore UAC1009 // Unsupported collection type for serialization
 
-    public bool Empty()
+    public bool IsEmpty()
     {
         return screenStack.Count == 0;
     }

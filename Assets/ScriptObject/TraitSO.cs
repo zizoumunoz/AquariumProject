@@ -5,6 +5,7 @@ public class TraitSO : ScriptableObject
 {
     [SerializeField]
     public string traitName;
+    public Color traitColor;
 
     [SerializeField]
     [Header("Multipliers, 1 = normal")]
