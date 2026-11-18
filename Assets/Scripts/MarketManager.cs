@@ -25,22 +25,26 @@ public class MarketManager : MonoBehaviour
             Refresh();
     }
 
-    public void Refresh(List<FishSO> marketFish = null)
+    public void Refresh()
     {
         lastRefreshTime = Time.time;
-        if (marketFish == null)
-        {
-            marketFish = PickOffers();
-            rolled?.Invoke(marketFish);
-        }
+        List<FishSO> marketFish = PickOffers();
+        rolled?.Invoke(marketFish);
         panel.SetOffers(marketFish);
+    }
+
+    public void Refresh(List<FishSO> marketFish, float lastRefreshTime, List<int> timesBought)
+    {
+        this.lastRefreshTime = lastRefreshTime;
+        panel.SetOffers(marketFish, timesBought);
+        rolled?.Invoke(marketFish);
     }
 
     public List<FishSO> PickOffers(TankSO tank = null)
     {
         List<FishSO> result = new();
 
-        tank ??= database;
+        tank = tank != null ? tank : database;
 
         for (int i = 0; i < offerCount; i++)
         {

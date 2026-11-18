@@ -6,9 +6,6 @@ public class AlbumScript : MonoBehaviour
     [Header("Hidden while the album is open")]
     [SerializeField] private GameObject[] _hideWhileOpen;
 
-    [Header("Database")]
-    [SerializeField] private TankSO _fishDatabase;
-
     private const int _fishPerPage = 6;
     public int _currentPage = 1;
     private int _minimumPage = 1;
@@ -21,7 +18,7 @@ public class AlbumScript : MonoBehaviour
     private void Awake()
     {
         // gets the maximum number of pages according to how many fishes there are
-        _maximumPage = Mathf.Max(1, Mathf.CeilToInt(_fishDatabase.fishes.Count / (float)_fishPerPage));
+        _maximumPage = Mathf.Max(1, Mathf.CeilToInt(TankManager.instance.database.tankSOs[0].fishes.Count / (float)_fishPerPage));
 
         foreach (AlbumPanel panel in _albumPanels)
         {
@@ -108,13 +105,13 @@ public class AlbumScript : MonoBehaviour
 
             // prevents from accessing fish not in database
 
-            if (fishIndex >= _fishDatabase.fishes.Count)
+            if (fishIndex >= TankManager.instance.database.tankSOs[0].fishes.Count)
             {
                 _albumPanels[i].SetUndiscovered();
                 continue;
             }
 
-            FishSO fish = _fishDatabase.fishes[fishIndex];
+            FishSO fish = TankManager.instance.database.tankSOs[0].fishes[fishIndex];
 
             // show fish only if player obtained
             if (FishCollection.IsDiscovered(fish))

@@ -28,8 +28,6 @@ public class TankManager : MonoBehaviour
     public void LoadNewTank(Tank tank)
     {
         sr.sprite = tankSprites[(int)tank.type];
-        MarketManager.instance.database = database.tankSOs[(int)tank.type];
-        MarketManager.instance.Refresh(tank.marketRoll);
 
         SaveTankData();
 
@@ -60,7 +58,10 @@ public class TankManager : MonoBehaviour
         }
 
         database.activeTank = tank;
+        MarketManager.instance.database = database.tankSOs[(int)tank.type];
+        MarketManager.instance.Refresh(tank.marketRoll, tank.lastRefresh, tank.timesBought);
         ScreenManager.instance.EmptyStack();
+        MoneyManager.Instance.UpdateUI();
     }
     public void UpdateUI()
     {
@@ -93,7 +94,7 @@ public class TankManager : MonoBehaviour
                 baseFish = controller.data,
                 multiplier = controller.statusMultiplier,
                 traits = controller.traits,
-                growTimer = controller.growTimer
+                growTimer = controller.growTimer,
             };
             database.activeTank.fishes.Add(saveFish);
         }
@@ -117,7 +118,8 @@ public class TankManager : MonoBehaviour
             type = tank.type,
             maxFish = tank.maxFish,
             marketRoll = MarketManager.instance.PickOffers(tank),
-            lastRefresh = Time.time
+            lastRefresh = Time.time,
+            timesBought = { 0, 0, 0, 0, 0, 0 }
         });
         ScreenManager.instance.EmptyStack();
         LoadNewTank(database.tanks[^1]);
@@ -126,5 +128,10 @@ public class TankManager : MonoBehaviour
     {
         database.activeTank.marketRoll = rolledFishes;
         database.activeTank.lastRefresh = Time.time;
+        database.activeTank.timesBought = new();
+        for (int i = 0; i < rolledFishes.Count; i++)
+        {
+            database.activeTank.timesBought.Add(0);
+        }
     }
 }

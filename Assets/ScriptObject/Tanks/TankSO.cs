@@ -23,8 +23,8 @@ public class Tank
     public TankAttribute currentAttibutes = new();
     public float maxFish = 8;
     public List<FishSO> marketRoll = new();
+    public List<int> timesBought = new();
     public float lastRefresh = 0;
-
 }
 
 public enum TankType
