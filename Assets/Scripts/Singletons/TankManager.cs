@@ -34,7 +34,7 @@ public class TankManager : MonoBehaviour
         foreach (SaveFish saveFish in tank.fishes)
         {
             FishController newFish = Instantiate(fishPrefab, fishRoot);
-            newFish.Init(saveFish.baseFish, saveFish.multiplier, saveFish.traits, saveFish.growTimer);
+            newFish.Init(saveFish.baseFish, saveFish.traits, saveFish.growTimer);
         }
         foreach (Transform deco in decoRoot)
         {

@@ -13,8 +13,30 @@ MonoBehaviour:
   m_Name: Dwarfism
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   traitName: Dwarfism
-  sizeMultiplier: 0.5
-  speedMultiplier: 1
-  turnSpeedMultiplier: 1
-  hungerDecayMultiplier: 1
+  traitColor: {r: 0.117557764, g: 0.78867924, b: 0.7400428, a: 1}
+  statusMultiplier:
+    baseSize: 0.5
+    nutrition: 1
+    youngSizeMultiplier: 1
+    fishSpeed: 1
+    minRetargetTime: 1
+    maxRetargetTime: 1
+    startFullness: 1
+    fullnessDecayPerSecond: 1
+    wanderThreshold: 1
+    eatDistance: 1
+    happiness: 1
+    unhappyBelow: 1
+    happyAbove: 1
+    happinessLossPerSecond: 1
+    happinessGainPerSecond: 1
+    fleeSpeedRatio: 1
+    fleeDistance: 1
+    fearMemoryTime: 1
+    detectionRadius: 1
+    breedHappiness: 1
+    breedCooldown: 1
+    breedDistance: 1
+    ageTime: 1
+    poopInterval: 1
   priceMultiplier: 1

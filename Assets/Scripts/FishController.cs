@@ -5,7 +5,7 @@ public class FishController : MonoBehaviour, IMotionSource
 {
     public FishSO data;
 
-    public FishStatus statusMultiplier = new();
+    public FishStatus statusMultiplier = new(1);
 
     private const float boundsMargin = 0.5f;
 
@@ -36,10 +36,11 @@ public class FishController : MonoBehaviour, IMotionSource
     private float chasedTimer;
 
     public FishSO Data { get { return data; } }
-    public float Size { get { return data.fishStatus.baseSize * statusMultiplier.baseSize * AgeMultiplier * modifiers.Size; } }
-    public int Price { get { return Mathf.RoundToInt(data.price * modifiers.Price * (age == Age.Adult ? 2 : 0.5f)); } }
+    public float Size { get { return data.fishStatus.baseSize * statusMultiplier.baseSize * AgeMultiplier; } }
+    public int Price { get { return Mathf.RoundToInt(data.price * priceMultiplier * (age == Age.Adult ? 2 : 0.5f)); } }
+    private float priceMultiplier = 1;
     private float AgeMultiplier { get { return age == Age.Young ? data.fishStatus.youngSizeMultiplier * statusMultiplier.youngSizeMultiplier : 1f; } }
-    public float CurrentSpeed { get { return data.fishStatus.fishSpeed * statusMultiplier.fishSpeed * modifiers.Speed; } }
+    public float CurrentSpeed { get { return data.fishStatus.fishSpeed * statusMultiplier.fishSpeed; } }
     private float happiness;
     public float Happiness { get { return happiness; } }
     public Age CurrentAge { get { return age; } }
@@ -56,14 +57,18 @@ public class FishController : MonoBehaviour, IMotionSource
 
     // used for traits
 
-    private TraitModifiers modifiers = new TraitModifiers(null);
-    public TraitModifiers Modifiers { get { return modifiers; } }
-
-    public void Init(FishSO so, FishStatus status, List<TraitSO> newTraits = null, float growTimer = -1f)
+    public void Init(FishSO so, List<TraitSO> newTraits = null, float growTimer = -1f)
     {
         data = so;
         FishCollection.Discover(so);    // Calls FishCollection event to add to album
-        statusMultiplier = status;
+        traits = new List<TraitSO>(newTraits);
+
+        foreach (TraitSO trait in traits)
+        {
+            statusMultiplier *= trait.statusMultiplier;
+            priceMultiplier *= trait.priceMultiplier;
+        }
+
         fullness = data.fishStatus.startFullness * statusMultiplier.startFullness;
         happiness = data.fishStatus.happiness * statusMultiplier.happiness;
         initialized = true;
@@ -72,8 +77,6 @@ public class FishController : MonoBehaviour, IMotionSource
         sr.sprite = data.sprite;
         highlight.sprite = data.sprite;
 
-        traits = newTraits ?? new List<TraitSO>();
-        modifiers = new TraitModifiers(traits);
 
         chaser = null;
         chasedTimer = 0f;
@@ -96,13 +99,13 @@ public class FishController : MonoBehaviour, IMotionSource
 
     private void Start()
     {
-        if (data != null && !initialized) Init(data, statusMultiplier, traits);
+        if (data != null && !initialized) Init(data, traits);
     }
 
     private void Update()
     {
         CalculateBounds();
-        fullness = Mathf.Max(0f, fullness - data.fishStatus.fullnessDecayPerSecond * statusMultiplier.fullnessDecayPerSecond * modifiers.HungerDecay * Time.deltaTime); breedTimer = Mathf.Max(0f, breedTimer - Time.deltaTime);
+        fullness = Mathf.Max(0f, fullness - data.fishStatus.fullnessDecayPerSecond * Time.deltaTime); breedTimer = Mathf.Max(0f, breedTimer - Time.deltaTime);
 
         if (chaser != null)
         {
@@ -140,9 +143,9 @@ public class FishController : MonoBehaviour, IMotionSource
     private void UpdateHappiness()
     {
         if (fullness < data.fishStatus.unhappyBelow * statusMultiplier.unhappyBelow)
-            happiness -= data.fishStatus.happinessLossPerSecond * statusMultiplier.happinessLossPerSecond * modifiers.HappinessLoss * Time.deltaTime;
+            happiness -= data.fishStatus.happinessLossPerSecond * statusMultiplier.happinessLossPerSecond * Time.deltaTime;
         else if (fullness > data.fishStatus.happyAbove * statusMultiplier.happyAbove)
-            happiness += data.fishStatus.happinessGainPerSecond * statusMultiplier.happinessGainPerSecond * modifiers.HappinessGain * Time.deltaTime;
+            happiness += data.fishStatus.happinessGainPerSecond * statusMultiplier.happinessGainPerSecond * Time.deltaTime;
 
         happiness = Mathf.Clamp(happiness, 0f, 100f);
     }
@@ -296,7 +299,7 @@ public class FishController : MonoBehaviour, IMotionSource
 
         float desiredAngle = Mathf.Atan2(toTarget.y, toTarget.x) * Mathf.Rad2Deg;
         float diff = Mathf.DeltaAngle(heading, desiredAngle);
-        heading = Mathf.MoveTowardsAngle(heading, desiredAngle, turnSpeed * modifiers.TurnSpeed * Time.deltaTime);
+        heading = Mathf.MoveTowardsAngle(heading, desiredAngle, turnSpeed * Time.deltaTime);
 
         float speedFactor = Mathf.Lerp(0.4f, 1f, Mathf.Clamp01(Mathf.Cos(diff * Mathf.Deg2Rad) * 0.5f + 0.5f));
         normalizedSpeed = CurrentSpeed > 0f ? Mathf.Clamp01(speed * speedFactor / CurrentSpeed) : 0f;
@@ -384,10 +387,7 @@ public class FishController : MonoBehaviour, IMotionSource
     {
         Vector3 pos = (transform.position + mate.transform.position) * 0.5f;
 
-        FishSpawner.instance.SpawnChild(data,
-            new FishStatus((float x, float y) => Random.Range(Mathf.Min(x, y) - 0.2f, Mathf.Max(x, y) + 0.2f),
-            statusMultiplier, mate.statusMultiplier),
-            traits, mate.traits, pos);
+        FishSpawner.instance.SpawnChild(data, traits, mate.traits, pos);
 
         breedTimer = data.fishStatus.breedCooldown * statusMultiplier.breedCooldown;
         mate.breedTimer = data.fishStatus.breedCooldown * mate.statusMultiplier.breedCooldown;

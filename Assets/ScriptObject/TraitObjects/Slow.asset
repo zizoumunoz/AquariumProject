@@ -13,10 +13,30 @@ MonoBehaviour:
   m_Name: Slow
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   traitName: Slow
-  sizeMultiplier: 1
-  speedMultiplier: 0.75
-  turnSpeedMultiplier: 1
-  hungerDecayMultiplier: 1
+  traitColor: {r: 0.7735849, g: 0.5765397, b: 0.64624375, a: 1}
+  statusMultiplier:
+    baseSize: 1
+    nutrition: 1
+    youngSizeMultiplier: 1
+    fishSpeed: 0.75
+    minRetargetTime: 1
+    maxRetargetTime: 1
+    startFullness: 1
+    fullnessDecayPerSecond: 1
+    wanderThreshold: 1
+    eatDistance: 1
+    happiness: 1
+    unhappyBelow: 1
+    happyAbove: 1
+    happinessLossPerSecond: 1
+    happinessGainPerSecond: 1
+    fleeSpeedRatio: 1
+    fleeDistance: 1
+    fearMemoryTime: 1
+    detectionRadius: 1
+    breedHappiness: 1
+    breedCooldown: 1
+    breedDistance: 1
+    ageTime: 1
+    poopInterval: 1
   priceMultiplier: 0.75
-  happinessGainMultiplier: 1
-  happinessLossMultiplier: 1
