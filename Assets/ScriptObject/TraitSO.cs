@@ -9,11 +9,6 @@ public class TraitSO : ScriptableObject
 
     [SerializeField]
     [Header("Multipliers, 1 = normal")]
-    public float sizeMultiplier = 1f;
-    public float speedMultiplier = 1f;
-    public float turnSpeedMultiplier = 1f;
-    public float hungerDecayMultiplier = 1f;
+    public FishStatus statusMultiplier = new(1);
     public float priceMultiplier = 1f;
-    public float happinessGainMultiplier = 1f;
-    public float happinessLossMultiplier = 1f;
 }

@@ -80,40 +80,6 @@ public class FishStatus
         poopInterval = initialValue;
     }
 
-    public FishStatus(Func<float, float, float> initialValue, FishStatus parent1, FishStatus parent2)
-    {
-        baseSize = initialValue(parent1.baseSize, parent2.baseSize);
-        nutrition = initialValue(parent1.nutrition, parent2.nutrition);
-        youngSizeMultiplier = initialValue(parent1.youngSizeMultiplier, parent2.youngSizeMultiplier);
-
-        fishSpeed = initialValue(parent1.fishSpeed, parent2.fishSpeed);
-        minRetargetTime = initialValue(parent1.minRetargetTime, parent2.minRetargetTime);
-        maxRetargetTime = initialValue(parent1.maxRetargetTime, parent2.maxRetargetTime);
-
-        startFullness = initialValue(parent1.startFullness, parent2.startFullness);
-        fullnessDecayPerSecond = initialValue(parent1.fullnessDecayPerSecond, parent2.fullnessDecayPerSecond);
-        wanderThreshold = initialValue(parent1.wanderThreshold, parent2.wanderThreshold);
-        eatDistance = initialValue(parent1.eatDistance, parent2.eatDistance);
-
-        happiness = initialValue(parent1.happiness, parent2.happiness);
-        unhappyBelow = initialValue(parent1.unhappyBelow, parent2.unhappyBelow);
-        happyAbove = initialValue(parent1.happyAbove, parent2.happyAbove);
-        happinessLossPerSecond = initialValue(parent1.happinessLossPerSecond, parent2.happinessLossPerSecond);
-        happinessGainPerSecond = initialValue(parent1.happinessGainPerSecond, parent2.happinessGainPerSecond);
-
-        fleeSpeedRatio = initialValue(parent1.fleeSpeedRatio, parent2.fleeSpeedRatio);
-        fleeDistance = initialValue(parent1.fleeDistance, parent2.fleeDistance);
-        fearMemoryTime = initialValue(parent1.fearMemoryTime, parent2.fearMemoryTime);
-        detectionRadius = initialValue(parent1.detectionRadius, parent2.detectionRadius);
-
-        breedHappiness = initialValue(parent1.breedHappiness, parent2.breedHappiness);
-        breedCooldown = initialValue(parent1.breedCooldown, parent2.breedCooldown);
-        breedDistance = initialValue(parent1.breedDistance, parent2.breedDistance);
-        ageTime = initialValue(parent1.ageTime, parent2.ageTime);
-
-        poopInterval = initialValue(parent1.poopInterval, parent2.poopInterval);
-    }
-
     public FishStatus()
     {
         baseSize = 1f;
@@ -146,6 +112,45 @@ public class FishStatus
         ageTime = 60f;
 
         poopInterval = 20f;
+    }
+
+    public static FishStatus operator *(FishStatus status1, FishStatus status2)
+    {
+        FishStatus ret = new()
+        {
+            baseSize = status1.baseSize * status2.baseSize,
+            nutrition = status1.nutrition * status2.nutrition,
+            youngSizeMultiplier = status1.youngSizeMultiplier * status2.youngSizeMultiplier,
+
+            fishSpeed = status1.fishSpeed * status2.fishSpeed,
+            minRetargetTime = status1.minRetargetTime * status2.minRetargetTime,
+            maxRetargetTime = status1.maxRetargetTime * status2.maxRetargetTime,
+
+            startFullness = status1.startFullness * status2.startFullness,
+            fullnessDecayPerSecond = status1.fullnessDecayPerSecond * status2.fullnessDecayPerSecond,
+            wanderThreshold = status1.wanderThreshold * status2.wanderThreshold,
+            eatDistance = status1.eatDistance * status2.eatDistance,
+
+            happiness = status1.happiness * status2.happiness,
+            unhappyBelow = status1.unhappyBelow * status2.unhappyBelow,
+            happyAbove = status1.happyAbove * status2.happyAbove,
+            happinessLossPerSecond = status1.happinessLossPerSecond * status2.happinessLossPerSecond,
+            happinessGainPerSecond = status1.happinessGainPerSecond * status2.happinessGainPerSecond,
+
+            fleeSpeedRatio = status1.fleeSpeedRatio * status2.fleeSpeedRatio,
+            fleeDistance = status1.fleeDistance * status2.fleeDistance,
+            fearMemoryTime = status1.fearMemoryTime * status2.fearMemoryTime,
+            detectionRadius = status1.detectionRadius * status2.detectionRadius,
+
+            breedHappiness = status1.breedHappiness * status2.breedHappiness,
+            breedCooldown = status1.breedCooldown * status2.breedCooldown,
+            breedDistance = status1.breedDistance * status2.breedDistance,
+            ageTime = status1.ageTime * status2.ageTime,
+
+            poopInterval = status1.poopInterval * status2.poopInterval,
+        };
+
+        return ret;
     }
 
     [Header("Body")]

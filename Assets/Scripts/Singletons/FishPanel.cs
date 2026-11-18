@@ -37,8 +37,11 @@ public class FishPanel : MonoBehaviour
                 trait = Instantiate(fishTraitsPrefab, fishTraitsRoot);
             }
             trait.gameObject.SetActive(true);
+            Color c = fish.traits[i].traitColor;
             trait.GetComponent<Image>().color = fish.traits[i].traitColor;
-            trait.GetChild(0).GetComponent<TextMeshProUGUI>().text = fish.traits[i].traitName;
+            TextMeshProUGUI text = trait.GetChild(0).GetComponent<TextMeshProUGUI>();
+            text.text = fish.traits[i].traitName;
+            text.color = ((c.r * 0.299f + c.g * 0.587f + c.b * 0.114f) > 0.5f) ? Color.black : Color.white;
         }
 
         if (fishTraitsRoot.childCount > fish.traits.Count)
