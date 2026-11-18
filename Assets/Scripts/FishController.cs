@@ -7,8 +7,6 @@ public class FishController : MonoBehaviour, IMotionSource
 
     public FishStatus statusMultiplier = new(1);
 
-    private const float boundsMargin = 0.5f;
-
     [Header("Direction")]
     private bool spriteFacesLeft = true;
     [SerializeField] private float turnSpeed = 120f;
@@ -41,7 +39,8 @@ public class FishController : MonoBehaviour, IMotionSource
     private float priceMultiplier = 1;
     private float AgeMultiplier { get { return age == Age.Young ? data.fishStatus.youngSizeMultiplier * statusMultiplier.youngSizeMultiplier : 1f; } }
     public float CurrentSpeed { get { return data.fishStatus.fishSpeed * statusMultiplier.fishSpeed; } }
-    private float happiness;
+    
+    [SerializeField] private float happiness;
     public float Happiness { get { return happiness; } }
     public Age CurrentAge { get { return age; } }
 
@@ -95,6 +94,11 @@ public class FishController : MonoBehaviour, IMotionSource
     private void Awake()
     {
         cam = Camera.main;
+    }
+
+    private void OnDestroy()
+    {
+        if (aimedFoodSorce != null) aimedFoodSorce.RemoveTarget(this);
     }
 
     private void Start()
@@ -179,14 +183,32 @@ public class FishController : MonoBehaviour, IMotionSource
         data.iconRenderer.enabled = afraid || hungry;
     }
 
+    private float BoundsMargin
+    {
+        get
+        {
+            Vector3 extents = sr.sprite.bounds.extents;
+            return Mathf.Max(extents.x, extents.y) * Size;
+        }
+    }
+
     private void CalculateBounds()
     {
+        float margin = BoundsMargin;
+
+        if (TankBounds.Instance != null)
+        {
+            min = TankBounds.Instance.Min + Vector2.one * margin;
+            max = TankBounds.Instance.Max - Vector2.one * margin;
+            return;
+        }
+
         float halfH = cam.orthographicSize;
         float halfW = halfH * cam.aspect;
         Vector2 c = cam.transform.position;
 
-        min = new Vector2(c.x - halfW + boundsMargin, c.y - halfH + boundsMargin);
-        max = new Vector2(c.x + halfW - boundsMargin, c.y + halfH - boundsMargin);
+        min = new Vector2(c.x - halfW + margin, c.y - halfH + margin);
+        max = new Vector2(c.x + halfW - margin, c.y + halfH - margin);
     }
 
     private Vector2 ClampToBounds(Vector2 p)
@@ -231,6 +253,12 @@ public class FishController : MonoBehaviour, IMotionSource
 
     private void SeekFood()
     {
+        if (aimedFoodSorce != null && aimedFoodSorce.bitesLeft <= 0)
+        {
+            aimedFoodSorce.RemoveTarget(this);
+            aimedFoodSorce = null;
+        }
+
         if (aimedFoodSorce == null)
         {
             aimedFoodSorce = FindNearestFood();
@@ -244,7 +272,7 @@ public class FishController : MonoBehaviour, IMotionSource
 
         MoveTo(aimedFoodSorce.transform.position, CurrentSpeed);
 
-        float dFood = Vector2.Distance(transform.position, aimedFoodSorce.transform.position);
+        float dFood = aimedFoodSorce.DistanceTo(transform.position);
         float eatDist = data.fishStatus.eatDistance * statusMultiplier.eatDistance * Size;
 
         if (dFood <= eatDist)
@@ -252,7 +280,7 @@ public class FishController : MonoBehaviour, IMotionSource
             aimedFoodSorce.RemoveTarget(this);
             fullness = Mathf.Min(100f, fullness + aimedFoodSorce.Eat());
             aimedFoodSorce = null;
-            eatTimer = 5f;
+            eatTimer = 1f;
         }
     }
 
@@ -266,7 +294,10 @@ public class FishController : MonoBehaviour, IMotionSource
         foreach (Collider2D food in foods)
         {
             FoodSource source = food.GetComponent<FoodSource>();
-            if (!source.IsAvailable() || !CanEatFood(source)) continue;
+            bool available = source.IsAvailable();
+            bool canEat = CanEatFood(source);
+            // Debug.Log(name + " -> " + source.name + " | bites=" + source.bitesLeft + " | available=" + available + " | canEat=" + canEat, source);
+            if (!available || !canEat) continue;
             if (source.CompareTag("Fish") && source.GetComponent<FishController>().data == data) continue;
 
             float d = Vector2.SqrMagnitude(transform.position - food.transform.position);
@@ -356,7 +387,7 @@ public class FishController : MonoBehaviour, IMotionSource
 
         MoveTo(mate.transform.position, CurrentSpeed);
 
-        if (Vector2.Distance(transform.position, mate.transform.position) <= statusMultiplier.breedHappiness)
+        if (Vector2.Distance(transform.position, mate.transform.position) <= data.fishStatus.breedDistance * statusMultiplier.breedDistance)
             Breed(mate);
 
         return true;
@@ -387,9 +418,11 @@ public class FishController : MonoBehaviour, IMotionSource
     {
         Vector3 pos = (transform.position + mate.transform.position) * 0.5f;
 
-        FishSpawner.instance.SpawnChild(data, traits, mate.traits, pos);
+        if (!FishSpawner.instance.SpawnChild(data, traits, mate.traits, pos)) return;
 
         breedTimer = data.fishStatus.breedCooldown * statusMultiplier.breedCooldown;
         mate.breedTimer = data.fishStatus.breedCooldown * mate.statusMultiplier.breedCooldown;
     }
+
+
 }
