@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 752b6bbeba446bb409714c95768a7728
+guid: c8a3b3e0179a3b5428ee0548e66690a9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1426486914805705407
-    second: Hook_0
+      213: -230212805086525623
+    second: ShopIcon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -98,17 +98,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hook_0
+      name: ShopIcon_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 385
-        height: 807
+        width: 355
+        height: 361
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 145534675b9143ce0800000000000000
-      internalID: -1426486914805705407
+      spriteID: 947421a6cae1eccf0800000000000000
+      internalID: -230212805086525623
       vertices: []
       indices: 
       edges: []
@@ -137,7 +150,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Hook_0: -1426486914805705407
+      ShopIcon_0: -230212805086525623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

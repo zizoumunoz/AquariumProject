@@ -32,6 +32,7 @@ public class MarketSlotUI : MonoBehaviour
         bought = false;
         fish = so;
         fishImage.sprite = so.sprite;
+        fishImage.preserveAspect = true;
         nameLabel.text = so.fishName;
         priceLabel.text = "$" + so.price;
         foreach (Transform star in starHolder)

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1fb188eeb3d33be47b78debaa7022a15
+guid: 9ef78a3631992fb40b9bef1fc99f8ef2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8379480884631466627
-    second: ExclamationPoint_0
+      213: -1671663248283000969
+    second: HungryIcon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -98,17 +98,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ExclamationPoint_0
+      name: HungryIcon_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 8
-        height: 12
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7d8d55288a16bb80800000000000000
-      internalID: -8379480884631466627
+      spriteID: 77f140ee12f0dc8e0800000000000000
+      internalID: -1671663248283000969
       vertices: []
       indices: 
       edges: []
@@ -137,7 +150,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ExclamationPoint_0: -8379480884631466627
+      HungryIcon_0: -1671663248283000969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

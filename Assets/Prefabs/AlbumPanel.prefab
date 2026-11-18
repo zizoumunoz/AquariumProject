@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad017752896f258479d14fc0c07ee1ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AlbumPanel
-  _fishImage: {fileID: 5738937940831457697}
+  _fishImage: {fileID: 5613783178905487719}
   _fishName: {fileID: 2018024135433781356}
   _fish: {fileID: 0}
   _undiscoveredSprite: {fileID: 8403274607910343662, guid: 3a001500638a96c449712be6c8801b8f, type: 3}
@@ -104,7 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8311176550383543407}
   - component: {fileID: 9150384765032014176}
-  - component: {fileID: 5738937940831457697}
+  - component: {fileID: 5613783178905487719}
   m_Layer: 5
   m_Name: FishImage
   m_TagString: Untagged
@@ -139,7 +139,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5846242595188236979}
   m_CullTransparentMesh: 1
---- !u!114 &5738937940831457697
+--- !u!114 &5613783178905487719
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,9 +148,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5846242595188236979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -159,13 +159,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5975768810732996427
 GameObject:
   m_ObjectHideFlags: 0

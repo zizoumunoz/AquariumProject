@@ -7,7 +7,7 @@ public class AlbumPanel : MonoBehaviour, IPointerClickHandler
 {
 
     [Header("FishSO")]
-    [SerializeField] private RawImage _fishImage;
+    [SerializeField] private Image _fishImage;
     [SerializeField] private TMP_Text _fishName;
     [SerializeField] private FishSO _fish;
     [SerializeField] private Sprite _undiscoveredSprite;
@@ -31,15 +31,16 @@ public class AlbumPanel : MonoBehaviour, IPointerClickHandler
     public void SetFish(FishSO fishData)
     {
         _fish = fishData;
-
-        _fishImage.texture = _fish.sprite.texture;
+        _fishImage.sprite = _fish.sprite;
+        _fishImage.preserveAspect = true;
         _fishName.text = _fish.fishName;
     }
 
     public void SetUndiscovered()
     {
         _fish = null;
-        _fishImage.texture = _undiscoveredSprite.texture;
+        _fishImage.sprite = _undiscoveredSprite;
+        _fishImage.preserveAspect = true;
         _fishName.text = "Not Discovered";
 
     }

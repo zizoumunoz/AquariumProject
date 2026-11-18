@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3017575449951369872}
   - component: {fileID: 7712172714012249840}
   - component: {fileID: 7117221734594811611}
-  - component: {fileID: 2121606769672973572}
+  - component: {fileID: 6131103558556669747}
   m_Layer: 7
   m_Name: MeatBall
   m_TagString: Food
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4952802837046464369, guid: b5ed9bf5f78d6f44aacb6f8beaa0fcc0, type: 3}
+  m_Sprite: {fileID: 5846443771815001908, guid: 0156c2f18898aae49be0f3b2b3cfca10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -156,8 +156,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &2121606769672973572
-BoxCollider2D:
+--- !u!58 &6131103558556669747
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -191,14 +191,4 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.08, y: 0.08}
-    newSize: {x: 0.32, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.08, y: 0.08}
-  m_EdgeRadius: 0
+  m_Radius: 0.145

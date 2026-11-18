@@ -514,6 +514,7 @@ MonoBehaviour:
   buyButton: {fileID: 9149974724141177678}
   fish: {fileID: 0}
   starHolder: {fileID: 8789009543203605513}
+  bought: 0
 --- !u!1 &5020148112626284910
 GameObject:
   m_ObjectHideFlags: 0
