@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Kelp
   m_EditorClassIdentifier: Assembly-CSharp::KelpSO
   fullnessPerBite: 15
-  bitesBeforeReload: 1
-  reloadTime: 5
+  bitesBeforeReload: 8
+  reloadTime: 30
