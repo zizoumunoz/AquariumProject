@@ -9,6 +9,14 @@ public class FoodSource : MonoBehaviour
     public int bitesLeft;
     public float size;
     private List<FishController> fishes = new();
+
+    private Collider2D col;
+
+    private void Awake()
+    {
+        col = GetComponent<Collider2D>();
+    }
+
     public float Eat()
     {
         bitesLeft--;
@@ -30,4 +38,11 @@ public class FoodSource : MonoBehaviour
     {
         return bitesLeft - fishes.Count > 0;
     }
+    public float DistanceTo(Vector2 from)
+    {
+        if (col == null) return Vector2.Distance(from, transform.position);
+        if (col.OverlapPoint(from)) return 0f;
+        return Vector2.Distance(from, col.ClosestPoint(from));
+    }
+
 }

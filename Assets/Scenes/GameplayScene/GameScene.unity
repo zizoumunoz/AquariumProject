@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c9801724f980d42869cd9a81c4eb32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoneyDisplay
-  money: 1000000
+  money: 5000
   initialMoney: 100
 --- !u!1 &780869033
 GameObject:
@@ -2189,6 +2189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 920171438}
+  - component: {fileID: 920171439}
   m_Layer: 0
   m_Name: Bounds
   m_TagString: Untagged
@@ -2215,6 +2216,22 @@ Transform:
   - {fileID: 1562173519}
   m_Father: {fileID: 1158554204}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &920171439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920171437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aea821ee21312f4db97822a084f60e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TankBounds
+  floor: {fileID: 1987798405}
+  ceiling: {fileID: 1120738883}
+  leftWall: {fileID: 1597512083}
+  rightWall: {fileID: 1562173520}
 --- !u!1 &930258086 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2343067917173691220, guid: 86efff7fae57ea440b23e9d19dbbd352, type: 3}
@@ -2420,6 +2437,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079343022}
   m_CullTransparentMesh: 1
+--- !u!1 &1082743128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1082743129}
+  - component: {fileID: 1082743130}
+  m_Layer: 0
+  m_Name: Algaevisuals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1082743129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082743128}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1082743130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082743128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704fc06d34715c94e8e83b5768f379a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlgaeVisuals
+  _smallAlgae: {fileID: 1822306425593731046, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}
+  _mediumAlgae: {fileID: 3088199924961003057, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}
+  _largeAlgae: {fileID: -6795380178158588127, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}
+  _maxSpots: 250
+  _edgeMargin: 0.2
+  _sortingLayer: Default
+  _sortingOrder: -5
+  _scaleRange: {x: 0.8, y: 1.2}
 --- !u!1 &1120738881
 GameObject:
   m_ObjectHideFlags: 0
@@ -4870,7 +4939,7 @@ Transform:
   m_GameObject: {fileID: 1987798403}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -6.78, z: 0}
+  m_LocalPosition: {x: 0, y: -6.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5940,3 +6009,4 @@ SceneRoots:
   - {fileID: 55165100}
   - {fileID: 185236743}
   - {fileID: 1158554204}
+  - {fileID: 1082743129}
