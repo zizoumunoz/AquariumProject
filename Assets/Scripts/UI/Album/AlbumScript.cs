@@ -46,6 +46,19 @@ public class AlbumScript : MonoBehaviour
 
     private void OnDisable()
     {
+        FishCollection.FishDiscovered -= OnFishDiscovered;
+
+        if (!gameObject.scene.isLoaded)
+        {
+            return;
+        }
+
+        if (ScreenManager.instance != null)
+        {
+            ScreenManager.instance.Remove(gameObject);
+        }
+
+        // hide non related UI items
         foreach (GameObject obj in _hideWhileOpen)
         {
             if (obj != null)
@@ -87,8 +100,6 @@ public class AlbumScript : MonoBehaviour
 
     private void RefreshView()
     {
-
-
         int pageStartIndex = (_currentPage - 1) * _fishPerPage;
 
         for (int i = 0; i < _albumPanels.Length; i++)
