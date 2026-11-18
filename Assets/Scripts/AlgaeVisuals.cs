@@ -12,10 +12,9 @@ public class AlgaeVisuals : MonoBehaviour
     [SerializeField] private Sprite _largeAlgae;
 
     [Header("Spawning")]
+    [SerializeField] private SpriteRenderer _algaePrefab;
     [SerializeField] private int _maxSpots = 40;
     [SerializeField] private float _edgeMargin = 0.2f;
-    [SerializeField] private string _sortingLayer = "Default";
-    [SerializeField] private int _sortingOrder = -5;
     [SerializeField] private Vector2 _scaleRange = new Vector2(0.8f, 1.2f);
 
     private readonly List<SpriteRenderer> _spots = new();
@@ -75,8 +74,6 @@ public class AlgaeVisuals : MonoBehaviour
         SpriteRenderer sr = obj.AddComponent<SpriteRenderer>();
 
         sr.sprite = sprite;
-        sr.sortingLayerName = _sortingLayer;
-        sr.sortingOrder = _sortingOrder;
         _spots.Add(sr);
     }
 
