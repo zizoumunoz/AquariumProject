@@ -5,6 +5,7 @@ public class SceneFlow : MonoBehaviour
 {
     public void NewGame()
     {
+        FishCollection.Clear();
         ChangeScene("GameScene");
     }
     public void LoadGame()
