@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3417289112425345382}
   - component: {fileID: 3582352136913256458}
   - component: {fileID: 2235996401636585318}
+  - component: {fileID: -413581193333780475}
   m_Layer: 0
   m_Name: Snail
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6797518887898634026}
+  m_GameObject: {fileID: 4241136700056786607}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -42,7 +43,7 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6797518887898634026}
+  m_GameObject: {fileID: 4241136700056786607}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -101,7 +102,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6797518887898634026}
+  m_GameObject: {fileID: 4241136700056786607}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03a741ec367a73c4ab6fac4f62a920d7, type: 3}
@@ -110,15 +111,13 @@ MonoBehaviour:
   speed: 0.3
   edgeMargin: 0.5
   spriteFacesRight: 1
-  groundTag: Bottom
-  groundSearchDistance: 40
 --- !u!114 &3582352136913256458
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6797518887898634026}
+  m_GameObject: {fileID: 4241136700056786607}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a29771ec3de1f3e4ea507ad96932c181, type: 3}
@@ -135,7 +134,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6797518887898634026}
+  m_GameObject: {fileID: 4241136700056786607}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a4232ae8c251214db32a8ccae07c590, type: 3}
@@ -146,3 +145,19 @@ MonoBehaviour:
   - {fileID: -7574233937097828409, guid: 0a9c5ea573a5001448f05ca01488906c, type: 3}
   - {fileID: -1243129457217457053, guid: 0a9c5ea573a5001448f05ca01488906c, type: 3}
   framesPerSecond: 3
+  randomStartFrame: 0
+--- !u!114 &-413581193333780475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4241136700056786607}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507230ef549136a4aa7d32bb2d7263ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SurfaceSnap
+  direction: {x: 0, y: -1}
+  surfaceTag: Bottom
+  searchDistance: 40

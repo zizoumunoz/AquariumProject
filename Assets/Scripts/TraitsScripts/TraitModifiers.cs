@@ -8,6 +8,10 @@ public class TraitModifiers
     public float HungerDecay { get; private set; } = 1f;
     public float Price { get; private set; } = 1f;
 
+    public float HappinessGain { get; private set; } = 1f;
+
+    public float HappinessLoss { get; private set; } = 1f;
+
     public TraitModifiers(IEnumerable<TraitSO> traits)
     {
         if (traits == null) return;
@@ -21,6 +25,8 @@ public class TraitModifiers
             TurnSpeed *= trait.turnSpeedMultiplier;
             HungerDecay *= trait.hungerDecayMultiplier;
             Price *= trait.priceMultiplier;
+            HappinessGain *= trait.happinessGainMultiplier;
+            HappinessLoss *= trait.happinessLossMultiplier;
         }
     }
 }

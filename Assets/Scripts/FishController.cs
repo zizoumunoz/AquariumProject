@@ -140,9 +140,9 @@ public class FishController : MonoBehaviour, IMotionSource
     private void UpdateHappiness()
     {
         if (fullness < data.fishStatus.unhappyBelow * statusMultiplier.unhappyBelow)
-            happiness -= data.fishStatus.happinessLossPerSecond * statusMultiplier.happinessLossPerSecond * Time.deltaTime;
+            happiness -= data.fishStatus.happinessLossPerSecond * statusMultiplier.happinessLossPerSecond * modifiers.HappinessLoss * Time.deltaTime;
         else if (fullness > data.fishStatus.happyAbove * statusMultiplier.happyAbove)
-            happiness += data.fishStatus.happinessGainPerSecond * statusMultiplier.happinessGainPerSecond * Time.deltaTime;
+            happiness += data.fishStatus.happinessGainPerSecond * statusMultiplier.happinessGainPerSecond * modifiers.HappinessGain * Time.deltaTime;
 
         happiness = Mathf.Clamp(happiness, 0f, 100f);
     }
