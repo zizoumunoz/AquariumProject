@@ -54,15 +54,8 @@ public class BuyTankButton : MonoBehaviour
     }
     public void BuyTank()
     {
-        database.tanks.Add(new Tank
-        {
-            currentAttibutes = new(database.tankSOs[index].startAttributes),
-            type = database.tankSOs[index].type,
-            maxFish = database.tankSOs[index].maxFish
-        });
         MoneyManager.Instance.SpendMoney(database.tankSOs[index].price);
-        ScreenManager.instance.EmptyStack();
-        TankManager.instance.LoadNewTank(database.tanks[^1]);
+        TankManager.instance.CreateTank(database.tankSOs[index]);
     }
     private void OnEnable()
     {

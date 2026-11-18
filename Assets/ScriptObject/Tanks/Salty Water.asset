@@ -23,3 +23,7 @@ MonoBehaviour:
     light: 50
   maxFish: 8
   price: 1000
+  fishes:
+  - {fileID: 11400000, guid: 30a87821136912843bac50ed6a1c972f, type: 2}
+  traits:
+  - {fileID: 11400000, guid: 69090d95a4ace244298a899a04f2e50d, type: 2}
