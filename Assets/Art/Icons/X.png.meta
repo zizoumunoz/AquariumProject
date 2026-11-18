@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0d9bbda5a8be05b49be4cc855ff666cf
+guid: 32895383991a76c4a98a72d46ffde7d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4326872430171513394
-    second: Tank_0
+      213: 3959922740387019359
+    second: X_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,11 +111,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tank_0
+      name: X_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 232edccec832c0c30800000000000000
-      internalID: 4326872430171513394
+      spriteID: f5a72c670c874f630800000000000000
+      internalID: 3959922740387019359
       vertices: []
       indices: 
       edges: []
@@ -150,7 +163,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tank_0: 4326872430171513394
+      X_0: 3959922740387019359
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
