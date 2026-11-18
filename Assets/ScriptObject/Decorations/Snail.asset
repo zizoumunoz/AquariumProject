@@ -15,11 +15,12 @@ MonoBehaviour:
   prefab: {fileID: 4241136700056786607, guid: 62006cab018abbc4180c4cf6d17449e0, type: 3}
   sprite: {fileID: 585679349008182817, guid: 0a9c5ea573a5001448f05ca01488906c, type: 3}
   currentAttibutes:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+    oxigen: 50
+    temperature: 50
+    moldLevel: 0
+    pHLevel: 50
+    salinity: 50
+    light: 50
   description: This piece of shit lowkey eats shit
   price: 100
+  restrictPlacement: 0

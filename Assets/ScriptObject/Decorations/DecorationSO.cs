@@ -9,4 +9,5 @@ public class DecorationSO : ScriptableObject
     public TankAttribute currentAttibutes = new();
     public string description;
     public int price = 100;
+    public bool restrictPlacement = false;
 }
