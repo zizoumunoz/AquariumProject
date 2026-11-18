@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: BasicPlantFood
   m_EditorClassIdentifier: Assembly-CSharp::FoodSO
   foodName: Herb Food
-  sprite: {fileID: -1045181238759104467, guid: 6854c0e0d434f8142b7e6c2ac052f154, type: 3}
+  sprite: {fileID: -2057373684649788704, guid: 818bd0840cf28224b9d5ca7cdfdc813c, type: 3}
   foodType: 0
   fullnessRestore: 15
   weight: 1
+  price: 10

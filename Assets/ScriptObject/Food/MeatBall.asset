@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: MeatBall
   m_EditorClassIdentifier: Assembly-CSharp::FoodSO
   foodName: MeatBall
-  sprite: {fileID: -4952802837046464369, guid: b5ed9bf5f78d6f44aacb6f8beaa0fcc0, type: 3}
+  sprite: {fileID: 5846443771815001908, guid: 0156c2f18898aae49be0f3b2b3cfca10, type: 3}
   foodType: 1
   fullnessRestore: 30
   weight: 1
+  price: 10
