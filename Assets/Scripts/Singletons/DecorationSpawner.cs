@@ -10,7 +10,7 @@ public class DecorationSpawner : MonoBehaviour
     [SerializeField] private BoolInput placed;
     [SerializeField] private Vector2Input mousePos;
     [SerializeField] private GameObject placingScreen;
-
+    [SerializeField] private Rect placementArea = new Rect(-7f, -4f, 14f, 6f);
 
     private void Awake()
     {
@@ -46,6 +46,13 @@ public class DecorationSpawner : MonoBehaviour
         Destroy(spawningDeco);
         ScreenManager.instance.PopScreen();
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireCube(placementArea.center, placementArea.size);
+    }
+
     private void Update()
     {
         if (spawningDeco == null)
@@ -53,8 +60,18 @@ public class DecorationSpawner : MonoBehaviour
             return;
         }
 
-        spawningDeco.transform.position = cam.ScreenToWorldPoint(mousePos.value);
-        spawningDeco.transform.position = new Vector2(spawningDeco.transform.position.x, spawningDeco.transform.position.y);
+        Vector2 pos = cam.ScreenToWorldPoint(mousePos.value);
+        if (spawningDecoSO.restrictPlacement) // if the restrict placement flag is on, clamp so you can't place too close to edge
+        {
+            float halfWidth = spawningDeco.GetComponent<SpriteRenderer>().bounds.extents.x;
+            pos.x = Mathf.Clamp(pos.x, placementArea.xMin + halfWidth, placementArea.xMax - halfWidth);
+            pos.y = Mathf.Clamp(pos.y, placementArea.yMin, placementArea.yMax);
+        }
+
+        spawningDeco.transform.position = pos;
+
+        // spawningDeco.transform.position = cam.ScreenToWorldPoint(mousePos.value);
+        // spawningDeco.transform.position = new Vector2(spawningDeco.transform.position.x, spawningDeco.transform.position.y);
 
         if (placed.pressed)
         {
