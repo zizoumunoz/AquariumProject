@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3438044855653490935}
   - component: {fileID: 1104791430223419946}
   - component: {fileID: -3115907126188387186}
+  - component: {fileID: -2475230197019122337}
+  - component: {fileID: 2450227531393618388}
   m_Layer: 7
   m_Name: Kelp
   m_TagString: Untagged
@@ -84,7 +86,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 4709586457989396098, guid: eeb5dd02d763e834bb75ca0ae69e9499, type: 3}
+  m_Sprite: {fileID: 954295811239133582, guid: 42b44fdf6f1cae447ac3ff1a1d7df1fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -121,9 +123,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodSource
   type: 0
-  fullnessRestore: 0
+  fullnessRestore: 15
   deleteWhenEaten: 0
-  bitesLeft: 0
+  bitesLeft: 1
   size: 0
 --- !u!70 &-3115907126188387186
 CapsuleCollider2D:
@@ -162,3 +164,40 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!114 &-2475230197019122337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7691902860742860120}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507230ef549136a4aa7d32bb2d7263ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SurfaceSnap
+  direction: {x: 0, y: -1}
+  surfaceTag: Bottom
+  searchDistance: 40
+--- !u!95 &2450227531393618388
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7691902860742860120}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e49d07937498dc743854c2975457966a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

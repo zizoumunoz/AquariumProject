@@ -24,5 +24,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 05726a96de41a7744b6f2f246e4eb2a2, type: 2}
   - {fileID: 11400000, guid: 1e58052344a642a469eb469f2c70fc0a, type: 2}
   traits:
+  - {fileID: 11400000, guid: 6beb5700122dccd48906896d0c34733e, type: 2}
+  - {fileID: 11400000, guid: cc9abf5ca8397cb4d9f42db44397dec9, type: 2}
+  - {fileID: 11400000, guid: baedb001a5ca76a48a7147ad58798124, type: 2}
+  - {fileID: 11400000, guid: 8b2b3ffb90cf0f84fbe071c46dcb68af, type: 2}
+  - {fileID: 11400000, guid: 727e38ca2b86fd94ab2e9bc3a18366e5, type: 2}
   - {fileID: 11400000, guid: 69090d95a4ace244298a899a04f2e50d, type: 2}
+  - {fileID: 11400000, guid: 21c8acbd7ce11c84389e0fd07697fa2f, type: 2}
+  - {fileID: 11400000, guid: 64da99569c6d9ca46ae8227e43429fd8, type: 2}
+  - {fileID: 11400000, guid: 2204e3bf8affb09448a41b0e4ddd8018, type: 2}
+  - {fileID: 11400000, guid: dafa0f6556f9f6d459a4e532cff5fb2a, type: 2}
   statusIcons: {fileID: 11400000, guid: 25a7fd334e56ef74bac62587f75b8533, type: 2}

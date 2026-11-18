@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4913327124905202694}
   - component: {fileID: 6105630987163528891}
   - component: {fileID: 2219912794423391511}
-  - component: {fileID: 8563355856941760247}
+  - component: {fileID: 2814551021227675149}
   m_Layer: 0
   m_Name: MeatFeeder
   m_TagString: Untagged
@@ -139,6 +139,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3df7b04bcb1ebd4ab90350bbbd4d9d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FoodReservoir
+  capacity: 0
+  reloadTime: 0
+  bitesLeft: 0
+  reloadTimer: 0
 --- !u!114 &2219912794423391511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,7 +159,7 @@ MonoBehaviour:
   foodPrefab: {fileID: 3017575449951369872, guid: dd3adf3d05194cf46a530d55975c74d3, type: 3}
   dropPoint: {fileID: 825968534706764250}
   foodRoot: {fileID: 0}
---- !u!114 &8563355856941760247
+--- !u!114 &2814551021227675149
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,9 +168,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5844645459085424257}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7fdb42c3ae600f4ba07e87d50cc7f37, type: 3}
+  m_Script: {fileID: 11500000, guid: 507230ef549136a4aa7d32bb2d7263ab, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WallSnap
+  m_EditorClassIdentifier: Assembly-CSharp::SurfaceSnap
   direction: {x: -1, y: 0}
-  wallTag: Wall
-  searchDistance: 30
+  surfaceTag: Wall
+  searchDistance: 40

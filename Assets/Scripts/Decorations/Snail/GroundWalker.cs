@@ -7,10 +7,6 @@ public class GroundWalker : MonoBehaviour, IMotionSource
     [SerializeField] private float edgeMargin = 0.5f;
     [SerializeField] private bool spriteFacesRight = true;
 
-    [Header("Ground")]
-    [SerializeField] private string groundTag = "Bottom";
-    [SerializeField] private float groundSearchDistance = 40f;
-
     private Camera cam;
     private SpriteRenderer sr;
     private bool moving;
@@ -22,11 +18,6 @@ public class GroundWalker : MonoBehaviour, IMotionSource
     {
         cam = Camera.main;
         sr = GetComponent<SpriteRenderer>();
-    }
-
-    private void Start()
-    {
-        SnapToGround();
     }
 
     public float ClampToScreen(float x)
@@ -50,22 +41,5 @@ public class GroundWalker : MonoBehaviour, IMotionSource
         transform.position = pos;
 
         sr.flipX = (direction > 0f) != spriteFacesRight;
-    }
-
-    private void SnapToGround()
-    {
-        RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, Vector2.down, groundSearchDistance);
-
-        foreach (RaycastHit2D hit in hits)
-        {
-            if (!hit.collider.CompareTag(groundTag)) continue;
-
-            Vector3 pos = transform.position;
-            pos.y = hit.point.y + transform.position.y - sr.bounds.min.y;
-            transform.position = pos;
-            return;
-        }
-
-        Debug.LogWarning(name + " found no '" + groundTag + "' collider below it.", this);
     }
 }
