@@ -1,0 +1,482 @@
+fileFormatVersion: 2
+guid: 1cc96b48f92214241ad0fa484833ecdb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4566920187545797305
+    second: menu_logo_0
+  - first:
+      213: 3863461031277766940
+    second: menu_logo_1
+  - first:
+      213: -3024596559723269187
+    second: menu_logo_2
+  - first:
+      213: 5141265339586120989
+    second: menu_logo_3
+  - first:
+      213: 6043283913506431752
+    second: menu_logo_4
+  - first:
+      213: 5870660877230540708
+    second: menu_logo_5
+  - first:
+      213: 6533180945646490199
+    second: menu_logo_6
+  - first:
+      213: -3908617883086006176
+    second: menu_logo_7
+  - first:
+      213: 828699853144813809
+    second: menu_logo_8
+  - first:
+      213: -7177741506025412173
+    second: menu_logo_9
+  - first:
+      213: -699625718593527333
+    second: menu_logo_10
+  - first:
+      213: 7020482673326609406
+    second: menu_logo_11
+  - first:
+      213: -4698120567300157772
+    second: menu_logo_12
+  - first:
+      213: 1273029752623202669
+    second: menu_logo_13
+  - first:
+      213: 1666926093562087096
+    second: menu_logo_14
+  - first:
+      213: -1684018104969071123
+    second: menu_logo_15
+  - first:
+      213: -2355692810973995315
+    second: menu_logo_16
+  - first:
+      213: 554075729829032025
+    second: menu_logo_17
+  - first:
+      213: 8776181312385749321
+    second: menu_logo_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: menu_logo_A
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 88
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74db5c7394a0f90c0800000000000000
+      internalID: -4566920187545797305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_logo_i_big
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 119
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 1, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1920e4a655cd9530800000000000000
+      internalID: 3863461031277766940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_logo_i_medium
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 132
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db373d434797606d0800000000000000
+      internalID: -3024596559723269187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_logo_q
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 48
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 27.5, y: -17.5}
+        - {x: 18.5, y: 4.5}
+        - {x: 19.5, y: 24.5}
+        - {x: 19.5, y: 35.5}
+        - {x: -27.5, y: 35.5}
+        - {x: -27.5, y: -11.5}
+        - {x: -0.5, y: -11.5}
+        - {x: 7.5, y: -35.5}
+        - {x: 27.5, y: -35.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d0f063691795740800000000000000
+      internalID: 5141265339586120989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_logo_u_01
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 75
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803226d53be0ed350800000000000000
+      internalID: 6043283913506431752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_logo_a
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 76
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 0, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a70c18b6f6c87150800000000000000
+      internalID: 5870660877230540708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_logo_r
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 76
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 1, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7521c9ea4758aaa50800000000000000
+      internalID: 6533180945646490199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_logo_i
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 76
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 1, z: 1, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0685beb7ebcc1c9c0800000000000000
+      internalID: -3908617883086006176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_logo_u_02
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 76
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 1, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f07d143022208b00800000000000000
+      internalID: 828699853144813809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_logo_m
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 75
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b927cb212a836c90800000000000000
+      internalID: -7177741506025412173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo_tycoon
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 203
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1618f9d1e6a46f0800000000000000
+      internalID: -699625718593527333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_logo_i_small
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 143
+        width: 4
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62828cd81da76e4cbb72bbdcb0282ec
+      internalID: -1958600652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 03b904d943bde7f41bf604be1d04f0b2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      logo_tycoon: -699625718593527333
+      menu_logo_11: 7020482673326609406
+      menu_logo_12: -4698120567300157772
+      menu_logo_13: 1273029752623202669
+      menu_logo_14: 1666926093562087096
+      menu_logo_15: -1684018104969071123
+      menu_logo_16: -2355692810973995315
+      menu_logo_17: 554075729829032025
+      menu_logo_18: 8776181312385749321
+      menu_logo_A: -4566920187545797305
+      menu_logo_a: 5870660877230540708
+      menu_logo_i: -3908617883086006176
+      menu_logo_i_big: 3863461031277766940
+      menu_logo_i_medium: -3024596559723269187
+      menu_logo_i_small: -1958600652
+      menu_logo_m: -7177741506025412173
+      menu_logo_q: 5141265339586120989
+      menu_logo_r: 6533180945646490199
+      menu_logo_u_01: 6043283913506431752
+      menu_logo_u_02: 828699853144813809
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
