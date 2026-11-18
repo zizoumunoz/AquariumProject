@@ -46,8 +46,8 @@ public class Poop : MonoBehaviour
     }
     public void Dissolve()
     {
-        TankManager.instance.database.activeTank.currentAttibutes.moldLevel +=
-            Mathf.Min(100, TankManager.instance.database.activeTank.currentAttibutes.moldLevel + 10);
+        TankManager.instance.database.activeTank.currentAttibutes.moldLevel =
+            Mathf.Min(100, TankManager.instance.database.activeTank.currentAttibutes.moldLevel + 1);
         Destroy(gameObject);
     }
 }
