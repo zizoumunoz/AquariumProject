@@ -18,8 +18,20 @@ public class AlbumScript : MonoBehaviour
     [SerializeField] private AlbumPanel[] _albumPanels;
     [SerializeField] private FishLorePanel _lorePanel;
 
-    public void OpenAlbum()
+    private void Awake()
     {
+        // gets the maximum number of pages according to how many fishes there are
+        _maximumPage = Mathf.Max(1, Mathf.CeilToInt(_fishDatabase.fishes.Count / (float)_fishPerPage));
+
+        foreach (AlbumPanel panel in _albumPanels)
+        {
+            panel.Clicked += fish => _lorePanel.Show(fish);
+        }
+    }
+
+    private void OnEnable()
+    {
+        // disable other UI elements
         foreach (GameObject obj in _hideWhileOpen)
         {
             if (obj != null)
@@ -27,15 +39,14 @@ public class AlbumScript : MonoBehaviour
                 obj.SetActive(false);
             }
         }
-
-        gameObject.SetActive(true);
+        FishCollection.FishDiscovered += OnFishDiscovered;
+        SetPageNumberText();
+        RefreshView();
     }
 
-    public void CloseAlbum()
+    private void OnDisable()
     {
-        gameObject.SetActive(false);
-
-        foreach(GameObject obj in _hideWhileOpen)
+        foreach (GameObject obj in _hideWhileOpen)
         {
             if (obj != null)
             {
@@ -44,30 +55,10 @@ public class AlbumScript : MonoBehaviour
         }
     }
 
-    private void Awake()
-    {
-        // gets the maximum number of pages according to how many fishes there are
-        _maximumPage = Mathf.Max(1, Mathf.CeilToInt(_fishDatabase.fishes.Count / (float)_fishPerPage));
-
-        foreach(AlbumPanel panel in _albumPanels)
-        {
-            panel.Clicked += fish => _lorePanel.Show(fish);
-        }
-    }
-
-    private void OnEnable()
-    {
-        FishCollection.FishDiscovered += OnFishDiscovered;
-        SetPageNumberText();
-        RefreshView();
-    }
-
     private void OnFishDiscovered(FishSO fish)
     {
         RefreshView();
     }
-
-
 
     private void SetPageNumberText()
     {
@@ -94,8 +85,6 @@ public class AlbumScript : MonoBehaviour
         }
     }
 
-
-
     private void RefreshView()
     {
 
@@ -113,7 +102,6 @@ public class AlbumScript : MonoBehaviour
                 _albumPanels[i].SetUndiscovered();
                 continue;
             }
-
 
             FishSO fish = _fishDatabase.fishes[fishIndex];
 
