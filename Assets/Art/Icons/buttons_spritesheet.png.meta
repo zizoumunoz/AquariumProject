@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -124,15 +124,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buttons_spritesheet_0
+      name: button_settings
       rect:
         serializedVersion: 2
-        x: 15
-        y: 15
-        width: 31
-        height: 34
+        x: 16
+        y: 16
+        width: 29
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -146,16 +146,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttons_spritesheet_1
+      name: button_fishShop
       rect:
         serializedVersion: 2
-        x: 68
+        x: 69
         y: 15
-        width: 31
-        height: 34
+        width: 29
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 1, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -168,15 +168,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttons_spritesheet_2
+      name: button_tankShop
       rect:
         serializedVersion: 2
-        x: 121
-        y: 15
-        width: 31
-        height: 34
+        x: 122
+        y: 16
+        width: 29
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -190,15 +190,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttons_spritesheet_3
+      name: button_decorationShop
       rect:
         serializedVersion: 2
-        x: 174
-        y: 15
-        width: 31
-        height: 34
+        x: 175
+        y: 16
+        width: 29
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -215,7 +215,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7b2fbb2adfd7aff4c8283098bdec25e4
     internalID: 0
     vertices: []
     indices: 
@@ -225,10 +225,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      buttons_spritesheet_0: 591272621907714027
-      buttons_spritesheet_1: -5258441529188775270
-      buttons_spritesheet_2: -2629482413744531212
-      buttons_spritesheet_3: -1526694656681427869
+      button_decorationShop: -1526694656681427869
+      button_fishShop: -5258441529188775270
+      button_settings: 591272621907714027
+      button_tankShop: -2629482413744531212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
