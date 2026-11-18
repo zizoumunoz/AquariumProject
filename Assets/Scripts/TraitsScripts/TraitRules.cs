@@ -11,14 +11,14 @@ public class TraitRules
     [Range(0f, 1f)] public float inheritChance = 0.5f;
     [Range(0f, 1f)] public float mutationChance = 0.1f;
 
-    public List<TraitSO> RollPurchase(FishDatabaseSO database)
+    public List<TraitSO> RollPurchase(TankSO database)
     {
         List<TraitSO> result = new List<TraitSO>();
         if (Random.value < purchaseChance) AddRandom(result, database.traits);
         return result;
     }
 
-    public List<TraitSO> RollChild(List<TraitSO> parentA, List<TraitSO> parentB, FishDatabaseSO database)
+    public List<TraitSO> RollChild(List<TraitSO> parentA, List<TraitSO> parentB, TankSO database)
     {
         List<TraitSO> result = new List<TraitSO>();
 

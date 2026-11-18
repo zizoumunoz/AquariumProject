@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class TankManager : MonoBehaviour
@@ -13,17 +15,21 @@ public class TankManager : MonoBehaviour
     [SerializeField] private UITankController tankUIPrefab;
     [SerializeField] private Transform tankPanel;
     [SerializeField] private FishController fishPrefab;
-
-    private void Start()
+    private void Awake()
     {
         instance = this;
         database.tanks.Clear();
-        database.tanks.Add(new Tank());
-        LoadNewTank(database.tanks[0]);
+    }
+    private void Start()
+    {
+        CreateTank(database.tankSOs[0]);
+        MarketManager.instance.rolled += AssignTankRoll;
     }
     public void LoadNewTank(Tank tank)
     {
         sr.sprite = tankSprites[(int)tank.type];
+        MarketManager.instance.database = database.tankSOs[(int)tank.type];
+        MarketManager.instance.Refresh(tank.marketRoll);
 
         SaveTankData();
 
@@ -102,5 +108,23 @@ public class TankManager : MonoBehaviour
             };
             database.activeTank.decorations.Add(saveDeco);
         }
+    }
+    public void CreateTank(TankSO tank)
+    {
+        database.tanks.Add(new Tank
+        {
+            currentAttibutes = new(tank.startAttributes),
+            type = tank.type,
+            maxFish = tank.maxFish,
+            marketRoll = MarketManager.instance.PickOffers(tank),
+            lastRefresh = Time.time
+        });
+        ScreenManager.instance.EmptyStack();
+        LoadNewTank(database.tanks[^1]);
+    }
+    public void AssignTankRoll(List<FishSO> rolledFishes)
+    {
+        database.activeTank.marketRoll = rolledFishes;
+        database.activeTank.lastRefresh = Time.time;
     }
 }

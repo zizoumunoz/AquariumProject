@@ -4,12 +4,12 @@ using UnityEngine;
 public class MarketManager : MonoBehaviour
 {
     public static MarketManager instance;
-    public FishDatabaseSO database;
+    public TankSO database;
     [SerializeField] private float refreshInterval = 60f;
     [SerializeField] private int offerCount = 6;
     [SerializeField] private float rarityIndex = 2.5f;
-
-
+    public delegate void MarketRolled(List<FishSO> fishes);
+    public MarketRolled rolled;
     [SerializeField] private MarketPanel panel;
     private float lastRefreshTime = float.NegativeInfinity;
 
@@ -25,21 +25,28 @@ public class MarketManager : MonoBehaviour
             Refresh();
     }
 
-    public void Refresh()
+    public void Refresh(List<FishSO> marketFish = null)
     {
         lastRefreshTime = Time.time;
-        panel.SetOffers(PickOffers());
+        if (marketFish == null)
+        {
+            marketFish = PickOffers();
+            rolled?.Invoke(marketFish);
+        }
+        panel.SetOffers(marketFish);
     }
 
-    private List<FishSO> PickOffers()
+    public List<FishSO> PickOffers(TankSO tank = null)
     {
         List<FishSO> result = new();
 
+        tank ??= database;
+
         for (int i = 0; i < offerCount; i++)
         {
-            int index = Random.Range(0, (int)Mathf.Pow(database.fishes.Count - 1, rarityIndex));
+            int index = Random.Range(0, (int)Mathf.Pow(tank.fishes.Count - 1, rarityIndex));
             index = Mathf.RoundToInt(Mathf.Pow(index, 1f / rarityIndex));
-            result.Add(database.fishes[database.fishes.Count - index - 1]);
+            result.Add(tank.fishes[tank.fishes.Count - index - 1]);
         }
         return result;
     }

@@ -7,7 +7,7 @@ public class AlbumScript : MonoBehaviour
     [SerializeField] private GameObject[] _hideWhileOpen;
 
     [Header("Database")]
-    [SerializeField] private FishDatabaseSO _fishDatabase;
+    [SerializeField] private TankSO _fishDatabase;
 
     private const int _fishPerPage = 6;
     public int _currentPage = 1;
