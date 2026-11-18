@@ -36,4 +36,8 @@ public class MoneyManager : MonoBehaviour
         money -= amount;
         moneyChanged(money);
     }
+    public void UpdateUI()
+    {
+        moneyChanged(money);
+    }
 }

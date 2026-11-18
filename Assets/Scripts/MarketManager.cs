@@ -19,7 +19,7 @@ public class MarketManager : MonoBehaviour
         instance = this;
     }
 
-    public void OpenMarket()
+    private void Update()
     {
         if (Time.time - lastRefreshTime >= refreshInterval)
             Refresh();
