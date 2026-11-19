@@ -25,8 +25,8 @@ public class FishLorePanel : MonoBehaviour
             $"Rarity: {fish.rarity}\n" +
             $"Diet: {fish.diet}\n" +
             $"Price: {fish.price}\n" +
-            $"Speed: {fish.fishStatus.fishSpeed}\n" +
-            $"Size: {fish.fishStatus.baseSize}\n";
+            $"Speed: {fish.baseStats[StatsEnum.fishSpeed]}\n" +
+            $"Size: {fish.baseStats[StatsEnum.baseSize]}\n";
     }
 
     public void Clear()

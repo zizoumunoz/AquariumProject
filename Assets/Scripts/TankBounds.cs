@@ -9,10 +9,9 @@ public class TankBounds : MonoBehaviour
     [SerializeField] private Collider2D leftWall;
     [SerializeField] private Collider2D rightWall;
     [SerializeField] private float xPadding;
-    private Camera cam;
     private void Start()
     {
-        cam = Camera.main;
+        Camera cam = Camera.main;
 
         float cameraBottom = cam.transform.position.y - cam.orthographicSize;
         floor.transform.position = new(0, cameraBottom - (floor.bounds.size.y * 0.5f) + bottomPadding);

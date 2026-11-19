@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class FishPanel : MonoBehaviour
 {
     public static FishPanel instance;
-    public FishController fish;
+    public FishStats fishStats;
     [SerializeField] private GameObject panel;
     [SerializeField] private TextMeshProUGUI fishName;
     [SerializeField] private TextMeshProUGUI fishDescription;
@@ -13,19 +13,19 @@ public class FishPanel : MonoBehaviour
     [SerializeField] private Camera fishCam;
     [SerializeField] private Transform fishTraitsRoot;
     [SerializeField] private Transform fishTraitsPrefab;
-    public void SetUp(FishController newFish)
+    public void SetUp(FishStats newFish)
     {
-        fish = newFish;
+        fishStats = newFish;
 
         ScreenManager.instance.OpenScreen(panel);
         panel.SetActive(true);
 
-        fishName.text = fish.data.fishName;
-        fishDescription.text = fish.data.diet.ToString();
-        fishPrice.text = fish.Price.ToString();
-        fishCam.orthographicSize = fish.Size;
+        fishName.text = fishStats.baseFish.fishName;
+        fishDescription.text = fishStats.baseFish.diet.ToString();
+        fishPrice.text = fishStats.baseFish.price.ToString();
+        fishCam.orthographicSize = fishStats[StatsEnum.baseSize];
 
-        for (int i = 0; i < fish.traits.Count; i++)
+        for (int i = 0; i < fishStats.traits.Count; i++)
         {
             Transform trait = fishTraitsRoot;
             if (fishTraitsRoot.childCount > i)
@@ -37,16 +37,16 @@ public class FishPanel : MonoBehaviour
                 trait = Instantiate(fishTraitsPrefab, fishTraitsRoot);
             }
             trait.gameObject.SetActive(true);
-            Color c = fish.traits[i].traitColor;
-            trait.GetComponent<Image>().color = fish.traits[i].traitColor;
+            Color c = fishStats.traits[i].traitColor;
+            trait.GetComponent<Image>().color = fishStats.traits[i].traitColor;
             TextMeshProUGUI text = trait.GetChild(0).GetComponent<TextMeshProUGUI>();
-            text.text = fish.traits[i].traitName;
+            text.text = fishStats.traits[i].traitName;
             text.color = ((c.r * 0.299f + c.g * 0.587f + c.b * 0.114f) > 0.5f) ? Color.black : Color.white;
         }
 
-        if (fishTraitsRoot.childCount > fish.traits.Count)
+        if (fishTraitsRoot.childCount > fishStats.traits.Count)
         {
-            for (int i = fish.traits.Count; i < fishTraitsRoot.childCount; i++)
+            for (int i = fishStats.traits.Count; i < fishTraitsRoot.childCount; i++)
             {
                 fishTraitsRoot.GetChild(i).gameObject.SetActive(false);
             }
@@ -62,10 +62,10 @@ public class FishPanel : MonoBehaviour
     }
     private void Update()
     {
-        if (fish == null)
+        if (fishStats == null)
         {
             return;
         }
-        fishCam.transform.position = fish.transform.position + Vector3.back * 1;
+        fishCam.transform.position = fishStats.transform.position + Vector3.back * 1;
     }
 }

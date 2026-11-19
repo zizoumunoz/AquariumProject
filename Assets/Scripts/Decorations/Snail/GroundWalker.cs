@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class GroundWalker : MonoBehaviour, IMotionSource
+public class GroundWalker : MonoBehaviour
 {
     [SerializeField] private float speed = 0.3f;
     [SerializeField] private float edgeMargin = 0.5f;

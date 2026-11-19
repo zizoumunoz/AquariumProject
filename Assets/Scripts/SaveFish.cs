@@ -5,7 +5,9 @@ using System.Collections.Generic;
 public class SaveFish
 {
     public FishSO baseFish;
-    public FishStatus multiplier;
+#pragma warning disable UAC1015 // Dictionary field missing [SerializeField]
+    public Dictionary<StatsEnum, float> statsMultiplier = new();
+#pragma warning restore UAC1015 // Dictionary field missing [SerializeField]
     public List<TraitSO> traits;
     public float growTimer;
 }

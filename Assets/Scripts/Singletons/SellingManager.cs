@@ -4,8 +4,8 @@ public class SellingManager : MonoBehaviour
 {
     public static void SellFish(FishPanel fishPanel)
     {
-        FishController fish = fishPanel.fish;
-        MoneyManager.Instance.AddMoney(fish.Price);
+        FishStats fish = fishPanel.fishStats;
+        MoneyManager.Instance.AddMoney(fish.price);
         ScreenManager.instance.EmptyStack();
 
         Destroy(fish.gameObject);

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SwimWiggle : MonoBehaviour
+public class SwimWiggle : MonoBehaviour, IFishBehaviour
 {
     [Header("Frequency (cycles speed)")]
     [SerializeField] private float slowFrequency = 2f;
@@ -9,28 +9,29 @@ public class SwimWiggle : MonoBehaviour
     [Header("Amplitude (stretch amount)")]
     [SerializeField] private float slowAmplitude = 0.025f;
     [SerializeField] private float fastAmplitude = 0.065f;
+    [SerializeField] private Transform visual;
 
-    private IMotionSource motion;
-    private Vector3 baseScale;
+    private FishStats stats;
+    private Vector2 baseScale;
     private float phase;
 
-    private void Awake()
+    public void Init(FishStats stats)
     {
-        motion = GetComponentInParent<IMotionSource>();
-        baseScale = transform.localScale;
+        baseScale = visual.localScale;
         phase = Random.Range(0f, Mathf.PI * 2f);
+        this.stats = stats;
     }
 
-    private void Update()
+    public void UpdateFish()
     {
-        float speed = motion.NormalizedSpeed;
+        float speed = stats[StatsEnum.fishSpeed];
 
         phase = Mathf.Repeat(phase + Time.deltaTime * Mathf.Lerp(slowFrequency, fastFrequency, speed), Mathf.PI * 2f);
         float wiggle = Mathf.Sin(phase) * Mathf.Lerp(slowAmplitude, fastAmplitude, speed);
 
-        transform.localScale = new Vector3(
+        visual.localScale = new Vector3(
             baseScale.x * (1f + wiggle),
             baseScale.y * (1f - wiggle * 0.5f),
-            baseScale.z);
+            1f);
     }
 }

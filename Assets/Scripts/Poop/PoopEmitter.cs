@@ -4,18 +4,18 @@ using UnityEngine;
 [RequireComponent(typeof(FishController))]
 public class PoopEmitter : MonoBehaviour
 {
-    private FishController fish;
+    private FishStats stats;
     private float elapsed;
 
     private void Awake()
     {
-        fish = GetComponent<FishController>();
+        stats = GetComponent<FishStats>();
     }
 
     private void Update()
     {
         elapsed += Time.deltaTime;
-        if (elapsed < fish.PoopInterval) return;
+        if (elapsed < stats[StatsEnum.poopInterval]) return;
 
         elapsed = 0f;
         PoopSpawner.instance.Spawn(transform.position);

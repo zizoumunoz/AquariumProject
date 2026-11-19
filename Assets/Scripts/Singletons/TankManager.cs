@@ -13,7 +13,7 @@ public class TankManager : MonoBehaviour
     public TankDatabase database;
     [SerializeField] private UITankController tankUIPrefab;
     [SerializeField] private Transform tankPanel;
-    [SerializeField] private FishController fishPrefab;
+    [SerializeField] private FishStats fishPrefab;
     private void Awake()
     {
         instance = this;
@@ -36,8 +36,8 @@ public class TankManager : MonoBehaviour
         }
         foreach (SaveFish saveFish in tank.fishes)
         {
-            FishController newFish = Instantiate(fishPrefab, fishRoot);
-            newFish.Init(saveFish.baseFish, saveFish.traits, saveFish.growTimer);
+            FishStats newFish = Instantiate(fishPrefab, fishRoot);
+            newFish.Init(saveFish.baseFish, saveFish.traits);
         }
         foreach (Transform deco in decoRoot)
         {
@@ -87,13 +87,13 @@ public class TankManager : MonoBehaviour
         database.activeTank.fishes.Clear();
         foreach (Transform fish in fishRoot)
         {
-            FishController controller = fish.GetComponent<FishController>();
+            FishStats stats = fish.GetComponent<FishStats>();
             SaveFish saveFish = new()
             {
-                baseFish = controller.data,
-                multiplier = controller.statusMultiplier,
-                traits = controller.traits,
-                growTimer = controller.growTimer,
+                baseFish = stats.baseFish,
+                statsMultiplier = stats.statsMultiplier,
+                traits = stats.traits,
+                growTimer = stats[StatsEnum.ageTimer],
             };
             database.activeTank.fishes.Add(saveFish);
         }

@@ -1,14 +1,14 @@
+using Sirenix.OdinInspector;
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "TraitSO", menuName = "Scriptable Objects/TraitSO")]
-public class TraitSO : ScriptableObject
+public class TraitSO : SerializedScriptableObject
 {
-    [SerializeField]
     public string traitName;
     public Color traitColor;
 
-    [SerializeField]
     [Header("Multipliers, 1 = normal")]
-    public FishStatus statusMultiplier = new(1);
+    [SerializeField] public Dictionary<StatsEnum, float> multiplier = new();
     public float priceMultiplier = 1f;
 }

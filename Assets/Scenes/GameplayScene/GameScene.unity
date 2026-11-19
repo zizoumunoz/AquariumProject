@@ -441,7 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ddefdecf74e498448f43e053d232654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishSpawner
-  fishPrefab: {fileID: 1011413437108166273, guid: 7834d18013485a4409663d4ddbaa3ca9, type: 3}
+  fishPrefab: {fileID: 2243338234881170425, guid: 7834d18013485a4409663d4ddbaa3ca9, type: 3}
   fishRoot: {fileID: 2044785690}
   traitRules:
     purchaseChance: 0.2
@@ -2389,7 +2389,7 @@ MonoBehaviour:
   database: {fileID: 11400000, guid: ad695cf2b600dd24f959458957cb25d8, type: 2}
   tankUIPrefab: {fileID: 2326717166587735966, guid: 8950258c325cbe14094a7a6ce99ce6b1, type: 3}
   tankPanel: {fileID: 1875253026}
-  fishPrefab: {fileID: 1011413437108166273, guid: 7834d18013485a4409663d4ddbaa3ca9, type: 3}
+  fishPrefab: {fileID: 0}
 --- !u!1 &962280615 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5580154264885952872, guid: 33df529b8c2076c488726273702b9dab, type: 3}
@@ -2588,7 +2588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1120738882}
   - component: {fileID: 1120738883}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ceiling
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3291,7 +3291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 774432cf74088fa469b0dfcf91ec8a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishPanel
-  fish: {fileID: 0}
+  fishStats: {fileID: 0}
   panel: {fileID: 737155143}
   fishName: {fileID: 544516701}
   fishDescription: {fileID: 1904933292}
@@ -3451,7 +3451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1562173519}
   - component: {fileID: 1562173520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallR
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3529,7 +3529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1597512082}
   - component: {fileID: 1597512083}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallL
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4952,7 +4952,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1987798404}
   - component: {fileID: 1987798405}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Bottom
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ public class InputManager : MonoBehaviour
     private BoolInput click;
     private Vector2Input mousePos;
     private Camera cam;
-    private FishController lastFish;
+    private FishStats lastFish;
     private Color highColor = new(0, 0, 0, 0.4f);
     private Color noHighColor = new(0, 0, 0, 0);
     public BoolInput GetBoolInput(string actionName)
@@ -67,7 +67,8 @@ public class InputManager : MonoBehaviour
         {
             if (lastFish != null)
             {
-                lastFish.highlight.color = noHighColor;
+                //TODO fix this
+                //lastFish.highlight.color = noHighColor;
                 lastFish = null;
             }
             return;
@@ -81,24 +82,24 @@ public class InputManager : MonoBehaviour
         {
             if (lastFish != null)
             {
-                if (lastFish != hits[0].GetComponent<FishController>())
+                if (lastFish != hits[0].GetComponent<FishStats>())
                 {
-                    lastFish.highlight.color = noHighColor;
-                    lastFish = hits[0].GetComponent<FishController>();
-                    lastFish.highlight.color = highColor;
+                    //lastFish.highlight.color = noHighColor;
+                    lastFish = hits[0].GetComponent<FishStats>();
+                    //lastFish.highlight.color = highColor;
                 }
             }
             else
             {
-                lastFish = hits[0].GetComponent<FishController>();
-                lastFish.highlight.color = highColor;
+                lastFish = hits[0].GetComponent<FishStats>();
+                //lastFish.highlight.color = highColor;
             }
         }
         else
         {
             if (lastFish != null)
             {
-                lastFish.highlight.color = noHighColor;
+                //lastFish.highlight.color = noHighColor;
                 lastFish = null;
             }
         }

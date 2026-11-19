@@ -9,11 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5299888763480850849}
+  - component: {fileID: 2243338234881170425}
   - component: {fileID: 1011413437108166273}
-  - component: {fileID: 366627789795619100}
-  - component: {fileID: 1313483995785125302}
+  - component: {fileID: 8123965658975794914}
   - component: {fileID: 2854351956802473783}
   - component: {fileID: 1363658366340760977}
+  - component: {fileID: 6623280960152825783}
+  - component: {fileID: 366627789795619100}
+  - component: {fileID: 1313483995785125302}
   m_Layer: 6
   m_Name: Fish
   m_TagString: Fish
@@ -34,11 +37,67 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6238866535008263620}
   - {fileID: 1869533086935061972}
   - {fileID: 2470520674574075225}
+  - {fileID: 8525878211890437830}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2243338234881170425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283583868285877914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1163b60576286e6439891567ea046c51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishStats
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: behaviours
+      Entry: 6
+      Data: 
+  baseFish: {fileID: 0}
+  statsMultiplier:
+  - key: 0
+    value: 1
+  - key: 1
+    value: 1
+  - key: 2
+    value: 1
+  - key: 3
+    value: 1
+  - key: 4
+    value: 1
+  - key: 5
+    value: 1
+  - key: 6
+    value: 1
+  - key: 7
+    value: 1
+  - key: 8
+    value: 1
+  - key: 9
+    value: 1
+  - key: 10
+    value: 1
+  - key: 11
+    value: 1
+  - key: 12
+    value: 1
+  - key: 13
+    value: 1
+  traits: []
+  price: 0
 --- !u!114 &1011413437108166273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,39 +110,118 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f225ad8b5557fc459efb1e3982971ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishController
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
   data: {fileID: 11400000, guid: 4d860ee4cf3738646bcda2b4dc7e1b88, type: 2}
-  statusMultiplier:
-    baseSize: 1
-    nutrition: 1
-    youngSizeMultiplier: 1
-    fishSpeed: 1
-    minRetargetTime: 1
-    maxRetargetTime: 1
-    startFullness: 1
-    fullnessDecayPerSecond: 1
-    wanderThreshold: 1
-    eatDistance: 1
-    happiness: 1
-    unhappyBelow: 1
-    happyAbove: 1
-    happinessLossPerSecond: 1
-    happinessGainPerSecond: 1
-    fleeSpeedRatio: 1
-    fleeDistance: 1
-    fearMemoryTime: 1
-    detectionRadius: 1
-    breedHappiness: 1
-    breedCooldown: 1
-    breedDistance: 1
-    ageTime: 1
-    poopInterval: 1
+  stats: {fileID: 0}
+  multiplier:
+  - key: 0
+    value: 1
+  - key: 1
+    value: 1
+  - key: 2
+    value: 1
+  - key: 3
+    value: 1
+  - key: 4
+    value: 1
+  - key: 5
+    value: 1
+  - key: 6
+    value: 1
+  - key: 7
+    value: 1
+  - key: 8
+    value: 1
+  - key: 9
+    value: 1
+  - key: 10
+    value: 1
+  - key: 11
+    value: 1
+  - key: 12
+    value: 1
+  - key: 13
+    value: 1
+  actions: []
+  activeAction:
+    actionName: 
   turnSpeed: 120
   growTimer: 0
   sr: {fileID: 8486787847657908472}
   highlight: {fileID: 4795836198496033543}
   fullness: 0
-  traits: []
+  happiness: 0
   aimedFoodSorce: {fileID: 0}
+--- !u!114 &8123965658975794914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283583868285877914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ab33d5dc7faa94fa0fcbc6d15ef2b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishBounds
+  rays: []
+  fishCollisions: []
+  fishRadius: []
+  mouthCollisions: []
+--- !u!114 &2854351956802473783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283583868285877914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34efd18669e82f04685a7a8517b64530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PoopEmitter
+--- !u!114 &1363658366340760977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283583868285877914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a3e39c971f7b37479f1505b1cc9d2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodSource
+  type: 1
+  fullnessRestore: 35
+  deleteWhenEaten: 1
+  bitesLeft: 1
+  size: 0
+--- !u!114 &6623280960152825783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283583868285877914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9b3981198888f4d9f0413134fbf2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SwimWiggle
+  slowFrequency: 2
+  fastFrequency: 11
+  slowAmplitude: 0.025
+  fastAmplitude: 0.065
+  visual: {fileID: 2470520674574075225}
 --- !u!70 &366627789795619100
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -148,35 +286,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2854351956802473783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283583868285877914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34efd18669e82f04685a7a8517b64530, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PoopEmitter
---- !u!114 &1363658366340760977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283583868285877914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a3e39c971f7b37479f1505b1cc9d2ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FoodSource
-  type: 1
-  fullnessRestore: 35
-  deleteWhenEaten: 1
-  bitesLeft: 1
-  size: 0
 --- !u!1 &2220960920421853631
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,7 +296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2470520674574075225}
   - component: {fileID: 8486787847657908472}
-  - component: {fileID: 7467183909232750709}
+  - component: {fileID: 9005198288381336415}
   m_Layer: 6
   m_Name: Visual
   m_TagString: Untagged
@@ -270,22 +379,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!114 &7467183909232750709
-MonoBehaviour:
+--- !u!331 &9005198288381336415
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2220960920421853631}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f9b3981198888f4d9f0413134fbf2e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SwimWiggle
-  slowFrequency: 2
-  fastFrequency: 11
-  slowAmplitude: 0.025
-  fastAmplitude: 0.065
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 15d0c3709176029428a0da2f8cecf0b5, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 0}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
+  m_MaskSource: 0
 --- !u!1 &3630121250320203994
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,7 +520,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -378,7 +530,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!1 &4358371791041683410
+--- !u!1 &6614467220317656430
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -386,87 +538,76 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6238866535008263620}
-  - component: {fileID: 6012605527737071900}
+  - component: {fileID: 8525878211890437830}
+  - component: {fileID: 3745493211797934487}
+  - component: {fileID: 2725104547817132121}
   m_Layer: 0
-  m_Name: StatusIcon
+  m_Name: Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6238866535008263620
+--- !u!4 &8525878211890437830
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4358371791041683410}
+  m_GameObject: {fileID: 6614467220317656430}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.11, z: 0}
+  m_LocalPosition: {x: -0.158, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5299888763480850849}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6012605527737071900
-SpriteRenderer:
-  serializedVersion: 3
+--- !u!114 &3745493211797934487
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4358371791041683410}
+  m_GameObject: {fileID: 6614467220317656430}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 10
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_SpriteSortPoint: 0
-  m_BlendShapeWeights: []
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88707b5db93495747a7ab35955e37eb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouthCollider
+--- !u!58 &2725104547817132121
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6614467220317656430}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.05
