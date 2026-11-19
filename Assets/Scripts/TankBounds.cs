@@ -2,18 +2,28 @@ using UnityEngine;
 
 public class TankBounds : MonoBehaviour
 {
-    public static TankBounds Instance { get; private set; }
-
     [SerializeField] private Collider2D floor;
+    [SerializeField] private float bottomPadding;
     [SerializeField] private Collider2D ceiling;
+    [SerializeField] private float topPadding;
     [SerializeField] private Collider2D leftWall;
     [SerializeField] private Collider2D rightWall;
-
-    public Vector2 Min { get { return new Vector2(leftWall.bounds.max.x, floor.bounds.max.y); } }
-    public Vector2 Max { get { return new Vector2(rightWall.bounds.min.x, ceiling.bounds.min.y); } }
-
-    private void Awake()
+    [SerializeField] private float xPadding;
+    private Camera cam;
+    private void Start()
     {
-        Instance = this;
+        cam = Camera.main;
+
+        float cameraBottom = cam.transform.position.y - cam.orthographicSize;
+        floor.transform.position = new(0, cameraBottom - (floor.bounds.size.y * 0.5f) + bottomPadding);
+
+        float cameraTop = cam.transform.position.y + cam.orthographicSize;
+        ceiling.transform.position = new(0, cameraTop + (ceiling.bounds.size.y * 0.5f) - topPadding);
+
+        float cameraLeft = cam.transform.position.y - cam.orthographicSize * cam.aspect;
+        leftWall.transform.position = new(cameraLeft - (leftWall.bounds.size.x * 0.5f) + xPadding, 0);
+
+        float cameraRight = cam.transform.position.y + cam.orthographicSize * cam.aspect;
+        rightWall.transform.position = new(cameraRight + (rightWall.bounds.size.x * 0.5f) - xPadding, 0);
     }
 }

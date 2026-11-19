@@ -196,13 +196,6 @@ public class FishController : MonoBehaviour, IMotionSource
     {
         float margin = BoundsMargin;
 
-        if (TankBounds.Instance != null)
-        {
-            min = TankBounds.Instance.Min + Vector2.one * margin;
-            max = TankBounds.Instance.Max - Vector2.one * margin;
-            return;
-        }
-
         float halfH = cam.orthographicSize;
         float halfW = halfH * cam.aspect;
         Vector2 c = cam.transform.position;
