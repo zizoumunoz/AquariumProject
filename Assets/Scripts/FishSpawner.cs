@@ -28,7 +28,7 @@ public class FishSpawner : MonoBehaviour
             return false;
         }
         FishController fish = Instantiate(fishPrefab, pos, Quaternion.identity, fishRoot);
-        fish.Init(so, traitRules.RollChild(parentATraits, parentBTraits, database));
+        fish.Init(so, traitRules.RollChild(parentATraits, parentBTraits, MarketManager.instance.database));
         return true;
     }
 }

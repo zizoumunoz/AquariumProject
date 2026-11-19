@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c9801724f980d42869cd9a81c4eb32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoneyDisplay
-  money: 5000
+  money: 0
   initialMoney: 100
 --- !u!1 &780869033
 GameObject:
@@ -2484,10 +2484,9 @@ MonoBehaviour:
   _smallAlgae: {fileID: 1822306425593731046, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}
   _mediumAlgae: {fileID: 3088199924961003057, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}
   _largeAlgae: {fileID: -6795380178158588127, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}
+  _algaePrefab: {fileID: 0}
   _maxSpots: 250
   _edgeMargin: 0.2
-  _sortingLayer: Default
-  _sortingOrder: -5
   _scaleRange: {x: 0.8, y: 1.2}
 --- !u!1 &1120738881
 GameObject:

@@ -1,8 +1,5 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEditor.Search;
-using UnityEngine.VFX;
-using System.Security.Cryptography;
 
 public class AlgaeVisuals : MonoBehaviour
 {
