@@ -12,7 +12,7 @@ public class UITankController : MonoBehaviour
     public void UpdateTank(Tank newTank)
     {
         myTank = newTank;
-        tankBG.sprite = TankManager.instance.database.tankSOs[(int)newTank.type].sprite;
+        tankBG.sprite = newTank.so.sprite;
         tankFishCount.text = newTank.fishes.Count.ToString();
         tankDecorationCount.text = newTank.decorations.Count.ToString();
         tankLoaderButton.interactable = newTank != TankManager.instance.database.activeTank;

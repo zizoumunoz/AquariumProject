@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c9801724f980d42869cd9a81c4eb32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoneyDisplay
-  money: 0
+  money: 800
   initialMoney: 100
 --- !u!1 &780869033
 GameObject:
@@ -2286,11 +2286,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 290a58c1812ceab498057acd6d74a6f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TankManager
-  tankSprites:
-  - {fileID: -4049572274367911354, guid: 1f14e16c92b98fb4c8c30d7115b00fd0, type: 3}
-  - {fileID: -216754732723819541, guid: b54408d062ff472458d8be8e818babb4, type: 3}
-  - {fileID: -4049510351803469674, guid: 21e97f2b6f888fc48a6cee13c76a14cf, type: 3}
-  - {fileID: 8431445700188012450, guid: 1259784deb565dd44a106c4a99270e41, type: 3}
   sr: {fileID: 1158554205}
   fishRoot: {fileID: 2044785690}
   decoRoot: {fileID: 1701980806}
@@ -2652,14 +2647,14 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -99
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -4049572274367911354, guid: 1f14e16c92b98fb4c8c30d7115b00fd0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f14e16c92b98fb4c8c30d7115b00fd0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 5.18, y: 3.48}
+  m_DrawMode: 2
+  m_Size: {x: 41.44, y: 13.92125}
   m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
+  m_SpriteTileMode: 1
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []

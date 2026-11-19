@@ -5,7 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "TankSO", menuName = "Scriptable Objects/TankSO")]
 public class TankSO : ScriptableObject
 {
-    public TankType type;
     public Sprite sprite;
     public TankAttribute startAttributes = new();
     public int maxFish = 8;
@@ -17,22 +16,14 @@ public class TankSO : ScriptableObject
 [Serializable]
 public class Tank
 {
+    public TankSO so;
     public List<SaveFish> fishes = new();
     public List<SaveDecoration> decorations = new();
-    public TankType type = TankType.Fresh;
     public TankAttribute currentAttibutes = new();
     public float maxFish = 8;
     public List<FishSO> marketRoll = new();
     public List<int> timesBought = new();
     public float lastRefresh = 0;
-}
-
-public enum TankType
-{
-    Fresh,
-    Salty,
-    Giant,
-    Candy
 }
 
 [Serializable]

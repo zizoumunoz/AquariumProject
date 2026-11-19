@@ -7,9 +7,4 @@ public class TankDatabase : ScriptableObject
     public List<TankSO> tankSOs = new();
     public List<Tank> tanks = new() { new Tank() };
     public Tank activeTank = null;
-
-    private void OnValidate()
-    {
-        tankSOs.Sort((x, y) => x.type - y.type);
-    }
 }

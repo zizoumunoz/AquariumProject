@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TankManager : MonoBehaviour
 {
-    [SerializeField] private Sprite[] tankSprites;
     public SpriteRenderer sr;
     public Transform fishRoot;
     public Transform decoRoot;
@@ -27,7 +26,7 @@ public class TankManager : MonoBehaviour
     }
     public void LoadNewTank(Tank tank)
     {
-        sr.sprite = tankSprites[(int)tank.type];
+        sr.sprite = tank.so.sprite;
 
         SaveTankData();
 
@@ -58,7 +57,7 @@ public class TankManager : MonoBehaviour
         }
 
         database.activeTank = tank;
-        MarketManager.instance.database = database.tankSOs[(int)tank.type];
+        MarketManager.instance.database = tank.so;
         MarketManager.instance.Refresh(tank.marketRoll, tank.lastRefresh, tank.timesBought);
         ScreenManager.instance.EmptyStack();
         MoneyManager.Instance.UpdateUI();
@@ -114,8 +113,8 @@ public class TankManager : MonoBehaviour
     {
         database.tanks.Add(new Tank
         {
+            so = tank,
             currentAttibutes = new(tank.startAttributes),
-            type = tank.type,
             maxFish = tank.maxFish,
             marketRoll = MarketManager.instance.PickOffers(tank),
             lastRefresh = Time.time,

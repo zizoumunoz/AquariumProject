@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Salty Water
   m_EditorClassIdentifier: Assembly-CSharp::TankSO
   type: 1
-  sprite: {fileID: -216754732723819541, guid: b54408d062ff472458d8be8e818babb4, type: 3}
+  sprite: {fileID: 21300000, guid: b54408d062ff472458d8be8e818babb4, type: 3}
   startAttributes:
     oxigen: 50
     temperature: 50
