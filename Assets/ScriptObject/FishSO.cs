@@ -53,6 +53,7 @@ public class FishSO : SerializedScriptableObject
         {StatsEnum.youngSizeMultiplier, 0.5f },
 
         {StatsEnum.fishSpeed, 1.5f },
+        {StatsEnum.turnSpeed, 120f },
         {StatsEnum.minRetargetTime, 2f },
         {StatsEnum.maxRetargetTime, 5f },
 

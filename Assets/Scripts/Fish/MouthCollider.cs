@@ -1,12 +1,17 @@
 using UnityEngine;
 
-public class MouthCollider : MonoBehaviour
+public class MouthCollider : MonoBehaviour, IFishBehaviour
 {
     private FishBounds bounds;
-    private void Start()
+
+    public int Order => 0;
+
+    public void Init(FishStats stats)
     {
-        bounds = GetComponentInParent<FishBounds>();
+        bounds = stats.GetBehaviour<FishBounds>();
     }
+
+    public void UpdateFish(){}
     private void OnTriggerEnter2D(Collider2D collision)
     {
         bounds.mouthCollisions.Add(collision);

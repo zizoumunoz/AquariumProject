@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -6,33 +7,50 @@ using UnityEngine;
 public class FishBounds : MonoBehaviour, IFishBehaviour
 {
     private Collider2D col;
-    private readonly Dictionary<Direction, Vector2> directions = new()
+    private readonly Dictionary<Direction, Func<Transform, Vector2>> directions = new()
     {
-        { Direction.up, Vector2.up },
-        { Direction.upFront, Vector2.up + Vector2.right },
-        { Direction.front, Vector2.right },
-        { Direction.downFront, Vector2.down + Vector2.right },
-        { Direction.down, Vector2.down },
-        { Direction.downBack, Vector2.down + Vector2.left },
-        { Direction.back, Vector2.left },
-        { Direction.upBack, Vector2.up + Vector2.left }
+        { Direction.up, x => x.up },
+        { Direction.upFront, x => x.up - x.right },
+        { Direction.front, x => -x.right },
+        { Direction.downFront, x => -x.up - x.right },
+        { Direction.down, x => -x.up },
+        { Direction.downBack, x => -x.up + x.right },
+        { Direction.back, x => x.right },
+        { Direction.upBack, x => x.up + x.right }
     };
-    [SerializeField] public Dictionary<Direction, RaycastHit2D[]> rays = new();
+    [SerializeField] public Dictionary<Direction, float> distanceToWalls = new();
     public List<Collider2D> fishCollisions = new();
-    public List<Collider2D> fishRadius = new();
+    public Collider2D[] fishFoodRadius;
     public List<Collider2D> mouthCollisions = new();
+
+    public int Order => 0;
+
     public void Init(FishStats stats)
     {
         col = GetComponent<Collider2D>();
+
+        UpdateFish();
     }
 
     public void UpdateFish()
     {
         for (Direction i = 0; i <= Direction.upBack; i++)
         {
-            rays[i] = Physics2D.RaycastAll(transform.position, directions[i], float.MaxValue, LayerMask.GetMask("Wall"));
+            RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, directions[i](transform), float.MaxValue, LayerMask.GetMask("Wall"));
+
+            float minD = float.MaxValue;
+            for (int j = 0; j < hits.Length; j++)
+            {
+                float thisD = (hits[j].point - (Vector2)transform.position).magnitude;
+                if (thisD < minD)
+                {
+                    minD = thisD;
+                }
+            }
+
+            distanceToWalls[i] = minD;
         }
-        fishRadius = Physics2D.OverlapCircleAll(transform.position, 5, LayerMask.GetMask("Fish", "Food")).Where(x => x != col).ToList();
+        fishFoodRadius = Physics2D.OverlapCircleAll(transform.position, 50f, LayerMask.GetMask("Fish", "Food"));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

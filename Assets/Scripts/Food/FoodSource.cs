@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class FoodSource : MonoBehaviour
+public class FoodSource : MonoBehaviour, IFishBehaviour
 {
     public FoodType type;
     public float fullnessRestore;
@@ -9,14 +9,14 @@ public class FoodSource : MonoBehaviour
     public int bitesLeft;
     public float size;
     private List<FishController> fishes = new();
-    private Collider2D col;
 
-    private void Awake()
-    {
-        col = GetComponent<Collider2D>();
-    }
+    public int Order => 0;
 
-    public float Eat()
+    public void Init(FishStats stats){}
+
+    public void UpdateFish(){}
+
+    public float Eaten()
     {
         bitesLeft--;
         if (bitesLeft == 0 && deleteWhenEaten)
@@ -49,11 +49,4 @@ public class FoodSource : MonoBehaviour
     {
         return bitesLeft - fishes.Count > 0;
     }
-    public float DistanceTo(Vector2 from)
-    {
-        if (col == null) return Vector2.Distance(from, transform.position);
-        if (col.OverlapPoint(from)) return 0f;
-        return Vector2.Distance(from, col.ClosestPoint(from));
-    }
-
 }

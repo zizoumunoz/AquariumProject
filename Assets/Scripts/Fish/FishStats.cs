@@ -1,5 +1,7 @@
 using Sirenix.OdinInspector;
+using Sirenix.Utilities;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class FishStats : SerializedMonoBehaviour
@@ -8,7 +10,18 @@ public class FishStats : SerializedMonoBehaviour
     [SerializeField] public Dictionary<StatsEnum, float> statsMultiplier = new();
     public List<TraitSO> traits = new();
     public IFishBehaviour[] behaviours;
-    public int price;
+    public float priceMultiplier;
+    public int Price
+    {
+        get
+        {
+            return (int)(baseFish.price * priceMultiplier * (age == Age.Young ? 0.5f : 2.0f));
+        }
+    }
+    public Age age = Age.Young;
+    public float happiness;
+    public float fullness;
+    public FishDiet diet;
     public void Init(FishSO baseFish, List<TraitSO> traits)
     {
         this.baseFish = baseFish;
@@ -28,9 +41,12 @@ public class FishStats : SerializedMonoBehaviour
                     statsMultiplier[m.Key] *= m.Value;
                 }
             }
+            priceMultiplier *= traits[i].priceMultiplier;
         }
 
-        behaviours = GetComponents<IFishBehaviour>();
+        behaviours = GetComponentsInChildren<IFishBehaviour>();
+        behaviours.Sort((x, y) => x.Order - y.Order);
+
 
         foreach (IFishBehaviour behaivour in behaviours)
         {
@@ -43,6 +59,26 @@ public class FishStats : SerializedMonoBehaviour
         {
             behaivour.UpdateFish();
         }
+
+        UpdateHunger();
+        UpdateHappiness();
+    }
+    private void UpdateHunger()
+    {
+        fullness -= this[StatsEnum.fullnessDecayPerSecond] * Time.deltaTime;
+        fullness = Mathf.Clamp(fullness, 0.0f, 100.0f);
+    }
+    private void UpdateHappiness()
+    {
+        if (fullness > this[StatsEnum.happyAbove])
+        {
+            happiness += this[StatsEnum.happinessGainPerSecond] * Time.deltaTime;
+        }
+        else if (fullness < this[StatsEnum.unhappyBelow])
+        {
+            happiness -= this[StatsEnum.happinessLossPerSecond] * Time.deltaTime;
+        }
+        happiness = Mathf.Clamp(happiness, 0.0f, 100.0f);
     }
     public float this[StatsEnum stats]
     {
@@ -51,6 +87,10 @@ public class FishStats : SerializedMonoBehaviour
             return baseFish.baseStats[stats] * statsMultiplier[stats];
         }
     }
+    public T GetBehaviour<T>() where T : IFishBehaviour
+    {
+        return (T)behaviours.First(x => x.GetType() == typeof(T));
+    }
 }
 public enum StatsEnum
 {
@@ -58,6 +98,7 @@ public enum StatsEnum
     youngSizeMultiplier,
 
     fishSpeed,
+    turnSpeed,
     minRetargetTime,
     maxRetargetTime,
 

@@ -2,17 +2,19 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(FishController))]
-public class PoopEmitter : MonoBehaviour
+public class PoopEmitter : MonoBehaviour, IFishBehaviour
 {
     private FishStats stats;
     private float elapsed;
 
-    private void Awake()
+    public int Order => 4;
+
+    public void Init(FishStats stats)
     {
-        stats = GetComponent<FishStats>();
+        this.stats = stats;
     }
 
-    private void Update()
+    public void UpdateFish()
     {
         elapsed += Time.deltaTime;
         if (elapsed < stats[StatsEnum.poopInterval]) return;

@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddfae909e6c71284cb1c6c9327643532, type: 3}
   m_Name: RedPiranha
   m_EditorClassIdentifier: Assembly-CSharp::FishSO
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
   fishName: Red Bellied Piranha
   sprite: {fileID: 7880602432240417576, guid: b87ee78aad5e2634b931cd6a2baa1cd3, type: 3}
   diet: 1
@@ -21,28 +30,34 @@ MonoBehaviour:
   statusIcons: {fileID: 0}
   iconPadding: 0.15
   iconSize: 1
-  fishStatus:
-    baseSize: 1
-    nutrition: 25
-    youngSizeMultiplier: 0.5
-    fishSpeed: 1.5
-    minRetargetTime: 2
-    maxRetargetTime: 5
-    startFullness: 100
-    fullnessDecayPerSecond: 2
-    wanderThreshold: 70
-    eatDistance: 0.2
-    happiness: 0
-    unhappyBelow: 40
-    happyAbove: 60
-    happinessLossPerSecond: 2
-    happinessGainPerSecond: 2
-    fleeSpeedRatio: 0.9
-    fleeDistance: 5
-    fearMemoryTime: 0.5
-    detectionRadius: 3
-    breedHappiness: 90
-    breedCooldown: 30
-    breedDistance: 0.5
-    ageTime: 60
-    poopInterval: 20
+  baseStats:
+  - key: 0
+    value: 1
+  - key: 1
+    value: 0.5
+  - key: 2
+    value: 1.5
+  - key: 4
+    value: 2
+  - key: 5
+    value: 5
+  - key: 6
+    value: 2
+  - key: 7
+    value: 70
+  - key: 8
+    value: 40
+  - key: 9
+    value: 60
+  - key: 10
+    value: 2
+  - key: 11
+    value: 2
+  - key: 12
+    value: 0.9
+  - key: 13
+    value: 30
+  - key: 14
+    value: 60
+  - key: 15
+    value: 20
