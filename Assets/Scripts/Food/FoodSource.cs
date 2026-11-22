@@ -38,11 +38,10 @@ public class FoodSource : MonoBehaviour
     {
         return bitesLeft - fishes.Count > 0;
     }
-    public float DistanceTo(Vector2 from)
+    public float DistanceTo(Collider2D body)
     {
-        if (col == null) return Vector2.Distance(from, transform.position);
-        if (col.OverlapPoint(from)) return 0f;
-        return Vector2.Distance(from, col.ClosestPoint(from));
+        if (col == null) return Vector2.Distance(body.bounds.center, transform.position);
+        return Mathf.Max(0.0f, body.Distance(col).distance);
     }
 
 }

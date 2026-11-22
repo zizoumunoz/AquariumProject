@@ -11,6 +11,13 @@ GameObject:
   - component: {fileID: 7436370279265831659}
   - component: {fileID: 6477726455941811002}
   - component: {fileID: 6564872827897932372}
+  - component: {fileID: 7857497660474289726}
+  - component: {fileID: 3699943159484134718}
+  - component: {fileID: 8608147689110143779}
+  - component: {fileID: 4473759980099292494}
+  - component: {fileID: 4275961735736800956}
+  - component: {fileID: -4886326058216598288}
+  - component: {fileID: -1551567337785046759}
   m_Layer: 0
   m_Name: Piranha
   m_TagString: Untagged
@@ -107,17 +114,163 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishController
   data: {fileID: 11400000, guid: 1e58052344a642a469eb469f2c70fc0a, type: 2}
-  boundsMargin: 0.5
-  spriteFacesLeft: 1
+  statusMultiplier:
+    baseSize: 1
+    nutrition: 1
+    youngSizeMultiplier: 1
+    fishSpeed: 1
+    minRetargetTime: 1
+    maxRetargetTime: 1
+    startFullness: 1
+    fullnessDecayPerSecond: 1
+    wanderThreshold: 1
+    eatDistance: 1
+    happiness: 1
+    unhappyBelow: 1
+    happyAbove: 1
+    happinessLossPerSecond: 1
+    happinessGainPerSecond: 1
+    fleeSpeedRatio: 1
+    fleeDistance: 1
+    fearMemoryTime: 1
+    detectionRadius: 1
+    breedHappiness: 1
+    breedCooldown: 1
+    breedDistance: 1
+    ageTime: 1
+    poopInterval: 1
+  growTimer: 0
+  happiness: 0
+  sr: {fileID: 0}
+  highlight: {fileID: 0}
+  fullness: 0
+  traits: []
+--- !u!50 &7857497660474289726
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579538544403211446}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &3699943159484134718
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579538544403211446}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
+--- !u!114 &8608147689110143779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579538544403211446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20cb9c5ddbcbcef40b79d561f1a81ce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishMovement
   turnSpeed: 120
-  fleeSpeedRatio: 0.9
-  fleeDistance: 5
-  fearMemoryTime: 0.5
-  detectionRadius: 3
-  iconRenderer: {fileID: 2870404441944369698}
-  statusIcons: {fileID: 11400000, guid: 25a7fd334e56ef74bac62587f75b8533, type: 2}
-  iconPadding: 0.15
-  iconSize: 1
+--- !u!114 &4473759980099292494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579538544403211446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62cfd905e39b1c4abb53b2f2620996d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishFeeding
+  aimedFood: {fileID: 0}
+--- !u!114 &4275961735736800956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579538544403211446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a1a320cc9e50c4a8447ae5632c37b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishBreeding
+--- !u!114 &-4886326058216598288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579538544403211446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d2c91cbdc5cb548815c9b0436b2407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishFlee
+--- !u!114 &-1551567337785046759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579538544403211446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c8cba0e05575a3459a5918e321ed641, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishWander
 --- !u!1 &8351681272076690051
 GameObject:
   m_ObjectHideFlags: 0
