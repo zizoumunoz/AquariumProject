@@ -94,7 +94,7 @@ public class TankManager : MonoBehaviour
                 baseFish = controller.data,
                 multiplier = controller.statusMultiplier,
                 traits = controller.traits,
-                growTimer = controller.growTimer,
+                growTimer = controller.GrowTimer,
             };
             database.activeTank.fishes.Add(saveFish);
         }
