@@ -3,12 +3,11 @@ using UnityEngine;
 public class FishNeeds : MonoBehaviour
 {
     private FishController fish;
-    private bool ready;
-
     [SerializeField] private float fullness;
     [SerializeField] private float happiness;
 
     public float Happiness {  get { return happiness; }}
+    public float Fullness {  get { return fullness; }}
 
     public bool IsHungry
     {
@@ -24,7 +23,6 @@ public class FishNeeds : MonoBehaviour
     {
         fullness = fish.Data.fishStatus.startFullness * fish.statusMultiplier.startFullness;
         happiness = fish.Data.fishStatus.happiness * fish.statusMultiplier.happiness;
-        ready = true;
     }
 
     public void Feed(float amount)
@@ -34,11 +32,6 @@ public class FishNeeds : MonoBehaviour
 
     private void Update()
     {
-        if(!ready)
-        {
-            return;
-        }
-
         fullness = Mathf.Max(0.0f, fullness - fish.Data.fishStatus.fullnessDecayPerSecond * Time.deltaTime);
         UpdateHappiness();
     }
@@ -54,7 +47,7 @@ public class FishNeeds : MonoBehaviour
         }
         else if (fullness > data.happyAbove * mult.happyAbove)
         {
-            happiness += data.happinessLossPerSecond * mult.happinessLossPerSecond * Time.deltaTime;
+            happiness += data.happinessGainPerSecond * mult.happinessGainPerSecond * Time.deltaTime;
         }
 
 

@@ -13,14 +13,11 @@ MonoBehaviour:
   m_Name: JellyFish
   m_EditorClassIdentifier: Assembly-CSharp::FishSO
   fishName: JellyFish
-  sprite: {fileID: 84022467, guid: ddda3f19b44a66445982b2cc43b4e0e5, type: 3}
+  sprite: {fileID: 21300000, guid: ddda3f19b44a66445982b2cc43b4e0e5, type: 3}
   diet: 2
   rarity: 1
   price: 110
-  iconRenderer: {fileID: 0}
-  statusIcons: {fileID: 0}
-  iconPadding: 0.15
-  iconSize: 1
+  description: Does stuff
   fishStatus:
     baseSize: 1
     nutrition: 25

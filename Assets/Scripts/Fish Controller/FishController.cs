@@ -8,12 +8,7 @@ using UnityEngine;
 public class FishController : MonoBehaviour
 {
     public FishSO data;
-
     public FishStatus statusMultiplier = new(1);
-
-    private bool initialized;
-
-
 
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] public SpriteRenderer highlight;
@@ -21,7 +16,6 @@ public class FishController : MonoBehaviour
     private FishFlee flee;
     private FishNeeds needs;
     private FishGrowth growth;
-
     private IFishBehaviour[] behaviours;
 
     public List<TraitSO> traits = new List<TraitSO>();
@@ -39,6 +33,7 @@ public class FishController : MonoBehaviour
     public Age CurrentAge { get { return growth.CurrentAge; } }
     public float GrowTimer { get { return growth.Timer; } }
     public float Happiness { get { return needs.Happiness; } }
+    public float Fullness { get { return needs.Fullness; } }
     public bool IsHungry { get { return needs.IsHungry; } }
     public bool IsAfraid { get { return flee.IsAfraid; } }
     public float PoopInterval { get { return data.fishStatus.poopInterval * statusMultiplier.poopInterval; } }
@@ -56,8 +51,6 @@ public class FishController : MonoBehaviour
             statusMultiplier *= trait.statusMultiplier;
             priceMultiplier *= trait.priceMultiplier;
         }
-
-        initialized = true;
 
         needs.Setup();
         growth.Setup(growTimer != -1 ? data.fishStatus.ageTime * statusMultiplier.ageTime : growTimer);
@@ -89,47 +82,11 @@ public class FishController : MonoBehaviour
         };
     }
 
-    private void Start()
-    {
-        if (data != null && !initialized) Init(data, traits);
-    }
-
     private void Update()
     {
         for (int i = 0; i < behaviours.Length; i++)
         {
             if (behaviours[i].Tick()) break;
         }
-
-        UpdateIcons();
-    }
-
-    private void LateUpdate()
-    {
-        if (data == null || data.iconRenderer == null || sr == null) return;
-
-        Bounds b = sr.bounds;
-        Transform t = data.iconRenderer.transform;
-        t.rotation = Quaternion.identity;
-        t.position = new Vector3(b.center.x, b.max.y + data.iconPadding, transform.position.z);
-        t.localScale = Vector3.one * (data.iconSize / Size);
-    }
-
-    private void UpdateIcons()
-    {
-        if (data.iconRenderer == null) return;
-        if (data.statusIcons == null)
-        {
-            Debug.LogWarning("missing " + name);
-            return;
-        }
-
-        bool afraid = IsAfraid;
-        bool hungry = IsHungry;
-
-        if (afraid) data.iconRenderer.sprite = data.statusIcons.fear;
-        else if (hungry) data.iconRenderer.sprite = data.statusIcons.hunger;
-
-        data.iconRenderer.enabled = afraid || hungry;
     }
 }

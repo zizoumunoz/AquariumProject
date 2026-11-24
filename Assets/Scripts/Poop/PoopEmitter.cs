@@ -5,7 +5,7 @@ using UnityEngine;
 public class PoopEmitter : MonoBehaviour
 {
     private FishController fish;
-    private float elapsed;
+    [SerializeField] private float elapsed;
 
     private void Awake()
     {
@@ -14,10 +14,10 @@ public class PoopEmitter : MonoBehaviour
 
     private void Update()
     {
-        elapsed += Time.deltaTime;
-        if (elapsed < fish.PoopInterval) return;
+        elapsed -= Time.deltaTime;
+        if (elapsed > 0) return;
 
-        elapsed = 0f;
+        elapsed = fish.PoopInterval;
         PoopSpawner.instance.Spawn(transform.position);
     }
 }
