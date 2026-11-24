@@ -9,7 +9,10 @@ public class FishPanel : MonoBehaviour
     [SerializeField] private GameObject panel;
     [SerializeField] private TextMeshProUGUI fishName;
     [SerializeField] private TextMeshProUGUI fishDescription;
+    [SerializeField] private TextMeshProUGUI fishDiet;
     [SerializeField] private TextMeshProUGUI fishPrice;
+    [SerializeField] private Slider fishHappiness;
+    [SerializeField] private Slider fishHunger;
     [SerializeField] private Camera fishCam;
     [SerializeField] private Transform fishTraitsRoot;
     [SerializeField] private Transform fishTraitsPrefab;
@@ -21,9 +24,9 @@ public class FishPanel : MonoBehaviour
         panel.SetActive(true);
 
         fishName.text = fish.data.fishName;
-        fishDescription.text = fish.data.diet.ToString();
+        fishDescription.text = fish.data.description;
+        fishDiet.text = fish.data.diet.ToString();
         fishPrice.text = fish.Price.ToString();
-        fishCam.orthographicSize = fish.Size;
 
         for (int i = 0; i < fish.traits.Count; i++)
         {
@@ -67,5 +70,8 @@ public class FishPanel : MonoBehaviour
             return;
         }
         fishCam.transform.position = fish.transform.position + Vector3.back * 1;
+        fishCam.orthographicSize = fish.Size;
+        fishHappiness.value = fish.Happiness;
+        fishHunger.value = fish.Fullness;
     }
 }

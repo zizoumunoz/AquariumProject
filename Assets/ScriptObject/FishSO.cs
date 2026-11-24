@@ -31,14 +31,7 @@ public class FishSO : ScriptableObject
     public FishDiet diet = FishDiet.Herbivore;
     public Rarity rarity = Rarity.Common;
     public int price = 50;
-
-    [Header("Icon")]
-    public SpriteRenderer iconRenderer;
-    public StatusIconSO statusIcons;
-    public float iconPadding = 0.15f;
-    public float iconSize = 1f;
-
-
+    [TextArea] public string description = "Does stuff";
     public FishStatus fishStatus = new();
 }
 
