@@ -13,10 +13,6 @@ public class FishController : MonoBehaviour
 
     private bool initialized;
 
-    [Header("Growth")]
-    private Age age = Age.Young;
-    public float growTimer;
-
 
 
     [SerializeField] private SpriteRenderer sr;
@@ -64,7 +60,7 @@ public class FishController : MonoBehaviour
         initialized = true;
 
         needs.Setup();
-        growth.Setup(growTimer);
+        growth.Setup(growTimer != -1 ? data.fishStatus.ageTime * statusMultiplier.ageTime : growTimer);
         sr.sprite = data.sprite;
         highlight.sprite = data.sprite;
 
