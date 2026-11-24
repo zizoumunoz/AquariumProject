@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class AlgaeVisuals : MonoBehaviour
 {
+    public static AlgaeVisuals instance;
     [Header("Sprites")]
     [SerializeField] private Sprite _smallAlgae;
     [SerializeField] private Sprite _mediumAlgae;
@@ -10,26 +11,28 @@ public class AlgaeVisuals : MonoBehaviour
 
     [Header("Spawning")]
     [SerializeField] private SpriteRenderer _algaePrefab;
-    [SerializeField] private int _maxSpots = 40;
+    [SerializeField] public int _maxSpots = 40;
     [SerializeField] private float _edgeMargin = 0.2f;
     [SerializeField] private Vector2 _scaleRange = new Vector2(0.8f, 1.2f);
 
     private readonly List<SpriteRenderer> _spots = new();
     private Tank _currentTank;
     private Bounds _currentBounds;
-
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Update()
     {
-        if (TankManager.instance == null)
+        for (int i = 0; i < _spots.Count; i++)
         {
-            return;
+            if (_spots[i] == null)
+            {
+                _spots.RemoveAt(i);
+                i--;
+            }
         }
-
         Tank tank = TankManager.instance.database.activeTank;
-        if (tank == null)
-        {
-            return;
-        }
 
         Bounds tankBounds = TankManager.instance.sr.bounds;
 
@@ -59,7 +62,7 @@ public class AlgaeVisuals : MonoBehaviour
         float radius = sprite.bounds.extents.x * _scaleRange.y;
         float min = _edgeMargin + radius;
 
-        GameObject obj = new GameObject("Algae");
+        SpriteRenderer obj = Instantiate(_algaePrefab, transform);
         obj.transform.SetParent(transform);
         obj.transform.position = new Vector3(
             Random.Range(_currentBounds.min.x + min, _currentBounds.max.x - min),
@@ -68,10 +71,8 @@ public class AlgaeVisuals : MonoBehaviour
         obj.transform.rotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
         obj.transform.localScale = Vector3.one * Random.Range(_scaleRange.x, _scaleRange.y);
 
-        SpriteRenderer sr = obj.AddComponent<SpriteRenderer>();
-
-        sr.sprite = sprite;
-        _spots.Add(sr);
+        obj.sprite = sprite;
+        _spots.Add(obj);
     }
 
     // more mold means big spots likelier

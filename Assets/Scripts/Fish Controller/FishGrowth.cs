@@ -29,7 +29,7 @@ public class FishGrowth : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer > 0f) return;
 
-        age = Age.Young;
+        age = Age.Adult;
         transform.localScale = Vector3.one * fish.Size;
         GetComponent<FoodSource>().size = fish.Size; 
 
