@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Barracuda
   m_EditorClassIdentifier: Assembly-CSharp::FishSO
   fishName: Barracuda
-  sprite: {fileID: -564814662061335941, guid: 4485c246bec44f243a32fae8e294f3e0, type: 3}
+  sprite: {fileID: -6454063522241350109, guid: c77b928c2e36c0b4fbe415bbadee3890, type: 3}
   diet: 1
   rarity: 0
   price: 50
@@ -33,8 +33,8 @@ MonoBehaviour:
     wanderThreshold: 70
     eatDistance: 0.2
     happiness: 0
-    unhappyBelow: 50
-    happyAbove: 70
+    unhappyBelow: 40
+    happyAbove: 60
     happinessLossPerSecond: 2
     happinessGainPerSecond: 2
     fleeSpeedRatio: 0.9

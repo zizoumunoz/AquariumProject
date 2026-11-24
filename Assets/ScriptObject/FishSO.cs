@@ -96,8 +96,8 @@ public class FishStatus
         eatDistance = 0.2f;
 
         happiness = 0;
-        unhappyBelow = 50f;
-        happyAbove = 70f;
+        unhappyBelow = 40f;
+        happyAbove = 60f;
         happinessLossPerSecond = 2f;
         happinessGainPerSecond = 2f;
 
@@ -108,7 +108,7 @@ public class FishStatus
 
         breedHappiness = 90f;
         breedCooldown = 30f;
-        breedDistance = 0.5f;
+        breedDistance = 1f;
         ageTime = 60f;
 
         poopInterval = 20f;
@@ -171,8 +171,8 @@ public class FishStatus
 
     [Header("Extra")]
     public float happiness = 0;
-    public float unhappyBelow = 50f;
-    public float happyAbove = 70f;
+    public float unhappyBelow = 40f;
+    public float happyAbove = 60f;
     public float happinessLossPerSecond = 2f;
     public float happinessGainPerSecond = 2f;
 

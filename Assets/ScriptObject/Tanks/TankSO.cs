@@ -10,22 +10,21 @@ public class TankSO : ScriptableObject
     public TankAttribute startAttributes = new();
     public int maxFish = 8;
     public int price = 1;
+    public List<FishSO> fishes = new();
+    public List<TraitSO> traits = new();
 }
 
 [Serializable]
 public class Tank
 {
-    public Tank()
-    {
-        type = TankType.Fresh;
-        maxFish = 8;
-    }
     public List<SaveFish> fishes = new();
     public List<SaveDecoration> decorations = new();
     public TankType type = TankType.Fresh;
     public TankAttribute currentAttibutes = new();
     public float maxFish = 8;
-
+    public List<FishSO> marketRoll = new();
+    public List<int> timesBought = new();
+    public float lastRefresh = 0;
 }
 
 public enum TankType

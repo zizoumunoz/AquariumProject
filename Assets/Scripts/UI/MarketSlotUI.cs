@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System;
 using TMPro;
 using UnityEngine;
@@ -11,7 +12,8 @@ public class MarketSlotUI : MonoBehaviour
     [SerializeField] private Button buyButton;
     [SerializeField] private FishSO fish;
     [SerializeField] private Transform starHolder;
-    public bool bought = false;
+    private int shopIndex = 0;
+    [HideInInspector] public int timesBought = 0;
 
     private void Awake()
     {
@@ -27,10 +29,11 @@ public class MarketSlotUI : MonoBehaviour
         MoneyManager.Instance.moneyChanged -= UpdateUI;
     }
 
-    public void Set(FishSO so)
+    public void Set(FishSO so, int shopIndex, int timesBought = 0)
     {
-        bought = false;
         fish = so;
+        this.shopIndex = shopIndex;
+        this.timesBought = timesBought;
         fishImage.sprite = so.sprite;
         fishImage.preserveAspect = true;
         nameLabel.text = so.fishName;
@@ -49,13 +52,15 @@ public class MarketSlotUI : MonoBehaviour
     {
         if (MarketManager.instance.TryBuy(fish))
         {
-            bought = true;
+            timesBought++;
         }
+        TankManager.instance.database.activeTank.timesBought[shopIndex] = timesBought;
+        MoneyManager.Instance.UpdateUI();
     }
 
     public void UpdateUI(int money)
     {
-        if (money >= fish.price && !bought)
+        if (money >= fish.price && timesBought < 2)
         {
             buyButton.interactable = true;
             priceLabel.color = Color.black;

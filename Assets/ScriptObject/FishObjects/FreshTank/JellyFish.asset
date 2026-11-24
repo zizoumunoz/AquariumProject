@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: JellyFish
   m_EditorClassIdentifier: Assembly-CSharp::FishSO
   fishName: JellyFish
-  sprite: {fileID: 5129743184734812743, guid: 6cc43c4804fa6f34f89ed9e83dca1866, type: 3}
+  sprite: {fileID: 84022467, guid: ddda3f19b44a66445982b2cc43b4e0e5, type: 3}
   diet: 2
   rarity: 1
   price: 110
@@ -33,8 +33,8 @@ MonoBehaviour:
     wanderThreshold: 70
     eatDistance: 0.2
     happiness: 0
-    unhappyBelow: 50
-    happyAbove: 70
+    unhappyBelow: 40
+    happyAbove: 60
     happinessLossPerSecond: 2
     happinessGainPerSecond: 2
     fleeSpeedRatio: 0.9

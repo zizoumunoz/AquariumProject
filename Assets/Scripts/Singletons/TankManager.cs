@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class TankManager : MonoBehaviour
@@ -13,13 +15,15 @@ public class TankManager : MonoBehaviour
     [SerializeField] private UITankController tankUIPrefab;
     [SerializeField] private Transform tankPanel;
     [SerializeField] private FishController fishPrefab;
-
-    private void Start()
+    private void Awake()
     {
         instance = this;
         database.tanks.Clear();
-        database.tanks.Add(new Tank());
-        LoadNewTank(database.tanks[0]);
+    }
+    private void Start()
+    {
+        CreateTank(database.tankSOs[0]);
+        MarketManager.instance.rolled += AssignTankRoll;
     }
     public void LoadNewTank(Tank tank)
     {
@@ -54,7 +58,10 @@ public class TankManager : MonoBehaviour
         }
 
         database.activeTank = tank;
+        MarketManager.instance.database = database.tankSOs[(int)tank.type];
+        MarketManager.instance.Refresh(tank.marketRoll, tank.lastRefresh, tank.timesBought);
         ScreenManager.instance.EmptyStack();
+        MoneyManager.Instance.UpdateUI();
     }
     public void UpdateUI()
     {
@@ -87,7 +94,7 @@ public class TankManager : MonoBehaviour
                 baseFish = controller.data,
                 multiplier = controller.statusMultiplier,
                 traits = controller.traits,
-                growTimer = controller.growTimer
+                growTimer = controller.GrowTimer,
             };
             database.activeTank.fishes.Add(saveFish);
         }
@@ -101,6 +108,30 @@ public class TankManager : MonoBehaviour
                 pos = deco.position
             };
             database.activeTank.decorations.Add(saveDeco);
+        }
+    }
+    public void CreateTank(TankSO tank)
+    {
+        database.tanks.Add(new Tank
+        {
+            currentAttibutes = new(tank.startAttributes),
+            type = tank.type,
+            maxFish = tank.maxFish,
+            marketRoll = MarketManager.instance.PickOffers(tank),
+            lastRefresh = Time.time,
+            timesBought = { 0, 0, 0, 0, 0, 0 }
+        });
+        ScreenManager.instance.EmptyStack();
+        LoadNewTank(database.tanks[^1]);
+    }
+    public void AssignTankRoll(List<FishSO> rolledFishes)
+    {
+        database.activeTank.marketRoll = rolledFishes;
+        database.activeTank.lastRefresh = Time.time;
+        database.activeTank.timesBought = new();
+        for (int i = 0; i < rolledFishes.Count; i++)
+        {
+            database.activeTank.timesBought.Add(0);
         }
     }
 }

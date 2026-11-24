@@ -17,7 +17,7 @@ TagManager:
   - UI
   - Fish
   - Food
-  - 
+  - Tank
   - 
   - 
   - 
@@ -47,6 +47,9 @@ TagManager:
     locked: 0
   - name: Fish
     uniqueID: 377795137
+    locked: 0
+  - name: Algae
+    uniqueID: 2593765567
     locked: 0
   m_RenderingLayers:
   - Default
