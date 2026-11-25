@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee5e78b107a7e448bec9541ab3ca3e5, type: 3}
+  m_Name: Algae Lover
+  m_EditorClassIdentifier: Assembly-CSharp::TraitSO
+  traitName: Algae Lover
+  traitColor: {r: 0, g: 0.8490566, b: 0.06467732, a: 0}
+  statusMultiplier:
+    baseSize: 1
+    nutrition: 1
+    youngSizeMultiplier: 1
+    fishSpeed: 1
+    minRetargetTime: 1
+    maxRetargetTime: 1
+    startFullness: 1
+    fullnessDecayPerSecond: 1
+    wanderThreshold: 1
+    eatDistance: 1
+    happiness: 1
+    unhappyBelow: 1
+    happyAbove: 1
+    happinessLossPerSecond: 1
+    happinessGainPerSecond: 1
+    maxAlgaeLevel: 1.25
+    fleeSpeedRatio: 1
+    fleeDistance: 1
+    fearMemoryTime: 1
+    detectionRadius: 1
+    breedHappiness: 1
+    breedCooldown: 1
+    breedDistance: 1
+    ageTime: 1
+    poopInterval: 1
+  priceMultiplier: 1

@@ -17,9 +17,42 @@ MonoBehaviour:
   startAttributes:
     oxigen: 50
     temperature: 50
-    moldLevel: 0
+    algaeLevel: 0
     pHLevel: 50
     salinity: 50
     light: 50
   maxFish: 8
   price: 5000
+  fishes:
+  - {fileID: 11400000, guid: 56ee33dfe4791bb47af4aa19af250e74, type: 2}
+  - {fileID: 11400000, guid: f2f2638f30bc50a4eb318643bc530e9e, type: 2}
+  - {fileID: 11400000, guid: 9393b0d16d8953640aeb978c8c3250f7, type: 2}
+  - {fileID: 11400000, guid: a48923e37049261468d48fbdfa427a11, type: 2}
+  - {fileID: 11400000, guid: a8159eb663dd4954ca921f0d2aa3eab4, type: 2}
+  - {fileID: 11400000, guid: 4325e26628a2101429cb53fe9fabf6b8, type: 2}
+  - {fileID: 11400000, guid: d4b1985b882e1cd46afa3b338c2065d5, type: 2}
+  - {fileID: 11400000, guid: 63acac37abc49ec45aa0bb910e29cb7e, type: 2}
+  - {fileID: 11400000, guid: 0ff3b8439cd63b04dae198b41caee1bf, type: 2}
+  - {fileID: 11400000, guid: e9c95d99dbb21d84f892e1e7f06e5bcf, type: 2}
+  traits:
+  - {fileID: 11400000, guid: db30efa53a5723e45ba209295f62575f, type: 2}
+  - {fileID: 11400000, guid: de831e8096a7477498b58666dd15d51f, type: 2}
+  - {fileID: 11400000, guid: 1260b4ecae21a824086a7df4e2af13a0, type: 2}
+  - {fileID: 11400000, guid: 6beb5700122dccd48906896d0c34733e, type: 2}
+  - {fileID: 11400000, guid: cc9abf5ca8397cb4d9f42db44397dec9, type: 2}
+  - {fileID: 11400000, guid: cb245184825de9f429a5862c2b50051b, type: 2}
+  - {fileID: 11400000, guid: 3d43059fcf9f7d14ba625d79b09bedc4, type: 2}
+  - {fileID: 11400000, guid: baedb001a5ca76a48a7147ad58798124, type: 2}
+  - {fileID: 11400000, guid: 8b2b3ffb90cf0f84fbe071c46dcb68af, type: 2}
+  - {fileID: 11400000, guid: 727e38ca2b86fd94ab2e9bc3a18366e5, type: 2}
+  - {fileID: 11400000, guid: bed4ff2a0ccf09c44855532c11713e49, type: 2}
+  - {fileID: 11400000, guid: b4ed6f7c3f2294a4b86cdeb2a20c215a, type: 2}
+  - {fileID: 11400000, guid: 69090d95a4ace244298a899a04f2e50d, type: 2}
+  - {fileID: 11400000, guid: 69a36a586b104a04e9e759b79fddc6ba, type: 2}
+  - {fileID: 11400000, guid: 270e7b4f954210145a81ea6b1261f7b7, type: 2}
+  - {fileID: 11400000, guid: 21c8acbd7ce11c84389e0fd07697fa2f, type: 2}
+  - {fileID: 11400000, guid: 8a17fa45eaf2e6c49bcb48668ea0e829, type: 2}
+  - {fileID: 11400000, guid: 64da99569c6d9ca46ae8227e43429fd8, type: 2}
+  - {fileID: 11400000, guid: 2204e3bf8affb09448a41b0e4ddd8018, type: 2}
+  - {fileID: 11400000, guid: dafa0f6556f9f6d459a4e532cff5fb2a, type: 2}
+  - {fileID: 11400000, guid: 9af2f3d6ed669e34cbde76e7e3868b4a, type: 2}
