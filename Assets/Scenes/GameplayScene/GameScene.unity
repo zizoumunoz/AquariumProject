@@ -2744,17 +2744,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 290a58c1812ceab498057acd6d74a6f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TankManager
-  tankSprites:
-  - {fileID: 8621088231950144865, guid: 55788a1bc592ee94d83b75793b429a11, type: 3}
-  - {fileID: -216754732723819541, guid: b54408d062ff472458d8be8e818babb4, type: 3}
-  - {fileID: -4049510351803469674, guid: 21e97f2b6f888fc48a6cee13c76a14cf, type: 3}
-  - {fileID: 8431445700188012450, guid: 1259784deb565dd44a106c4a99270e41, type: 3}
   sr: {fileID: 1158554205}
   fishRoot: {fileID: 2044785690}
   decoRoot: {fileID: 1701980806}
   foodRoot: {fileID: 1749155749}
   restRoot: {fileID: 1919581841}
   database: {fileID: 11400000, guid: ad695cf2b600dd24f959458957cb25d8, type: 2}
+  decoDatabase: {fileID: 11400000, guid: fdc4d4d039ec62f4a85df182a56ca99f, type: 2}
   tankUIPrefab: {fileID: 2326717166587735966, guid: 8950258c325cbe14094a7a6ce99ce6b1, type: 3}
   tankPanel: {fileID: 1875253026}
   fishPrefab: {fileID: 1011413437108166273, guid: 7834d18013485a4409663d4ddbaa3ca9, type: 3}

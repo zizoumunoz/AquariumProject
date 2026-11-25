@@ -23,6 +23,7 @@ public class FishSpawner : MonoBehaviour
     }
     public void Spawn(FishSO so, List<TraitSO> traits, float growTimer)
     {
+        Debug.Log(fishRoot.childCount);
         if (fishRoot.childCount == TankManager.instance.database.activeTank.maxFish)
         {
             return;
