@@ -2906,7 +2906,7 @@ GameObject:
   - component: {fileID: 1082743129}
   - component: {fileID: 1082743130}
   m_Layer: 0
-  m_Name: Algaevisuals
+  m_Name: AlgaeVisuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2939,6 +2939,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704fc06d34715c94e8e83b5768f379a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AlgaeVisuals
+  _wallLeft: {fileID: 1597512083}
+  _wallRight: {fileID: 1562173520}
+  _wallTop: {fileID: 1120738883}
+  _wallBottom: {fileID: 1987798405}
   _fullnessPerSpot: 20
   _smallAlgae: {fileID: 1822306425593731046, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}
   _mediumAlgae: {fileID: 3088199924961003057, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}
