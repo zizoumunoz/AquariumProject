@@ -21,7 +21,6 @@ public class FishPanel : MonoBehaviour
         fish = newFish;
 
         ScreenManager.instance.OpenScreen(panel);
-        panel.SetActive(true);
 
         fishName.text = fish.data.fishName;
         fishDescription.text = fish.data.description;
