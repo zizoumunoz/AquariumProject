@@ -74,6 +74,7 @@ MonoBehaviour:
     happyAbove: 1
     happinessLossPerSecond: 1
     happinessGainPerSecond: 1
+    maxAlgaeLevel: 1
     fleeSpeedRatio: 1
     fleeDistance: 1
     fearMemoryTime: 1
@@ -162,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34efd18669e82f04685a7a8517b64530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PoopEmitter
-  elapsed: 200
+  elapsed: 60
 --- !u!114 &1363658366340760977
 MonoBehaviour:
   m_ObjectHideFlags: 0
