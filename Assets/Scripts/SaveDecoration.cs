@@ -3,6 +3,6 @@ using UnityEngine;
 [Serializable]
 public class SaveDecoration
 {
-    public DecorationSO baseDecoration;
+    public int baseDecoration;
     public Vector2 pos;
 }

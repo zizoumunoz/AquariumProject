@@ -12,6 +12,10 @@ public class TankSO : ScriptableObject
     public int price = 1;
     public List<FishSO> fishes = new();
     public List<TraitSO> traits = new();
+    private void OnValidate()
+    {
+        fishes.Sort((x, y) => x.rarity - y.rarity);
+    }
 }
 
 [Serializable]
@@ -54,7 +58,7 @@ public class TankAttribute
     public float oxigen = 50;
     public float temperature = 50;
     public float algaeLevel = 0;
-    public float pHLevel = 50;
+    public float pHLevel = 7;
     public float salinity = 50;
     public float light = 50;
 }
