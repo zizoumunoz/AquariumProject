@@ -5,6 +5,12 @@ public class AlgaeVisuals : MonoBehaviour
 {
     public static AlgaeVisuals instance;
 
+    [Header("TankBounds")]
+    [SerializeField] private Collider2D _wallLeft;
+    [SerializeField] private Collider2D _wallRight;
+    [SerializeField] private Collider2D _wallTop;
+    [SerializeField] private Collider2D _wallBottom;
+
     [Header("Eating")]
     [SerializeField] private float _fullnessPerSpot = 20f;
 
@@ -43,7 +49,7 @@ public class AlgaeVisuals : MonoBehaviour
         }
         Tank tank = TankManager.instance.database.activeTank;
 
-        Bounds tankBounds = TankManager.instance.sr.bounds;
+        Bounds tankBounds = GetPlayAreaBounds();
 
         if (tank != _currentTank || tankBounds != _currentBounds)
         {
@@ -134,5 +140,16 @@ public class AlgaeVisuals : MonoBehaviour
             Destroy(sr.gameObject);
         }
         _spots.Clear();
+    }
+    private Bounds GetPlayAreaBounds()
+    {
+        Vector3 min = new Vector3(_wallLeft.bounds.max.x, _wallBottom.bounds.max.y, 0f);
+        Vector3 max = new Vector3(_wallRight.bounds.min.x, _wallTop.bounds.min.y, 0f);
+
+        Bounds b = new Bounds();
+
+        b.SetMinMax(min, max);
+
+        return b;
     }
 }
