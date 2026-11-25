@@ -2939,6 +2939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704fc06d34715c94e8e83b5768f379a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AlgaeVisuals
+  _fullnessPerSpot: 20
   _smallAlgae: {fileID: 1822306425593731046, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}
   _mediumAlgae: {fileID: 3088199924961003057, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}
   _largeAlgae: {fileID: -6795380178158588127, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}

@@ -3,7 +3,8 @@ using UnityEngine;
 public enum FoodType
 {
     Plant,
-    Meat
+    Meat,
+    Algae
 }
 
 

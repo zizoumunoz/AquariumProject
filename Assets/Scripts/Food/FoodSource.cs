@@ -10,6 +10,9 @@ public class FoodSource : MonoBehaviour
     public float size;
     private List<FishController> fishes = new();
 
+    // event for when food is eaten
+    public event System.Action<FoodSource> Eaten;
+
     private Collider2D col;
 
     private void Awake()
@@ -20,6 +23,7 @@ public class FoodSource : MonoBehaviour
     public float Eat()
     {
         bitesLeft--;
+        Eaten?.Invoke(this);
         if (bitesLeft == 0 && deleteWhenEaten)
         {
             Destroy(gameObject);

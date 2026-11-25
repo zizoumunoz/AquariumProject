@@ -5,7 +5,8 @@ public enum FishDiet
 {
     Herbivore,
     Carnivore,
-    Omnivore
+    Omnivore,
+    AlgaeEater
 }
 
 public enum Age
