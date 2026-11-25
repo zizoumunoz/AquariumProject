@@ -27,8 +27,11 @@ public class DecorationSpawner : MonoBehaviour
         spawningDecoSO = so;
         spawningDeco = Instantiate(so.prefab, Vector2.zero, Quaternion.identity, decoRoot);
         spawningDeco.AddComponent<DecorationSOHolder>().so = so;
-        ScreenManager.instance.EmptyStack();
-        ScreenManager.instance.OpenScreen(placingScreen);
+        foreach (MonoBehaviour component in spawningDeco.GetComponents<MonoBehaviour>())
+        {
+            component.enabled = true;
+        }
+        spawningDeco = null;
     }
     public void Spawn(DecorationSO so, Vector2 pos)
     {

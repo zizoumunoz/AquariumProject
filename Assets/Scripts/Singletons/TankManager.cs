@@ -22,7 +22,27 @@ public class TankManager : MonoBehaviour
     }
     private void Start()
     {
-        CreateTank(database.tankSOs[0]);
+        if (SaveAndLoad.save != null)
+        {
+            for (int i = 0; i < SaveAndLoad.save.tankList.Count; i++)
+            {
+                CreateTank(database.tankSOs[(int)SaveAndLoad.save.tankList[i].type]);
+                for (int j = 0; j < SaveAndLoad.save.tankList[i].fishes.Count; j++)
+                {
+                    SaveFish save = SaveAndLoad.save.tankList[i].fishes[j];
+                    FishSpawner.instance.Spawn(save.baseFish, save.traits, save.growTimer);
+                }
+                for (int j = 0; j < SaveAndLoad.save.tankList[i].decorations.Count; j++)
+                {
+                    SaveDecoration save = SaveAndLoad.save.tankList[i].decorations[j];
+                    DecorationSpawner.instance.Spawn(save.baseDecoration, save.pos);
+                }
+            }
+        }
+        else
+        {
+            CreateTank(database.tankSOs[0]);
+        }
         MarketManager.instance.rolled += AssignTankRoll;
     }
     public void LoadNewTank(Tank tank)
@@ -92,7 +112,6 @@ public class TankManager : MonoBehaviour
             SaveFish saveFish = new()
             {
                 baseFish = controller.data,
-                multiplier = controller.statusMultiplier,
                 traits = controller.traits,
                 growTimer = controller.GrowTimer,
             };

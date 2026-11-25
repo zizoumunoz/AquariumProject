@@ -21,7 +21,14 @@ public class MoneyManager : MonoBehaviour
     {
         if (!moneyGiven)
         {
-            AddMoney(initialMoney);
+            if (SaveAndLoad.save != null)
+            {
+                AddMoney(SaveAndLoad.save.money);
+            }
+            else
+            {
+                AddMoney(initialMoney);
+            }
             moneyGiven = true;
         }
     }

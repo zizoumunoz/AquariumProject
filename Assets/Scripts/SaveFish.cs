@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class SaveFish
 {
     public FishSO baseFish;
-    public FishStatus multiplier;
     public List<TraitSO> traits;
     public float growTimer;
 }

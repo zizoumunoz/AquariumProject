@@ -31,5 +31,6 @@ public class FishCollection : MonoBehaviour
     {
         discovered.Clear();
         FishDiscovered = null;
+
     }
 }
