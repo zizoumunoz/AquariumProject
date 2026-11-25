@@ -67,6 +67,10 @@ public class FishPanel : MonoBehaviour
     {
         if (fish == null)
         {
+            if (panel.activeSelf)
+            {
+                ScreenManager.instance.EmptyStack();
+            }
             return;
         }
         fishCam.transform.position = fish.transform.position + Vector3.back * 1;
