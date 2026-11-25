@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Fresh Water
   m_EditorClassIdentifier: Assembly-CSharp::TankSO
   type: 0
-  sprite: {fileID: -4049572274367911354, guid: 1f14e16c92b98fb4c8c30d7115b00fd0, type: 3}
+  sprite: {fileID: 8621088231950144865, guid: 55788a1bc592ee94d83b75793b429a11, type: 3}
   startAttributes:
     oxigen: 50
     temperature: 50
-    moldLevel: 0
+    algaeLevel: 0
     pHLevel: 50
     salinity: 50
     light: 50
