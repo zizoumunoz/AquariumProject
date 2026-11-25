@@ -19,7 +19,7 @@ public class Scrapper : MonoBehaviour
         }
 
 
-        TankManager.instance.database.activeTank.currentAttibutes.moldLevel
+        TankManager.instance.database.activeTank.currentAttibutes.algaeLevel
             = newTotalAlgea / AlgaeVisuals.instance._maxSpots * 100;
 
         Destroy(gameObject);

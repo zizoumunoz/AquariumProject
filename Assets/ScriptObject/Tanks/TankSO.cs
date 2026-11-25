@@ -46,14 +46,14 @@ public class TankAttribute
     {
         oxigen = other.oxigen;
         temperature = other.temperature;
-        moldLevel = other.moldLevel;
+        algaeLevel = other.algaeLevel;
         pHLevel = other.pHLevel;
         salinity = other.salinity;
         light = other.light;
     }
     public float oxigen = 50;
     public float temperature = 50;
-    public float moldLevel = 0;
+    public float algaeLevel = 0;
     public float pHLevel = 50;
     public float salinity = 50;
     public float light = 50;

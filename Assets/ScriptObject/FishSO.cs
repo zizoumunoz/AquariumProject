@@ -60,6 +60,7 @@ public class FishStatus
         happyAbove = initialValue;
         happinessLossPerSecond = initialValue;
         happinessGainPerSecond = initialValue;
+        maxAlgaeLevel = initialValue;
 
         fleeSpeedRatio = initialValue;
         fleeDistance = initialValue;
@@ -94,6 +95,7 @@ public class FishStatus
         happyAbove = 60f;
         happinessLossPerSecond = 2f;
         happinessGainPerSecond = 2f;
+        maxAlgaeLevel = 50;
 
         fleeSpeedRatio = 0.9f;
         fleeDistance = 5f;
@@ -130,6 +132,7 @@ public class FishStatus
             happyAbove = status1.happyAbove * status2.happyAbove,
             happinessLossPerSecond = status1.happinessLossPerSecond * status2.happinessLossPerSecond,
             happinessGainPerSecond = status1.happinessGainPerSecond * status2.happinessGainPerSecond,
+            maxAlgaeLevel = status1.maxAlgaeLevel * status2.maxAlgaeLevel,
 
             fleeSpeedRatio = status1.fleeSpeedRatio * status2.fleeSpeedRatio,
             fleeDistance = status1.fleeDistance * status2.fleeDistance,
@@ -169,6 +172,7 @@ public class FishStatus
     public float happyAbove = 60f;
     public float happinessLossPerSecond = 2f;
     public float happinessGainPerSecond = 2f;
+    public float maxAlgaeLevel = 50;
 
     [Header("Flee")]
     public float fleeSpeedRatio = 0.9f;
