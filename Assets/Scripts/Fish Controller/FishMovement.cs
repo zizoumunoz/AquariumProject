@@ -14,12 +14,22 @@ public class FishMovement : MonoBehaviour, IMotionSource
 
     private Vector2 destination;
     private float speed;
+    private float turnBoost = 1.0f;
 
     private float heading;
     private float normalizedSpeed;
     private bool ready;
 
     private Vector2 wallNormal;
+    public Vector2 Forward
+    {
+        get
+        {
+            float rad = heading * Mathf.Deg2Rad;
+            return new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
+        }
+    }
+
     private float wallContactTime = -1f;
 
     public float NormalizedSpeed { get { return normalizedSpeed; } }
@@ -51,10 +61,11 @@ public class FishMovement : MonoBehaviour, IMotionSource
         body.direction = local.size.x >= local.size.y ? CapsuleDirection2D.Horizontal : CapsuleDirection2D.Vertical;
     }
 
-    public void MoveTo(Vector2 dest, float moveSpeed)
+    public void MoveTo(Vector2 dest, float moveSpeed, float turnMultiplier = 1f)
     {
-        destination = dest; 
+        destination = dest;
         speed = moveSpeed;
+        turnBoost = turnMultiplier;
     }
 
     private void FixedUpdate()
@@ -65,7 +76,7 @@ public class FishMovement : MonoBehaviour, IMotionSource
 
         float desiredAngle = Mathf.Atan2(toTarget.y, toTarget.x) * Mathf.Rad2Deg;
         float diff = Mathf.DeltaAngle(heading, desiredAngle);
-        heading = Mathf.MoveTowardsAngle(heading, desiredAngle, turnSpeed * Time.fixedDeltaTime);
+        heading = Mathf.MoveTowardsAngle(heading, desiredAngle, turnSpeed * turnBoost * Time.fixedDeltaTime);
 
         float speedFactor = Mathf.Lerp(0.4f, 1.0f, Mathf.Clamp01(Mathf.Cos(diff * Mathf.Deg2Rad) * 0.5f + 0.5f));
         float maxSpeed = fish.CurrentSpeed;
