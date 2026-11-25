@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.ComponentModel.Design;
 using TMPro;
 using UnityEngine;
 
@@ -5,6 +7,12 @@ public class AlbumScript : MonoBehaviour
 {
     [Header("Hidden while the album is open")]
     [SerializeField] private GameObject[] _hideWhileOpen;
+    [SerializeField] private GameObject _emptyMessage;  // for when there's no fish implemented in that aquarium yet
+    public static List<List<bool>> _discoveredFish = new();
+
+    private readonly List<FishSO> _tankFish = new();
+    private int _currentTank = 0;
+
 
     private const int _fishPerPage = 6;
     public int _currentPage = 1;
@@ -15,15 +23,71 @@ public class AlbumScript : MonoBehaviour
     [SerializeField] private AlbumPanel[] _albumPanels;
     [SerializeField] private FishLorePanel _lorePanel;
 
+    public static void SyncFromCollection()
+    {
+        List<TankSO> tanks = TankManager.instance.database.tankSOs;
+        _discoveredFish.Clear();
+        foreach (TankSO tank in tanks)
+        {
+            List<bool> tankFlags = new();
+            foreach(FishSO fish in tank.fishes)
+            {
+                tankFlags.Add(FishCollection.IsDiscovered(fish));
+            }
+            _discoveredFish.Add(tankFlags);
+        }
+    }
+
+    // mark saved fish as discovered
+    public static void ApplyToCollection()
+    {
+        List<TankSO> tanks = TankManager.instance.database.tankSOs;
+        for (int t = 0; t < _discoveredFish.Count && t < tanks.Count; t++)
+        {
+            for (int f = 0; f < _discoveredFish[t].Count && f < tanks[t].fishes.Count; f++)
+            {
+                if (_discoveredFish[t][f])
+                {
+                    FishCollection.Discover(tanks[t].fishes[f]);
+                }
+            }
+        }
+    }
+
     private void Awake()
     {
-        // gets the maximum number of pages according to how many fishes there are
-        _maximumPage = Mathf.Max(1, Mathf.CeilToInt(TankManager.instance.database.tankSOs[0].fishes.Count / (float)_fishPerPage));
-
         foreach (AlbumPanel panel in _albumPanels)
         {
             panel.Clicked += fish => _lorePanel.Show(fish);
         }
+    }
+
+    public void SetTank(int tankIndex)
+    {
+        List<TankSO> tanks = TankManager.instance.database.tankSOs;
+        _currentTank = Mathf.Clamp(tankIndex, 0, tanks.Count - 1);
+        TankSO tank = tanks[_currentTank];
+
+        // Load this tanks fish
+        _tankFish.Clear();
+        _tankFish.AddRange(tank.fishes);
+
+        _maximumPage = Mathf.Max(1, Mathf.CeilToInt(_tankFish.Count / (float)_fishPerPage));
+        _currentPage = _minimumPage;
+
+        bool isEmpty = _tankFish.Count == 0;
+        if (_emptyMessage != null)
+        {
+            _emptyMessage.SetActive(isEmpty);
+        }
+        foreach (AlbumPanel panel in _albumPanels)
+        {
+            panel.gameObject.SetActive(!isEmpty);
+        }
+
+        // update screen
+        SetPageNumberText();
+        RefreshView();
     }
 
     private void OnEnable()
@@ -37,8 +101,7 @@ public class AlbumScript : MonoBehaviour
             }
         }
         FishCollection.FishDiscovered += OnFishDiscovered;
-        SetPageNumberText();
-        RefreshView();
+        SetTank((int)TankManager.instance.database.activeTank.type);
     }
 
     private void OnDisable()
@@ -48,11 +111,6 @@ public class AlbumScript : MonoBehaviour
         if (!gameObject.scene.isLoaded)
         {
             return;
-        }
-
-        if (ScreenManager.instance != null)
-        {
-            ScreenManager.instance.Remove(gameObject);
         }
 
         // hide non related UI items
@@ -105,13 +163,13 @@ public class AlbumScript : MonoBehaviour
 
             // prevents from accessing fish not in database
 
-            if (fishIndex >= TankManager.instance.database.tankSOs[0].fishes.Count)
+            if (fishIndex >= _tankFish.Count)
             {
                 _albumPanels[i].SetUndiscovered();
                 continue;
             }
 
-            FishSO fish = TankManager.instance.database.tankSOs[0].fishes[fishIndex];
+            FishSO fish = _tankFish[fishIndex];
 
             // show fish only if player obtained
             if (FishCollection.IsDiscovered(fish))
