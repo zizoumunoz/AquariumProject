@@ -21,6 +21,15 @@ public class FishSpawner : MonoBehaviour
         FishController fish = Instantiate(fishPrefab, Vector2.zero, Quaternion.identity, fishRoot);
         fish.Init(so, traitRules.RollPurchase(MarketManager.instance.database));
     }
+    public void Spawn(FishSO so, List<TraitSO> traits, float growTimer)
+    {
+        if (fishRoot.childCount == TankManager.instance.database.activeTank.maxFish)
+        {
+            return;
+        }
+        FishController fish = Instantiate(fishPrefab, Vector2.zero, Quaternion.identity, fishRoot);
+        fish.Init(so, traits, growTimer);
+    }
     public bool SpawnChild(FishSO so, List<TraitSO> parentATraits, List<TraitSO> parentBTraits, Vector2 pos)
     {
         if (fishRoot.childCount == TankManager.instance.database.activeTank.maxFish)
