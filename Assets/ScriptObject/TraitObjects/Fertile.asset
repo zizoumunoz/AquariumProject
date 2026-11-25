@@ -30,12 +30,13 @@ MonoBehaviour:
     happyAbove: 1
     happinessLossPerSecond: 1
     happinessGainPerSecond: 1
+    maxAlgaeLevel: 1
     fleeSpeedRatio: 1
     fleeDistance: 1
     fearMemoryTime: 1
     detectionRadius: 1
-    breedHappiness: 1
-    breedCooldown: 0.5
+    breedHappiness: 0.75
+    breedCooldown: 0.75
     breedDistance: 1
     ageTime: 1
     poopInterval: 1
