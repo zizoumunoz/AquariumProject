@@ -4,7 +4,8 @@ using System.Collections.Generic;
 [Serializable]
 public class SaveFish
 {
-    public FishSO baseFish;
-    public List<TraitSO> traits;
+    public int baseFish;
+    public TankType tank;
+    public List<int> traits;
     public float growTimer;
 }

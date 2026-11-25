@@ -34,8 +34,6 @@ public class SaveAndLoad
                 writer.Write(dataToSave);
             }
         }
-
-        Debug.Log(fullPath);
     }
     public static void LoadData(int slot)
     {

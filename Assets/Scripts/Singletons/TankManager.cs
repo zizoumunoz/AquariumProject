@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TankManager : MonoBehaviour
 {
-    [SerializeField] private Sprite[] tankSprites;
     public SpriteRenderer sr;
     public Transform fishRoot;
     public Transform decoRoot;
@@ -12,6 +11,7 @@ public class TankManager : MonoBehaviour
     public Transform restRoot;
     public static TankManager instance;
     public TankDatabase database;
+    public DecorationsDatabaseSO decoDatabase;
     [SerializeField] private UITankController tankUIPrefab;
     [SerializeField] private Transform tankPanel;
     [SerializeField] private FishController fishPrefab;
@@ -24,20 +24,8 @@ public class TankManager : MonoBehaviour
     {
         if (SaveAndLoad.save != null)
         {
-            for (int i = 0; i < SaveAndLoad.save.tankList.Count; i++)
-            {
-                CreateTank(database.tankSOs[(int)SaveAndLoad.save.tankList[i].type]);
-                for (int j = 0; j < SaveAndLoad.save.tankList[i].fishes.Count; j++)
-                {
-                    SaveFish save = SaveAndLoad.save.tankList[i].fishes[j];
-                    FishSpawner.instance.Spawn(save.baseFish, save.traits, save.growTimer);
-                }
-                for (int j = 0; j < SaveAndLoad.save.tankList[i].decorations.Count; j++)
-                {
-                    SaveDecoration save = SaveAndLoad.save.tankList[i].decorations[j];
-                    DecorationSpawner.instance.Spawn(save.baseDecoration, save.pos);
-                }
-            }
+            database.tanks = SaveAndLoad.save.tankList;
+            LoadNewTank(database.tanks[^1]);
         }
         else
         {
@@ -47,7 +35,7 @@ public class TankManager : MonoBehaviour
     }
     public void LoadNewTank(Tank tank)
     {
-        sr.sprite = tankSprites[(int)tank.type];
+        sr.sprite = database.tankSOs[(int)tank.type].sprite;
 
         SaveTankData();
 
@@ -58,7 +46,13 @@ public class TankManager : MonoBehaviour
         foreach (SaveFish saveFish in tank.fishes)
         {
             FishController newFish = Instantiate(fishPrefab, fishRoot);
-            newFish.Init(saveFish.baseFish, saveFish.traits, saveFish.growTimer);
+            List<TraitSO> traits = new();
+            for (int i = 0; i < saveFish.traits.Count; i++)
+            {
+                traits.Add(database.tankSOs[(int)tank.type].traits[saveFish.traits[i]]);
+            }
+            newFish.Init(database.tankSOs[(int)tank.type].fishes[saveFish.baseFish],
+                traits, saveFish.growTimer);
         }
         foreach (Transform deco in decoRoot)
         {
@@ -66,7 +60,7 @@ public class TankManager : MonoBehaviour
         }
         foreach (SaveDecoration saveDecoration in tank.decorations)
         {
-            DecorationSpawner.instance.Spawn(saveDecoration.baseDecoration, saveDecoration.pos);
+            DecorationSpawner.instance.Spawn(decoDatabase.decorations[saveDecoration.baseDecoration], saveDecoration.pos);
         }
         foreach (Transform food in foodRoot)
         {
@@ -109,10 +103,15 @@ public class TankManager : MonoBehaviour
         foreach (Transform fish in fishRoot)
         {
             FishController controller = fish.GetComponent<FishController>();
+            List<int> saveTraits = new();
+            for (int i = 0; i < controller.traits.Count; i++)
+            {
+                saveTraits.Add(database.tankSOs[(int)database.activeTank.type].traits.IndexOf(controller.traits[i]));
+            }
             SaveFish saveFish = new()
             {
-                baseFish = controller.data,
-                traits = controller.traits,
+                baseFish = database.tankSOs[(int)database.activeTank.type].fishes.IndexOf(controller.data),
+                traits = saveTraits,
                 growTimer = controller.GrowTimer,
             };
             database.activeTank.fishes.Add(saveFish);
@@ -123,7 +122,7 @@ public class TankManager : MonoBehaviour
             DecorationSOHolder holder = deco.GetComponent<DecorationSOHolder>();
             SaveDecoration saveDeco = new()
             {
-                baseDecoration = holder.so,
+                baseDecoration = decoDatabase.decorations.IndexOf(holder.so),
                 pos = deco.position
             };
             database.activeTank.decorations.Add(saveDeco);
