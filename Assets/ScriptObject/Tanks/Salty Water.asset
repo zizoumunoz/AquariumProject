@@ -26,13 +26,14 @@ MonoBehaviour:
   fishes:
   - {fileID: 11400000, guid: dcc0eb62b3a48ba4cb5f1b97cfd9d2c6, type: 2}
   - {fileID: 11400000, guid: 13d284decdf204947b2dbca1179b087e, type: 2}
-  - {fileID: 11400000, guid: 41a41b2eaf77b614a8014cff10a09f90, type: 2}
-  - {fileID: 11400000, guid: 6bec145d7a71b4840a515739e78f1f79, type: 2}
   - {fileID: 11400000, guid: 6e62ce1e43d513c4680ecf62b10b243f, type: 2}
   - {fileID: 11400000, guid: b8767cbdaec3e9d4a8da5a1b0184f54d, type: 2}
   - {fileID: 11400000, guid: c6e2b7cececd0ea42ad49bf1f85a7203, type: 2}
-  - {fileID: 11400000, guid: 9de0e9a05bafb53479682e5e8b87b52c, type: 2}
   - {fileID: 11400000, guid: fad83b3e447b6d9449e5f8aa5d0816cd, type: 2}
+  - {fileID: 11400000, guid: 68160255ea251224e8b6be1cef33b74d, type: 2}
+  - {fileID: 11400000, guid: 6bec145d7a71b4840a515739e78f1f79, type: 2}
+  - {fileID: 11400000, guid: 41a41b2eaf77b614a8014cff10a09f90, type: 2}
+  - {fileID: 11400000, guid: 9de0e9a05bafb53479682e5e8b87b52c, type: 2}
   traits:
   - {fileID: 11400000, guid: db30efa53a5723e45ba209295f62575f, type: 2}
   - {fileID: 11400000, guid: de831e8096a7477498b58666dd15d51f, type: 2}
