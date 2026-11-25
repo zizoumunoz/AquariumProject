@@ -14,9 +14,11 @@ public class PoopEmitter : MonoBehaviour
 
     private void Update()
     {
-        elapsed -= Time.deltaTime;
+        if (fish.Fullness > 10)
+        {
+            elapsed -= Time.deltaTime;
+        }
         if (elapsed > 0) return;
-
         elapsed = fish.PoopInterval;
         PoopSpawner.instance.Spawn(transform.position);
     }
