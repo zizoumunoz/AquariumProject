@@ -40,8 +40,9 @@ public class FishNeeds : MonoBehaviour
     {
         FishStatus data = fish.Data.fishStatus;
         FishStatus mult = fish.statusMultiplier;
+        TankAttribute tankAttribute = TankManager.instance.database.activeTank.currentAttibutes;
 
-        if (fullness < data.unhappyBelow * mult.unhappyBelow)
+        if (fullness < data.unhappyBelow * mult.unhappyBelow || data.maxAlgaeLevel < tankAttribute.algaeLevel)
         {
             happiness -= data.happinessLossPerSecond * mult.happinessLossPerSecond * Time.deltaTime;
         }

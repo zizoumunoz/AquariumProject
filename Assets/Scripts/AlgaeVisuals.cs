@@ -58,7 +58,7 @@ public class AlgaeVisuals : MonoBehaviour
             _currentBounds = tankBounds;
         }
 
-        float algae = Mathf.Clamp01(tank.currentAttibutes.moldLevel / 100f);
+        float algae = Mathf.Clamp01(tank.currentAttibutes.algaeLevel / 100f);
         int target = Mathf.FloorToInt(algae * _maxSpots);
 
         while (_spots.Count < target)
@@ -108,7 +108,7 @@ public class AlgaeVisuals : MonoBehaviour
         Destroy(source.gameObject);
 
         TankAttribute attributes = _currentTank.currentAttibutes;
-        attributes.moldLevel = Mathf.Max(0f, attributes.moldLevel - AlgaeLevelPerSpot);
+        attributes.algaeLevel = Mathf.Max(0f, attributes.algaeLevel - AlgaeLevelPerSpot);
     }
 
     // more mold means big spots likelier
