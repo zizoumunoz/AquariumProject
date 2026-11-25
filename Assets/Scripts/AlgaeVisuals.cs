@@ -4,6 +4,15 @@ using System.Collections.Generic;
 public class AlgaeVisuals : MonoBehaviour
 {
     public static AlgaeVisuals instance;
+
+    [Header("Eating")]
+    [SerializeField] private float _fullnessPerSpot = 20f;
+
+    /// <summary>
+    /// How much algaeLevel drops when a spot is eaten. Divide by 100 to make it a percentage based on the max number of possible spots.
+    /// </summary>
+    private float AlgaeLevelPerSpot { get { return 100f / _maxSpots; } }
+
     [Header("Sprites")]
     [SerializeField] private Sprite _smallAlgae;
     [SerializeField] private Sprite _mediumAlgae;
@@ -62,17 +71,38 @@ public class AlgaeVisuals : MonoBehaviour
         float radius = sprite.bounds.extents.x * _scaleRange.y;
         float min = _edgeMargin + radius;
 
-        SpriteRenderer obj = Instantiate(_algaePrefab, transform);
-        obj.transform.SetParent(transform);
-        obj.transform.position = new Vector3(
+        SpriteRenderer sr = Instantiate(_algaePrefab, transform);
+        sr.transform.position = new Vector3(
             Random.Range(_currentBounds.min.x + min, _currentBounds.max.x - min),
-            Random.Range(_currentBounds.min.y + min, _currentBounds.max.y - min), 0f
+            Random.Range(_currentBounds.min.y + min, _currentBounds.max.y - min),
+            0f
             );
-        obj.transform.rotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
-        obj.transform.localScale = Vector3.one * Random.Range(_scaleRange.x, _scaleRange.y);
 
-        obj.sprite = sprite;
-        _spots.Add(obj);
+        sr.transform.rotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
+        sr.transform.localScale = Vector3.one * Random.Range(_scaleRange.x, _scaleRange.y);
+        sr.sprite = sprite;
+
+        sr.GetComponent<CircleCollider2D>().radius = sprite.bounds.extents.x;
+        FoodSource source = sr.GetComponent<FoodSource>();
+        source.fullnessRestore = _fullnessPerSpot;
+        source.Eaten += OnSpotEaten;
+
+
+        _spots.Add(sr);
+    }
+
+    private void OnSpotEaten(FoodSource source)
+    {
+        if (source.bitesLeft > 0)
+        {
+            return;
+        }
+
+        _spots.Remove(source.GetComponent<SpriteRenderer>());
+        Destroy(source.gameObject);
+
+        TankAttribute attributes = _currentTank.currentAttibutes;
+        attributes.moldLevel = Mathf.Max(0f, attributes.moldLevel - AlgaeLevelPerSpot);
     }
 
     // more mold means big spots likelier
@@ -102,7 +132,7 @@ public class AlgaeVisuals : MonoBehaviour
         foreach (SpriteRenderer sr in _spots)
         {
             Destroy(sr.gameObject);
-            _spots.Clear();
         }
+        _spots.Clear();
     }
 }

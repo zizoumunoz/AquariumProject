@@ -1,2 +1,15 @@
 fileFormatVersion: 2
 guid: 704fc06d34715c94e8e83b5768f379a1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _smallAlgae: {fileID: 1822306425593731046, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}
+  - _mediumAlgae: {fileID: 3088199924961003057, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}
+  - _largeAlgae: {fileID: -6795380178158588127, guid: 93fd3a24ccd51c64783ede7bcd6325b1, type: 3}
+  - _algaePrefab: {fileID: -4258669922457103233, guid: 34483aaca6e0a8842816cea5b9a781c7, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

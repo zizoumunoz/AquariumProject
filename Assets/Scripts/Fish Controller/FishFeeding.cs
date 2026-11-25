@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent (typeof(FishController), typeof(FishMovement))]
+[RequireComponent(typeof(FishController), typeof(FishMovement))]
 public class FishFeeding : MonoBehaviour, IFishBehaviour
 {
     private const float InititalEatDelay = 5.0f;
@@ -61,8 +61,8 @@ public class FishFeeding : MonoBehaviour, IFishBehaviour
     {
         FoodSource nearest = FindNearestFood();
         if (nearest == null) return false;
-     
-        aimedFood = nearest; 
+
+        aimedFood = nearest;
         aimedFood.AddTarget(fish);
         return true;
 
@@ -110,10 +110,11 @@ public class FishFeeding : MonoBehaviour, IFishBehaviour
         {
             case FishDiet.Herbivore: return food.type == FoodType.Plant;
             case FishDiet.Carnivore: return food.type == FoodType.Meat && fish.Size >= food.size;
-            default: return true;
+            case FishDiet.AlgaeEater: return food.type == FoodType.Algae;
+            default: return food.type != FoodType.Algae;
         }
     }
-   
+
 
 
 }
