@@ -6,10 +6,13 @@ public class FishFeeding : MonoBehaviour, IFishBehaviour
     private const float InititalEatDelay = 5.0f;
     private const float EatColldown = 1.0f;
     private const float SearchRadius = 50.0f;
+    private const float AlertRadius = 4.0f;
+
 
     private FishController fish;
     private FishMovement movement;
 
+    private FishFlee aimedPrey;
     public FoodSource aimedFood;
     private float eatTimer = InititalEatDelay;
 
@@ -47,6 +50,7 @@ public class FishFeeding : MonoBehaviour, IFishBehaviour
         if (aimedFood == null && !AquireTarget()) return false;
 
         movement.MoveTo(aimedFood.transform.position, fish.CurrentSpeed);
+        AlertPrey();
         TryEat();
         return true;
     }
@@ -55,6 +59,7 @@ public class FishFeeding : MonoBehaviour, IFishBehaviour
     {
         if (aimedFood != null) aimedFood.RemoveTarget(fish);
         aimedFood = null;
+        aimedPrey = null;
     }
 
     private bool AquireTarget()
@@ -68,6 +73,14 @@ public class FishFeeding : MonoBehaviour, IFishBehaviour
 
     }
 
+    private void AlertPrey()
+    {
+        if (aimedPrey == null) return;
+        if (Vector2.Distance(transform.position, aimedPrey.transform.position) > AlertRadius) return;
+
+        aimedPrey.NotifyChased(fish);
+    }
+
     private void TryEat()
     {
         float distance = aimedFood.DistanceTo(movement.Body);
@@ -78,6 +91,7 @@ public class FishFeeding : MonoBehaviour, IFishBehaviour
         aimedFood.RemoveTarget(fish);
         fish.Feed(aimedFood.Eat());
         aimedFood = null;
+        aimedPrey = null;
         eatTimer = EatColldown;
     }
 

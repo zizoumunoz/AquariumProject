@@ -53,7 +53,7 @@ public class FishController : MonoBehaviour
         }
 
         needs.Setup();
-        growth.Setup(growTimer != -1 ? data.fishStatus.ageTime * statusMultiplier.ageTime : growTimer);
+        growth.Setup(growTimer == -1 ? data.fishStatus.ageTime * statusMultiplier.ageTime : growTimer);
         sr.sprite = data.sprite;
         highlight.sprite = data.sprite;
 
