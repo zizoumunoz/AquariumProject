@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feac59969ef43784f96525c1e463a8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScreenSettings
-  MoneyBoxLocation: {x: 350, y: -20}
+  MoneyBoxLocation: {x: 400, y: -20}
   showButtons: 1
 --- !u!1 &178985014
 GameObject:
@@ -2627,7 +2627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feac59969ef43784f96525c1e463a8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScreenSettings
-  MoneyBoxLocation: {x: 350, y: -20}
+  MoneyBoxLocation: {x: 400, y: -20}
   showButtons: 1
 --- !u!1 &920171437
 GameObject:
@@ -2761,7 +2761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feac59969ef43784f96525c1e463a8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScreenSettings
-  MoneyBoxLocation: {x: 350, y: -20}
+  MoneyBoxLocation: {x: 400, y: -20}
   showButtons: 1
 --- !u!1 &949765955
 GameObject:

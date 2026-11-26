@@ -23,6 +23,10 @@ public class Poop : MonoBehaviour
 
     private void Update()
     {
+        if (!landed)
+        {
+            return;
+        }
         dissolveTimer -= Time.deltaTime;
         if (dissolveTimer < 0f)
         {

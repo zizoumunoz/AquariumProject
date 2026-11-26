@@ -953,6 +953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f83b395ca68ecfa47858cc1c6a6fbcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScreenManager
+  moneyDisplay: {fileID: 0}
+  buttons: []
 --- !u!1 &386980429
 GameObject:
   m_ObjectHideFlags: 0
@@ -7432,6 +7434,14 @@ PrefabInstance:
     - target: {fileID: 4832291641651767263, guid: b5ea67dca9aed724d9fe6dd8c8bfcf41, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699711929389441108, guid: b5ea67dca9aed724d9fe6dd8c8bfcf41, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 378815174}
+    - target: {fileID: 5699711929389441108, guid: b5ea67dca9aed724d9fe6dd8c8bfcf41, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PopScreen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

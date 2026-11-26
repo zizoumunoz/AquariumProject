@@ -14,10 +14,32 @@ public class SaveAndLoad
 
     }
     public static int slot = 0;
-    private static string path = Application.dataPath;
+    private static string path
+    {
+        get
+        {
+            string folder;
+
+            #if UNITY_WEBGL && !UNITY_EDITOR
+            folder = "/idbfs/my_tank_game_saves";
+            #else
+            folder = Application.persistentDataPath;
+            #endif
+
+            // Make sure the directory exists
+            if (!Directory.Exists(folder))
+            {
+                Directory.CreateDirectory(folder);
+            }
+
+            return folder;
+        }
+    }
     public static void SaveData(List<Tank> tanks, int slot)
     {
+        Debug.Log("Save");
         string fullPath = Path.Combine(path, $"Save{slot}.txt");
+        Debug.Log(fullPath);
 
         SaveFile save = new()
         {
@@ -27,13 +49,7 @@ public class SaveAndLoad
         };
         string dataToSave = JsonUtility.ToJson(save);
 
-        using (FileStream stream = new(fullPath, FileMode.Create))
-        {
-            using (StreamWriter writer = new(stream))
-            {
-                writer.Write(dataToSave);
-            }
-        }
+        File.WriteAllText(fullPath, dataToSave);
     }
     public static void LoadData(int slot)
     {
@@ -45,13 +61,7 @@ public class SaveAndLoad
             return;
         }
 
-        using (FileStream stream = new(fullPath, FileMode.Open))
-        {
-            using (StreamReader reader = new(stream))
-            {
-                save = JsonUtility.FromJson<SaveFile>(reader.ReadToEnd());
-            }
-        }
+        save = JsonUtility.FromJson<SaveFile>(File.ReadAllText(fullPath));
     }
     public static bool ExistSlot(int slot)
     {
