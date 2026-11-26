@@ -80,7 +80,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 6.1}
+  m_AnchoredPosition: {x: 0, y: 6.100006}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5102486381829195007
@@ -322,6 +322,7 @@ GameObject:
   - component: {fileID: 6508084665175728477}
   - component: {fileID: 2393862084519285058}
   - component: {fileID: 2731870859439697531}
+  - component: {fileID: 3494961152038191828}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -442,6 +443,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3494961152038191828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2961346848200968515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d4e76742417b44787dbe9be5160a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonText
+  _button: {fileID: 2731870859439697531}
+  _text: {fileID: 324966163896919043}
+  _pressOffset: 8
 --- !u!1 &3736470697144155246
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,6 +607,7 @@ GameObject:
   - component: {fileID: 2068791746857321664}
   - component: {fileID: 2047747865268970154}
   - component: {fileID: 3491729069498976540}
+  - component: {fileID: 763028896330390252}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -711,6 +728,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &763028896330390252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4186650985738521720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d4e76742417b44787dbe9be5160a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonText
+  _button: {fileID: 3491729069498976540}
+  _text: {fileID: 1164418396327378771}
+  _pressOffset: 8
 --- !u!1 &5021438911411721756
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,6 +984,7 @@ GameObject:
   - component: {fileID: 2568746023064641345}
   - component: {fileID: 84650811377793075}
   - component: {fileID: 8434548555633827278}
+  - component: {fileID: 6710476307587581218}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1072,6 +1105,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6710476307587581218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7707942898754522051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d4e76742417b44787dbe9be5160a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonText
+  _button: {fileID: 8434548555633827278}
+  _text: {fileID: 7050945895937882851}
+  _pressOffset: 8
 --- !u!1 &7887545385093495637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,6 +1132,7 @@ GameObject:
   - component: {fileID: 8267034200618546335}
   - component: {fileID: 7150094608593120895}
   - component: {fileID: 5045545963201646145}
+  - component: {fileID: 5547961504131296133}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1204,6 +1253,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5547961504131296133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7887545385093495637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d4e76742417b44787dbe9be5160a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonText
+  _button: {fileID: 5045545963201646145}
+  _text: {fileID: 1316158165985598622}
+  _pressOffset: 8
 --- !u!1 &7904635583875070007
 GameObject:
   m_ObjectHideFlags: 0
