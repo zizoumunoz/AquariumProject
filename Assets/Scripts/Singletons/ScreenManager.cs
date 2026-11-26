@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ScreenManager : MonoBehaviour
@@ -7,6 +9,9 @@ public class ScreenManager : MonoBehaviour
 #pragma warning disable UAC1009 // Unsupported collection type for serialization
     [SerializeField] private Stack<GameObject> screenStack = new();
 #pragma warning restore UAC1009 // Unsupported collection type for serialization
+
+    public RectTransform moneyDisplay;
+    public GameObject[] buttons = new GameObject[0];
 
     public bool IsEmpty()
     {
@@ -36,15 +41,6 @@ public class ScreenManager : MonoBehaviour
         }
     }
 
-    // For screens that are turned off another way
-    public void Remove(GameObject screen)
-    {
-        if (screenStack.Count > 0 && screenStack.Peek() == screen)
-        {
-            screenStack.Pop();
-        }
-    }
-
     public void EmptyStack()
     {
         while (screenStack.Count > 0)
@@ -53,6 +49,7 @@ public class ScreenManager : MonoBehaviour
             screenStack.Pop();
         }
     }
+
     private void Awake()
     {
         instance = this;
