@@ -7,9 +7,9 @@ public class ScreenManager : MonoBehaviour
 {
     public static ScreenManager instance;
 #pragma warning disable UAC1009 // Unsupported collection type for serialization
-    [SerializeField] private Stack<GameObject> screenStack = new();
+    [SerializeField] private Stack<PanelAnimator> screenStack = new();
 #pragma warning restore UAC1009 // Unsupported collection type for serialization
-
+    private Vector3 moneyOriginalPosition;
     public RectTransform moneyDisplay;
     public GameObject[] buttons = new GameObject[0];
 
@@ -18,10 +18,10 @@ public class ScreenManager : MonoBehaviour
         return screenStack.Count == 0;
     }
 
-    public void OpenScreen(GameObject screen)
+    public void OpenScreen(PanelAnimator screen)
     {
         screenStack.Push(screen);
-        screenStack.Peek().SetActive(true);
+        screenStack.Peek().gameObject.SetActive(true);
     }
 
     public void PopScreen()
@@ -32,26 +32,35 @@ public class ScreenManager : MonoBehaviour
         }
 
         // pop first then deactivate
-        GameObject top = screenStack.Pop();
-        top.SetActive(false);
+        PanelAnimator top = screenStack.Pop();
+        top.Close();
 
         if (screenStack.Count > 0)
         {
-            screenStack.Peek().SetActive(true);
+            screenStack.Peek().gameObject.SetActive(true);
         }
     }
 
     public void EmptyStack()
     {
-        while (screenStack.Count > 0)
+        while (screenStack.Count > 1)
         {
-            screenStack.Peek().SetActive(false);
+            screenStack.Peek().gameObject.SetActive(false);
+            screenStack.Pop();
+        }
+        if (screenStack.Count > 0)
+        {
+            screenStack.Peek().Close();
             screenStack.Pop();
         }
     }
 
     private void Awake()
     {
+        if (moneyDisplay)
+        {
+            moneyOriginalPosition = moneyDisplay.position;
+        }
         instance = this;
     }
 }

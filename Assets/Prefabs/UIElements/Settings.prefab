@@ -148,7 +148,8 @@ GameObject:
   - component: {fileID: 4832291641651767263}
   - component: {fileID: 6467149749136696297}
   - component: {fileID: 9123307516897536360}
-  - component: {fileID: 3966987228290616578}
+  - component: {fileID: 4719666518121705555}
+  - component: {fileID: 4411689952104126957}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -215,7 +216,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3966987228290616578
+--- !u!225 &4719666518121705555
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4427000825088423799}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &4411689952104126957
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,9 +237,48 @@ MonoBehaviour:
   m_GameObject: {fileID: 4427000825088423799}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 013d2348c4f796a4b984050e325f5707, type: 3}
+  m_Script: {fileID: 11500000, guid: 465ca622c05a11043bdd838a387d23c7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneFlow
+  m_EditorClassIdentifier: Assembly-CSharp::PanelAnimator
+  animationDuration: 1
+  animationSmoothness:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  opacity: 0
+  group: {fileID: 0}
+  closedOpacity: 0
+  openOpacity: 1
+  position: 1
+  closedPosition: {x: 0.5, y: 0.275}
+  openPosition: {x: 0.5, y: 0.5}
+  scale: 1
+  closedScale: {x: 0, y: 0}
+  openScale: {x: 1, y: 1}
+  extras: 0
+  moneyPosition: {x: 0, y: 0}
+  showButtons: 0
+  blockScreenPanel: {fileID: 0}
 --- !u!1 &8732074584959852097
 GameObject:
   m_ObjectHideFlags: 0

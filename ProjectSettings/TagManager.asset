@@ -8,6 +8,7 @@ TagManager:
   - Bottom
   - Wall
   - Fish
+  - Block
   layers:
   - Default
   - TransparentFX

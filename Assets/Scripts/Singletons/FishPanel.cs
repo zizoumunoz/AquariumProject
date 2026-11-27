@@ -6,7 +6,7 @@ public class FishPanel : MonoBehaviour
 {
     public static FishPanel instance;
     public FishController fish;
-    [SerializeField] private GameObject panel;
+    [SerializeField] private PanelAnimator panel;
     [SerializeField] private TextMeshProUGUI fishName;
     [SerializeField] private TextMeshProUGUI fishDescription;
     [SerializeField] private TextMeshProUGUI fishDiet;
@@ -20,7 +20,10 @@ public class FishPanel : MonoBehaviour
     {
         fish = newFish;
 
-        ScreenManager.instance.OpenScreen(panel);
+        if (!panel.gameObject.activeSelf)
+        {
+            ScreenManager.instance.OpenScreen(panel);
+        }
 
         fishName.text = fish.data.fishName;
         fishDescription.text = fish.data.description;
@@ -66,7 +69,7 @@ public class FishPanel : MonoBehaviour
     {
         if (fish == null)
         {
-            if (panel.activeSelf)
+            if (panel.gameObject.activeSelf)
             {
                 ScreenManager.instance.EmptyStack();
             }

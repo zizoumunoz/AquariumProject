@@ -5,19 +5,19 @@ public class MarketPanel : MonoBehaviour
 {
     [SerializeField] private MarketSlotUI[] slots;
 
-    public void SetOffers(List<FishSO> offers)
+    public void SetOffers(List<int> offers)
     {
         for (int i = 0; i < slots.Length; i++)
         {
-            slots[i].Set(i < offers.Count ? offers[i] : null, i);
+            slots[i].Set(offers[i], i);
         }
         MoneyManager.Instance.UpdateUI();
     }
-    public void SetOffers(List<FishSO> offers, List<int> timesBought)
+    public void SetOffers(List<int> offers, List<int> timesBought)
     {
         for (int i = 0; i < slots.Length; i++)
         {
-            slots[i].Set(i < offers.Count ? offers[i] : null, i, timesBought[i]);
+            slots[i].Set(offers[i], i, timesBought[i]);
         }
         MoneyManager.Instance.UpdateUI();
     }

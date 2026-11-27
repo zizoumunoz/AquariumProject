@@ -1,5 +1,3 @@
-using NUnit.Framework;
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +9,7 @@ public class MarketSlotUI : MonoBehaviour
     [SerializeField] private TMP_Text priceLabel;
     [SerializeField] private Button buyButton;
     [SerializeField] private FishSO fish;
+    [SerializeField] private int SOindex;
     [SerializeField] private Transform starHolder;
     private int shopIndex = 0;
     [HideInInspector] public int timesBought = 0;
@@ -29,15 +28,16 @@ public class MarketSlotUI : MonoBehaviour
         MoneyManager.Instance.moneyChanged -= UpdateUI;
     }
 
-    public void Set(FishSO so, int shopIndex, int timesBought = 0)
+    public void Set(int so, int shopIndex, int timesBought = 0)
     {
-        fish = so;
+        SOindex = so;
+        fish = TankManager.instance.database.tankSOs[(int)TankManager.instance.database.activeTank.type].fishes[so];
         this.shopIndex = shopIndex;
         this.timesBought = timesBought;
-        fishImage.sprite = so.sprite;
+        fishImage.sprite = fish.sprite;
         fishImage.preserveAspect = true;
-        nameLabel.text = so.fishName;
-        priceLabel.text = "$" + so.price;
+        nameLabel.text = fish.fishName;
+        priceLabel.text = "$" + fish.price;
         foreach (Transform star in starHolder)
         {
             star.gameObject.SetActive(false);
