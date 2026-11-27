@@ -142,7 +142,7 @@ public class TankManager : MonoBehaviour
         ScreenManager.instance.EmptyStack();
         LoadNewTank(database.tanks[^1]);
     }
-    public void AssignTankRoll(List<FishSO> rolledFishes)
+    public void AssignTankRoll(List<int> rolledFishes)
     {
         database.activeTank.marketRoll = rolledFishes;
         database.activeTank.lastRefresh = Time.time;

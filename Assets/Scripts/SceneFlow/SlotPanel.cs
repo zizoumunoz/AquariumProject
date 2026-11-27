@@ -15,6 +15,8 @@ public class SlotPanel : MonoBehaviour
         for (int i = 0; i < slots.Length; i++)
         {
             slots[i].slotNumber.text = $"Slot {i + 1}";
+            SaveAndLoad.LoadData(i);
+
             if (!SaveAndLoad.ExistSlot(i))
             {
                 slots[i].info.SetActive(false);
@@ -22,7 +24,6 @@ public class SlotPanel : MonoBehaviour
                 continue;
             }
 
-            SaveAndLoad.LoadData(i);
             slots[i].info.SetActive(true);
 
             SaveAndLoad.SaveFile save = SaveAndLoad.save;

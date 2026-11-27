@@ -1084,6 +1084,8 @@ GameObject:
   - component: {fileID: 7147619872991942762}
   - component: {fileID: 4382974928650519022}
   - component: {fileID: 2982141576054250232}
+  - component: {fileID: 7560391292427426794}
+  - component: {fileID: 4560065347600907693}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -1153,6 +1155,69 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &7560391292427426794
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4130718743919819961}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &4560065347600907693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4130718743919819961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 465ca622c05a11043bdd838a387d23c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PanelAnimator
+  animationDuration: 1
+  animationSmoothness:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  opacity: 1
+  group: {fileID: 0}
+  closedOpacity: 0
+  openOpacity: 1
+  position: 0
+  closedPosition: {x: 0, y: 0}
+  openPosition: {x: 0, y: 0}
+  scale: 0
+  closedScale: {x: 1, y: 1}
+  openScale: {x: 1, y: 1}
+  extras: 1
+  moneyPosition: {x: 0.5, y: 1.2}
+  showButtons: 0
+  blockScreenPanel: {fileID: 0}
 --- !u!1 &4140151565104206872
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,7 +2140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -20, y: 20}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6162787051561607038
@@ -2991,10 +3056,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Settings
       objectReference: {fileID: 0}
-    - target: {fileID: 4427000825088423799, guid: b5ea67dca9aed724d9fe6dd8c8bfcf41, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4832291641651767263, guid: b5ea67dca9aed724d9fe6dd8c8bfcf41, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3080,6 +3141,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5ea67dca9aed724d9fe6dd8c8bfcf41, type: 3}
+--- !u!114 &3144762920691189568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4411689952104126957, guid: b5ea67dca9aed724d9fe6dd8c8bfcf41, type: 3}
+  m_PrefabInstance: {fileID: 1629469179235917485}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3166826989781543386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 465ca622c05a11043bdd838a387d23c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PanelAnimator
 --- !u!1 &3166826989781543386 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4427000825088423799, guid: b5ea67dca9aed724d9fe6dd8c8bfcf41, type: 3}
@@ -3109,6 +3181,14 @@ PrefabInstance:
     - target: {fileID: 1850564586891314180, guid: df0244cd41369c049818fa33e9e443b5, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491729069498976540, guid: df0244cd41369c049818fa33e9e443b5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 3144762920691189568}
+    - target: {fileID: 3491729069498976540, guid: df0244cd41369c049818fa33e9e443b5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: PanelAnimator, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4088657770865705726, guid: df0244cd41369c049818fa33e9e443b5, type: 3}
       propertyPath: m_AnchorMax.y

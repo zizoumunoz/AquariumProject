@@ -9,8 +9,8 @@ public class DecorationSpawner : MonoBehaviour
     [SerializeField] private Transform decoRoot;
     [SerializeField] private BoolInput placed;
     [SerializeField] private Vector2Input mousePos;
-    [SerializeField] private GameObject placingScreen;
-    [SerializeField] private Rect placementArea = new Rect(-7f, -4f, 14f, 6f);
+    public PanelAnimator placingScreen;
+    [SerializeField] private Rect placementArea = new(-7f, -4f, 14f, 6f);
 
     private void Awake()
     {

@@ -26,7 +26,7 @@ public class Tank
     public TankType type = TankType.Fresh;
     public TankAttribute currentAttibutes = new();
     public float maxFish = 8;
-    public List<FishSO> marketRoll = new();
+    public List<int> marketRoll = new();
     public List<int> timesBought = new();
     public float lastRefresh = 0;
 }
