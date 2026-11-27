@@ -7,7 +7,7 @@ public class SnailController : MonoBehaviour
 
     [Header("Eating")]
     [SerializeField] private float sightRange = 2.5f;
-    [SerializeField] private float eatDistance = 0.15f;
+    [SerializeField] private float eatRange = 0.5f;
 
     [Header("Wander")]
     [SerializeField] private float wanderRadius = 3f;
@@ -17,6 +17,8 @@ public class SnailController : MonoBehaviour
     private GroundWalker walker;
     private float wanderTargetX;
     private float retargetTimer;
+
+    private Poop target = null;
 
     private void Awake()
     {
@@ -30,9 +32,9 @@ public class SnailController : MonoBehaviour
 
     private void Update()
     {
-        Poop poop = FindNearestPoop();
+        target = FindNearestPoop();
 
-        if (poop != null) GoEat(poop);
+        if (target != null) GoEat(target);
         else Wander();
     }
 
@@ -45,8 +47,6 @@ public class SnailController : MonoBehaviour
         foreach (Collider2D shit in shits)
         {
             Poop poop = shit.GetComponent<Poop>();
-            if (!poop.landed) continue;
-
             float d = Vector2.Distance(transform.position, poop.transform.position);
             if (d > best) continue;
 
@@ -60,7 +60,7 @@ public class SnailController : MonoBehaviour
     {
         float poopX = poop.transform.position.x;
 
-        if (Mathf.Abs(poopX - walker.X) <= eatDistance)
+        if (Mathf.Abs(poopX - walker.X) <= eatRange)
         {
             poop.Consume();
             return;

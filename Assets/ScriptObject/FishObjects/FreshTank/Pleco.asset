@@ -15,14 +15,14 @@ MonoBehaviour:
   fishName: Pleco
   sprite: {fileID: 5167706199879496267, guid: 495579fea0f8201448fe5f062a8abdf2, type: 3}
   diet: 3
-  rarity: 0
-  price: 100
+  rarity: 1
+  price: 150
   description: Does stuff
   fishStatus:
-    baseSize: 1
+    baseSize: 0.5
     nutrition: 25
     youngSizeMultiplier: 0.5
-    fishSpeed: 0.2
+    fishSpeed: 1.2
     minRetargetTime: 2
     maxRetargetTime: 5
     startFullness: 100
@@ -34,6 +34,7 @@ MonoBehaviour:
     happyAbove: 60
     happinessLossPerSecond: 2
     happinessGainPerSecond: 2
+    maxAlgaeLevel: 50
     fleeSpeedRatio: 0.9
     fleeDistance: 5
     fearMemoryTime: 0.5
