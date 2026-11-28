@@ -6,7 +6,6 @@ public class PanelAnimator : MonoBehaviour
     private bool openning = true;
     private bool open = false;
     [Header("Timer")]
-    public float animationDuration = 1f;
     public AnimationCurve animationSmoothness = AnimationCurve.EaseInOut(0, 0, 1, 1);
     private float timer = 0;
     [Header("Opacity")]
@@ -41,7 +40,7 @@ public class PanelAnimator : MonoBehaviour
         {
             timer += Time.deltaTime;
             Vector2 screenSize = new(Camera.main.pixelWidth, Camera.main.pixelHeight);
-            if (timer > animationDuration)
+            if (timer > Settings.Instance.animationDuration)
             {
                 blockScreenPanel.SetActive(false);
                 if (opacity)
@@ -60,11 +59,12 @@ public class PanelAnimator : MonoBehaviour
                 {
                     ScreenManager.instance.moneyDisplay.position = new( moneyPosition.x * screenSize.x, moneyPosition.y * screenSize.y);
                 }
-                timer = animationDuration;
+                timer = Settings.Instance.animationDuration;
+                open = true;
                 return;
             }
 
-            float smoothedTimer = animationSmoothness.Evaluate(timer / animationDuration);
+            float smoothedTimer = animationSmoothness.Evaluate(timer / Settings.Instance.animationDuration);
 
             if (opacity)
             {
@@ -104,7 +104,7 @@ public class PanelAnimator : MonoBehaviour
                 return;
             }
 
-            float smoothedTimer = animationSmoothness.Evaluate(timer / animationDuration);
+            float smoothedTimer = animationSmoothness.Evaluate(timer / Settings.Instance.animationDuration);
 
             Vector2 screenSize = new(Camera.main.pixelWidth, Camera.main.pixelHeight);
 
@@ -162,5 +162,6 @@ public class PanelAnimator : MonoBehaviour
         blockScreenPanel.SetActive(true);
         openning = false;
         open = false;
+        timer = Settings.Instance.animationDuration;
     }
 }
