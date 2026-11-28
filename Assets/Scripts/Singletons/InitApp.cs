@@ -12,5 +12,7 @@ public class InitApp : MonoBehaviour
         }
         instance = this;
         SaveAndLoad.Init();
+
+        DontDestroyOnLoad(gameObject);
     }
 }

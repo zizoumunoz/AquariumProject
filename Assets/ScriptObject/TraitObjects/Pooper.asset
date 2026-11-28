@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ee5e78b107a7e448bec9541ab3ca3e5, type: 3}
   m_Name: Pooper
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
-  traitName: 
-  traitColor: {r: 0, g: 0, b: 0, a: 0}
+  traitName: Pooper
+  traitColor: {r: 0.3584906, g: 0.12344251, b: 0.12344251, a: 1}
   statusMultiplier:
     baseSize: 1
     nutrition: 1
@@ -30,6 +30,7 @@ MonoBehaviour:
     happyAbove: 1
     happinessLossPerSecond: 1
     happinessGainPerSecond: 1
+    maxAlgaeLevel: 1
     fleeSpeedRatio: 1
     fleeDistance: 1
     fearMemoryTime: 1

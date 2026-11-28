@@ -42,7 +42,6 @@ public class SaveAndLoad
         {
             Settings settings = JsonUtility.FromJson<Settings>(File.ReadAllText(settingsPath));
             Settings.Instance.animationDuration = settings.animationDuration;
-            Debug.Log(settings.folder);
             Settings.Instance.folder = settings.folder;
         }
     }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FastAger
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   traitName: Fast Ager
-  traitColor: {r: 0, g: 0, b: 0, a: 0}
+  traitColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   statusMultiplier:
     baseSize: 1
     nutrition: 1
@@ -30,6 +30,7 @@ MonoBehaviour:
     happyAbove: 1
     happinessLossPerSecond: 1
     happinessGainPerSecond: 1
+    maxAlgaeLevel: 1
     fleeSpeedRatio: 1
     fleeDistance: 1
     fearMemoryTime: 1

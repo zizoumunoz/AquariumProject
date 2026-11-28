@@ -227,7 +227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 465ca622c05a11043bdd838a387d23c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PanelAnimator
-  animationDuration: 1
   animationSmoothness:
     serializedVersion: 2
     m_Curve:
@@ -1595,7 +1594,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 465ca622c05a11043bdd838a387d23c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PanelAnimator
-  animationDuration: 1
   animationSmoothness:
     serializedVersion: 2
     m_Curve:
@@ -2802,7 +2800,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 465ca622c05a11043bdd838a387d23c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PanelAnimator
-  animationDuration: 1
   animationSmoothness:
     serializedVersion: 2
     m_Curve:
@@ -2985,7 +2982,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 465ca622c05a11043bdd838a387d23c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PanelAnimator
-  animationDuration: 1
   animationSmoothness:
     serializedVersion: 2
     m_Curve:
@@ -3107,7 +3103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 465ca622c05a11043bdd838a387d23c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PanelAnimator
-  animationDuration: 1
   animationSmoothness:
     serializedVersion: 2
     m_Curve:
@@ -4358,7 +4353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 465ca622c05a11043bdd838a387d23c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PanelAnimator
-  animationDuration: 1
   animationSmoothness:
     serializedVersion: 2
     m_Curve:
@@ -5870,7 +5864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 465ca622c05a11043bdd838a387d23c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PanelAnimator
-  animationDuration: 1
   animationSmoothness:
     serializedVersion: 2
     m_Curve:
@@ -5908,7 +5901,7 @@ MonoBehaviour:
   extras: 1
   moneyPosition: {x: 0.5, y: 1.2}
   showButtons: 0
-  blockScreenPanel: {fileID: 0}
+  blockScreenPanel: {fileID: 604244488}
 --- !u!225 &1824687171
 CanvasGroup:
   m_ObjectHideFlags: 0

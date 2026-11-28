@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Trapped Poop
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   traitName: Low poopper
-  traitColor: {r: 0.3509434, g: 0.2260281, b: 0, a: 0}
+  traitColor: {r: 0.39, g: 0, b: 0.25172716, a: 1}
   statusMultiplier:
     baseSize: 1
     nutrition: 1

@@ -43,18 +43,16 @@ public class FishPanel : MonoBehaviour
             }
             trait.gameObject.SetActive(true);
             Color c = fish.traits[i].traitColor;
-            trait.GetComponent<Image>().color = fish.traits[i].traitColor;
+            trait.GetComponent<Image>().color = c;
             TextMeshProUGUI text = trait.GetChild(0).GetComponent<TextMeshProUGUI>();
             text.text = fish.traits[i].traitName;
             text.color = ((c.r * 0.299f + c.g * 0.587f + c.b * 0.114f) > 0.5f) ? Color.black : Color.white;
+            Debug.Log(text.text);
         }
 
-        if (fishTraitsRoot.childCount > fish.traits.Count)
+        for (int i = fish.traits.Count; i < fishTraitsRoot.childCount; i++)
         {
-            for (int i = fish.traits.Count; i < fishTraitsRoot.childCount; i++)
-            {
-                fishTraitsRoot.GetChild(i).gameObject.SetActive(false);
-            }
+            fishTraitsRoot.GetChild(i).gameObject.SetActive(false);
         }
     }
     private void Awake()

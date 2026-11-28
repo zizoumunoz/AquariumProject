@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Small Stomach
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   traitName: Small Stomach
-  traitColor: {r: 0.4113207, g: 0.18437481, b: 0, a: 1}
+  traitColor: {r: 0.5377358, g: 0.41276842, b: 0.31198823, a: 1}
   statusMultiplier:
     baseSize: 1
     nutrition: 1
@@ -30,6 +30,7 @@ MonoBehaviour:
     happyAbove: 1
     happinessLossPerSecond: 1
     happinessGainPerSecond: 1
+    maxAlgaeLevel: 1
     fleeSpeedRatio: 1
     fleeDistance: 1
     fearMemoryTime: 1

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Blind
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   traitName: Blind
-  traitColor: {r: 1, g: 1, b: 1, a: 0}
+  traitColor: {r: 1, g: 1, b: 1, a: 1}
   statusMultiplier:
     baseSize: 1
     nutrition: 1
