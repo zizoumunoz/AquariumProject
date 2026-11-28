@@ -33,6 +33,8 @@ public class AlgaeVisuals : MonoBehaviour
     private readonly List<SpriteRenderer> _spots = new();
     private Tank _currentTank;
     private Bounds _currentBounds;
+
+    private float lastSize = Settings.Instance.algaeSize;
     private void Awake()
     {
         instance = this;
@@ -69,6 +71,17 @@ public class AlgaeVisuals : MonoBehaviour
         {
             RemoveSpot();
         }
+
+        if (lastSize != Settings.Instance.algaeSize)
+        {
+            float aspect = Settings.Instance.algaeSize / lastSize;
+            for (int i = 0; i < _spots.Count; i++)
+            {
+                _spots[i].transform.localScale *= aspect;
+            }
+
+            lastSize = Settings.Instance.algaeSize;
+        }
     }
 
     private void SpawnSpot(float algae)
@@ -85,7 +98,7 @@ public class AlgaeVisuals : MonoBehaviour
             );
 
         sr.transform.rotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
-        sr.transform.localScale = Vector3.one * Random.Range(_scaleRange.x, _scaleRange.y);
+        sr.transform.localScale = Vector3.one * Random.Range(_scaleRange.x, _scaleRange.y) * Settings.Instance.algaeSize / 10;
         sr.sprite = sprite;
 
         sr.GetComponent<CircleCollider2D>().radius = sprite.bounds.extents.x;

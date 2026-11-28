@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ee5e78b107a7e448bec9541ab3ca3e5, type: 3}
-  m_Name: High Stamina
+  m_Name: Athletic
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
-  traitName: 
-  traitColor: {r: 0, g: 0, b: 0, a: 0}
+  traitName: Athletic
+  traitColor: {r: 0.28773582, g: 0.53574896, b: 1, a: 1}
   statusMultiplier:
     baseSize: 1
     nutrition: 1

@@ -25,6 +25,10 @@ public class TankManager : MonoBehaviour
         if (SaveAndLoad.save != null)
         {
             database.tanks = SaveAndLoad.save.tankList;
+            for (int i = 0; i < database.tanks.Count; i++)
+            {
+                database.tanks[i].lastRefresh = 0;
+            }
             LoadNewTank(database.tanks[^1]);
         }
         else

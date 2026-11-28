@@ -13,6 +13,7 @@ public class Settings
     }
     public string folder;
     public float animationDuration;
+    public int algaeSize;
     private Settings()
     {
 
@@ -23,5 +24,6 @@ public class Settings
 #endif
 
         animationDuration = 1.0f;
+        algaeSize = 10;
     }
 }

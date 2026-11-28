@@ -81,7 +81,7 @@ public class DecorationSpawner : MonoBehaviour
             }
             spawningDeco = null;
             MoneyManager.Instance.SpendMoney(spawningDecoSO.price);
-            ScreenManager.instance.PopScreen();
+            ScreenManager.instance.EmptyStack();
         }
     }
 }

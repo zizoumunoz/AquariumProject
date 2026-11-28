@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Infertile
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   traitName: Infertile
-  traitColor: {r: 0, g: 0, b: 0, a: 0}
+  traitColor: {r: 0.745283, g: 0.05273228, b: 0.05273228, a: 1}
   statusMultiplier:
     baseSize: 1
     nutrition: 1
@@ -30,6 +30,7 @@ MonoBehaviour:
     happyAbove: 1
     happinessLossPerSecond: 1
     happinessGainPerSecond: 1
+    maxAlgaeLevel: 1
     fleeSpeedRatio: 1
     fleeDistance: 1
     fearMemoryTime: 1

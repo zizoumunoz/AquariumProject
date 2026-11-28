@@ -36,10 +36,10 @@ public class PanelAnimator : MonoBehaviour
         {
             return;
         }
+        Vector2 screenSize = new(Camera.main.pixelWidth, Camera.main.pixelHeight);
         if (openning)
         {
             timer += Time.deltaTime;
-            Vector2 screenSize = new(Camera.main.pixelWidth, Camera.main.pixelHeight);
             if (timer > Settings.Instance.animationDuration)
             {
                 blockScreenPanel.SetActive(false);
@@ -57,7 +57,7 @@ public class PanelAnimator : MonoBehaviour
                 }
                 if (extras)
                 {
-                    ScreenManager.instance.moneyDisplay.position = new( moneyPosition.x * screenSize.x, moneyPosition.y * screenSize.y);
+                    ScreenManager.instance.moneyDisplay.position = new(moneyPosition.x * screenSize.x, moneyPosition.y * screenSize.y);
                 }
                 timer = Settings.Instance.animationDuration;
                 open = true;
@@ -106,8 +106,6 @@ public class PanelAnimator : MonoBehaviour
 
             float smoothedTimer = animationSmoothness.Evaluate(timer / Settings.Instance.animationDuration);
 
-            Vector2 screenSize = new(Camera.main.pixelWidth, Camera.main.pixelHeight);
-
             if (opacity)
             {
                 group.alpha = Mathf.LerpUnclamped(closedOpacity, openOpacity, smoothedTimer);
@@ -147,13 +145,14 @@ public class PanelAnimator : MonoBehaviour
         }
         if (extras)
         {
-            previousMoneyPosition = ScreenManager.instance.moneyDisplay.position;
-            previousShowButtons = ScreenManager.instance.buttons[0].activeSelf;
+            previousMoneyPosition = ScreenManager.instance.Count() != 1 ? ScreenManager.instance.moneyDisplay.position : ScreenManager.instance.moneyOriginalPosition;
+            previousShowButtons = ScreenManager.instance.Count() == 1 || ScreenManager.instance.buttons[0].activeSelf;
             for (int i = 0; i < ScreenManager.instance.buttons.Length; i++)
             {
                 ScreenManager.instance.buttons[i].SetActive(showButtons);
             }
         }
+        open = false;
         openning = true;
         timer = 0;
     }

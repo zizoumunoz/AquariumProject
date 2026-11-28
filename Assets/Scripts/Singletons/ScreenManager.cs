@@ -9,13 +9,17 @@ public class ScreenManager : MonoBehaviour
 #pragma warning disable UAC1009 // Unsupported collection type for serialization
     [SerializeField] private Stack<PanelAnimator> screenStack = new();
 #pragma warning restore UAC1009 // Unsupported collection type for serialization
-    private Vector3 moneyOriginalPosition;
+    public Vector3 moneyOriginalPosition;
     public RectTransform moneyDisplay;
     public GameObject[] buttons = new GameObject[0];
 
     public bool IsEmpty()
     {
         return screenStack.Count == 0;
+    }
+    public int Count()
+    {
+        return screenStack.Count;
     }
 
     public void OpenScreen(PanelAnimator screen)

@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class SettingsManager : MonoBehaviour
 {
     public SliderValue animationDurationValue;
+    public SliderValue algaeSizeValue;
     public TMP_InputField pathInput;
     private void OnEnable()
     {
         animationDurationValue.Set(Settings.Instance.animationDuration, "s");
+        algaeSizeValue.Set(Settings.Instance.algaeSize, "");
         pathInput.text = Settings.Instance.folder;
 #if UNITY_WEBGL && !UNITY_EDITOR
         pathInput.interactable = false;
@@ -47,6 +49,40 @@ public class SettingsManager : MonoBehaviour
 
         Settings.Instance.animationDuration = newValuefloat;
         animationDurationValue.Set(Settings.Instance.animationDuration, "s");
+        SaveAndLoad.UpdateSettings();
+    }
+    public void ChangedAlgaeSize()
+    {
+        if (algaeSizeValue.slider.value != Settings.Instance.algaeSize)
+        {
+            Settings.Instance.algaeSize = (int)algaeSizeValue.slider.value;
+            algaeSizeValue.Set(Settings.Instance.algaeSize, "");
+            return;
+        }
+        else if (algaeSizeValue.inputText.text.Trim().Length < 1)
+        {
+            return;
+        }
+
+        string newValue = algaeSizeValue.inputText.text.Trim();
+        if (newValue[^1] == 's' || newValue[^1] == 'S')
+        {
+            newValue = newValue[..^1].Trim();
+        }
+
+        float newValuefloat = algaeSizeValue.slider.value;
+        try
+        {
+            newValuefloat = float.Parse(newValue);
+        }
+        catch (Exception)
+        {
+        }
+
+        newValuefloat = Mathf.Clamp(newValuefloat, algaeSizeValue.slider.minValue, algaeSizeValue.slider.maxValue);
+
+        Settings.Instance.algaeSize = Mathf.FloorToInt(newValuefloat);
+        algaeSizeValue.Set(Settings.Instance.algaeSize, "s");
         SaveAndLoad.UpdateSettings();
     }
 

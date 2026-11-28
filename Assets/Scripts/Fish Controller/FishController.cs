@@ -18,7 +18,7 @@ public class FishController : MonoBehaviour
     private FishGrowth growth;
     private IFishBehaviour[] behaviours;
 
-    public List<TraitSO> traits = new List<TraitSO>();
+    public List<TraitSO> traits = new();
 
 
     public SpriteRenderer Visual { get { return sr; } }

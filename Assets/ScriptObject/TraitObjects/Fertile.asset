@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fertile
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   traitName: Fertile
-  traitColor: {r: 0, g: 0, b: 0, a: 0}
+  traitColor: {r: 0.99444187, g: 0.8254717, b: 1, a: 1}
   statusMultiplier:
     baseSize: 1
     nutrition: 1
