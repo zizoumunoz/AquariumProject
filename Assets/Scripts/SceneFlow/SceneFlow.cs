@@ -19,7 +19,7 @@ public class SceneFlow : MonoBehaviour
     public static void GoToMainMenu()
     {
         TankManager.instance.SaveTankData();
-        SaveAndLoad.SaveData(TankManager.instance.database.tanks, SaveAndLoad.slot);
+        SaveAndLoad.SaveData();
 
         ChangeScene("MainMenu");
     }
@@ -32,7 +32,7 @@ public class SceneFlow : MonoBehaviour
     public static void ExitApp()
     {
         TankManager.instance.SaveTankData();
-        SaveAndLoad.SaveData(TankManager.instance.database.tanks, SaveAndLoad.slot);
+        SaveAndLoad.SaveData();
 
         Application.Quit();
     }
@@ -51,7 +51,7 @@ public class SceneFlow : MonoBehaviour
         if (saveTimer < 0)
         {
             TankManager.instance.SaveTankData();
-            SaveAndLoad.SaveData(TankManager.instance.database.tanks, SaveAndLoad.slot);
+            SaveAndLoad.SaveData();
             saveTimer += timeToSave;
         }
     }
@@ -62,6 +62,6 @@ public class SceneFlow : MonoBehaviour
             return;
         }
         TankManager.instance.SaveTankData();
-        SaveAndLoad.SaveData(TankManager.instance.database.tanks, SaveAndLoad.slot);
+        SaveAndLoad.SaveData();
     }
 }
